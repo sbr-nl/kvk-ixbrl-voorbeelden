@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<link:roleRef roleURI="https://www.demicrobv.nl/role/DocumentAndEntityInformation" xlink:type="simple" xlink:href="https://www.demicrobv.nl/xbrl/2023-12-31.xsd#DocumentAndEntityInformation"/>
+	<link:presentationLink xlink:type="extended" xlink:role="https://www.demicrobv.nl/role/DocumentAndEntityInformation">
+		<link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor.xsd#kvk_DocumentEntityInformationTitle" xlink:label="kvk_DocumentEntityInformationTitle_loc"/>
+		<link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor.xsd#kvk_TitleOfTheDocument" xlink:label="kvk_TitleOfTheDocument_loc"/>
+		<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_TitleOfTheDocument_loc" order="1.0"/>
+	</link:presentationLink>
+</link:linkbase>
