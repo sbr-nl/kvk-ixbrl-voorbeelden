@@ -3,6 +3,7 @@
 <link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link:roleRef roleURI="https://www.demicrobv.nl/role/DocumentAndEntityInformation" xlink:type="simple" xlink:href="demicrobv-2023-12-31.xsd#DocumentAndEntityInformation"/>
   <link:roleRef roleURI="https://www.demicrobv.nl/role/BalanceSheet" xlink:type="simple" xlink:href="demicrobv-2023-12-31.xsd#BalanceSheet"/>
+  <link:roleRef roleURI="https://www.demicrobv.nl/role/IncomeStatement" xlink:type="simple" xlink:href="demicrobv-2023-12-31.xsd#IncomeStatement"/>
   <link:presentationLink xlink:type="extended" xlink:role="https://www.demicrobv.nl/role/DocumentAndEntityInformation">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor.xsd#kvk_DocumentEntityInformationTitle" xlink:label="kvk_DocumentEntityInformationTitle_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor.xsd#kvk_TitleOfTheDocument" xlink:label="kvk_TitleOfTheDocument_loc"/>
@@ -70,5 +71,32 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_LiabilitiesNoncurrent_loc" order="11.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityAndLiabilities" xlink:label="bw2-titel9_EquityAndLiabilities_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_EquityAndLiabilities_loc" order="13.0"/>
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="https://www.demicrobv.nl/role/IncomeStatement">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IncomeStatementTitle" xlink:label="bw2-titel9_IncomeStatementTitle_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_NetRevenue" xlink:label="bw2-titel9_NetRevenue_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_NetRevenue_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_OperatingIncomeOther" xlink:label="bw2-titel9_OperatingIncomeOther_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_OperatingIncomeOther_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IncomeOther" xlink:label="bw2-titel9_IncomeOther_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_IncomeOther_loc" order="3.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_OperatingIncome" xlink:label="bw2-titel9_OperatingIncome_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_OperatingIncome_loc" order="4.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_CostsRawMaterialsConsumables" xlink:label="bw2-titel9_CostsRawMaterialsConsumables_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_CostsRawMaterialsConsumables_loc" order="5.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_WagesSalaries" xlink:label="bw2-titel9_WagesSalaries_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_WagesSalaries_loc" order="6.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_DepreciationAmortisationAndDecreaseInValueAssets" xlink:label="bw2-titel9_DepreciationAmortisationAndDecreaseInValueAssets_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_DepreciationAmortisationAndDecreaseInValueAssets_loc" order="7.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_OperatingExpensesOther" xlink:label="bw2-titel9_OperatingExpensesOther_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_OperatingExpensesOther_loc" order="8.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ExpensesOther" xlink:label="bw2-titel9_ExpensesOther_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_ExpensesOther_loc" order="9.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SumOfExpenses" xlink:label="bw2-titel9_SumOfExpenses_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_SumOfExpenses_loc" order="10.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_Result" xlink:label="rj_Result_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="rj_Result_loc" order="11.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ResultAfterTax" xlink:label="bw2-titel9_ResultAfterTax_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_ResultAfterTax_loc" order="12.0"/>
   </link:presentationLink>
 </link:linkbase>
