@@ -17,6 +17,10 @@
         <link:definition>00200 - Income statement</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
+      <link:roleType roleURI="https://www.demicrobv.nl/role/Notes" id="Notes">
+        <link:definition>00300 - Notes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
     </xs:appinfo>
   </xs:annotation>
   <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
