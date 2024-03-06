@@ -10,7 +10,8 @@
 
     @media print {
       html {
-        font-size: 0.875rem !important;
+        /* font-size: 0.875rem !important; */
+        font-size: 0.9rem !important;
       }
 
       .page {
@@ -26,7 +27,7 @@
     html {
       font-family: Georgia, "Times New Roman", Times, serif;
       background-color: #fff;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     body {
@@ -48,7 +49,7 @@
       justify-content: center;
       counter-increment: page;
       background-color: #fff;
-      box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     }
 
     .page:not(:last-child) {
@@ -94,7 +95,7 @@
     }
 
     .footer-page-number::after {
-      content: "Pagina " counter(page) " van 7";
+      content: "Pagina " counter(page) " van 27";
     }
 
     .footer-content::after {
@@ -108,11 +109,15 @@
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6 {
+    h4, table h4,
+    h5, table h5,
+    h6, table h6 {
       margin: 0;
     }
+
+    /* h5 {
+      margin-top: 1rem;
+    } */
 
     h1,
     h2 {
@@ -128,6 +133,10 @@
       font-size: 1.2rem;
     }
 
+    h6 {
+      font-size: 1rem;
+    }
+
     table h4,
     table h5,
     table h6 {
@@ -135,11 +144,13 @@
     }
 
     h2,
-    h5 {
+    h5,
+    h6 {
       font-weight: normal;
     }
 
-    h4 {
+    h4,
+    table h6 {
       font-weight: bold;
     }
 
@@ -151,13 +162,17 @@
       font-style: italic;
     }
 
+    table {
+      margin-bottom: 1rem;
+    }
+
     table,
     th,
     td {
       border-collapse: collapse;
       font-size: 1rem;
       /* table debug line */
-      outline: solid 1px rgba(173, 216, 230, 0.25);
+      /* outline: solid 1px rgba(173, 216, 230, 0.25); */
       /* /table debug line */
     }
 
@@ -176,7 +191,7 @@
     .total hr {
       border-width: 2px;
     }
-    
+
     tr.empty-row {
       height: 1.4rem;
     }
@@ -189,6 +204,35 @@
     .balance-sheet tr> :first-child,
     .profit-and-loss-account tr> :first-child {
       width: 42.5%;
+    }
+
+    .change-in-accounting-policy-equity tr> :first-child,
+    .revaluation-reserve tr> :first-child {
+      width: 80%;
+    }
+
+    .wages-salaries-social-security-contributions tr> :first-child,
+    .interest-expenses-related-expenses tr> :first-child,
+    .extraordinary-income-expenses tr> :first-child {
+      width: 75%;
+    }
+
+    .securities tr> :first-child,
+    .taxes-social-security-contributions tr> :first-child,
+    .long-term-liabilities tr> :first-child,
+    .wages-salaries-social-security-contributions tr> :first-child,
+    .interest-expenses-related-expenses tr> :first-child,
+    .extraordinary-income-expenses tr> :first-child {
+      width: 60%;
+    }
+
+    .provisions tr> :nth-child(2),
+    .provisions tr> :nth-child(4),
+    .provisions tr> :nth-child(6) {
+      width: 18%;
+    }
+
+    table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
       text-indent: 0;
@@ -204,8 +248,7 @@
       direction: ltr;
     }
 
-    .balance-sheet tbody:nth-of-type(2),
-    .profit-and-loss-account tbody:nth-of-type(2) {
+    table tbody:nth-of-type(2) {
       font-family: Arial, Helvetica, sans-serif;
       text-indent: 0.5rem;
       direction: rtl;
@@ -213,12 +256,33 @@
     }
 
     .profit-and-loss-account>tbody:first-child tr:first-child> :nth-child(4),
-    .balance-sheet>tbody:first-child tr:first-child> :nth-child(4) {
+    .balance-sheet>tbody:first-child tr:first-child> :nth-child(4),
+    .securities>tbody:first-child tr:first-child> :nth-child(3),
+    .provisions>tbody:first-child tr:first-child> :nth-child(3),
+    .provisions>tbody:first-child tr:first-child> :nth-child(5),
+    .long-term-liabilities>tbody:first-child tr:first-child> :nth-child(3),
+    .taxes-social-security-contributions>tbody:first-child tr:first-child> :nth-child(3),
+    .wages-salaries-social-security-contributions>tbody:first-child tr:first-child> :nth-child(3),
+    .interest-expenses-related-expenses>tbody:first-child tr:first-child> :nth-child(3),
+    .extraordinary-income-expenses>tbody:first-child tr:first-child> :nth-child(3) {
       width: 2%;
     }
 
+    .change-in-accounting-policy-equity,
+    .revaluation-reserve,
+    .securities,
+    .long-term-liabilities,
+    .taxes-social-security-contributions,
+    .wages-salaries-social-security-contributions,
+    .interest-expenses-related-expenses,
+    .extraordinary-income-expenses {
+      width: 85%;
+      text-align: right;
+    }
+
     .balance-sheet,
-    .profit-and-loss-account {
+    .profit-and-loss-account,
+    .provisions {
       width: 100%;
       text-align: right;
     }
@@ -303,32 +367,12 @@
     </div>
     <div class="content">
       <h3>Inhoud</h3>
-      <!-- <p>
-        <a href="#audit-report"><span class="toc-h3">Accountantsrapport<span class="align-right">3</span></span></a>
-        <a href="#compilation-report">Samenstellingsverklaring<span class="align-right">4</span></a>
-        <a href="#income-statement">Resultaten<span class="align-right">4</span></a>
-        <a href="#audit-report-signing">Ondertekening van het accountantsrapport<span class="align-right">10</span></a>
-      </p> -->
       <p>
-        <a href="#financial-statements"><span class="toc-h3">Jaarrekening<span class="align-right">11</span></span></a>
-        <a href="#balance-sheet">Balans per 31 december 2023<span class="align-right">12</span></a>
-        <a href="#account-of-profit-and-loss">Winst- en verliesrekening over 2023<span class="align-right">15</span></a>
-        <a href="#account-of-profit-and-loss-disclosure">Toelichting op de balans en winst- en verliesrekening<span class="align-right">16</span></a>
+        <a href="#financial-statements"><span class="toc-h3">Jaarrekening<span class="align-right">3</span></span></a>
+        <a href="#balance-sheet">Balans per 31 december 2023<span class="align-right">4</span></a>
+        <a href="#account-of-profit-and-loss">Winst- en verliesrekening over 2023<span class="align-right">6</span></a>
+        <a href="#balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst- en verliesrekening<span class="align-right">7</span></a>
       </p>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
-      <h3 id="audit-report">Accountantsrapport</h3>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -356,7 +400,7 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3 id="balance-sheet">Balans per 31 december 2023</h3>
+      <h3 id="balance-sheet-part-1">Balans per 31 december 2023</h3>
       (na resultaatbestemming)
       <table class="balance-sheet">
         <tbody>
@@ -365,9 +409,9 @@
               <h4>Activa</h4>
             </td>
             <td></td>
-            <th colspan="2">31 december 2023</th>
+            <th colspan="2"><h4>31 december 2023</h4></th>
             <td></td>
-            <th colspan="2">31 december 2022</th>
+            <th colspan="2"><h4>31 december 2022</h4></th>
           </tr>
           <tr class="empty-row top-table-header">
             <td></td>
@@ -748,7 +792,429 @@
             <td></td>
             <td>0</td>
           </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <table class="balance-sheet">
+        <tbody>
+          <tr>
+            <td>
+              <h4>Passiva</h4>
+            </td>
+            <td></td>
+            <th colspan="2"><h4>31 december 2023</h4></th>
+            <td></td>
+            <th colspan="2"><h4>31 december 2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td></td>
+            <td colspan="2">
+              <hr>
+            </td>
+            <td></td>
+            <td colspan="2">
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>Ref.</td>
+            <td>€</td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Eigen vermogen</h6>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Geplaatst kapitaal</td>
+            <td>14.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Agioreserve</td>
+            <td>15</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Herwaarderingsreserve</td>
+            <td>16</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Andere wettelijke reserves</td>
+            <td>17</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Statutaire reserves</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige reserves</td>
+            <td>18</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
           <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Voorzieningen</h6>
+            </td>
+            <td>19.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Pensioenvoorziening</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Latente belastingverplichtingen</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Langlopende schulden</h6>
+            </td>
+            <td>20.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Achtergestelde leningen</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan kredietinstellingen</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Financiële leaseverplichtingen</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Oudedagsverplichting</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige schulden</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Kortlopende schulden</h6>
+            </td>
+            <td>21.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan kredietinstellingen</td>
+            <td>22.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan leveranciers en handelskredieten</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan groepsmaatschappijen</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Onderhanden projecten</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Belastingen en premies sociale verzekeringen</td>
+            <td>23.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Pensioenpremies</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige schulden en overlopende passiva</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
             <td></td>
             <td></td>
             <td></td>
@@ -782,9 +1248,9 @@
           <tr>
             <td></td>
             <td></td>
-            <th colspan="2">2023</th>
+            <th colspan="2"><h4>2023</h4></th>
             <td></td>
-            <th colspan="2">2022</th>
+            <th colspan="2"><h4>2022</h4></th>
           </tr>
           <tr class="empty-row top-table-header">
             <td></td>
@@ -799,7 +1265,7 @@
           </tr>
           <tr class="unit-row">
             <td></td>
-            <td></td>
+            <td>Ref.</td>
             <td>€</td>
             <td>€</td>
             <td></td>
@@ -812,48 +1278,8 @@
             <td colspan="7"></td>
           </tr>
           <tr>
-            <td>Netto-omzet</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Overige bedrijfsopbrengsten</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Overige posten</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-          </tr>
-          <tr class="empty-row sub-total">
-            <td></td>
-            <td></td>
             <td>
-              <hr>
-            </td>
-            <td></td>
-            <td></td>
-            <td>
-              <hr>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <h4>Som der bedrijfsopbrengsten</h4>
+              <h4>Bruto-bedrijfsresultaat</h4>
             </td>
             <td></td>
             <td></td>
@@ -866,7 +1292,25 @@
             <td colspan="7"></td>
           </tr>
           <tr>
-            <td>Kosten van grond- en hulpstoffen</td>
+            <td>Lonen en salarissen</td>
+            <td>25.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sociale lasten</td>
+            <td>25.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Afschrijvingen op immateriële en materiële vaste activa</td>
             <td></td>
             <td>0</td>
             <td></td>
@@ -875,7 +1319,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>Lonen</td>
+            <td>Waardeveranderingen vastgoedbelegging</td>
             <td></td>
             <td>0</td>
             <td></td>
@@ -884,7 +1328,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>Afschrijvingen op en bijzondere waardeverminderingen van activa</td>
+            <td>Bijzondere waardeverminderingen vlottende activa</td>
             <td></td>
             <td>0</td>
             <td></td>
@@ -901,15 +1345,6 @@
             <td>0</td>
             <td></td>
           </tr>
-          <tr>
-            <td>Overige posten</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-          </tr>
           <tr class="empty-row sub-total">
             <td></td>
             <td></td>
@@ -925,7 +1360,7 @@
           </tr>
           <tr>
             <td>
-              <h4>Som der lasten</h4>
+              <h4>Som der kosten</h4>
             </td>
             <td></td>
             <td></td>
@@ -946,6 +1381,60 @@
             <td>
               <hr>
             </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Bedrijfsresultaat</h4>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
+          <tr>
+            <td>Opbrengst effecten</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rentebaten en soortgelijke opbrengsten</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rentelasten en soortgelijke kosten</td>
+            <td>26.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
           </tr>
           <tr>
             <td>
@@ -958,6 +1447,9 @@
             <td></td>
             <td>0</td>
           </tr>
+          <tr class="empty-row">
+            <td colspan="7"></td>
+          </tr>
           <tr>
             <td>Belastingen</td>
             <td></td>
@@ -967,7 +1459,17 @@
             <td></td>
             <td>0</td>
           </tr>
+          <tr>
+            <td>Resultaat deelnemingen</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
           <tr class="empty-row sub-total">
+            <td></td>
             <td></td>
             <td></td>
             <td>
@@ -1003,9 +1505,6 @@
               <hr>
             </td>
           </tr>
-          <tr class="empty-row">
-            <td colspan="7"></td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -1021,12 +1520,1261 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst- en verliesrekening</h3>
+      <h3 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening</h3>
+      <h4>Algemene toelichting</h4>
+      <h5>Activiteiten</h5>
+      <p>De activiteiten van De Kleine B.V. en haar groepsmaatschappijen bestaan voornamelijk uit:
+      <ul>
+        <li>de productie van en handel in elektronische artikelen en computercomponenten;</li>
+        <li>dienstverlening op het gebied van IT-processen en implementatie van software bij derden;</li>
+        <li>bouw van maatwerksoftware in opdracht van derden.</li>
+      </ul>
+      <p>Verkoop vindt plaats zowel in het binnenland als in het buitenland, waarbij de landen van de Europese Unie de belangrijkste afzetmarkt vormen.</p>
+      <h5>Continuïteit</h5>
+      <p>Het eigen vermogen van De Kleine B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Kleine B.V.</p>
+      <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt:</p>
+      <p>.........
+        .........</p>
+      <p>Op basis van gesprekken die zijn gevoerd met de groepsmaatschappijen/banken over onze maatregelen en plannen verwachten wij dat de financiering zal worden gecontinueerd.</p>
+      <p>De in de onderhavige jaarrekening gehanteerde grondslagen van waardering en resultaatbepaling zijn dan ook gebaseerd op de veronderstelling van continuïteit van de vennootschap.</p>
+      <h5>Vestigingsadres, rechtsvorm en inschrijfnummer handelsregister</h5>
+      <p>De Kleine B.V. is feitelijk gevestigd te Statutaire vestigingsplaats en is ingeschreven bij het handelsregister onder nummer 00000000.</p>
+      <h5>Groepsverhoudingen</h5>
+      <p>XYZ B.V. te Statutaire vestigingsplaats stelt de geconsolideerde jaarrekening op van het groepsdeel waartoe De Kleine B.V. behoort. Aangezien De Kleine B.V. geconsolideerd ook als kleine rechtspersoon valt aan te merken is consolidatie achterwege gelaten op grond van het bepaalde in artikel 2:407 lid 2 sub a BW.</p>
+      </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h5>Stelselwijzigingen</h5>
+      <h5>Stelselwijziging</h5>
+      <p>Als gevolg van.....</p>
+      <h6>Invloed stelselwijziging op vermogen en resultaat</h6>
+      <p>De stelselwijzigingen zijn rechtstreeks verwerkt in het eigen vermogen per 1 januari 2023. De invloed van de stelselwijzigingen op het vermogen is weergegeven in onderstaande aansluiting van het eigen vermogen van 31 december 2022 naar 1 januari 2023:</p>
+      <table class="change-in-accounting-policy-equity">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>Eigen vermogen</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr/>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>Stand per 31 december 2022</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Vermogensverschil vanwege overgang naar fiscale grondslagen </td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>Stand per 1 januari 2023</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <h5>Schattingswijzigingen</h5>
+      <h5>Schattingen</h5>
+      <p>Bij toepassing van de grondslagen en regels voor het opstellen van de jaarrekening vormt de leiding van De Kleine B.V. zich verschillende oordelen en schattingen die essentieel kunnen zijn voor de in de jaarrekening opgenomen bedragen. Indien het voor het geven van het in artikel 2:362 lid 1 BW vereiste inzicht noodzakelijk is, is de aard van deze oordelen en schattingen inclusief de bijbehorende veronderstellingen opgenomen bij de toelichting op de desbetreffende jaarrekeningposten.</p>
+      <h5>Foutherstel</h5>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
     </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Algemene grondslagen</h4>
+      <h5>Algemeen</h5>
+      <p>De jaarrekening is opgesteld in overeenstemming met de wettelijke bepalingen van Titel 9 Boek 2 BW en de Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen, die uitgegeven zijn door de Raad voor de jaarverslaggeving.</p>
+      <p>Activa en passiva worden in het algemeen gewaardeerd tegen de verkrijgings- of vervaardigingsprijs of de actuele waarde. Indien geen specifieke waarderingsgrondslag is vermeld vindt waardering plaats tegen de verkrijgingsprijs. In de balans en de winst- en verliesrekening zijn referenties opgenomen. Met deze referenties wordt verwezen naar de toelichting.</p>
+      <h5>Vergelijking met voorgaand jaar</h5>
+      <h6>Functionele valuta</h6>
+      <p>De posten in de jaarrekening van De Kleine B.V. worden gewaardeerd met inachtneming van de valuta van de economische omgeving waarin de vennootschap haar bedrijfsactiviteiten voornamelijk uitoefent (de functionele valuta). De jaarrekening is opgesteld in euro's; dit is zowel de functionele als de presentatievaluta van De Kleine B.V.</p>
+      <h6>Transacties, vorderingen en schulden</h6>
+      <p>Transacties in vreemde valuta gedurende de verslagperiode zijn in de jaarrekening verwerkt tegen de koers op transactiedatum.</p>
+      <p>Monetaire activa en passiva in vreemde valuta worden omgerekend in de functionele valuta tegen de koers per balansdatum. De uit de afwikkeling en omrekening voortvloeiende koersverschillen komen ten gunste of ten laste van de winst- en verliesrekening.</p>
+      <p>Niet-monetaire activa die volgens de verkrijgingsprijs worden gewaardeerd in een vreemde valuta worden omgerekend tegen de wisselkoers op de transactiedatum.</p>
+      <p>Niet-monetaire activa die volgens de actuele waarde worden gewaardeerd in een vreemde valuta worden omgerekend tegen de wisselkoers op het moment waarop de actuele waarde werd bepaald.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h5>Leasing</h5>
+      <h6>Financiële leasing</h6>
+      <p>De vennootschap leaset een deel van het machinepark; hierbij heeft de vennootschap grotendeels de voor- en nadelen verbonden aan de eigendom van deze activa. Deze activa worden geactiveerd in de balans bij aanvang van het leasecontract tegen de reële waarde van het actief of de lagere contante waarde van de minimale leasetermijnen. De te betalen leasetermijnen worden op annuïtaire wijze verdeeld in een aflossings- en een rentecomponent. De leaseverplichtingen worden exclusief de rentecomponent opgenomen onder de langlopende schulden. De rentecomponent wordt gedurende de looptijd van het contract verantwoord in de winst- en verliesrekening met een vast rentepercentage over de gemiddelde resterende aflossingscomponent.</p>
+      <h6>Operationele leasing</h6>
+      <p>Bij de vennootschap kunnen er leasecontracten bestaan waarbij een groot deel van de voor- en nadelen die aan de eigendom verbonden zijn, niet bij de vennootschap ligt. Deze leasecontracten worden verantwoord als operationele leasing. Leasebetalingen worden, rekening houdend met ontvangen vergoedingen van de lessor, op lineaire basis verwerkt in de winst- en verliesrekening over de looptijd van het contract.</p>
+      <h5>Bijzondere posten</h5>
+      <p>Bijzondere posten zijn baten of lasten die voortvloeien uit gebeurtenissen of transacties die behoren tot het resultaat uit de normale, niet-incidentele bedrijfsactiviteiten, maar die omwille van de vergelijkbaarheid apart toegelicht worden op grond van de aard, omvang of het incidentele karakter van de post.</p>
+      <h5>Hedge-accounting</h5>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Grondslagen voor waardering van activa en passiva</h4>
+      <h5>Immateriële vaste activa</h5>
+      <p>De immateriële vaste activa worden gewaardeerd tegen verkrijgingsprijs onder aftrek van afschrijvingen. Er wordt rekening gehouden met bijzondere waardeverminderingen; dit is het geval als de boekwaarde van het actief (of van de kasstroom genererende eenheid waartoe het actief behoort) hoger is dan de realiseerbare waarde ervan.</p>
+      <p>Om vast te stellen of er voor een immaterieel vast actief sprake is van een bijzondere waardevermindering, wordt verwezen naar ‘Bijzondere waardeverminderingen van vaste activa’.</p>
+      <h6>Kosten van ontwikkeling</h6>
+      <p>Uitgaven voor ontwikkelingsprojecten worden geactiveerd als onderdeel van de vervaardigingsprijs als het waarschijnlijk is dat het project commercieel en technisch succesvol zal zijn (dat wil zeggen: als het waarschijnlijk is dat economische voordelen zullen worden behaald) en de kosten betrouwbaar kunnen worden vastgesteld. Voor de geactiveerde ontwikkelingskosten is een wettelijke reserve onder het eigen vermogen gevormd ter hoogte van het geactiveerde bedrag. De afschrijving van de geactiveerde ontwikkelingskosten vangt aan zodra de commerciële productie is gestart en vindt lineair plaats over de verwachte toekomstige gebruiksduur van het actief. Onderzoekskosten worden verwerkt in de winst- en verliesrekening.</p>
+      <h6>Goodwill</h6>
+      <p>Positieve goodwill voortkomend uit acquisities en berekend in overeenstemming met de grondslag  "Deelnemingen", wordt geactiveerd en lineair afgeschreven gedurende de verwachte economische gebruiksduur.</p>
+      <p>Negatieve goodwill valt vrij in de winst- en verliesrekening voor zover lasten en verliezen zich voordoen, indien hier bij de verwerking van de overname rekening mee is gehouden en deze lasten en verliezen betrouwbaar zijn te meten. Indien geen rekening is gehouden met verwachte lasten of verliezen, dan valt de negatieve goodwill vrij in overeenstemming met het gewogen gemiddelde van de resterende levensduur van de verworven afschrijfbare activa. Voor zover de negatieve goodwill uitkomt boven de reële waarde van de geïdentificeerde niet-monetaire activa wordt het meerdere direct in de winst- en verliesrekening verwerkt.</p>
+      <h5>Materiële vaste activa</h5>
+      <p>Bedrijfsgebouwen en terreinen worden gewaardeerd tegen verkrijgingsprijs plus bijkomende kosten of vervaardigingsprijs onder aftrek van lineaire afschrijvingen gedurende de verwachte toekomstige gebruiksduur. Op terreinen wordt niet afgeschreven. Er wordt rekening gehouden met de bijzondere waardeverminderingen die op balansdatum worden verwacht. Voor de vaststelling of voor een materieel vast actief sprake is van een bijzondere waardevermindering wordt verwezen naar de desbetreffende noot.</p>
+      <p>Overige materiële vaste activa worden gewaardeerd tegen verkrijgings- of vervaardigingsprijs inclusief direct toerekenbare kosten, onder aftrek van lineaire afschrijvingen gedurende de verwachte toekomstige gebruiksduur en bijzondere waardeverminderingen.</p>
+      <p>Subsidies op investeringen worden in mindering gebracht op de verkrijgings- of vervaardigingsprijs van de activa waarop de subsidies betrekking hebben.</p>
+      <p>Voor verplichtingen tot herstel na afloop van het gebruik van het actief (ontmantelingskosten) wordt een voorziening getroffen voor het verwachte bedrag op het moment van activering. Dit bedrag wordt verwerkt als onderdeel van de boekwaarde van het actief waartegenover voor het gehele bedrag een voorziening wordt gevormd, dan wel de opbouw van de voorziening vindt plaats over de gebruiksduur van het actief.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <p>Voor de toekomstige kosten van groot onderhoud aan de bedrijfsgebouwen is een voorziening voor groot onderhoud gevormd. De toevoeging aan de voorziening wordt bepaald op basis van het geschatte bedrag van het onderhoud en de periode die telkens tussen de werkzaamheden van groot onderhoud verloopt.
+      Of
+      De kosten in verband met groot onderhoud worden verwerkt in de boekwaarde van het actief, indien voldaan is aan de activeringscriteria. De kosten van groot onderhoud hebben een andere gebruiksduur dan de rest van het actief en worden aangemerkt als afzonderlijk af te schrijven bestanddeel. 
+      Frequent voorkomende onderhoudskosten worden verwerkt in de winst-en-verliesrekening wanneer zij gemaakt worden</p>
+      <h5>Vastgoedbeleggingen</h5>
+      <p>Vastgoedbeleggingen zijn onroerende zaken die worden aangehouden om huuropbrengsten of waardestijgingen, of beide, te realiseren. Vastgoedbeleggingen, daaronder begrepen vastgoedbeleggingen in ontwikkeling, worden bij eerste verwerking tegen verkrijgingsprijs inclusief transactiekosten gewaardeerd en daarna tegen actuele (reële) waarde. De invulling hiervan wordt onder meer gebaseerd op beschikbare marktgegevens en samengesteld door externe taxateurs. 
+      Waardeveranderingen van vastgoedbeleggingen worden verwerkt in de winst- en verliesrekening. Daarnaast wordt ten laste van de Overige reserves een herwaarderingsreserve gevormd. De herwaarderingsreserve wordt bepaald als het positieve verschil tussen de reële waarde en de initiële verkrijgings- of vervaardigingsprijs (zonder rekening te houden met enige afschrijving of waardevermindering) en onder aftrek van relevante (latente) belastingverplichtingen. Op vastgoedbeleggingen wordt niet afgeschreven. Vastgoedbeleggingen in ontwikkeling waarvan de reële waarde niet betrouwbaar te bepalen is worden tegen kostprijs worden gewaardeerd tot het moment dat de reële waarde wel betrouwbaar is te bepalen.</p>
+      <h5>Financiële vaste activa</h5>
+      <h6>Deelnemingen</h6>
+      <p>Deelnemingen waarin invloed van betekenis kan worden uitgeoefend worden gewaardeerd volgens de vermogensmutatiemethode (nettovermogenswaarde). Wanneer 20% of meer van de stemrechten uitgebracht kan worden, wordt ervan uitgegaan dat er invloed van betekenis is.</p>
+      </p>De nettovermogenswaarde wordt berekend volgens de grondslagen die gelden voor deze jaarrekening; voor deelnemingen waarvan onvoldoende gegevens beschikbaar zijn voor aanpassing aan deze grondslagen, wordt uitgegaan van de waarderingsgrondslagen van de desbetreffende deelneming.</p>
+      <p>Indien de waardering van een deelneming volgens de nettovermogenswaarde negatief is, wordt deze op nihil gewaardeerd. Indien en voor zover De Kleine B.V. in deze situatie geheel of gedeeltelijk instaat voor de schulden van de deelneming, dan wel het stellige voornemen heeft de deelneming tot betaling van haar schulden in staat te stellen, wordt hiervoor een voorziening getroffen.</p>
+      <p>De eerste waardering van gekochte deelnemingen is gebaseerd op de reële waarde van de identificeerbare activa en passiva op het moment van acquisitie. Voor de vervolgwaardering worden de grondslagen toegepast die gelden voor deze jaarrekening, uitgaande van de waarden bij eerste waardering.</p>
+      <p>Als resultaat wordt verantwoord het bedrag waarmee de boekwaarde van de deelneming sinds de voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat.</p>
+      <p>Deelnemingen waarop geen invloed van betekenis kan worden uitgeoefend, worden gewaardeerd tegen verkrijgingsprijs. Als resultaat wordt in aanmerking genomen het in het verslagjaar gedeclareerde dividend van de deelneming, waarbij niet in contanten uitgekeerde dividenden worden gewaardeerd tegen reële waarde.</p>
+      <p>Indien sprake is van een bijzondere waardevermindering vindt waardering plaats tegen de realiseerbare waarde (zie verder de noot 3.5. "Bijzondere waardeverminderingen van vaste activa"); afwaardering vindt plaats ten laste van de winst- en verliesrekening.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h6>Vorderingen op groepsmaatschappijen</h6>
+      <p>De onder financiële vaste activa opgenomen vorderingen worden initieel gewaardeerd tegen de reële waarde inclusief transactiekosten. Vervolgens worden deze vorderingen gewaardeerd tegen geamortiseerde kostprijs, welke in het algemeen gelijk is aan de nominale waarde.
+      Bij de waardering wordt rekening gehouden met eventuele waardeverminderingen.</p>
+      <h6>Latente belastingvorderingen</h6>
+      <p>Latente belastingvorderingen worden opgenomen voor verrekenbare fiscale verliezen en voor verrekenbare tijdelijke verschillen tussen de waarde van de activa en passiva volgens fiscale voorschriften enerzijds en de in deze jaarrekening gevolgde waarderingsgrondslagen anderzijds, met dien verstande dat latente belastingvorderingen alleen worden opgenomen voor zover het waarschijnlijk is dat er toekomstige fiscale winst zal zijn waarmee de tijdelijke verschillen kunnen worden verrekend en verliezen kunnen worden gecompenseerd.</p>
+      <p>De berekening van de latente belastingvorderingen geschiedt tegen de op het einde van het verslagjaar geldende belastingtarieven dan wel tegen de in komende jaren geldende tarieven, voor zover deze al bij wet zijn vastgesteld.</p>
+      <p>Latente belastingvorderingen worden gewaardeerd op nominale waarde.</p>
+      <h5>Bijzondere waardeverminderingen van vaste activa</h5>
+      <p>De vennootschap beoordeelt op iedere balansdatum of er aanwijzingen zijn dat een vast actief aan een bijzondere waardevermindering onderhevig kan zijn. Indien dergelijke indicaties aanwezig zijn, wordt de realiseerbare waarde van het actief vastgesteld. Indien het niet mogelijk is de realiseerbare waarde voor het individuele actief te bepalen, wordt de realiseerbare waarde bepaald van de kasstroomgenererende eenheid waartoe het actief behoort. Van een bijzondere waardevermindering is sprake als de boekwaarde van een actief hoger is dan de realiseerbare waarde; de realiseerbare waarde is de hoogste van de opbrengstwaarde en de bedrijfswaarde. Een bijzondere-waardeverminderingsverlies wordt direct als een last verwerkt in de winst- en verliesrekening onder gelijktijdige verlaging van de boekwaarde van het betreffende actief.</p>
+      <p>De opbrengstwaarde wordt in eerste instantie ontleend aan een bindende verkoopovereenkomst; als die er niet is, wordt de opbrengstwaarde bepaald met behulp van de actieve markt waarbij normaliter de gangbare biedprijs geldt als marktprijs. De in aftrek te brengen kosten bij het bepalen van de opbrengstwaarde zijn gebaseerd op de geschatte kosten die rechtstreeks kunnen worden toegerekend aan de verkoop en nodig zijn om de verkoop te realiseren. Voor de bepaling van de bedrijfswaarde wordt een inschatting gemaakt van de toekomstige netto kasstromen bij voortgezet gebruik van het actief/de kasstroomgenererende eenheid; vervolgens worden deze kasstromen contant gemaakt waarbij een disconteringsvoet wordt gehanteerd van ...% (2022: ...%). De disconteringsvoet geeft geen risico’s weer waarmee in de toekomstige kasstromen al rekening is gehouden.</p>
+      <p>Indien wordt vastgesteld dat een bijzondere waardevermindering die in het verleden verantwoord is, niet meer bestaat of is afgenomen, dan wordt de toegenomen boekwaarde van de desbetreffende activa niet hoger gesteld dan de boekwaarde die bepaald zou zijn indien geen bijzondere waardevermindering voor het actief zou zijn verantwoord. Een bijzondere waardevermindering van goodwill wordt niet teruggenomen.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h5>Voorraden</h5>
+      <h6>Voorraden voor gebruik en verkoop</h6>
+      <p>De voorraden worden gewaardeerd tegen verkrijgings- of vervaardigingsprijs onder toepassing van de FIFO-methode (first in, first out) of lagere opbrengstwaarde.</p>
+      <p>De verkrijgings- of vervaardigingsprijs bestaan uit (alle kosten die samenhangen met de verkrijging of vervaardiging) alsmede de gemaakte kosten om de voorraden op hun huidige plaats en in hun huidige staat te brengen. In de kosten van vervaardiging zijn begrepen directe loonkosten en toeslagen voor aan de productie gerelateerde indirecte vaste en variabele kosten, waaronder de kosten van het bedrijfsbureau, de onderhoudsafdeling en interne logistiek.</p>
+      <p>De opbrengstwaarde is de geschatte verkoopprijs onder aftrek van direct toerekenbare verkoopkosten. Bij de bepaling van de opbrengstwaarde wordt rekening gehouden met de incourantheid van de voorraden.</p>
+      <h5>Onderhanden projecten</h5>
+      <p>De post onderhanden projecten in opdracht van derden bestaat uit het saldo van gerealiseerde projectkosten, toegerekende winst (voor zover betrouwbaar kan worden vastgesteld), en indien van toepassing, verwerkte verliezen en reeds gedeclareerde termijnen. Onderhanden projecten waarvan het saldo een debetstand vertoont, worden gepresenteerd onder de vlottende activa. Onderhanden projecten waarvan het saldo een creditstand vertoont, worden gepresenteerd onder de kortlopende schulden.</p>
+      <p>Uitgaven voor projectkosten voor nog niet verrichte prestaties worden opgenomen onder de voorraden.</p>
+      <h5>Vorderingen</h5>
+      <p>Vorderingen worden bij eerste verwerking gewaardeerd tegen de reële waarde inclusief de transactiekosten. Vorderingen worden na eerste verwerking gewaardeerd tegen de geamortiseerde kostprijs. Voorzieningen wegens oninbaarheid worden in mindering gebracht op de boekwaarde van de vordering.</p>
+      <h5>Effecten</h5>
+      <p>Beursgenoteerde effecten die onderdeel zijn van de handelsportefeuille worden gewaardeerd tegen actuele waarde (reële waarde). De reële waarde van beursgenoteerde effecten is gelijk aan de beurswaarde. Beursgenoteerde obligaties die geen onderdeel zijn van de handelsportefeuille worden gewaardeerd tegen geamortiseerde kostprijs.</p>
+      <p>Andere dan beursgenoteerde effecten worden gewaardeerd tegen de verkrijgingsprijs of lagere actuele (reële) waarde. In dat laatste geval wordt de reële waarde benaderd met behulp van algemeen aanvaarde waarderingsmodellen en –technieken.</p>
+      <p>Waardevermeerderingen van op actuele waarde gewaardeerde effecten worden onmiddellijk in de winst- en verliesrekening verwerkt. Waardeverminderingen van op actuele waarde gewaardeerde effecten worden eveneens onmiddellijk in de winst- en verliesrekening verwerkt.</p>
+      <p>Transactiekosten die direct zijn toe te rekenen aan de verwerving van de effecten worden direct in de winst- en verliesrekening verwerkt.</p>
+      <h5>Liquide middelen</h5>
+      <p>Liquide middelen bestaan uit kas, banktegoeden en deposito’s met een looptijd korter dan twaalf maanden. Rekening-courantschulden bij banken zijn opgenomen onder schulden aan kredietinstellingen onder kortlopende schulden. Liquide middelen worden gewaardeerd tegen nominale waarde.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>   
+      
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h5>Eigen vermogen</h5>
+      <p>Indien De Kleine B.V. eigen aandelen inkoopt, wordt de verkrijgingsprijs van de ingekochte aandelen in mindering gebracht op de overige reserves, of op andere reserves mits de statuten dit toestaan, totdat deze aandelen worden ingetrokken of worden verkocht. Indien ingekochte aandelen worden verkocht, komt de opbrengst uit verkoop ten gunste van de overige reserves of andere reserves in het eigen vermogen. 
+      De opbrengst komt ten gunste van de reserve waarop eerder de inkoop van deze aandelen in mindering is gebracht.</p>
+      <p>Kosten die direct samenhangen met de inkoop, verkoop en/of uitgifte van nieuwe aandelen worden rechtstreeks ten laste gebracht van het eigen vermogen, onder verrekening van relevante winstbelastingeffecten.</p>
+      <h5>Herwaarderingsreserve</h5>
+      <p>Indien herwaarderingen in de herwaarderingsreserve onder aftrek van relevante (latente) belastingverplichtingen zijn verwerkt, worden de gerealiseerde herwaarderingen bruto ten gunste van de winst- en verliesrekening gebracht. De corresponderende vrijval van de (latente) belastingverplichtingen wordt onder de post belastingen ten laste van het resultaat gebracht.</p>
+      <h5>Voorzieningen</h5>
+      <h6>Algemeen</h6>
+      <p>Voorzieningen worden gevormd voor in rechte afdwingbare of feitelijke verplichtingen die op de balansdatum bestaan, waarbij het waarschijnlijk is dat een uitstroom van middelen noodzakelijk is en waarvan de omvang op betrouwbare wijze is te schatten.</p>
+      <p>De voorzieningen worden gewaardeerd tegen de beste schatting van de bedragen die noodzakelijk zijn om de verplichtingen per balansdatum af te wikkelen. Pensioenvoorzieningen worden gewaardeerd op basis van actuariële grondslagen. Onderhoudsvoorzieningen worden gewaardeerd tegen nominale waarde. De overige voorzieningen worden gewaardeerd tegen de contante waarde van de uitgaven die naar verwachting noodzakelijk zijn om de verplichtingen af te wikkelen, tenzij de tijdswaarde van geld niet materieel is. Als de periode waarover de uitgaven contant worden gemaakt maximaal een jaar is, wordt de voorziening tegen nominale waarde gewaardeerd.</p>
+      <p>Wanneer het de verwachting is dat een derde de verplichtingen vergoedt, en wanneer het waarschijnlijk is dat deze vergoeding zal worden ontvangen bij de afwikkeling van de verplichting, dan wordt deze vergoeding als een actief in de balans opgenomen.</p>
+      <h6>Pensioenverplichting in eigen beheer</h6>
+      <p></p>
+      <h6>Latente belastingverplichtingen</h6>
+      <p>Latente belastingverplichtingen worden opgenomen voor tijdelijke verschillen tussen de waarde van de activa en passiva volgens fiscale voorschriften enerzijds en de boekwaarden die in deze jaarrekening gevolgd worden anderzijds. De berekening van de latente belastingverplichtingen geschiedt tegen de belastingtarieven die op het einde van het verslagjaar gelden, of tegen de tarieven die in de komende jaren gelden, voor zover deze al bij wet zijn vastgesteld.</p>
+      <p>Belastinglatenties worden gewaardeerd op nominale waarde.
+      </p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h6>Reorganisatievoorziening</h6>
+      <p>Deze voorziening heeft betrekking op kosten in verband met de reorganisatie van activiteiten en wordt gevormd indien voor de rechtspersoon een feitelijke of juridische verplichting is ontstaan.</p>
+      <h6>Garantievoorziening</h6>
+      <p>Deze voorziening heeft betrekking op te vergoeden kosten voor producten die zijn verkocht of diensten die zijn verricht, indien voor de rechtspersoon een verplichting is ontstaan wegens het niet voldoen aan de overeengekomen kwaliteiten.</p>
+      <h6>Overige voorzieningen</h6>
+      <p>Voor uitgaven voor groot onderhoud van gebouwen wordt een onderhoudsvoorziening gevormd om deze lasten gelijkmatig te verdelen over een aantal boekjaren. De toevoegingen aan de voorziening wordt bepaald op basis van het geschatte bedrag van het groot onderhoud en de periode die telkens tussen de werkzaamheden voor groot onderhoud verloopt.</p>
+      <p>De overige voorzieningen worden opgenomen tegen nominale waarde van de voor de afwikkeling van de voorziening naar verwachting noodzakelijke uitgaven.</p>
+      <h5>Langlopende schulden</h5>
+      <p>Langlopende schulden worden bij de eerste verwerking gewaardeerd tegen reële waarde. Transactiekosten die direct zijn toe te rekenen aan de verwerving van de langlopende schulden worden in de waardering bij eerste verwerking opgenomen. Langlopende schulden worden na eerste verwerking gewaardeerd tegen geamortiseerde kostprijs, zijnde het ontvangen bedrag rekening houdend met agio of disagio en onder aftrek van transactiekosten.</p>
+      <p>Het verschil tussen de bepaalde boekwaarde en de uiteindelijke aflossingswaarde wordt op basis van de effectieve rente gedurende de geschatte looptijd van de langlopende schulden in de winst- en verliesrekening als interestlast verwerkt.</p>
+      <h5>Kortlopende schulden</h5>
+      <p>Kortlopende schulden worden bij de eerste verwerking gewaardeerd tegen reële waarde. Kortlopende schulden worden na eerste verwerking gewaardeerd tegen de bedragen waartegen de schuld moet worden afgelost.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+    <h4>Grondslagen voor bepaling van het resultaat</h4>
+	  <h5>Algemeen</h5>
+    <p>Het resultaat wordt bepaald als het verschil tussen de opbrengstwaarde van de geleverde prestaties en de kosten en andere lasten over het jaar. De opbrengsten op transacties worden verantwoord in het jaar waarin zij zijn gerealiseerd.</p>
+    <p>Het resultaat wordt tevens bepaald met inachtneming van de verwerking van ongerealiseerde waardeveranderingen van op reële waarde gewaardeerde:
+    <ul>
+      <li>vastgoedbeleggingen;</li>
+      <li>onder vlottende activa opgenomen effecten.</li>
+    </ul>
+    <h5>Opbrengstverantwoording</h5>
+    <h6>Algemeen</h6>
+    <p>Netto-omzet omvat de opbrengsten uit overeenkomsten met klanten, waarbij het gaat om verkopen, leveringen en/of verrichte diensten voor eigen rekening en risico In de overeenkomsten worden de individuele prestatieverplichtingen geïdentificeerd. Vervolgens wordt de transactieprijs vastgesteld en deze wordt toegerekend aan individuele prestatieverplichting. Hierbij wordt rekening gehouden met kortingen en dergelijke en van over de omzet geheven belastingen.</p>
+    <h6>Verkoop van goederen</h6>
+    <p>Opbrengsten uit de verkoop van goederen worden verwerkt zodra alle belangrijke rechten en risico's met betrekking tot de eigendom van de goederen zijn overgedragen aan de koper.</p>
+    <h6>Verlenen van diensten</h6>
+    <p>Verantwoording van opbrengsten uit de levering van diensten geschiedt naar rato van de geleverde prestaties, gebaseerd op de verrichte diensten tot aan de balansdatum in verhouding tot de in totaal te verrichten diensten.</p>
+    <h6>Projectopbrengsten en projectkosten</h6>
+    <p>Voor onderhanden projecten, waarvan het resultaat op betrouwbare wijze kan worden bepaald, worden de projectopbrengsten en de projectkosten verwerkt als netto-omzet en kosten in de winst- en verliesrekening naar rato van de verrichte prestaties per balansdatum (de ‘Percentage of Completion’-methode, ofwel de PoC-methode).
+    De voortgang van de verrichte prestaties wordt bepaald op basis van de tot de balansdatum gemaakte projectkosten in verhouding tot de geschatte totale projectkosten. Als het resultaat (nog) niet op betrouwbare wijze kan worden ingeschat, dan worden de opbrengsten als netto-omzet verwerkt in de winst- en verliesrekening tot het bedrag van de gemaakte projectkosten dat waarschijnlijk kan worden verhaald; de projectkosten worden dan verwerkt in de winst- en verliesrekening in de periode waarin ze zijn gemaakt. Zodra het resultaat wel op betrouwbare wijze kan worden bepaald, vindt opbrengstverantwoording plaats volgens de PoC-methode naar rato van de verrichte prestaties per balansdatum.
+    Het resultaat wordt bepaald als het verschil tussen de projectopbrengsten en projectkosten. Projectopbrengsten zijn de contractueel overeengekomen opbrengsten en opbrengsten uit hoofde van meer- en minderwerk, claims en vergoedingen indien en voor zover het waarschijnlijk is dat deze worden gerealiseerd en ze betrouwbaar kunnen worden bepaald. Projectkosten zijn de direct op het project betrekking hebbende kosten, die in het algemeen aan projectactiviteiten worden toegerekend en toegewezen kunnen worden aan het project, en andere kosten die contractueel aan de opdrachtgever kunnen worden toegerekend.
+    Indien het waarschijnlijk is dat de totale projectkosten de totale projectopbrengsten overschrijden, dan worden de verwachte verliezen onmiddellijk in de winst- en verliesrekening verwerkt. Dit verlies wordt verwerkt in de kostprijs van de omzet. 
+    De voorziening voor het verlies maakt deel uit van de post onderhanden projecten.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h5>Overige bedrijfsopbrengsten</h5>
+      <p>Onder overige bedrijfsopbrengsten worden resultaten verantwoord die niet rechtstreeks samenhangen met de levering van goederen of diensten in het kader van de normale, niet-incidentele bedrijfsactiviteiten. De overige bedrijfsopbrengsten bestaan uit royaltyopbrengsten. Deze opbrengsten worden toegerekend aan de verslagperiode in overeenstemming met de inhoud van de overeenkomst.</p>
+      <h5>Kosten</h5>
+      <p>De kosten worden bepaald op historische basis en toegerekend aan het verslagjaar waarop zij betrekking hebben.</p>
+      <h5>Personeelsbeloningen</h5>
+      <h6>periodiek betaalbare beloningen</h6>
+      <p>De aan het personeel verschuldigde beloningen worden op grond van de arbeidsvoorwaarden verwerkt in de winst- en verliesrekening.</p>
+      <h6>Pensioenen</h6>
+      <p>De Kleine B.V. heeft alle pensioenregelingen verwerkt volgens de verplichtingenbenadering. De over het verslagjaar verschuldigde premie wordt als last verantwoord.
+      Op de Nederlandse pensioenregelingen zijn de bepalingen van de Nederlandse Pensioenwet van toepassing en betaalt De Kleine B.V. verplichte, contractuele of vrijwillige basispremies aan pensioenfondsen en verzekeringsmaatschappijen. De premies worden verantwoord als personeelskosten zodra deze verschuldigd zijn. Vooruitbetaalde premies worden opgenomen als overlopende activa indien dit tot een terugstorting leidt of tot een vermindering van toekomstige betalingen. Nog niet betaalde premies worden als verplichting op de balans opgenomen.</p>
+      <h5>Afschrijvingen op immateriële en materiële vaste activa</h5>
+      <p>Immateriële vaste activa inclusief goodwill en materiële vaste activa worden vanaf het moment dat het actief beschikbaar is voor het beoogde gebruik afgeschreven over de geschatte economische levensduur/verwachte toekomstige gebruiksduur van het actief. Over terreinen en vastgoedbeleggingen wordt niet afgeschreven.</p>
+      <h5>Bijzondere posten</h5>
+      <p>Bijzondere posten zijn baten of lasten die voortvloeien uit gebeurtenissen of transacties die behoren tot de normale, niet-incidentele bedrijfsuitoefening, maar die omwille van de analyse en vergelijkbaarheid apart toegelicht worden op grond van de aard, omvang of het incidentele karakter van de post.</p>
+      <h5>Overheidssubsidies</h5>
+      <p>Exploitatiesubsidies worden als bate verantwoord in de winst- en verliesrekening in het jaar waarin de gesubsidieerde kosten zijn gemaakt of opbrengsten zijn gederfd, of wanneer een gesubsidieerd exploitatietekort zich heeft voorgedaan. De baten worden verantwoord als het waarschijnlijk is dat deze worden ontvangen.
+      Subsidies met betrekking tot investeringen in materiële vaste activa worden in mindering gebracht op het desbetreffende actief en als onderdeel van de afschrijvingen verwerkt in de winst- en verliesrekening.
+      Subsidies die betrekking hebben op investeringen anders dan in materiële activa worden als vooruitontvangen bedrag onder de overlopende passiva opgenomen, afhankelijk van het karakter langlopend en/of kortlopend. Jaarlijks valt een gedeelte van deze subsidie vrij, met inachtneming van de wijze waarop de besteding zelf in de jaarrekening wordt verwerkt.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h5>Financiële baten en lasten</h5>
+      <h6>Rentebaten en rentelasten</h6>
+      <p>Rentebaten en rentelasten worden tijdsevenredig verwerkt, rekening houdend met de effectieve rentevoet van de desbetreffende activa en passiva. Bij de verwerking van de rentelasten wordt rekening gehouden met de verantwoorde transactiekosten op de ontvangen leningen.</p>
+      <h6>Koersverschillen</h6>
+      <p>Koersverschillen die optreden bij de afwikkeling of omrekening van monetaire posten worden in de winst- en verliesrekening verwerkt in de periode dat zij zich voordoen, tenzij hedge-accounting wordt toegepast.</p>
+      <h6>Dividenden</h6>
+      <p>Te ontvangen dividenden van niet op nettovermogenswaarde gewaardeerde deelnemingen en effecten, worden verantwoord zodra De Kleine B.V. het recht hierop heeft verkregen.</p>
+      <h6>Waardeveranderingen financiële instrumenten gewaardeerd tegen reële waarde</h6>
+      <p>Waardeveranderingen van financiële instrumenten die op actuele waarde gewaardeerd zijn, worden verwerkt in de winst- en verliesrekening.</p>
+      <h5>Activeren van rentelasten</h5>
+      <p>Rentelasten worden geactiveerd gedurende de periode van vervaardiging van een actief, indien het een aanmerkelijke hoeveelheid tijd vergt om het actief gebruiks- of verkoopklaar te maken. De te activeren rente wordt berekend op basis van de verschuldigde rente over specifiek voor de vervaardiging opgenomen leningen of op basis van de gewogen rentevoet van leningen die niet specifiek aan de vervaardiging van het actief zijn toe te rekenen, in verhouding tot de uitgaven en periode van vervaardiging.</p>
+      <h5>Belastingen</h5>
+      <p>De belasting over het resultaat wordt berekend over het resultaat voor belastingen in de winst- en verliesrekening, rekening houdend met beschikbare, fiscaal compensabele verliezen uit voorgaande boekjaren (voor zover niet opgenomen in de latente belastingvorderingen) en vrijgestelde winstbestanddelen en na bijtelling van niet-aftrekbare kosten. Tevens wordt rekening gehouden met wijzigingen die optreden in de latente belastingvorderingen en latente belastingschulden uit hoofde van wijzigingen in het te hanteren belastingtarief.</p>
+      <p>In de jaarrekening van dochtervennootschappen wordt een belastinglast berekend op basis van het behaalde commerciële resultaat. De door dochtervennootschappen verschuldigde belasting wordt verrekend in rekening-courant met De Kleine B.V.</p>
+      <h5>Resultaat deelnemingen (gewaardeerd op netto-vermogenswaarde)</h5>
+      <p>Het resultaat is het bedrag waarmee de boekwaarde van de deelneming sinds de voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat voor zover dit aan De Kleine B.V. wordt toegerekend.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Immateriële vaste activa</h4>
+      <p>Ten laste van het resultaat van het boekjaar, zichtbaar in de ....[betreffende jaarrekeningpost] in de winst- en verliesrekening is een bijzondere waardevermindering gebracht van € 0. 
+      Behalve de intern gegenereerde computersoftware en de ontwikkelingskosten zijn de overige immateriële vaste activa gekocht of als onderdeel van een overname verwerkt.</p>
+      <h4>Materiële vaste activa</h4>
+      <p>Ten laste van het resultaat van het boekjaar, zichtbaar in de ....[betreffende jaarrekeningpost] in de winst- en verliesrekening is een bijzondere waardevermindering gebracht van € 0.</p> 
+      <p>De bedrijfsgebouwen en -terreinen dienen als zekerheid voor de hypothecaire lening zoals die is verstrekt door X bank. Zie hiervoor ook noot 25.2 ‘Meerjarige financiële verplichtingen’ in de toelichting.</p>
+      <h4>Vastgoedbeleggingen</h4>
+      <p></p>
+      <h4>Financiële vaste activa</h4>
+      <p>Bij de verwerving van deelneming B.V. Q is bij de bepaling van de reële waarde van de passiva rekening gehouden met een reorganisatievoorziening.</p>
+      <p>Voor verrekenbare tijdelijke verschillen tussen de commerciële (bedrijfseconomische) en fiscale waardering van de pensioenvoorziening van de directeur-groot aandeelhouder is een latente belastingvordering gevormd tot het bedrag waarvan het waarschijnlijk is dat er fiscale winst beschikbaar zal zijn voor verrekening.</p>
+      <h4>Vorderingen op groepsmaatschappijen</h4>
+      <p>Onder vorderingen op groepsmaatschappijen zijn marktconforme leningen opgenomen aan Q B.V. en R B.V. voor respectievelijk ... (2022: ...) en ... (2022: ...). Het betreft vastrentende leningen met een rentepercentage van € 0,0% (2022: 0,0%). De resterende looptijd van deze vorderingen bedraagt respectievelijk 0 en 0 jaar. Omtrent zekerheden is niets overeengekomen.</p>
+      <h4>Voorraden</h4>
+      <p></p>
+      <h4>Onderhanden projecten</h4>
+      <p></p>
+      <h4>Vorderingen</h4>
+      <h5>Algemeen</h5>
+      <p>Alle vorderingen hebben een resterende looptijd korter dan een jaar, tenzij anders vermeld.</p>
+      <h5>Handelsdebiteuren</h5>
+      <p>Onder de handelsdebiteuren zijn vorderingen opgenomen tot een bedrag van € 0 met een (verwachte) resterende looptijd langer dan een jaar.</p>
+      <h5>Overige vorderingen en overlopende activa</h5>
+      <p>Hierin zijn begrepen de leningen aan bestuurders van € 0 (2022: € 0) verstrekt tegen 0% en € 0 (2022: € 0) renteloos. De resterende looptijden bedragen respectievelijk 0 en 0 jaar. Deze leningen moeten uiterlijk door de desbetreffende bestuurder worden afgelost in het jaar waarin hij zijn functie neerlegt. In het boekjaar werd door de bestuurders € 0 op hun leningen afgelost. Er zijn leningen aan de commissarissen van € 0 (2022: € 0) verstrekt. Alle leningen zijn tegen 0% rente verstrekt. De resterende looptijd varieert van 0 tot 0 jaar. In het boekjaar werd niets afgelost.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Effecten</h4>
+      <table class="securities">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>31-12-2023</h4></th>
+            <td></td>
+            <th><h4>31-12-2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>Beursgenoteerde effecten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Niet-beursgenoteerde effecten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Geplaatst kapitaal</h4>
+      <p>Het ingehouden deel van het resultaat over 2023 bedraagt € 0 (2022: € 0).</p>
+      <h4>Agioreserve</h4>
+      <p>Voor een bedrag van € 0 kan het agio worden aangemerkt als fiscaal niet-gestort kapitaal.</p>
+      <p>In 2023 is door de aandeelhouders € 0 gestort zonder uitgifte van aandelen. De verschuldigde kapitaalbelasting is op de storting in mindering gebracht, onder aftrek van € 0 aan winstbelasting.</p>
+      <h4>Herwaarderingsreserve</h4>
+      <table class="revaluation-reserve">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>Totaal</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td><h4>Stand per 31 december 2022</h4></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Gerealiseerde herwaarderingen:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><li>via winst- en verliesrekening</li></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><li>naar overige reserves</li></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><li>via afgedekt actief of passief</li></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Belastingeffecten</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Gevormde herwaarderingen:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><li>via overige reserves</li></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><li>wijziging waardering financiële instrumenten</li></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><li>wijziging waardering afdekkingsinstrument</li></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Belastingeffecten</td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td><h4>Stand per 1 januari 2023</h4></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Andere wettelijke reserves</h4>
+      <p>De wettelijke reserves worden aangehouden voor het de geactiveerde kosten van ontwikkeling ter grootte van € 0 (2022: € 0).</p>
+      <h4>Statutaire reserves</h4>
+      <p></p> 
+      <h4>Overige reserves</h4>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Voorzieningen</h4>
+      <p>Het verloop van de voorzieningen is als volgt:</p>
+      <table class="provisions">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>Latente belasting-verplichtingen</h4></th>
+            <td></td>
+            <th><h4>Overige</h4></th>
+            <td></td>
+            <th><h4>Totaal</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <td><h4>Stand per 1 januari 2023</h4></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Dotatie</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Vrijval</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Onttrekking</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td><h4>Stand per 31 december 2023</h4></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5>Latente belastingverplichtingen</h5>
+      <p>Voor belastbare tijdelijke verschillen tussen de commerciële (bedrijfseconomische) en fiscale waardering van materiële vaste activa en onderhanden projecten is een voorziening voor latente belastingverplichtingen gevormd. Naar verwachting wordt € 0 in 2024 verrekend.</p>
+      <h5>Overige</h5>
+      <p>De voorziening voor herstelkosten is gevormd ten tijde van de aanschaf van de machine en dient als dekking voor de ontmanteling van de machine aan het einde van haar levensduur. De voorziening bedraagt ultimo boekjaar € 0 (2022: € 0).</p>
+      <p>De onderhoudsvoorziening, die dient ter dekking van de toekomstige kosten van groot onderhoud aan de bedrijfsgebouwen, bedraagt ultimo boekjaar € 0 (2022: € 0).</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Langlopende schulden</h4>
+      <table class="long-term-liabilities">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>2023</h4></th>
+            <td></td>
+            <th><h4>2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>Achtergestelde leningen</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Schulden aan kredietinstellingen</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Financiële leaseverplichtingen</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Oudedagsverplichting</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Overige schulden</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Aflossingsverplichtingen binnen 12 maanden na afloop van het boekjaar zijn niet begrepen in de hierboven genoemde bedragen maar opgenomen onder de kortlopende schulden. Alle leningen zijn afgesloten in euro’s. Van het totaalbedrag aan langlopende schulden heeft een bedrag van € 0 (2022: € 0) een resterende looptijd van langer dan 5 jaren.</p>
+      <h5>Achtergestelde leningen</h5>
+      <p>De achtergestelde lening is achtergesteld ten opzichte van alle andere bestaande en toekomstige schulden van de vennootschap. De rente over deze lening bedraagt x%. Er is geen aflossingsschema vastgesteld.</p>
+      <h5>Schulden aan kredietinstellingen</h5>
+      <p>X Bank heeft een hypothecaire lening verstrekt voor een bedrag van € 0 met een resterende looptijd van 20 jaar. De rente over deze lening is variabel en bedraagt x%. De bedrijfsgebouwen en -terreinen dienen als zekerheid voor deze lening.</p>
+      <p>Verder is hieronder begrepen een onderhandse lening. Het rentepercentage is variabel en bedroeg in 2023 gemiddeld x%. De resterende looptijd bedraagt 0 jaren; jaarlijks dient € 0 te worden afgelost.</p>
+      <p>De reële waarde van beide leningen benadert de geamortiseerde kostprijs.</p>
+      <h5>Financiële leaseverplichtingen</h5>
+      <p>Van de financiële leaseverplichtingen heeft een bedrag van € 0 (2022: € 0) een resterende looptijd van langer dan 5 jaren.</p>
+      <h4>Kortlopende schulden</h4>
+      <p>De kortlopende schulden hebben een resterende looptijd van korter dan een jaar. In de kortlopende schulden is begrepen de aflossingsverplichting hypothecaire lening aan X bank voor de komende 12 maanden.</p>
+      <p>Het over het boekjaar aan de houders van gewone aandelen uit te keren dividend is verantwoord als kortlopende verplichting in de balans.</p>
+      <h4>Schulden aan kredietinstellingen</h4>
+      <p>Dit betreft een krediet in rekening-courant, het maximaal op te nemen krediet bedraagt € 0. Als zekerheid hiervoor is een (stil) pandrecht gevestigd op handelsdebiteuren en voorraden.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Belastingen en premies sociale verzekeringen</h4>
+      <table class="taxes-social-security-contributions">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>2023</h4></th>
+            <td></td>
+            <th><h4>2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td><h5>Omzetbelasting</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Loonheffingen</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Vennootschapsbelasting</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Niet in de balans opgenomen activa en verplichtingen</h4>
+      <h5>Voorwaardelijke verplichtingen</h5>
+      <p>De groepsmaatschappijen zijn over en weer hoofdelijk aansprakelijk voor de bankier.</p>
+      <p>De Kleine B.V. is vennoot in V.o.f. Z te Amsterdam en is als zodanig hoofdelijk aansprakelijk voor het geheel der schulden van die vof.</p>
+      <h5>(Meerjarige) financiële verplichtingen</h5>
+      <p>Er zijn niet in de balans opgenomen verplichtingen voor de aankoop van machines Er zijn niet in de balans opgenomen verplichtingen voor de aankoop van grond- en hulpstoffen in Britse ponden De verplichtingen uit hoofde van operationele leasing zien toe op...</p>
+      <h5>Fiscale eenheid</h5>
+      <p>De Kleine B.V. is opgenomen in de fiscale eenheid voor de vennootschapsbelasting en omzetbelasting tezamen met groepsmaatschappijen BV Q en BV R.</p>
+      <p>Op grond van de Invorderingswet zijn de vennootschap en de met haar gevoegde dochterondernemingen ieder hoofdelijk aansprakelijk voor ter zake door de combinatie verschuldigde belasting.</p>
+      <p>In de jaarrekening van beide dochtervennootschappen wordt een belastinglast berekend op basis van het door BV Q resp. BV R behaalde commerciële resultaat. De door beide dochtervennootschappen verschuldigde belasting wordt verrekend in rekening-courant.</p>
+      <h5>Niet-verwerkte verplichtingen</h5>
+      <p>De Kleine B.V. heeft een claim ontvangen van een afnemer voor onjuist samengestelde producten. 
+      De vennootschap is het niet eens met de claim. Momenteel is er door de afnemer een rechtszaak aangespannen. De directie is van mening dat het niet waarschijnlijk is dat de claim wordt toegekend en heeft daarom geen voorziening getroffen. De kosten inzake rechtsbijstand worden ten laste van de winst- en verliesrekening gebracht.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Lonen, salarissen en sociale lasten</h4>
+      <table class="wages-salaries-social-security-contributions">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>2023</h4></th>
+            <td></td>
+            <th><h4>2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>Lonen en salarissen</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Sociale lasten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Pensioenlasten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Af: Vergoeding NOW</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspa="4"></td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+        </tr>
+        </tbody>
+      </table>
+      <h4>Rentelasten en soortgelijke kosten</h4>
+      <table class="interest-expenses-related-expenses">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>2023</h4></th>
+            <td></td>
+            <th><h4>2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td><h5>Rente achtergestelde lening</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Rente hypothecaire lening X bank</h5> </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Overige rentelasten</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Bankkosten</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Gedurende het boekjaar is er geen rente geactiveerd als onderdeel van de vervaardigingsprijs van een actief.</p>
+      <h4>Gemiddeld aantal werknemers</h4>
+      <p>Gedurende het jaar 2023 waren 2,0 werknemers in dienst op basis van een volledig dienstverband (2022: 2,0).</p>
+      <h4>Gebeurtenissen na balansdatum</h4>
+      <p>In 2024 loopt een contract met een belangrijke afnemer af. In de jaarrekening over 2023 werd ongeveer 40% van de netto-omzet gerealiseerd met dit contract. Het wegvallen van het contract zal een belangrijke invloed hebben op het bedrijfsresultaat.</p>
+      <p>In februari 2024 zijn voor € 0 eigen aandelen uitgegeven.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Baten en lasten uit voorgaande jaren</h4>
+      <p></p>
+      <h4>Bijzondere baten en lasten</h4>
+      <p>In de ‘……. (bijv. overige bedrijfskosten)’ zijn bijzondere posten begrepen tot een bedrag van € 0. Dit bedrag kan als volgt worden gespecificeerd:</p>
+      <table class="extraordinary-income-expenses">
+        <tbody>
+          <tr>
+            <td></td>
+            <th><h4>2023</h4></th>
+            <td></td>
+            <th><h4>2022</h4></th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td><h5>Naheffing loonbelasting</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Claim inzake ...</h5> </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><h5>Bijdrage NOW</h5></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr>
+            </td>
+            <td></td>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div> 
   </div>
 
   <div class="page">
@@ -1049,19 +2797,6 @@
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
     </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div> 
   </div>
 
 </body>
