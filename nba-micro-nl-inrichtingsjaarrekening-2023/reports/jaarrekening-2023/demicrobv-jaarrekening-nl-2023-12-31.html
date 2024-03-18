@@ -11,7 +11,7 @@ xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
 xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
 xmlns:link="http://www.xbrl.org/2003/linkbase" 
 xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" 
-xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" 
+xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2022-02-16"
 xmlns:xlink="http://www.w3.org/1999/xlink" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
@@ -293,7 +293,7 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor"
 <body>
   <div style="display:none">
     <ix:header>
-      <ix:references>
+      <ix:references xml:lang="nl">
         <link:schemaRef xlink:type="simple"
           xlink:href="../www.demicrobv.nl/xbrl/2023-12-31/demicrobv-2023-12-31.xsd" />
       </ix:references>
@@ -351,12 +351,15 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor"
         <div class="title-content">
           <h1>Voorbeeld jaarrekening 2023</h1>
           <h2><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Micro</ix:nonNumeric> <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric></h2>
-          <h2>Statutaire vestigingsplaats</h2>
+          <h2><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Statutaire vestigingsplaats</ix:nonNumeric></h2>
+		  <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeMicro" id="ID000050" escape="false">true</ix:nonNumeric>
+		  <h3></h3>
         </div>
       </div>
       <div class="date">
         <div class="date-line"></div>
         <div class="date-content">d.d. maand 2024</div>
+		<div class="date-content">Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric></div>
       </div>
     </div>
     <div class="footer">  
@@ -373,7 +376,7 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor"
       <h3>Inhoud</h3>
       <p>
         <a href="#financial-statements"><span class="toc-h3">Jaarrekening<span class="align-right">3</span></span></a>
-        <a href="#balance-sheet">Balans per 31 december 2023<span class="align-right">4</span></a>
+        <a href="#balance-sheet">Balans per <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriodEndDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000060">31 december 2023</ix:nonNumeric><span class="align-right">4</span></a>
         <a href="#account-of-profit-and-loss">Winst-en-verliesrekening over 2023<span class="align-right">5</span></a>
         <a href="#balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening<span class="align-right">6</span></a>
       </p>
