@@ -4,6 +4,7 @@
   <xs:annotation>
     <xs:appinfo>
       <link:linkbaseRef xlink:type="simple" xlink:href="demicrobv-2023-12-31_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="demicrobv-2023-12-31_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="demicrobv-2023-12-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:roleType roleURI="https://www.demicrobv.nl/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
         <link:definition>00000 - Document and Entity information</link:definition>
@@ -12,10 +13,12 @@
       <link:roleType roleURI="https://www.demicrobv.nl/role/BalanceSheet" id="BalanceSheet">
         <link:definition>00100 - Balance sheet</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.demicrobv.nl/role/IncomeStatement" id="IncomeStatement">
         <link:definition>00200 - Income statement</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.demicrobv.nl/role/Notes" id="Notes">
         <link:definition>00300 - Notes</link:definition>
