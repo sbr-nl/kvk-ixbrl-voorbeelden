@@ -1,8 +1,28 @@
-<!DOCTYPE html>
-<html lang="nl" xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xml:lang="en" 
+xmlns:demicrobv="https://www.demicrobv.com/xbrl/2023-12-31" 
+xmlns:utr="http://www.xbrl.org/2009/utr" 
+xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:xl="http://www.xbrl.org/2003/XLink" 
+xmlns:ref="http://www.xbrl.org/2006/ref"
+xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
+xmlns:link="http://www.xbrl.org/2003/linkbase" 
+xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" 
+xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
+xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor"
+xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" 
+xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" 
+ >
+
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>nba-micro-nl-inrichtingsjaarrekenning-2023</title>
   <style type="text/css">
     @page {
@@ -271,6 +291,55 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <ix:header>
+      <ix:references>
+        <link:schemaRef xlink:type="simple"
+          xlink:href="../www.demicrobv.nl/xbrl/2023-12-31/demicrobv-2023-12-31.xsd" />
+      </ix:references>
+      <ix:resources>
+        <xbrli:context id="context_1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="context_2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2023-12-31</xbrli:instant>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="context_3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2022-12-31</xbrli:instant>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="context_4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2022-01-01</xbrli:startDate>
+            <xbrli:endDate>2022-12-31</xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+		<xbrli:unit id="EUR">
+          <xbrli:measure>iso4217:EUR</xbrli:measure>
+        </xbrli:unit>
+      </ix:resources>
+    </ix:header>
+  </div>
+
+
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -281,7 +350,7 @@
         <div class="title-line"></div>
         <div class="title-content">
           <h1>Voorbeeld jaarrekening 2023</h1>
-          <h2>De Micro B.V.</h2>
+          <h2><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Micro</ix:nonNumeric> <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric></h2>
           <h2>Statutaire vestigingsplaats</h2>
         </div>
       </div>
@@ -350,11 +419,11 @@
             <td></td>
             <td></td>
             <td colspan="2">
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td colspan="2">
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr class="unit-row">
@@ -399,12 +468,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr>
@@ -447,12 +516,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr>
@@ -469,12 +538,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr>
@@ -491,12 +560,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr class="empty-row">
@@ -559,12 +628,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr>
@@ -581,12 +650,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr class="empty-row">
@@ -621,11 +690,11 @@
             <td></td>
             <td></td>
             <td colspan="2">
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td colspan="2">
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr class="unit-row">
@@ -673,12 +742,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
           </tr>
@@ -745,12 +814,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
           </tr>
@@ -770,12 +839,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr>
@@ -802,12 +871,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr>
@@ -826,12 +895,12 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr/>
             </td>
           </tr>
           <tr class="empty-row">
@@ -855,7 +924,7 @@
       <h3 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening</h3>
       <h4>Algemene toelichting</h4>
       <h5>Continuïteit</h5>
-      <p>Het eigen vermogen van De Micro B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Micro B.V.
+      <p>Het eigen vermogen van De Micro B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Micro B.V.</p>
       <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt.</p>
       <p>.........
          .........</p>
