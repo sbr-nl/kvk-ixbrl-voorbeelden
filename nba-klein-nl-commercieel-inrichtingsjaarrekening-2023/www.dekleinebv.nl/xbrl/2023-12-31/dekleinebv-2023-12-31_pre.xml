@@ -45,30 +45,56 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_BalanceSheetBeforeAppropriationResults_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_CostsIncorporationShareIssue" xlink:label="bw2-titel9_CostsIncorporationShareIssue_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_CostsIncorporationShareIssue_loc" order="2.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_AssetsNoncurrentOther" xlink:label="bw2-titel9_AssetsNoncurrentOther_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_AssetsNoncurrentOther_loc" order="3.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_AssetsNoncurrent" xlink:label="bw2-titel9_AssetsNoncurrent_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_AssetsNoncurrent_loc" order="4.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_CalledUpShareCapital" xlink:label="bw2-titel9_CalledUpShareCapital_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_CalledUpShareCapital_loc" order="5.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_CalledUpShareCapital_loc" order="18.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_AssetsCurrentOther" xlink:label="bw2-titel9_AssetsCurrentOther_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_AssetsCurrentOther_loc" order="6.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_AssetsCurrentOther_loc" order="19.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_AssetsCurrent" xlink:label="bw2-titel9_AssetsCurrent_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_AssetsCurrent_loc" order="7.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_AssetsCurrent_loc" order="20.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Assets" xlink:label="bw2-titel9_Assets_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Assets_loc" order="8.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Assets_loc" order="21.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Equity" xlink:label="bw2-titel9_Equity_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Equity_loc" order="9.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Equity_loc" order="22.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Provisions" xlink:label="bw2-titel9_Provisions_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Provisions_loc" order="10.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Provisions_loc" order="23.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_LiabilitiesCurrent" xlink:label="bw2-titel9_LiabilitiesCurrent_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_LiabilitiesCurrent_loc" order="12.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_LiabilitiesCurrent_loc" order="25.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_LiabilitiesNoncurrent" xlink:label="bw2-titel9_LiabilitiesNoncurrent_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_LiabilitiesNoncurrent_loc" order="11.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_LiabilitiesNoncurrent_loc" order="24.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityAndLiabilities" xlink:label="bw2-titel9_EquityAndLiabilities_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_EquityAndLiabilities_loc" order="13.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_EquityAndLiabilities_loc" order="26.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IndicationNoAccruedAssetsLiabilitiesAreRecorded" xlink:label="bw2-titel9_IndicationNoAccruedAssetsLiabilitiesAreRecorded_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_IndicationNoAccruedAssetsLiabilitiesAreRecorded_loc" order="14.0"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_IndicationNoAccruedAssetsLiabilitiesAreRecorded_loc" order="27.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_DevelopmentCosts" xlink:label="bw2-titel9_DevelopmentCosts_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_DevelopmentCosts_loc" order="3.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Goodwill" xlink:label="bw2-titel9_Goodwill_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Goodwill_loc" order="4.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IntangibleAssets" xlink:label="bw2-titel9_IntangibleAssets_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_IntangibleAssets_loc" order="5.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_LandAndBuildings" xlink:label="bw2-titel9_LandAndBuildings_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_LandAndBuildings_loc" order="6.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_TangibleAssetsOther" xlink:label="bw2-titel9_TangibleAssetsOther_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_TangibleAssetsOther_loc" order="7.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_PropertyPlantEquipment" xlink:label="bw2-titel9_PropertyPlantEquipment_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_PropertyPlantEquipment_loc" order="8.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_InvestmentProperties" xlink:label="rj_InvestmentProperties_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="rj_InvestmentProperties_loc" order="9.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_InvestmentsInParticipatingInterestsInGroupCompanies" xlink:label="bw2-titel9_InvestmentsInParticipatingInterestsInGroupCompanies_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_InvestmentsInParticipatingInterestsInGroupCompanies_loc" order="10.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ReceivablesGroupCompaniesNoncurrent" xlink:label="bw2-titel9_ReceivablesGroupCompaniesNoncurrent_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_ReceivablesGroupCompaniesNoncurrent_loc" order="11.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_DeferredTaxAssetsNoncurrent" xlink:label="rj_DeferredTaxAssetsNoncurrent_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="rj_DeferredTaxAssetsNoncurrent_loc" order="12.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_FinancialAssets" xlink:label="bw2-titel9_FinancialAssets_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_FinancialAssets_loc" order="13.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Inventories" xlink:label="bw2-titel9_Inventories_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_Inventories_loc" order="14.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ConstructionContractsAssets" xlink:label="rj_ConstructionContractsAssets_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="rj_ConstructionContractsAssets_loc" order="15.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_TradeReceivables" xlink:label="bw2-titel9_TradeReceivables_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_TradeReceivables_loc" order="16.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ReceivablesGroupCompaniesCurrent" xlink:label="bw2-titel9_ReceivablesGroupCompaniesCurrent_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_ReceivablesGroupCompaniesCurrent_loc" order="17.0"/>
   </link:presentationLink>
   <link:presentationLink xlink:type="extended" xlink:role="https://www.dekleinebv.nl/role/IncomeStatement">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IncomeStatementTitle" xlink:label="bw2-titel9_IncomeStatementTitle_loc"/>
