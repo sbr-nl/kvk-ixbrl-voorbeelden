@@ -1,41 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" 
-xml:lang="nl" 
-xmlns:demicrobv="https://www.demicrobv.nl/xbrl/2023-12-31" 
-xmlns:utr="http://www.xbrl.org/2009/utr" 
-xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
-xmlns:xbrli="http://www.xbrl.org/2003/instance" 
-xmlns:xl="http://www.xbrl.org/2003/XLink" 
-xmlns:ref="http://www.xbrl.org/2006/ref"
-xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
-xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
-xmlns:link="http://www.xbrl.org/2003/linkbase" 
-xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" 
-xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12"
-xmlns:xlink="http://www.w3.org/1999/xlink" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
-xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor"
-xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" 
-xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" xmlns:demicrobv="https://www.demicrobv.nl/xbrl/2023-12-31" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
 
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>nba-micro-nl-inrichtingsjaarrekenning-2023</title>
   <style type="text/css">
-    @page {
-      size: a4;
-    }
-
     @media print {
       html {
-        font-size: 0.875rem !important;
+        font-size: 10pt !important;
       }
 
       .page {
         padding: 0 !important;
-        margin: 0 auto 0 auto !important;
+        margin: 0 auto !important;
         box-shadow: none !important;
         height: calc(100vh - 1rem) !important;
         min-height: auto !important;
@@ -46,35 +24,46 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
     html {
       font-family: Georgia, "Times New Roman", Times, serif;
       background-color: #fff;
-      font-size: 0.9rem;
+      font-size: 15px;
     }
 
     body {
-      counter-reset: page;
+      counter-reset: page h2 h3 h4 h5;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
+    /* page layout */
     .page {
       min-width: 21cm;
       min-height: 29.7cm;
       width: 21cm;
       height: 29.7cm;
-      margin: 1cm 1cm 1cm 1cm;
-      padding: 1cm 1.5cm 1cm 1.5cm;
+      margin: 1cm;
+      padding: 1cm 1.5cm;
       display: flex;
-      flex-direction: column;
+      flex-flow: column;
       justify-content: center;
       counter-increment: page;
       background-color: #fff;
-      box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      overflow: auto;
+      border-radius: 6px;
     }
 
     .page:not(:last-child) {
       page-break-after: always;
     }
 
+    .page::-webkit-scrollbar {
+      background-color: red;
+      width: 10px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    /* page content layout */
     .header-content,
     .footer-content,
     .content {
@@ -94,6 +83,7 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       flex: 1;
     }
 
+    /* header and footer */
     .header-line {
       height: 1rem;
       border-top: solid 1px black;
@@ -114,61 +104,169 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
     }
 
     .footer-page-number::after {
-      content: "Pagina " counter(page) " van 7";
+      content: "Pagina " counter(page) " van 69";
     }
 
     .footer-content::after {
-      content: "De Micro B.V., Statutaire vestigingsplaats";
+      content: "De Middelgrote B.V., Statutaire vestigingsplaats";
     }
 
     .header-content::after {
-      content: "Samenstellingsverklaring afgegeven d.d. … 2024";
+      content: "Samenstellingsverklaring afgegeven d.d. ... 2022";
     }
 
+    /* first page */
+    first-page-title,
+    first-page-subtitle {
+      display: block;
+      font-size: 2rem;
+    }
+
+    first-page-title {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* paragraphs */
+    p {
+      white-space: pre-line;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    /* chapters */
     h1,
     h2,
     h3,
     h4,
-    h5,
-    h6 {
+    h5 {
+      margin-top: .75rem;
+      margin-bottom: .5rem;
+    }
+
+    table h2,
+    table h3,
+    table h4 {
       margin: 0;
     }
 
-    h1,
-    h2 {
-      font-size: 2rem;
-    }
-
-    h3 {
+    h1 {
       font-size: 1.6rem;
     }
 
-    h4,
-    h5 {
+    h2,
+    h3 {
       font-size: 1.2rem;
     }
 
-    table h4,
-    table h5,
-    table h6 {
+    h4 {
       font-size: 1rem;
     }
 
-    h2,
+    h5 {
+      font-size: 1rem;
+    }
+
+    table h2,
+    table h3,
+    table h4 {
+      font-size: 1rem;
+    }
+
+    h3,
+    h4,
     h5 {
       font-weight: normal;
     }
 
-    h4 {
+    h2,
+    table h4 {
       font-weight: bold;
     }
 
     h1,
+    h2,
     h3,
     h4,
-    h5,
-    h6 {
+    h5 {
       font-style: italic;
+    }
+
+    /* chapter numbering */
+    h2:not(table h2) {
+      counter-increment: h2;
+      counter-set: h3 h4 h5;
+    }
+
+    h2:not(table h2)::before {
+      content: counter(h2) ". ";
+    }
+
+    h3:not(table h3) {
+      counter-increment: h3;
+      counter-set: h4 h5;
+    }
+
+    h3:not(table h3)::before {
+      content: counter(h2) "." counter(h3) ". ";
+    }
+
+    h4:not(table h4) {
+      counter-increment: h4;
+      counter-set: h5;
+    }
+
+    h4:not(table h4)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+    }
+
+    h5:not(table h5) {
+      counter-increment: h5;
+    }
+
+    h5:not(table h5)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+    }
+
+    /* table layout */
+    table {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-align: right;
+      table-layout: fixed;
+    }
+
+    .table-xs {
+      width: 40%;
+    }
+
+    .table-s {
+      width: 55%;
+    }
+
+    .table-m {
+      width: 70%;
+    }
+
+    .table-l {
+      width: 85%;
+    }
+
+    .table-full {
+      width: 100%;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .non-list-bullet {
+      display: list-item;
+      list-style-position: inside;
+    }
+
+    td {
+      vertical-align: bottom;
     }
 
     table,
@@ -176,73 +274,107 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
     td {
       border-collapse: collapse;
       font-size: 1rem;
-      /* table debug line */
-      /* outline: solid 1px rgba(173, 216, 230, 0.25); */
-      /* /table debug line */
+      border: dashed 1px lightgrey;
     }
 
     .top-table-header hr,
     .sub-total hr,
     .total hr {
-      border-style: solid none none none;
+      border-style: solid none none;
+      border-color: black;
+    }
+
+    .dotted hr {
+      border-style: dotted none none;
       border-color: black;
     }
 
     .top-table-header hr,
-    .sub-total hr {
+    .sub-total hr,
+    .dotted hr {
       border-width: 1px;
     }
 
     .total hr {
       border-width: 2px;
+      border-color: black;
     }
-    
+
     tr.empty-row {
       height: 1.4rem;
     }
 
     .unit-row>td {
-      text-indent: 0.5rem;
+      text-indent: .5rem;
       direction: rtl;
     }
 
-    .balance-sheet tr> :first-child,
-    .profit-and-loss-account tr> :first-child {
-      width: 42.5%;
+    table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
       text-indent: 0;
       direction: ltr;
     }
 
-    .balance-sheet tr> :nth-child(2),
-    .profit-and-loss-account tr> :nth-child(2) {
-      width: 7.5%;
+    table.col-xs col:nth-child(2n+2),
+    table.col-xs:is(.annotated, .single) col:nth-child(2n+3) {
+      width: 10%;
+    }
+
+    table.col-s col:nth-child(2n+2),
+    table.col-s:is(.annotated, .single) col:nth-child(2n+3) {
+      width: 12.5%;
+    }
+
+    table.col-m col:nth-child(2n+2),
+    table.col-m:is(.annotated, .single) col:nth-child(2n+3) {
+      width: 15%;
+    }
+
+    table.col-l col:nth-child(2n+2),
+    table.col-l:is(.annotated, .single) col:nth-child(2n+3) {
+      width: 17.5%;
+    }
+
+    table.col-xl col:nth-child(2n+2),
+    table.col-xl:is(.annotated, .single) col:nth-child(2n+3) {
+      width: 20%;
+    }
+
+    table.annotated col:nth-child(2) {
+      width: 50px;
+    }
+
+    .annotated tr> :nth-child(2) {
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
       text-indent: 0;
       direction: ltr;
     }
 
-    .balance-sheet tbody:nth-of-type(2),
-    .profit-and-loss-account tbody:nth-of-type(2) {
+    table col:nth-child(2n+3),
+    table.annotated col:nth-child(2n+4),
+    table.single col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 8px;
+    }
+
+    table tbody:nth-of-type(2) {
       font-family: Arial, Helvetica, sans-serif;
-      text-indent: 0.5rem;
+      text-indent: .5rem;
       direction: rtl;
-      vertical-align: bottom;
     }
 
-    .profit-and-loss-account>tbody:first-child tr:first-child> :nth-child(4),
-    .balance-sheet>tbody:first-child tr:first-child> :nth-child(4) {
-      width: 2%;
+    .scale {
+      font-size: .8rem;
     }
 
-    .balance-sheet,
-    .profit-and-loss-account {
-      width: 100%;
-      text-align: right;
+    .footnote-table {
+      font-size: .9rem;
+      font-style: italic;
     }
 
+    /* front page */
     .title-content,
     .title-line {
       margin-left: 25%;
@@ -269,22 +401,28 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       border-left: dotted 1px black;
     }
 
-    p {
-      white-space: pre-line;
-      margin-top: 0;
+    /* toc */
+    .toc-h1 {
+      font-weight: bold;
+    }
+
+    .toc-h2 {
+      font-style: italic;
     }
 
     .align-right {
       float: right;
     }
 
-    .toc-h3 {
-      font-weight: bold;
-    }
-
     a {
       color: black;
       text-decoration: none;
+    }
+
+    /* lists */
+    ol,
+    ul {
+      padding-left: 1.4rem;
     }
   </style>
 </head>
@@ -293,8 +431,7 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
   <div style="display:none">
     <ix:header>
       <ix:references xml:lang="nl">
-        <link:schemaRef xlink:type="simple"
-          xlink:href="../www.demicrobv.nl/xbrl/2023-12-31/demicrobv-2023-12-31.xsd" />
+        <link:schemaRef xlink:type="simple" xlink:href="../www.demicrobv.nl/xbrl/2023-12-31/demicrobv-2023-12-31.xsd" />
       </ix:references>
       <ix:resources>
         <xbrli:context id="context_1">
@@ -331,56 +468,56 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
             <xbrli:endDate>2022-12-31</xbrli:endDate>
           </xbrli:period>
         </xbrli:context>
-		
-		
-  <xbrli:context id="context_5">
-    <xbrli:entity>
-      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
-    </xbrli:entity>
-    <xbrli:period>
-      <xbrli:instant>2023-12-31</xbrli:instant>
-    </xbrli:period>
-    <xbrli:scenario>
-			<xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
-		</xbrli:scenario>
-  </xbrli:context>
-  <xbrli:context id="context_6">
-    <xbrli:entity>
-      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
-    </xbrli:entity>
-    <xbrli:period>
-      <xbrli:startDate>2023-01-01</xbrli:startDate>
-      <xbrli:endDate>2023-12-31</xbrli:endDate>
-    </xbrli:period>
-    <xbrli:scenario>
-			<xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
-		</xbrli:scenario>
-  </xbrli:context>
-  
-   <xbrli:context id="context_7">
-    <xbrli:entity>
-      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
-    </xbrli:entity>
-    <xbrli:period>
-      <xbrli:startDate>2022-01-01</xbrli:startDate>
-      <xbrli:endDate>2022-12-31</xbrli:endDate>
-    </xbrli:period>
-    <xbrli:scenario>
-			<xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
-		</xbrli:scenario>
-  </xbrli:context>
-  <xbrli:context id="context_8">
-    <xbrli:entity>
-      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
-    </xbrli:entity>
-    <xbrli:period>
-      <xbrli:instant>2022-12-31</xbrli:instant>
-    </xbrli:period>
-    <xbrli:scenario>
-			<xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
-		</xbrli:scenario>
-  </xbrli:context>
-		<xbrli:unit id="EUR">
+
+
+        <xbrli:context id="context_5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2023-12-31</xbrli:instant>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_6">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+
+        <xbrli:context id="context_7">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2022-01-01</xbrli:startDate>
+            <xbrli:endDate>2022-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_8">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2022-12-31</xbrli:instant>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:unit id="EUR">
           <xbrli:measure>iso4217:EUR</xbrli:measure>
         </xbrli:unit>
       </ix:resources>
@@ -397,22 +534,29 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="title">
         <div class="title-line"></div>
         <div class="title-content">
-          <h1>Voorbeeld jaarrekening 2023</h1>
-          <h2><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Micro</ix:nonNumeric> <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric></h2>
-          <h2><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Statutaire vestigingsplaats</ix:nonNumeric></h2>
-		  <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeMicro" format="ixt:fixed-true" id="ID000050"></ix:nonNumeric>
-		  <ix:nonNumeric contextRef="context_1" name="rj:FinancialStatementsConsolidated" format="ixt:fixed-false" id="ID000080"></ix:nonNumeric>
-		  <h3></h3>
+          <first-page-title>Voorbeeld jaarrekening 2023</first-page-title>
+          <first-page-subtitle>
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Micro</ix:nonNumeric>
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric>
+          </first-page-subtitle>
+          <first-page-subtitle>
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Statutaire vestigingsplaats</ix:nonNumeric>
+          </first-page-subtitle>
+          <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeMicro" format="ixt:fixed-true" id="ID000050"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="context_1" name="rj:FinancialStatementsConsolidated" format="ixt:fixed-false" id="ID000080"></ix:nonNumeric>
         </div>
       </div>
       <div class="date">
         <div class="date-line"></div>
         <div class="date-content">d.d. maand 2024</div>
-		<div class="date-content">Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric></div>
-		<div class="date-content">Vastgesteld door de algemene vergadering op <ix:nonNumeric name="bw2-titel9:DocumentAdoptionDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000100">19 maart 2024</ix:nonNumeric><ix:nonNumeric contextRef="context_1" name="bw2-titel9:DocumentAdoptionStatus" format="ixt:fixed-true" id="ID000090"></ix:nonNumeric></div>
+        <div class="date-content">Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric>
+        </div>
+        <div class="date-content">Vastgesteld door de algemene vergadering op <ix:nonNumeric name="bw2-titel9:DocumentAdoptionDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000100">19 maart 2024</ix:nonNumeric>
+          <ix:nonNumeric contextRef="context_1" name="bw2-titel9:DocumentAdoptionStatus" format="ixt:fixed-true" id="ID000090"></ix:nonNumeric>
+        </div>
       </div>
     </div>
-    <div class="footer">  
+    <div class="footer">
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
     </div>
@@ -423,9 +567,9 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3>Inhoud</h3>
+      <h1>Inhoud</h1>
       <p>
-        <a href="#financial-statements"><span class="toc-h3">Jaarrekening<span class="align-right">3</span></span></a>
+        <a href="#financial-statements"><span class="toc-h1">Jaarrekening<span class="align-right">3</span></span></a>
         <a href="#balance-sheet">Balans per 31 december 2023<span class="align-right">4</span></a>
         <a href="#account-of-profit-and-loss">Winst-en-verliesrekening over 2023<span class="align-right">5</span></a>
         <a href="#balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening<span class="align-right">6</span></a>
@@ -442,7 +586,7 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3 id="financial-statements">Jaarrekening</h3>
+      <h1 id="financial-statements">Jaarrekening</h1>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -455,65 +599,84 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3 id="balance-sheet">Balans per <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriodEndDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000060">31 december 2023</ix:nonNumeric></h3>
+      <h1 id="balance-sheet">Balans per <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriodEndDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000060">31 december 2023</ix:nonNumeric>
+      </h1>
       (na resultaatbestemming)<ix:nonNumeric contextRef="context_6" name="bw2-titel9:BalanceSheetBeforeAppropriationResults" format="ixt:fixed-true" id="ID000120"></ix:nonNumeric>
-      <table class="balance-sheet">
+      <table class="table-full col-s">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
         <tbody>
           <tr>
             <td>
-              <h4>Activa</h4>
+              <h2>Activa</h2>
             </td>
+            <th colspan="3">31 december 2023</th>
             <td></td>
-            <th colspan="2">31 december 2023</th>
-            <td></td>
-            <th colspan="2">31 december 2022</th>
+            <th colspan="3">31 december 2022</th>
           </tr>
           <tr class="empty-row top-table-header">
             <td></td>
-            <td></td>
-            <td colspan="2">
-              <hr/>
+            <td colspan="3">
+              <hr />
             </td>
             <td></td>
-            <td colspan="2">
-              <hr/>
+            <td colspan="3">
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
             <td></td>
-            <td></td>
-            <td>€</td>
             <td>€</td>
             <td></td>
             <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
             <td>€</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
           <tr>
-            <td colspan="7">
-              <h5>Vaste activa</h5>
+            <td colspan="8">
+              <h3>Vaste activa</h3>
             </td>
           </tr>
           <tr>
             <td>Kosten die verband houden met de oprichting van uitgifte van aandelen</td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CostsIncorporationShareIssue" unitRef="EUR" decimals="0" scale="0" id="ID0000130">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CostsIncorporationShareIssue" unitRef="EUR" decimals="0" scale="0" id="ID0000130">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:CostsIncorporationShareIssue" unitRef="EUR" decimals="0" scale="0" id="ID0000140">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:CostsIncorporationShareIssue" unitRef="EUR" decimals="0" scale="0" id="ID0000140">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Overige vaste activa</td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000150">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000150">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000160">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000160">0</ix:nonFraction>
+            </td>
+            <td></td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">
@@ -521,47 +684,63 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
+            <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000170">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000170">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000180">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000180">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
           <tr>
-            <td colspan="7">
-              <h5>Vlottende activa</h5>
+            <td colspan="8">
+              <h3>Vlottende activa</h3>
             </td>
           </tr>
           <tr>
             <td>Opgevraagde stortingen van geplaatst kapitaal</td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000190">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000190">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000200">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000200">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Overige vlottende activa</td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000210">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000210">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000220">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000220">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">
@@ -569,154 +748,196 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000230">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000230">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000240">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000240">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Assets" unitRef="EUR" decimals="0" scale="0" id="ID0000250">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Assets" unitRef="EUR" decimals="0" scale="0" id="ID0000250">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:Assets" unitRef="EUR" decimals="0" scale="0" id="ID0000260">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:Assets" unitRef="EUR" decimals="0" scale="0" id="ID0000260">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row total">
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
           <tr>
-            <td colspan="7">
-              <h4>Passiva</h4>
+            <td colspan="8">
+              <h2>Passiva</h2>
             </td>
           </tr>
           <tr>
             <td>
-              <h5>Eigen vermogen</h5>
+              <h3>Eigen vermogen</h3>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Equity" unitRef="EUR" decimals="0" scale="0" id="ID0000270">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Equity" unitRef="EUR" decimals="0" scale="0" id="ID0000270">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:Equity" unitRef="EUR" decimals="0" scale="0" id="ID0000280">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:Equity" unitRef="EUR" decimals="0" scale="0" id="ID0000280">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
           <tr>
             <td>
-              <h5>Voorzieningen</h5>
+              <h3>Voorzieningen</h3>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Provisions" unitRef="EUR" decimals="0" scale="0" id="ID0000290">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Provisions" unitRef="EUR" decimals="0" scale="0" id="ID0000290">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:Provisions" unitRef="EUR" decimals="0" scale="0" id="ID0000300">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:Provisions" unitRef="EUR" decimals="0" scale="0" id="ID0000300">0</ix:nonFraction>
+            </td>
           </tr>
           <tr>
             <td>
-              <h5>Langlopende schulden</h5>
+              <h3>Langlopende schulden</h3>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000310">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000310">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000320">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000320">0</ix:nonFraction>
+            </td>
           </tr>
           <tr>
             <td>
-              <h5>Kortlopende schulden</h5>
+              <h3>Kortlopende schulden</h3>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000330">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000330">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000340">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000340">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:EquityAndLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000350">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:EquityAndLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000350">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:EquityAndLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000360">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:EquityAndLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000360">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row total">
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
+            <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
         </tbody>
       </table>
-      <p><ix:nonNumeric contextRef="context_6" name="bw2-titel9:IndicationNoAccruedAssetsLiabilitiesAreRecorded" id="ID0000370" escape="false">In de balans zijn geen overlopende activa en passiva opgenomen.</ix:nonNumeric></p>
+      <p>
+        <ix:nonNumeric contextRef="context_6" name="bw2-titel9:IndicationNoAccruedAssetsLiabilitiesAreRecorded" id="ID0000370" escape="false">In de balans zijn geen overlopende activa en passiva opgenomen.</ix:nonNumeric>
+      </p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -729,235 +950,315 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3 id="account-of-profit-and-loss">Winst-en-verliesrekening over <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriod" contextRef="context_1" id="ID000070">2023</ix:nonNumeric></h3>
-      <table class="profit-and-loss-account">
+      <h1 id="account-of-profit-and-loss">Winst-en-verliesrekening over <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriod" contextRef="context_1" id="ID000070">2023</ix:nonNumeric>
+      </h1>
+      <table class="table-full col-s">
+        <colgoup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgoup>
         <tbody>
           <tr>
             <td></td>
+            <th colspan="3">2023</th>
             <td></td>
-            <th colspan="2">2023</th>
-            <td></td>
-            <th colspan="2">2022</th>
+            <th colspan="3">2022</th>
           </tr>
           <tr class="empty-row top-table-header">
             <td></td>
-            <td></td>
-            <td colspan="2">
-              <hr/>
+            <td colspan="3">
+              <hr />
             </td>
             <td></td>
-            <td colspan="2">
-              <hr/>
+            <td colspan="3">
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
             <td></td>
-            <td></td>
-            <td>€</td>
             <td>€</td>
             <td></td>
             <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
             <td>€</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
           <tr>
             <td>Netto-omzet</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:NetRevenue" unitRef="EUR" decimals="0" scale="0" id="ID0000380">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:NetRevenue" unitRef="EUR" decimals="0" scale="0" id="ID0000380">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:NetRevenue" unitRef="EUR" decimals="0" scale="0" id="ID0000390">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:NetRevenue" unitRef="EUR" decimals="0" scale="0" id="ID0000390">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Overige bedrijfsopbrengsten</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000400">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000400">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000410">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000410">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Overige posten</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000420">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000420">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000430">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000430">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
-            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
           </tr>
           <tr>
             <td>
-              <h4>Som der bedrijfsopbrengsten</h4>
+              <h2>Som der bedrijfsopbrengsten</h2>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncome" unitRef="EUR" decimals="0" scale="0" id="ID0000440">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncome" unitRef="EUR" decimals="0" scale="0" id="ID0000440">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncome" unitRef="EUR" decimals="0" scale="0" id="ID0000450">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncome" unitRef="EUR" decimals="0" scale="0" id="ID0000450">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
           <tr>
             <td>Kosten van grond- en hulpstoffen</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:CostsRawMaterialsConsumables" unitRef="EUR" decimals="0" scale="0" id="ID0000460">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:CostsRawMaterialsConsumables" unitRef="EUR" decimals="0" scale="0" id="ID0000460">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:CostsRawMaterialsConsumables" unitRef="EUR" decimals="0" scale="0" id="ID0000470">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:CostsRawMaterialsConsumables" unitRef="EUR" decimals="0" scale="0" id="ID0000470">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Lonen</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0000480">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0000480">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0000490">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0000490">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Afschrijvingen op en bijzondere waardeverminderingen van activa</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationAmortisationAndDecreaseInValueAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000500">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationAmortisationAndDecreaseInValueAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000500">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationAmortisationAndDecreaseInValueAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000510">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationAmortisationAndDecreaseInValueAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000510">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Overige bedrijfskosten</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000520">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000520">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000530">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000530">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>Overige posten</td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:ExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000540">0</ix:nonFraction>
+            </td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:ExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000540">0</ix:nonFraction></td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000550">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000550">0</ix:nonFraction>
+            </td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
-            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
             <td>
-              <h4>Som der lasten</h4>
+              <h2>Som der lasten</h2>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:SumOfExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0000560">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:SumOfExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0000560">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:SumOfExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0000570">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:SumOfExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0000570">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr>
             <td>
-              <h4>Resultaat voor belastingen</h4>
+              <h2>Resultaat voor belastingen</h2>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:ResultBeforeTax" unitRef="EUR" decimals="0" scale="0" id="ID0000580">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:ResultBeforeTax" unitRef="EUR" decimals="0" scale="0" id="ID0000580">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ResultBeforeTax" unitRef="EUR" decimals="0" scale="0" id="ID0000590">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ResultBeforeTax" unitRef="EUR" decimals="0" scale="0" id="ID0000590">0</ix:nonFraction>
+            </td>
           </tr>
           <tr>
             <td>Belastingen</td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeTaxExpense" unitRef="EUR" decimals="0" scale="0" id="ID0000600">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeTaxExpense" unitRef="EUR" decimals="0" scale="0" id="ID0000600">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeTaxExpense" unitRef="EUR" decimals="0" scale="0" id="ID0000610">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeTaxExpense" unitRef="EUR" decimals="0" scale="0" id="ID0000610">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
             <td></td>
             <td></td>
+            <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr>
             <td>
-              <h4>Resultaat na belastingen</h4>
+              <h2>Resultaat na belastingen</h2>
             </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:ResultAfterTax" unitRef="EUR" decimals="0" scale="0" id="ID0000620">0</ix:nonFraction></td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:ResultAfterTax" unitRef="EUR" decimals="0" scale="0" id="ID0000620">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
-            <td><ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ResultAfterTax" unitRef="EUR" decimals="0" scale="0" id="ID0000630">0</ix:nonFraction></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ResultAfterTax" unitRef="EUR" decimals="0" scale="0" id="ID0000630">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row total">
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
+            <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr/>
+              <hr />
             </td>
           </tr>
           <tr class="empty-row">
-            <td colspan="7"></td>
+            <td colspan="8"></td>
           </tr>
         </tbody>
       </table>
@@ -967,22 +1268,24 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="footer-page-number"></div>
     </div>
   </div>
-  
+
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h3 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening</h3>
-      <h4>Algemene toelichting</h4>
-      <ix:nonNumeric contextRef="context_6" name="bw2-titel9:GoingConcernDisclosure" id="ID0000640" escape="true"><h5>Continuïteit</h5>
-      <p>Het eigen vermogen van De Micro B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Micro B.V.</p>
-      <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt.</p>
-      <p>.........
-         .........</p>
-      <p>Op basis van gesprekken die zijn gevoerd met de groepsmaatschappijen/banken over onze maatregelen en plannen verwachten wij dat de financiering zal worden gecontinueerd.</p>
-      <p>De in de onderhavige jaarrekening gehanteerde grondslagen van waardering en resultaatbepaling zijn dan ook gebaseerd op de veronderstelling van continuïteit van de vennootschap.</p></ix:nonNumeric>
+      <h1 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening</h1>
+      <h2>Algemene toelichting</h2>
+      <ix:nonNumeric contextRef="context_6" name="bw2-titel9:GoingConcernDisclosure" id="ID0000640" escape="true">
+        <h3>Continuïteit</h3>
+        <p>Het eigen vermogen van De Micro B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Micro B.V.</p>
+        <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt.</p>
+        <p>.........
+          .........</p>
+        <p>Op basis van gesprekken die zijn gevoerd met de groepsmaatschappijen/banken over onze maatregelen en plannen verwachten wij dat de financiering zal worden gecontinueerd.</p>
+        <p>De in de onderhavige jaarrekening gehanteerde grondslagen van waardering en resultaatbepaling zijn dan ook gebaseerd op de veronderstelling van continuïteit van de vennootschap.</p>
+      </ix:nonNumeric>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -996,17 +1299,17 @@ xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
       <div class="header-line"></div>
     </div>
     <div class="content">
-	 <ix:nonNumeric contextRef="context_1" name="bw2-titel9:SigningManagingSupervisoryDirectorsDisclosure" id="ID0000110" escape="true">
-      <p>
-	  
-
-        Statutaire vestigingsplaats, d.d. ... 2024
-        De Micro B.V.
+      <ix:nonNumeric contextRef="context_1" name="bw2-titel9:SigningManagingSupervisoryDirectorsDisclosure" id="ID0000110" escape="true">
+        <p>
 
 
+          Statutaire vestigingsplaats, d.d. ... 2024
+          De Micro B.V.
 
-        Bestuurder (huidig)</p>
-		</ix:nonNumeric>
+
+
+          Bestuurder (huidig)</p>
+      </ix:nonNumeric>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
