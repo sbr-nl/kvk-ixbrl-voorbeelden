@@ -104,15 +104,20 @@
     }
 
     .footer-page-number::after {
-      content: "Pagina " counter(page) " van 69";
+      content: "Pagina " counter(page) " van 7";
     }
 
     .footer-content::after {
-      content: "De Middelgrote B.V., Statutaire vestigingsplaats";
+      content: "De Micro B.V., Statutaire vestigingsplaats";
     }
 
     .header-content::after {
       content: "Samenstellingsverklaring afgegeven d.d. ... 2022";
+    }
+
+    /* hidden */
+    .hidden {
+      display: none;
     }
 
     /* first page */
@@ -383,7 +388,7 @@
 
     .date-content,
     .date-line {
-      width: 23%;
+      width: 60%;
       padding-left: 1rem;
       font-style: italic;
     }

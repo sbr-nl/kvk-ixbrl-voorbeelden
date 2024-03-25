@@ -102,15 +102,20 @@
     }
 
     .footer-page-number::after {
-      content: "Pagina " counter(page) " van 69";
+      content: "Pagina " counter(page) " van 27";
     }
 
     .footer-content::after {
-      content: "De Middelgrote B.V., Statutaire vestigingsplaats";
+      content: "De Kleine B.V., Statutaire vestigingsplaats";
     }
 
     .header-content::after {
       content: "Samenstellingsverklaring afgegeven d.d. ... 2022";
+    }
+
+    /* hidden */
+    .hidden {
+      display: none;
     }
 
     /* first page */
@@ -381,7 +386,7 @@
 
     .date-content,
     .date-line {
-      width: 23%;
+      width: 60%;
       padding-left: 1rem;
       font-style: italic;
     }
@@ -442,7 +447,12 @@
       </div>
       <div class="date">
         <div class="date-line"></div>
-        <div class="date-content">d.d. maand 2024</div>
+        <div class="date-content">
+          <p>d.d. maand 2024
+            Kamer van Koophandel nr. 12345678
+            Vastgesteld door de algemene vergadering op 19 maart 2024
+          </p>
+        </div>
       </div>
     </div>
     <div class="footer">
