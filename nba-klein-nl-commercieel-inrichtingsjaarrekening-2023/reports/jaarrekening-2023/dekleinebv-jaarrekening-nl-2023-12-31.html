@@ -101,7 +101,7 @@
       justify-content: space-between;
     }
 
-    .footer-page-number::after {
+    .page:nth-child(n+3) .footer-page-number::after {
       content: "Pagina " counter(page) " van 27";
     }
 
@@ -110,7 +110,7 @@
     }
 
     .header-content::after {
-      content: "Samenstellingsverklaring afgegeven d.d. ... 2022";
+      content: "Samenstellingsverklaring afgegeven d.d. ... 2023";
     }
 
     /* hidden */
@@ -263,11 +263,6 @@
       text-align: left;
     }
 
-    .non-list-bullet {
-      display: list-item;
-      list-style-position: inside;
-    }
-
     td {
       vertical-align: bottom;
     }
@@ -391,7 +386,7 @@
 
     .date-content,
     .date-line {
-      width: 23%;
+      width: 60%;
       padding-left: 1rem;
       font-style: italic;
     }
@@ -426,6 +421,11 @@
     ul {
       padding-left: 1.4rem;
     }
+
+    .non-list-bullet {
+      display: list-item;
+      margin-left: 1.4rem;
+    }
   </style>
 </head>
 
@@ -447,7 +447,12 @@
       </div>
       <div class="date">
         <div class="date-line"></div>
-        <div class="date-content">d.d. maand 2024</div>
+        <div class="date-content">
+          <p>d.d. maand 2024
+            Kamer van Koophandel nr. 12345678
+            Vastgesteld door de algemene vergadering op 19 maart 2024
+          </p>
+        </div>
       </div>
     </div>
     <div class="footer">

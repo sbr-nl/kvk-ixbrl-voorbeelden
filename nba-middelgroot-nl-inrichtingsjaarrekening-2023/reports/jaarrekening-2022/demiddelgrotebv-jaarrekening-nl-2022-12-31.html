@@ -101,8 +101,8 @@
       justify-content: space-between;
     }
 
-    .footer-page-number::after {
-      content: "Pagina " counter(page) " van 69";
+    .page:nth-child(n+3) .footer-page-number::after {
+      content: "Pagina " counter(page) " van 70";
     }
 
     .footer-content::after {
@@ -111,6 +111,11 @@
 
     .header-content::after {
       content: "Samenstellingsverklaring afgegeven d.d. ... 2022";
+    }
+
+    /* hidden */
+    .hidden {
+      display: none;
     }
 
     /* first page */
@@ -258,11 +263,6 @@
       text-align: left;
     }
 
-    .non-list-bullet {
-      display: list-item;
-      list-style-position: inside;
-    }
-
     td {
       vertical-align: bottom;
     }
@@ -386,7 +386,7 @@
 
     .date-content,
     .date-line {
-      width: 23%;
+      width: 60%;
       padding-left: 1rem;
       font-style: italic;
     }
@@ -421,6 +421,11 @@
     ul {
       padding-left: 1.4rem;
     }
+
+    .non-list-bullet {
+      display: list-item;
+      margin-left: 1.4rem;
+    }
   </style>
 </head>
 
@@ -442,7 +447,12 @@
       </div>
       <div class="date">
         <div class="date-line"></div>
-        <div class="date-content">d.d. maand 2022</div>
+        <div class="date-content">
+          <p>d.d. maand 2024
+            Kamer van Koophandel nr. 12345678
+            Vastgesteld door de algemene vergadering op 19 maart 2023
+          </p>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -1174,7 +1184,7 @@
           </tr>
           <tr>
             <td>Waardeveranderingen vastgoedbeleggingen</td>
-            <td>27</td>
+            <td>27.</td>
             <td>0</td>
             <td></td>
             <td></td>
@@ -1296,7 +1306,7 @@
             <td colspan="9"></td>
           </tr>
           <tr>
-            <td></td>
+            <td>Resultaat aandeel derden</td>
             <td></td>
             <td></td>
             <td></td>
@@ -1443,6 +1453,9 @@
             <td></td>
             <td>0</td>
           </tr>
+          <tr class="empty-row">
+            <td colspan="9"></td>
+          </tr>
           <tr>
             <td>
               <h3>Aanpassingen voor:</h3>
@@ -1492,6 +1505,17 @@
             </td>
             <td></td>
             <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
           </tr>
           <tr>
             <td>
@@ -1577,7 +1601,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>Kasstroom uit bedrijfsoperaties</td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -1601,6 +1625,20 @@
             <td>
               <hr />
             </td>
+          </tr>
+          <tr>
+            <td>Kasstroom uit bedrijfsoperaties</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="9"></td>
           </tr>
           <tr>
             <td>Ontvangen interest</td>
@@ -1713,6 +1751,69 @@
               <hr />
             </td>
           </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <table class="annotated col-s table-full">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td colspan="3">
+              <h2>2022</h2>
+            </td>
+            <td></td>
+            <td colspan="3">
+              <h2>2021</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td class="scale">(x 1.000)</td>
+            <td>Ref.</td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
           <tr class="empty-row">
             <td colspan="9"></td>
           </tr>
@@ -1847,69 +1948,6 @@
               <hr />
             </td>
           </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
-      <table class="annotated col-s table-full">
-        <colgroup>
-          <col />
-          <col />
-          <col />
-          <col />
-          <col />
-          <col />
-          <col />
-          <col />
-          <col />
-        </colgroup>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td colspan="3">
-              <h2>2022</h2>
-            </td>
-            <td></td>
-            <td colspan="3">
-              <h2>2021</h2>
-            </td>
-          </tr>
-          <tr class="empty-row top-table-header">
-            <td></td>
-            <td></td>
-            <td colspan="3">
-              <hr />
-            </td>
-            <td></td>
-            <td colspan="3">
-              <hr />
-            </td>
-          </tr>
-          <tr class="unit-row">
-            <td class="scale">(x 1.000)</td>
-            <td>Ref.</td>
-            <td>€</td>
-            <td></td>
-            <td>€</td>
-            <td></td>
-            <td>€</td>
-            <td></td>
-            <td>€</td>
-          </tr>
-        </tbody>
-        <tbody>
           <tr class="empty-row">
             <td colspan="9"></td>
           </tr>
@@ -2516,8 +2554,6 @@
       <p>Indien De Middelgrote B.V. eigen aandelen inkoopt, wordt de verkrijgingsprijs van de ingekochte aandelen in mindering gebracht op de overige reserves, of op andere reserves mits de statuten dit toestaan, totdat deze aandelen worden ingetrokken of worden verkocht. Indien ingekochte aandelen worden verkocht, komt de opbrengst uit verkoop ten gunste van de overige reserves of andere reserves in het eigen vermogen.
         De opbrengst komt ten gunste van de reserve waarop eerder de inkoop van deze aandelen in mindering is gebracht.</p>
       <p>Kosten die direct samenhangen met de inkoop, verkoop en/of uitgifte van nieuwe aandelen worden rechtstreeks ten laste gebracht van het eigen vermogen, onder verrekening van relevante winstbelastingeffecten.</p>
-      <h3>Herwaarderingsreserve</h3>
-      <p>Indien herwaarderingen in de herwaarderingsreserve onder aftrek van relevante (latente) belastingverplichtingen zijn verwerkt, worden de gerealiseerde herwaarderingen bruto ten gunste van de winst-en-verliesrekening gebracht. De corresponderende vrijval van de (latente) belastingverplichtingen wordt onder de post belastingen ten laste van het resultaat gebracht.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2531,6 +2567,8 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
+      <h3>Herwaarderingsreserve</h3>
+      <p>Indien herwaarderingen in de herwaarderingsreserve onder aftrek van relevante (latente) belastingverplichtingen zijn verwerkt, worden de gerealiseerde herwaarderingen bruto ten gunste van de winst-en-verliesrekening gebracht. De corresponderende vrijval van de (latente) belastingverplichtingen wordt onder de post belastingen ten laste van het resultaat gebracht.</p>
       <h3>Aandeel derden</h3>
       <p>Het aandeel derden als onderdeel van het groepsvermogen wordt gewaardeerd tegen het bedrag van het netto-belang in de netto-activa van de desbetreffende groepsmaatschappijen.</p>
       <p>Voor zover de desbetreffende groepsmaatschappij een negatieve nettovermogenswaarde heeft, worden de negatieve waarde en de eventuele verdere verliezen niet toegewezen aan het aandeel derden, tenzij de derden-aandeelhouders een feitelijke verplichting hebben en in staat zijn om de verliezen voor hun rekening te nemen.
@@ -2548,15 +2586,6 @@
         <li>...</li>
       </ul>
       <p>Op de Nederlandse pensioenregelingen zijn de bepalingen van de Nederlandse Pensioenwet van toepassing en worden op verplichte, contractuele of vrijwillige basispremies aan pensioenfondsen en verzekeringsmaatschappijen betaald door De Middelgrote B.V. De premies worden verantwoord als personeelskosten zodra deze verschuldigd zijn. Vooruitbetaalde premies worden opgenomen als overlopende activa indien dit tot een terugstorting leidt of tot een vermindering van toekomstige betalingen. Nog niet betaalde premies worden als verplichting op de balans opgenomen.</p>
-      <p>Voor bestaande verplichtingen (anders dan de te betalen premies) jegens de pensioenuitvoerder en/of werknemers wordt een voorziening opgenomen. Dit betreft een voorziening voor:</p>
-      <ul>
-        <li>de verplichting van De Middelgrote B.V. tot het verrichten van extra betalingen of herstelpremies als gevolg van een lage dekkingsgraad van het pensioenfonds;</li>
-        <li>onvoorwaardelijke nog niet gefinancierde indexaties;</li>
-        <li>overrente of winstdeling die (volgens het verzekeringscontract) beschikbaar komt aan De Middelgrote B.V.;</li>
-        <li>voor- of nadelen van individuele waardeoverdrachten die ten laste komen van De Middelgrote B.V.;</li>
-        <li>...</li>
-      </ul>
-      <p>Deze pensioenvoorzieningen worden op basis van de beste schatting gewaardeerd. Hierbij is de verplichting gewaardeerd tegen de contante waarde van de uitgaven die naar verwachting noodzakelijk zijn om de verplichting af te wikkelen. Als disconteringsvoet voor de contantmaking is de marktrente van hoogwaardige ondernemingsobligaties genomen.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2570,6 +2599,15 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
+      <p>Voor bestaande verplichtingen (anders dan de te betalen premies) jegens de pensioenuitvoerder en/of werknemers wordt een voorziening opgenomen. Dit betreft een voorziening voor:</p>
+      <ul>
+        <li>de verplichting van De Middelgrote B.V. tot het verrichten van extra betalingen of herstelpremies als gevolg van een lage dekkingsgraad van het pensioenfonds;</li>
+        <li>onvoorwaardelijke nog niet gefinancierde indexaties;</li>
+        <li>overrente of winstdeling die (volgens het verzekeringscontract) beschikbaar komt aan De Middelgrote B.V.;</li>
+        <li>voor- of nadelen van individuele waardeoverdrachten die ten laste komen van De Middelgrote B.V.;</li>
+        <li>...</li>
+      </ul>
+      <p>Deze pensioenvoorzieningen worden op basis van de beste schatting gewaardeerd. Hierbij is de verplichting gewaardeerd tegen de contante waarde van de uitgaven die naar verwachting noodzakelijk zijn om de verplichting af te wikkelen. Als disconteringsvoet voor de contantmaking is de marktrente van hoogwaardige ondernemingsobligaties genomen.</p>
       <p>Indien de periode waarover de uitgaven contant worden gemaakt niet langer is dan een jaar, is de verplichting niet tegen de contante waarde opgenomen.
         Toevoegingen aan en vrijval van pensioenvoorzieningen worden ten laste respectievelijk ten gunste van de winst-en-verliesrekening gebracht.</p>
       <h5>Buitenlandse pensioenregelingen</h5>
@@ -2582,15 +2620,6 @@
       <h4>Voorziening voor verwijderingsverplichtingen</h4>
       <p>Indien en voor zover De Middelgrote B.V. aansprakelijk is voor de kosten van verwijdering op basis van haar marktaandeel in enig jaar, neemt De Middelgrote B.V. in dat jaar een voorziening op voor haar aandeel in de geschatte kosten van verwijdering gerelateerd aan het marktaandeel van dat jaar.
         Indien en voor zover de productie, respectievelijk het op de markt brengen van nieuwe producten, resulteert in een verplichting tot verwijdering, neemt De Middelgrote B.V. op het moment van vervaardiging, respectievelijk het op de markt brengen van de desbetreffende producten een voorziening op.</p>
-      <p>Indien wordt deelgenomen in een verwijderingsfonds en betalingen worden verricht aan het fonds ter vergoeding of afwikkeling van de verwijderingsverplichtingen, wordt vastgesteld of de betaling leidt tot afwikkeling van de (in rechte afdwingbare) verplichting. Het gaat om de volgende twee mogelijke situaties:</p>
-      <ul>
-        <li>Indien en voor zover de betaling niet leidt tot afwikkeling van de (in rechte afdwingbare) verplichting, wordt het recht op vergoeding uit het fonds als een afzonderlijk actief opgenomen in de balans tot maximaal de aanspraak op de activa in het verwijderingsfonds beschikbaar voor de afwikkeling van de verplichting van de rechtspersoon.</li>
-        <li>Indien en voor zover de betaling wel leidt tot afwikkeling van de (in rechte afdwingbare) verplichting, wordt deze niet langer in de balans opgenomen.</li>
-      </ul>
-      <h4>Voorziening jubilea</h4>
-      <p>De voorziening jubilea wordt opgenomen tegen de contante waarde van de verwachte uitkeringen gedurende het dienstverband. Bij de berekening van de voorziening wordt onder meer rekening gehouden met verwachte salarisstijgingen en de blijfkans. Bij het contant maken is de marktrente van hoogwaardige ondernemingsobligaties ad 0% (2021: 0%) als disconteringsvoet gehanteerd.</p>
-      <h4>Voorziening groot onderhoud gebouwen</h4>
-      <p>Voor uitgaven voor groot onderhoud van gebouwen wordt een voorziening gevormd om deze lasten gelijkmatig te verdelen over een aantal boekjaren. De toevoegingen aan de voorziening wordt bepaald op basis van het geschatte bedrag van het groot onderhoud en de periode die telkens tussen de werkzaamheden voor groot onderhoud verloopt.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2604,6 +2633,15 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
+      <p>Indien wordt deelgenomen in een verwijderingsfonds en betalingen worden verricht aan het fonds ter vergoeding of afwikkeling van de verwijderingsverplichtingen, wordt vastgesteld of de betaling leidt tot afwikkeling van de (in rechte afdwingbare) verplichting. Het gaat om de volgende twee mogelijke situaties:</p>
+      <ul>
+        <li>Indien en voor zover de betaling niet leidt tot afwikkeling van de (in rechte afdwingbare) verplichting, wordt het recht op vergoeding uit het fonds als een afzonderlijk actief opgenomen in de balans tot maximaal de aanspraak op de activa in het verwijderingsfonds beschikbaar voor de afwikkeling van de verplichting van de rechtspersoon.</li>
+        <li>Indien en voor zover de betaling wel leidt tot afwikkeling van de (in rechte afdwingbare) verplichting, wordt deze niet langer in de balans opgenomen.</li>
+      </ul>
+      <h4>Voorziening jubilea</h4>
+      <p>De voorziening jubilea wordt opgenomen tegen de contante waarde van de verwachte uitkeringen gedurende het dienstverband. Bij de berekening van de voorziening wordt onder meer rekening gehouden met verwachte salarisstijgingen en de blijfkans. Bij het contant maken is de marktrente van hoogwaardige ondernemingsobligaties ad 0% (2021: 0%) als disconteringsvoet gehanteerd.</p>
+      <h4>Voorziening groot onderhoud gebouwen</h4>
+      <p>Voor uitgaven voor groot onderhoud van gebouwen wordt een voorziening gevormd om deze lasten gelijkmatig te verdelen over een aantal boekjaren. De toevoegingen aan de voorziening wordt bepaald op basis van het geschatte bedrag van het groot onderhoud en de periode die telkens tussen de werkzaamheden voor groot onderhoud verloopt.</p>
       <h4>Voorziening negatieve deelneming</h4>
       <h4>Voorziening loondoorbetaling bij ziekte</h4>
       <p>De voorziening vanwege loondoorbetaling bij ziekte wordt gevormd voor op balansdatum bestaande verplichtingen tot het in de toekomst doorbetalen van beloningen aan personeelsleden die op balansdatum naar verwachting blijvend of geheel niet in staat zijn om werkzaamheden te verrichten door ziekte of arbeidsongeschiktheid. In deze voorziening zijn tevens begrepen eventuele (wettelijke) ontslagvergoedingen te betalen aan deze personeelsleden. De voorziening loondoorbetaling bij ziekte wordt opgenomen tegen de contante waarde van de verwachte loondoorbetalingen gedurende het dienstverband.</p>
@@ -2611,6 +2649,19 @@
       Langlopende schulden, betreffen schulden die niet binnen 12 maanden na balansdatum kunnen worden opgeëist, worden bij de eerste verwerking gewaardeerd tegen reële waarde. Transactiekosten die direct zijn toe te rekenen aan de verwerving van de langlopende schulden worden in de waardering bij eerste verwerking opgenomen. Langlopende schulden worden na eerste verwerking gewaardeerd tegen geamortiseerde kostprijs, zijnde het ontvangen bedrag rekening houdend met agio of disagio en onder aftrek van transactiekosten. Het verschil tussen de bepaalde boekwaarde en de uiteindelijke aflossingswaarde wordt op basis van de effectieve rente gedurende de geschatte looptijd van de langlopende schulden in de winst-en-verliesrekening als interestlast verwerkt.
       <h3>Kortlopende schulden</h3>
       <p>Kortlopende schulden, betreffen schulden die binnen 12 maanden na balansdatum kunnen worden opgeëist en worden bij de eerste verwerking gewaardeerd tegen reële waarde. Kortlopende schulden worden na eerste verwerking gewaardeerd tegen geamortiseerde kostprijs, zijnde het ontvangen bedrag rekening houdend met agio of disagio en onder aftrek van transactiekosten. Dit is meestal de nominale waarde.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <h2>Grondslagen voor bepaling van het resultaat</h2>
       <h3>Algemeen</h3>
       <p>Het resultaat wordt bepaald als het verschil tussen de opbrengstwaarde van de geleverde prestaties en de kosten en andere lasten over het jaar. De opbrengsten op transacties worden verantwoord in het jaar waarin zij zijn gerealiseerd.</p>
@@ -2625,19 +2676,6 @@
       <p>Netto-omzet omvat de opbrengsten uit levering van goederen en diensten en gerealiseerde projectopbrengsten uit hoofde van onderhanden projecten onder aftrek van kortingen en dergelijke en van over de omzet geheven belastingen. Hierbij worden de individuele prestatieverplichtingen geïdentificeerd. Vervolgens wordt de transactieprijs vastgesteld en deze wordt toegerekend aan de individuele prestatieverplichting. Hierbij wordt rekening gehouden met kortingen en dergelijke en van over de omzet geheven belastingen.</p>
       <h4>Verkoop van goederen</h4>
       <p>Opbrengsten uit de verkoop van goederen worden verwerkt zodra alle belangrijke rechten en risico’s met betrekking tot de eigendom van de goederen zijn overgedragen aan de koper.</p>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
       <h4>Verlenen van diensten</h4>
       <p>Verantwoording van opbrengsten uit de levering van diensten geschiedt naar rato van de geleverde prestaties, gebaseerd op de verrichte diensten tot aan de balansdatum in verhouding tot de in totaal te verrichten diensten.</p>
       <h3>Kostprijs van de omzet</h3>
@@ -2649,13 +2687,6 @@
       <h3>Personeelsbeloningen</h3>
       <h4>Algemeen</h4>
       <p>Personeelsbeloningen (lonen, sociale lasten enz.) vormen geen aparte regel in de winst-en-verliesrekening. Deze kosten zijn opgenomen in andere onderdelen van de winst-en-verliesrekening, te weten kostprijs omzet, ....... [verder aanvullen hetgeen van toepassing is]. Voor een nadere specificatie worden verwezen naar de betreffende toelichting.</p>
-      <h4>Periodiek betaalbare beloningen</h4>
-      <p>Lonen, salarissen en sociale lasten worden op grond van de arbeidsvoorwaarden verwerkt in de winst-en-verliesrekening.</p>
-      <h4>Pensioenen</h4>
-      <p>De Middelgrote B.V. heeft alle pensioenregelingen verwerkt volgens de verplichtingenbenadering. De over het verslagjaar verschuldigde premie wordt als last verantwoord. Mutaties in de pensioenvoorziening worden ook in de winst-en-verliesrekening verwerkt. Zie ook de grondslagen voor waardering van activa en passiva, bij Pensioenvoorziening. Hiernaar wordt ook verwezen voor wat betreft pensioenregelingen van dochterondernemingen in het buitenland.</p>
-      <h4>Aandelenoptieregeling en aandelenbonusregeling</h4>
-      <p>De Middelgrote B.V. heeft een aandelenoptieregeling voor directie en personeel en een aandelenbonusregeling voor senior management. De waarde van deze regelingen wordt als kosten in de winst-en-verliesrekening verwerkt. Het totale als kosten te verwerken bedrag is de reële waarde van de toegekende (opties op) aandelen zonder rekening te houden met prestatie-gerelateerde voorwaarden. Met prestatie-gerelateerde voorwaarden wordt rekening gehouden bij het bepalen van het aantal aandelen dat naar verwachting onvoorwaardelijk zal worden toegekend. Gedurende de periode dat die prestaties worden verricht, wordt het totale als kosten te verwerken bedrag lineair ten laste van het resultaat gebracht.</p>
-      <p>Indien de toegekende (opties op) aandelen in aandelen worden afgewikkeld, wordt het ten laste van het resultaat gebrachte bedrag ook in het eigen vermogen verwerkt. Ontvangsten bij de afwikkeling van de onvoorwaardelijk toegekende (opties op) aandelen worden ten gunste van het eigen vermogen gebracht.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2669,9 +2700,16 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
+      <h4>Periodiek betaalbare beloningen</h4>
+      <p>Lonen, salarissen en sociale lasten worden op grond van de arbeidsvoorwaarden verwerkt in de winst-en-verliesrekening.</p>
+      <h4>Pensioenen</h4>
+      <p>De Middelgrote B.V. heeft alle pensioenregelingen verwerkt volgens de verplichtingenbenadering. De over het verslagjaar verschuldigde premie wordt als last verantwoord. Mutaties in de pensioenvoorziening worden ook in de winst-en-verliesrekening verwerkt. Zie ook de grondslagen voor waardering van activa en passiva, bij Pensioenvoorziening. Hiernaar wordt ook verwezen voor wat betreft pensioenregelingen van dochterondernemingen in het buitenland.</p>
+      <h4>Aandelenoptieregeling en aandelenbonusregeling</h4>
+      <p>De Middelgrote B.V. heeft een aandelenoptieregeling voor directie en personeel en een aandelenbonusregeling voor senior management. De waarde van deze regelingen wordt als kosten in de winst-en-verliesrekening verwerkt. Het totale als kosten te verwerken bedrag is de reële waarde van de toegekende (opties op) aandelen zonder rekening te houden met prestatie-gerelateerde voorwaarden. Met prestatie-gerelateerde voorwaarden wordt rekening gehouden bij het bepalen van het aantal aandelen dat naar verwachting onvoorwaardelijk zal worden toegekend. Gedurende de periode dat die prestaties worden verricht, wordt het totale als kosten te verwerken bedrag lineair ten laste van het resultaat gebracht.</p>
+      <p>Indien de toegekende (opties op) aandelen in aandelen worden afgewikkeld, wordt het ten laste van het resultaat gebrachte bedrag ook in het eigen vermogen verwerkt. Ontvangsten bij de afwikkeling van de onvoorwaardelijk toegekende (opties op) aandelen worden ten gunste van het eigen vermogen gebracht.</p>
       <p>Indien de toegekende (opties op) aandelen in geld worden afgewikkeld, wordt het ten laste van het resultaat gebrachte bedrag als verplichting verwerkt. Per iedere balansdatum wordt de reële waarde van de aldus opgenomen verplichting opnieuw bepaald. Eventuele veranderingen worden in de winst-en-verliesrekening verwerkt.</p>
       <p>De belangrijkste bepalingen van de aandelenoptieregeling zijn ....</p>
-      <p>De belangrijkste bepalingen van de aandelenbonusregeling zijn....</p>
+      <p>De belangrijkste bepalingen van de aandelenbonusregeling zijn ....</p>
       <h3>Afschrijvingen op immateriële en materiële vaste activa</h3>
       <p>Afschrijvingskosten vormen geen aparte regel in de winst-en-verliesrekening. Deze kosten zijn opgenomen in andere onderdelen van de winst-en-verliesrekening, te weten kostprijs omzet, ....... [verder aanvullen hetgeen van toepassing is]. Voor een nadere specificatie worden verwezen naar de betreffende toelichting.</p>
       <p>Immateriële vaste activa inclusief goodwill en materiële vaste activa worden vanaf het moment van gereedheid voor ingebruikneming afgeschreven over de verwachte toekomstige gebruiksduur van het actief. Over terreinen en vastgoedbeleggingen wordt niet afgeschreven.</p>
@@ -2679,6 +2717,19 @@
       <p>Boekwinsten en -verliezen uit de incidentele verkoop van materiële vaste activa zijn begrepen onder de afschrijvingen.</p>
       <h3>Bijzondere posten</h3>
       <p>Bijzondere posten zijn baten of lasten die voortvloeien uit gebeurtenissen of transacties die behoren tot de normale, niet-incidentele bedrijfsuitoefening, maar die omwille van de analyse en vergelijkbaarheid van de resultaten apart toegelicht worden op grond van de aard, omvang of het incidentele karakter van de post. Hierbij worden tevens baten en lasten die aan een ander boekjaar moeten worden toegerekend naar aard en omvang toegelicht.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <h3>Overheidssubsidies en overheidsheffingen</h3>
       <p>Exploitatiesubsidies worden als bate verantwoord in de winst-en-verliesrekening in het jaar waarin de gesubsidieerde kosten zijn gemaakt of opbrengsten zijn gederfd, of wanneer een gesubsidieerd exploitatietekort zich heeft voorgedaan. De baten worden verantwoord als het waarschijnlijk is dat deze worden ontvangen.</p>
       <p>Subsidies met betrekking tot investeringen in materiële vaste activa worden in mindering gebracht op het desbetreffende actief en als onderdeel van de afschrijvingen verwerkt in de winst-en-verliesrekening</p>
@@ -2690,19 +2741,6 @@
       <p>Koersverschillen die optreden bij de afwikkeling of omrekening van monetaire posten worden in de winst-en-verliesrekening verwerkt in de periode dat zij zich voordoen, tenzij hedge-accounting wordt toegepast.</p>
       <h4>Dividenden</h4>
       <p>Te ontvangen dividenden van niet op nettovermogenswaarde gewaardeerde deelnemingen en effecten, worden verantwoord zodra De Middelgrote B.V. het recht hierop heeft verkregen.</p>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
       <h4>Waardeveranderingen financiële instrumenten gewaardeerd tegen reële waarde</h4>
       <p>Waardeveranderingen van de volgende financiële instrumenten (waarop geen hedge-accounting wordt toegepast) worden rechtstreeks verwerkt in de winst-en-verliesrekening:</p>
       <ul>
@@ -2715,11 +2753,6 @@
       <p>Gerealiseerde waardevermeerderingen van de onder de financiële vaste activa of vlottende activa opgenomen effecten worden op het moment van realisatie uit de herwaarderingsreserve ten gunste van het resultaat gebracht.</p>
       <h3>Activeren van rentelasten</h3>
       <p>Rentelasten worden geactiveerd gedurende de periode van vervaardiging van een actief, indien het een aanmerkelijke hoeveelheid tijd vergt om het actief gebruiks- of verkoopklaar te maken. De te activeren rente wordt berekend op basis van de verschuldigde rente over specifiek voor de vervaardiging opgenomen leningen en op basis van de gewogen rentevoet van leningen die niet specifiek aan de vervaardiging van het actief zijn toe te rekenen, in verhouding tot de uitgaven en periode van vervaardiging.</p>
-      <h3>Belastingen</h3>
-      <p>De belasting over het resultaat wordt berekend over het resultaat voor belastingen in de winst-en-verliesrekening, rekening houdend met beschikbare, fiscaal compensabele verliezen uit voorgaande boekjaren (voor zover niet opgenomen in de latente belastingvorderingen) en vrijgestelde winstbestanddelen en na bijtelling van niet-aftrekbare kosten. Tevens wordt rekening gehouden met wijzigingen die optreden in de latente belastingvorderingen en latente belastingschulden uit hoofde van wijzigingen in het te hanteren belastingtarief.
-        (Latente) belastingvorderingen en verplichtingen worden gewaardeerd in overeenstemming met de (voorgenomen) fiscale aangifte, tenzij het niet waarschijnlijk is dat de fiscale autoriteiten hiermee zullen instemmen. Alsdan wordt de waardering van de onzekere belastingpositie gebaseerd op de beste schatting van het afwijkende belastingbedrag ten opzichte van de (voorgenomen) aangifte.</p>
-      <h3>Resultaat deelnemingen (gewaardeerd op netto-vermogenswaarde)</h3>
-      <p>Het resultaat is het bedrag waarmee de boekwaarde van de deelneming sinds de voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat voor zover dit aan De Middelgrote B.V. wordt toegerekend.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2733,6 +2766,11 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
+      <h3>Belastingen</h3>
+      <p>De belasting over het resultaat wordt berekend over het resultaat voor belastingen in de winst-en-verliesrekening, rekening houdend met beschikbare, fiscaal compensabele verliezen uit voorgaande boekjaren (voor zover niet opgenomen in de latente belastingvorderingen) en vrijgestelde winstbestanddelen en na bijtelling van niet-aftrekbare kosten. Tevens wordt rekening gehouden met wijzigingen die optreden in de latente belastingvorderingen en latente belastingschulden uit hoofde van wijzigingen in het te hanteren belastingtarief.
+        (Latente) belastingvorderingen en verplichtingen worden gewaardeerd in overeenstemming met de (voorgenomen) fiscale aangifte, tenzij het niet waarschijnlijk is dat de fiscale autoriteiten hiermee zullen instemmen. Alsdan wordt de waardering van de onzekere belastingpositie gebaseerd op de beste schatting van het afwijkende belastingbedrag ten opzichte van de (voorgenomen) aangifte.</p>
+      <h3>Resultaat deelnemingen (gewaardeerd op netto-vermogenswaarde)</h3>
+      <p>Het resultaat is het bedrag waarmee de boekwaarde van de deelneming sinds de voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat voor zover dit aan De Middelgrote B.V. wordt toegerekend.</p>
       <h2>Financiële instrumenten en risicobeheersing</h2>
       <h3>Marktrisico</h3>
       <h4>Valutarisico</h4>
@@ -2746,6 +2784,19 @@
       <p>Voor vorderingen en schulden met variabele renteafspraken loopt De Middelgrote B.V. risico ten aanzien van toekomstige kasstromen; met betrekking tot vastrentende vorderingen en schulden loopt De Middelgrote B.V. risico’s over de reële waarde als gevolg van wijzigingen in de marktrente.
         Met betrekking tot de vorderingen worden geen financiële derivaten met betrekking tot afdekking van het renterisico gecontracteerd.</p>
       <p>Met betrekking tot bepaalde vastrentende schulden (achtergestelde leningen) heeft De Middelgrote B.V. renteswaps gecontracteerd, zodat zij variabele rente ontvangt en vaste rente betaalt.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <h3>Kredietrisico</h3>
       <p>De Middelgrote B.V. heeft geen significante concentraties van kredietrisico. Verkoop vindt plaats aan afnemers die voldoen aan de kredietwaardigheidstoets van De Middelgrote B.V. Verkoop vindt plaats op basis van krediettermijnen tussen de 8 en 60 dagen. Voor grote leveringen kan een afwijkende krediettermijn van toepassing zijn. In dat geval worden aanvullende zekerheden gevraagd, waaronder garantiestellingen.</p>
       <p>De liquide middelen staan uit bij banken die minimaal een A-rating hebben.</p>
@@ -2845,9 +2896,7 @@
             <td colspan="8"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Verkrijgings- of vervaardigingsprijzen</h3>
-            </td>
+            <td>Verkrijgings- of vervaardigingsprijzen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2857,9 +2906,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Cumulatieve waardeverminderingen en afschrijvingen</h3>
-            </td>
+            <td>Cumulatieve waardeverminderingen en afschrijvingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2887,9 +2934,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h3>Boekwaarde</h3>
-            </td>
+            <td>Boekwaarde</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2935,9 +2980,7 @@
             <td colspan="8"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Investeringen</h3>
-            </td>
+            <td>Investeringen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2947,9 +2990,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Desinvesteringen</h3>
-            </td>
+            <td>Desinvesteringen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2959,9 +3000,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Nieuwe consolidaties</h3>
-            </td>
+            <td>Nieuwe consolidaties</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2971,9 +3010,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Afschrijvingen</h3>
-            </td>
+            <td>Afschrijvingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2983,9 +3020,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Waardeverminderingen</h3>
-            </td>
+            <td>Waardeverminderingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -2995,9 +3030,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Afschrijvingen desinvesteringen</h3>
-            </td>
+            <td>Afschrijvingen desinvesteringen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3025,9 +3058,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h3>Saldo</h3>
-            </td>
+            <td>Saldo</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3073,9 +3104,7 @@
             <td colspan="8"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Verkrijgings- of vervaardigingsprijzen</h3>
-            </td>
+            <td>Verkrijgings- of vervaardigingsprijzen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3085,9 +3114,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Cumulatieve waardeverminderingen en afschrijvingen</h3>
-            </td>
+            <td>Cumulatieve waardeverminderingen en afschrijvingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3115,9 +3142,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h3>Boekwaarde</h3>
-            </td>
+            <td>Boekwaarde</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3148,9 +3173,7 @@
             <td colspan="8"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Afschrijvingspercentage</h3>
-            </td>
+            <td>Afschrijvingspercentages</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3183,7 +3206,7 @@
     <div class="footer">
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
-    </div>
+    </div> 
   </div>
 
   <div class="page">
@@ -3286,9 +3309,7 @@
             <td colspan="10"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Verkrijgings- of vervaardigingsprijzen</h3>
-            </td>
+            <td>Verkrijgings- of vervaardigingsprijzen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3300,9 +3321,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Cumulatieve waardeverminderingen en afschrijvingen</h3>
-            </td>
+            <td>Cumulatieve waardeverminderingen en afschrijvingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3336,9 +3355,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h3>Boekwaarde</h3>
-            </td>
+            <td>Boekwaarde</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3392,9 +3409,7 @@
             <td colspan="10"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Investeringen</h3>
-            </td>
+            <td>Investeringen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3406,9 +3421,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Desinvesteringen</h3>
-            </td>
+            <td>Desinvesteringen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3420,9 +3433,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Nieuwe consolidaties</h3>
-            </td>
+            <td>Afschrijvingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3434,9 +3445,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Afschrijvingen</h3>
-            </td>
+            <td>Waardeverminderingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3448,9 +3457,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Waardeverminderingen</h3>
-            </td>
+            <td>Terugneming van waardevermindering</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3462,9 +3469,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Afschrijvingen desinvesteringen</h3>
-            </td>
+            <td>Afschrijvingen desinvesteringen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3498,9 +3503,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h3>Saldo</h3>
-            </td>
+            <td>Saldo</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3554,9 +3557,7 @@
             <td colspan="10"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Verkrijgings- of vervaardigingsprijzen</h3>
-            </td>
+            <td>Verkrijgings- of vervaardigingsprijzen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3568,9 +3569,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>
-              <h3>Cumulatieve waardeverminderingen en afschrijvingen</h3>
-            </td>
+            <td>Cumulatieve waardeverminderingen en afschrijvingen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3604,9 +3603,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h3>Boekwaarde</h3>
-            </td>
+            <td>Boekwaarde</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -3643,9 +3640,7 @@
             <td colspan="10"></td>
           </tr>
           <tr>
-            <td>
-              <h3>Afschrijvingspercentage</h3>
-            </td>
+            <td>Afschrijvingspercentages</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -4597,26 +4592,24 @@
           <tr class="empty-row">
             <td colspan="4"></td>
           </tr>
+
+
+
+
           <tr>
-            <td>Grond- en hulpstoffen</td>
+            <td>Verrekenbare tijdelijke verschillen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>Onderhanden werk</td>
+            <td>Compensabele verliezen</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>Gereed product en handelsgoederen</td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Vooruitbetaald op voorraden</td>
+            <td>Verrekenbare tijdelijke verschillen in verband met investeringen in groepsmaatschappijen enz.</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -4665,9 +4658,6 @@
       <p>Van de niet-opgenomen verrekenbare tijdelijke verschillen en compensabele verliezen ten bedrage van € 0 (2021: € 0) is het (nog) niet waarschijnlijk dat toekomstige fiscale winst beschikbaar komt ter compensatie of dat verrekeningsmogelijkheden kunnen worden benut.</p>
       <h3>Overige vorderingen</h3>
       <p>Onder de overige vorderingen is een marktconforme lening aan een aandeelhouder begrepen voor een bedrag van € 0 (2021: € 0). De lening betreft een vastrentende lening met een rentepercentage van 0,0%. De lening heeft een looptijd van 0 jaar. Omtrent zekerheden is niets overeengekomen.</p>
-      <p>Voorraden met een boekwaarde van € 0 zijn met stil pandrecht bezwaard als zekerheid voor de kredietverlening door de bankier. Zie hiervoor ook de betreffende noot X “Schulden aan kredietinstellingen”.</p>
-      <p>De grond- en hulpstoffen die tegen lagere opbrengstwaarde zijn gewaardeerd, hebben op balansdatum een boekwaarde van € 0.</p>
-      <p>Terugneming van afwaardering heeft plaatsgevonden op gereed product ter waarde van € 0. Dit is het gevolg van ... (omstandigheden en/of gebeurtenissen benoemen).</p>
       <h2>Voorraden</h2>
       <table class="table-full col-m">
         <colgroup>
@@ -4795,11 +4785,11 @@
           <tr>
             <td></td>
             <td colspan="3">
-              <h2>31 december 2022</h2>
+              <h2>31-12-2022</h2>
             </td>
             <td></td>
             <td colspan="3">
-              <h2>31 december 2021</h2>
+              <h2>31-12-2021</h2>
             </td>
           </tr>
           <tr class="empty-row top-table-header">
@@ -6559,6 +6549,7 @@
       <p>Dit betreft een krediet in rekening-courant, het maximaal op te nemen krediet bedraagt € 0. Als zekerheid hiervoor is een (stil) pandrecht gevestigd op handelsdebiteuren en voorraden. Het rentepercentage is variabel en bedroeg in 2022 gemiddeld 0% (2021: 0%).</p>
       <h3>Schulden aan groepsmaatschappijen</h3>
       <p>Over het gemiddeld saldo van deze rekening-courantverhoudingen wordt 0% rente per jaar berekend (2021: 0%). Omtrent aflossing en zekerheden is niets overeengekomen.</p>
+      <h3>Belastingen en premies sociale verzekeringen</h3>
       <table class="table-full col-m">
         <colgroup>
           <col />
@@ -7641,12 +7632,6 @@
               <hr />
             </td>
           </tr>
-          <tr class="unit-row">
-            <td></td>
-            <td>€</td>
-            <td></td>
-            <td>€</td>
-          </tr>
         </tbody>
         <tbody>
           <tr class="empty-row">
@@ -8152,16 +8137,6 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>Effecten</td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-          </tr>
-          <tr>
             <td>Converteerbare obligatielening</td>
             <td>0</td>
             <td></td>
@@ -8227,10 +8202,23 @@
         <li>of en hoe eventuele prijs gerelateerde voorwaarden zijn verwerkt in de bepaling van de reële waarde.</li>
       </ul>
       <p>Het aldus bepaalde bedrag van € 0 is ten laste gekomen van de lonen en salarissen. Voor zover de bonusaandelen zijn verstrekt aan bestuurders, zijn deze als onderdeel van de beloning bestuurders opgenomen.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <h3>Uitgeoefende aandelenopties</h3>
       <p>Er zijn gedurende het boekjaar 0 aandelenopties uitgeoefend. Deze opties gaven recht op 0 aandelen, waarvan 0 aandelen in het boekjaar zijn uitgegeven en 0 aandelen eerder door de vennootschap zijn ingekocht.
         De gemiddelde beurskoers op het moment van uitoefening van de optierechten bedroeg € 0. Voorts zijn in maart 200x 0 nieuwe aandelen geplaatst bij houders van optierechten tegen een uitoefenprijs van € 0 per aandeel.</p>
-      <p>De mutaties in uitstaande aandelenopties in 2021 kunnen als volgt worden gespecificeerd:</p>
+      <p>De mutaties in uitstaande aandelenopties in 2022 kunnen als volgt worden gespecificeerd:</p>
       <table class="table-full col-s">
         <colgroup>
           <col />
@@ -8382,19 +8370,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
       <p>Van de per 31 december 2022 uitstaande aandelenopties zijn x opties nog niet afgedekt (2021: x). Van de reeds afgedekte opties is een gemiddelde prijs betaald van € 0 (2021: € 0).</p>
       <p>De mutaties in uitstaande aandelenopties voor bestuurders in 2022 kunnen als volgt worden gespecificeerd:</p>
       <table class="table-full col-s">
@@ -8548,6 +8523,19 @@
           </tr>
         </tbody>
       </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <p>De mutaties in uitstaande aandelenopties voor commissarissen in 2022 kunnen als volgt worden gespecificeerd:</p>
       <table class="table-full col-s">
         <colgroup>
@@ -8852,19 +8840,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
       <p>De per 31 december 2022 uitstaande aandelenopties zijn als volgt nader toe te lichten:</p>
       <table class="table-full col-s">
         <colgroup>
@@ -9009,6 +8984,19 @@
           </tr>
         </tbody>
       </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <p>De per 31 december 2022 uitstaande aandelenopties voor bestuurders zijn als volgt nader toe te lichten:</p>
       <table class="table-full col-s">
         <colgroup>
@@ -9230,7 +9218,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>Verstrekte opties</td>
+            <td>0,00 (looptijd tot 0x/0x/0x)</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -9240,17 +9228,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>Vervallen opties</td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-            <td></td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Uitgeoefende opties</td>
+            <td>0,00 (looptijd tot 0x/0x/0x)</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -9307,19 +9285,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
       <p>De per 31 december 2022 uitstaande aandelenopties voor personeelsleden zijn als volgt nader toe te lichten:</p>
       <table class="table-full col-s">
         <colgroup>
@@ -9471,6 +9436,19 @@
         <li>...</li>
         <li>...</li>
       </ul>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
       <p>De Middelgrote B.V. heeft zich ten doel gesteld de verplichtingen uit hoofde van de verleende optierechten voor 0% na te komen door het inkopen van eigen aandelen en voor 50% door het uitgeven van nieuwe aandelen. Per 31 december 2022 zijn [aantal] aandelen (31 december 2021: [aantal]) in verband hiermee ingekocht. Hiervoor is gemiddeld € 0 per aandeel (2021: € 0) betaald.</p>
       <h2>Overige rechten op aandelen</h2>
       Anders dan de aandelenoptieregeling voor het personeel heeft de vennootschap de volgende rechten verstrekt.
@@ -9485,19 +9463,6 @@
       <p>Per xx juni 201x hebben de houders van de converteerbare obligatie het recht om de schuldpapieren om te zetten in aandelen tegen een prijs per aandeel van € 0, resulterend in een potentiële uitgifte van 0 aandelen. Indien de marktprijs lager zou zijn dan de omruilprijs, hebben de houders van de converteerbare obligatie het recht tot terugbetaling van de lening tegen 0% van de nominale waarde.</p>
       <p>Per 31 december 2022 staan converteerbare obligaties uit. Er zijn geen wijzigingen opgetreden ten opzichte van voorgaand jaar.</p>
       <p>Indien conversie plaatsvindt in aandelen zal De Middelgrote B.V. nieuwe aandelen uitgeven.</p>
-    </div>
-    <div class="footer">
-      <div class="footer-content"></div>
-      <div class="footer-page-number"></div>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="header">
-      <div class="header-content"></div>
-      <div class="header-line"></div>
-    </div>
-    <div class="content">
       <h3>Overige optierechten</h3>
       <p>Overige optierechten betreffen rechten aan aandeelhouders van een overgenomen groepsmaatschappij. In 201x
         zijn 0 optierechten verstrekt, alle rechtgevend op 1 aandeel per optie. De uitoefenprijs is € 0 per optie.
@@ -10114,7 +10079,9 @@
             </td>
           </tr>
           <tr>
-            <td></td>
+            <td>
+              <h4>Resultaat na belastingen</h4>
+            </td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -11565,14 +11532,14 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>Belastingeffecten:</td>
+            <td>Belastingeffecten</td>
+            <td>0</td>
             <td></td>
+            <td>0</td>
             <td></td>
+            <td>0</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>0</td>
           </tr>
           <tr>
             <td>Gevormde herwaarderingen:</td>
@@ -12689,17 +12656,17 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h1 id="statutory-regulation-profit-appropriation">Statutaire regeling inzake de winstbestemming</h1>
-      <p>In de statuten is in artikel X het onderstaande opgenomen inzake de winstbestemming.</p>
-      <p>Uit de statuten blijkt dat de behaalde jaarwinst ter vrije beschikking staat van de algemene vergadering.
-        De houders van preferente aandelen hebben recht op een dividenduitkering van 0% van de door hen gehouden aandelen, indien en voor zover de jaarwinst daartoe toereikend is.</p>
-      <h1 id="special-statutory-rights-control">Bijzondere statutaire rechten inzake de zeggenschap</h1>
-      <p>Aan de volgende personen zijn preferente aandelen uitgegeven. Deze aandelen geven recht op het benoemen en /of ontslaan van de bestuurders van de vennootschap.</p>
-      <p>Het betreft:</p>
-      <h1 id="non-voting-or-non-profit-shares">Stemrechtloze dan wel winstrechtloze aandelen</h1>
-      <p>De vennootschap heeft …. aandelen uitgeven met een beperkt recht op de winst en de reserves van de vennootschap. Op deze aandelen wordt maximaal € 0,0 winst uitgekeerd.</p>
-      <h1>Nevenvestigingen</h1>
-      <p>In Duitsland en België zijn nevenvestigingen met dezelfde handelsnaam als De Middelgrote B.V.</p>
+      <h2 id="statutory-regulation-profit-appropriation">Statutaire regeling inzake de winstbestemming</h1>
+        <p>In de statuten is in artikel X het onderstaande opgenomen inzake de winstbestemming.</p>
+        <p>Uit de statuten blijkt dat de behaalde jaarwinst ter vrije beschikking staat van de algemene vergadering.
+          De houders van preferente aandelen hebben recht op een dividenduitkering van 0% van de door hen gehouden aandelen, indien en voor zover de jaarwinst daartoe toereikend is.</p>
+        <h2 id="special-statutory-rights-control">Bijzondere statutaire rechten inzake de zeggenschap</h1>
+          <p>Aan de volgende personen zijn preferente aandelen uitgegeven. Deze aandelen geven recht op het benoemen en /of ontslaan van de bestuurders van de vennootschap.</p>
+          <p>Het betreft:</p>
+          <h2 id="non-voting-or-non-profit-shares">Stemrechtloze dan wel winstrechtloze aandelen</h1>
+            <p>De vennootschap heeft …. aandelen uitgeven met een beperkt recht op de winst en de reserves van de vennootschap. Op deze aandelen wordt maximaal € 0,0 winst uitgekeerd.</p>
+            <h2>Nevenvestigingen</h1>
+              <p>In Duitsland en België zijn nevenvestigingen met dezelfde handelsnaam als De Middelgrote B.V.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
