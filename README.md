@@ -101,7 +101,7 @@ Dit template kan gebruikt worden voor de titelpagina
 
 ### 2.4 Header & Footer
 
-De inhoud van de header and footer is opgenomen als CSS in `<style>`
+De inhoud van de header and footer is opgenomen als CSS in `<style>` en kan tekstueel aangepast worden
 
 <details><summary>Footer</summary>
 
