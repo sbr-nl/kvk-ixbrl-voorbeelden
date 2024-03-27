@@ -47,6 +47,8 @@ De `<div class="content"></div>` moet worden gebruikt voor de inhoud van de pagi
 - Cursieve tekst: `<i></i>`
 - <ins>Onderstreepte</ins> tekst: `<u></u>`
 - <s>Doorstreepte</s> tekst: `<s></s>`
+- <sup>Superscript</sup> text: `<sup></sup>`
+- <sub>Subscript</sub> text: `<sub></sub>`
 - [Links](): `<a></a>`
 - <q>Inline citaten</q>: `<q></q>`
 - Ongeordende lijsten: `<ul></ul>` met geneste `<li></li>`
