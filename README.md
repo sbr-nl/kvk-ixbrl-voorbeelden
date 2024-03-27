@@ -1,5 +1,7 @@
 # iXBRL voorbeelden
 
+## 1. Templates
+
 Voor micro, kleine en middelgrote rechtspersonen is elk een template in iXBRL uitgewerkt.
 Dit zijn iXBRL versies van de door de NBA verstrekte jaarrekening voorbeelden en zijn gedeeltelijk getagd.
 De voorbeelden dienen enkel ter indicatie en derhalve kunnen er geen rechten aan worden ontleend.
@@ -10,7 +12,7 @@ Met als belangrijkste aandachtspunten:
 - tags moeten altijd gesloten worden: `<tag></tag>` of 'self closing': `<tag />`
 - de semantische tags uit HTML 5 mogen niet worden gebruikt
 
-## 2.Aanpassen van een template
+## 2. Aanpassen van een template
 
 ### 2.1 Standaard pagina layout:
 
