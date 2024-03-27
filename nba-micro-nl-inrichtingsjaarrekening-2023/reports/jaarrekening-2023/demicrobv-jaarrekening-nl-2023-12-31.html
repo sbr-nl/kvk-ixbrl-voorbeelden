@@ -132,6 +132,13 @@
       font-style: italic;
     }
 
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
     /* paragraphs */
     p {
       white-space: pre-line;
@@ -316,27 +323,27 @@
     }
 
     table.col-xs col:nth-child(2n+2),
-    table.col-xs:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 10%;
     }
 
     table.col-s col:nth-child(2n+2),
-    table.col-s:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 12.5%;
     }
 
     table.col-m col:nth-child(2n+2),
-    table.col-m:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 15%;
     }
 
     table.col-l col:nth-child(2n+2),
-    table.col-l:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 17.5%;
     }
 
     table.col-xl col:nth-child(2n+2),
-    table.col-xl:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 20%;
     }
 
@@ -353,7 +360,7 @@
 
     table col:nth-child(2n+3),
     table.annotated col:nth-child(2n+4),
-    table.single col:nth-child(2n+2) {
+    table.no-row-headers col:nth-child(2n+2) {
       background-color: #ffffff;
       width: 8px;
     }

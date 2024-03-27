@@ -130,6 +130,13 @@
       font-style: italic;
     }
 
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
     /* paragraphs */
     p {
       white-space: pre-line;
@@ -314,27 +321,27 @@
     }
 
     table.col-xs col:nth-child(2n+2),
-    table.col-xs:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 10%;
     }
 
     table.col-s col:nth-child(2n+2),
-    table.col-s:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 12.5%;
     }
 
     table.col-m col:nth-child(2n+2),
-    table.col-m:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 15%;
     }
 
     table.col-l col:nth-child(2n+2),
-    table.col-l:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 17.5%;
     }
 
     table.col-xl col:nth-child(2n+2),
-    table.col-xl:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 20%;
     }
 
@@ -351,7 +358,7 @@
 
     table col:nth-child(2n+3),
     table.annotated col:nth-child(2n+4),
-    table.single col:nth-child(2n+2) {
+    table.no-row-headers col:nth-child(2n+2) {
       background-color: #ffffff;
       width: 8px;
     }
@@ -1854,6 +1861,7 @@
       <p>Verkoop vindt plaats zowel in het binnenland als in het buitenland, waarbij de landen van de Europese Unie de belangrijkste afzetmarkt vormen.</p>
       <h3>Continuïteit</h3>
       <p>Het eigen vermogen van De Kleine B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Kleine B.V.</p>
+      <hr/>
       <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt:</p>
       <p>.........
         .........</p>

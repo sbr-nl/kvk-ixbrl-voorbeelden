@@ -118,6 +118,13 @@
       display: none;
     }
 
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
     /* first page */
     first-page-title,
     first-page-subtitle {
@@ -314,27 +321,27 @@
     }
 
     table.col-xs col:nth-child(2n+2),
-    table.col-xs:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 10%;
     }
 
     table.col-s col:nth-child(2n+2),
-    table.col-s:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 12.5%;
     }
 
     table.col-m col:nth-child(2n+2),
-    table.col-m:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 15%;
     }
 
     table.col-l col:nth-child(2n+2),
-    table.col-l:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 17.5%;
     }
 
     table.col-xl col:nth-child(2n+2),
-    table.col-xl:is(.annotated, .single) col:nth-child(2n+3) {
+    table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 20%;
     }
 
@@ -351,7 +358,7 @@
 
     table col:nth-child(2n+3),
     table.annotated col:nth-child(2n+4),
-    table.single col:nth-child(2n+2) {
+    table.no-row-headers col:nth-child(2n+2) {
       background-color: #ffffff;
       width: 8px;
     }
@@ -4494,7 +4501,7 @@
     <div class="content">
       <h3>Deelnemingen</h3>
       <p>De rechtstreeks door De Middelgrote B.V. gehouden kapitaalbelangen zijn:</p>
-      <table class="table-full col-xl single">
+      <table class="table-full col-xl no-row-headers">
         <colgroup>
           <col />
           <col />
@@ -10636,7 +10643,7 @@
       </table>
       <p>Voor de onder deze post opgenomen deelneming van 100% in B.V. X te Assen geldt dat de waardering hiervan eind 2022 op nihil is gesteld (eind 2021: nihil). De Middelgrote B.V. heeft voor deze vennootschap geen aansprakelijkheidsverklaring of andere borgstelling afgegeven. Het vermogen van deelneming B.V. X bedraagt eind 2022 negatief € 0 (eind 2021: positief € 0). Het door de deelneming geleden verlies over 2022 bedraagt € 0.</p>
       <p>De rechtstreeks door De Middelgrote B.V. gehouden deelnemingen zijn:</p>
-      <table class="table-full col-xl single">
+      <table class="table-full col-xl no-row-headers">
         <colgroup>
           <col>
           <col>
