@@ -1,5 +1,7 @@
 # iXBRL voorbeelden
 
+## Templates
+
 Voor micro, kleine en middelgrote rechtspersonen is elk een template in iXBRL uitgewerkt.
 Dit zijn iXBRL versies van de door de NBA verstrekte jaarrekening voorbeelden en zijn gedeeltelijk getagd.
 De voorbeelden dienen enkel ter indicatie en derhalve kunnen er geen rechten aan worden ontleend.
