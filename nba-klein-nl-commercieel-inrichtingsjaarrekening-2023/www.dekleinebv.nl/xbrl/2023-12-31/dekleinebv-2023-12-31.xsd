@@ -6,7 +6,7 @@
       <link:linkbaseRef xlink:type="simple" xlink:href="dekleinebv-2023-12-31_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="dekleinebv-2023-12-31_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="dekleinebv-2023-12-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
-      <link:linkbaseRef xlink:type="simple" xlink:href="dekleinebv-2023-12-31-label.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="dekleinebv-2023-12-31-lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:roleType roleURI="https://www.dekleinebv.nl/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
         <link:definition>00000 - Document and Entity information</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
@@ -26,11 +26,17 @@
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.dekleinebv.nl/role/SigningManagingSupervisoryDirectors" id="SigningManagingSupervisoryDirectors">
-        <link:definition>00400 - SigningManagingSupervisoryDirectors</link:definition>
+        <link:definition>00500 - Signing managing and supervisory directors</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.dekleinebv.nl/role/Anchoring" id="Anchoring">
-        <link:definition>Anchoring</link:definition>
+        <link:definition>00600 - Anchoring</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.dekleinebv.nl/role/RevaluationReserveStatementOfChanges" id="RevaluationReserveStatementOfChanges">
+        <link:definition>00400 - Revaluation reserve: Statement of changes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
     </xsd:appinfo>
@@ -44,4 +50,6 @@
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
   <xsd:element name="ReceivablesOtherAccruedIncome" id="klein_ReceivablesOtherAccruedIncome" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
   <xsd:element name="PayablesOtherAccrualsAndDeferredIncomeCurrent" id="klein_PayablesOtherAccrualsAndDeferredIncomeCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant"/>
+  <xsd:element name="RevaluationReserveRevaluationsChangesValueFinancialInstruments" id="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xsd:element name="RevaluationReserveRevaluationsChangesValueHedgeInstrument" id="klein_RevaluationReserveRevaluationsChangesValueHedgeInstrument" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
 </xsd:schema>
