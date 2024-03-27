@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" xmlns:demicrobv="https://www.demicrobv.nl/xbrl/2023-12-31" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
 
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>nba-micro-nl-inrichtingsjaarrekenning-2023</title>
@@ -121,15 +120,18 @@
     }
 
     /* first page */
-    first-page-title,
-    first-page-subtitle {
-      display: block;
+    .first-page-title,
+    .first-page-subtitle {
       font-size: 2rem;
     }
 
-    first-page-title {
+    .first-page-title {
       font-weight: bold;
       font-style: italic;
+    }
+
+    .first-page-subtitle {
+      font-weight: normal;
     }
 
     /* horizontal rules */
@@ -538,14 +540,14 @@
       <div class="title">
         <div class="title-line"></div>
         <div class="title-content">
-          <first-page-title>Voorbeeld jaarrekening 2023</first-page-title>
-          <first-page-subtitle>
+          <div class="first-page-title">Voorbeeld jaarrekening 2023</div>
+          <div class="first-page-subtitle">
             <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Micro</ix:nonNumeric>
             <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric>
-          </first-page-subtitle>
-          <first-page-subtitle>
+          </div>
+          <div class="first-page-subtitle">
             <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Statutaire vestigingsplaats</ix:nonNumeric>
-          </first-page-subtitle>
+          </div>
           <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeMicro" format="ixt:fixed-true" id="ID000050"></ix:nonNumeric>
           <ix:nonNumeric contextRef="context_1" name="rj:FinancialStatementsConsolidated" format="ixt:fixed-false" id="ID000080"></ix:nonNumeric>
         </div>
@@ -566,6 +568,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
+
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -585,6 +588,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
+
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -598,6 +602,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
+
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -946,6 +951,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
+
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
