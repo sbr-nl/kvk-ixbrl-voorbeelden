@@ -77,9 +77,9 @@ Dit template kan gebruikt worden voor de titelpagina
     <div class="title">
       <div class="title-line"></div>
       <div class="title-content">
-        <first-page-title>Voorbeeld rapport 2022</first-page-title>
-        <first-page-subtitle>De Middelgrote B.V.</first-page-subtitle>
-        <first-page-subtitle>Statutaire vestigingsplaats</first-page-subtitle>
+        <div class="first-page-title">Voorbeeld rapport 2022</div>
+        <div class="first-page-subtitle">De Middelgrote B.V.</div>
+        <div class="first-page-subtitle">Statutaire vestigingsplaats</div>
       </div>
     </div>
     <div class="date">
