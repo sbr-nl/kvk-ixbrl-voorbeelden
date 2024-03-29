@@ -47,6 +47,8 @@ De `<div class="content"></div>` moet worden gebruikt voor de inhoud van de pagi
 - Cursieve tekst: `<i></i>`
 - <ins>Onderstreepte</ins> tekst: `<u></u>`
 - <s>Doorstreepte</s> tekst: `<s></s>`
+- <sup>Superscript</sup> text: `<sup></sup>`
+- <sub>Subscript</sub> text: `<sub></sub>`
 - [Links](): `<a></a>`
 - <q>Inline citaten</q>: `<q></q>`
 - Ongeordende lijsten: `<ul></ul>` met geneste `<li></li>`
@@ -77,9 +79,9 @@ Dit template kan gebruikt worden voor de titelpagina
     <div class="title">
       <div class="title-line"></div>
       <div class="title-content">
-        <first-page-title>Voorbeeld rapport 2022</first-page-title>
-        <first-page-subtitle>De Middelgrote B.V.</first-page-subtitle>
-        <first-page-subtitle>Statutaire vestigingsplaats</first-page-subtitle>
+        <div class="first-page-title">Voorbeeld rapport 2022</div>
+        <div class="first-page-subtitle">De Middelgrote B.V.</div>
+        <div class="first-page-subtitle">Statutaire vestigingsplaats</div>
       </div>
     </div>
     <div class="date">
