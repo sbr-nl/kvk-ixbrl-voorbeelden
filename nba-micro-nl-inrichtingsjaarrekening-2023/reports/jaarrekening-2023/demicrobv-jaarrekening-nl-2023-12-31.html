@@ -119,6 +119,13 @@
       display: none;
     }
 
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
     /* first page */
     .first-page-title,
     .first-page-subtitle {
@@ -132,13 +139,6 @@
 
     .first-page-subtitle {
       font-weight: normal;
-    }
-
-    /* horizontal rules */
-    hr {
-      border-style: solid none none;
-      border-color: black;
-      border-width: 1px;
     }
 
     /* paragraphs */
@@ -183,6 +183,16 @@
     table h2,
     table h3 {
       font-size: 1rem;
+    }
+
+    table.vertical-headers tbody:first-of-type tr:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-lr;
+      rotate: 180deg;
+    }
+
+    table.vertical-headers tbody:first-of-type tr:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
     }
 
     h3,
@@ -309,16 +319,19 @@
       height: 1.4rem;
     }
 
-    .unit-row>td {
-      text-indent: .5rem;
-      direction: rtl;
-    }
-
     table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
+    }
+
+    table.col-3xs col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+
+    table.col-2xs col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
     }
 
     table.col-xs col:nth-child(2n+2),
@@ -353,8 +366,6 @@
     .annotated tr> :nth-child(2) {
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
     }
 
     table col:nth-child(2n+3),
@@ -364,10 +375,19 @@
       width: 8px;
     }
 
-    table tbody:nth-of-type(2) {
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+
+    tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2) {
       font-family: Arial, Helvetica, sans-serif;
-      text-indent: .5rem;
-      direction: rtl;
     }
 
     .scale {
