@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-	<rewriteURI rewritePrefix="../../www.demicrobv.nl/" uriStartString="https://www.demicrobv.nl/"/>
+	<rewriteURI rewritePrefix="../www.demicrobv.nl/" uriStartString="https://www.demicrobv.nl/"/>
 </catalog>
