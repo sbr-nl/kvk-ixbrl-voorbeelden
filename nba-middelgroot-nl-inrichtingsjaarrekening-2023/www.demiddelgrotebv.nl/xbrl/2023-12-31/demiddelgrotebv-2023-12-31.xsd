@@ -33,8 +33,8 @@
         <link:definition>00700 - Anchoring</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
-      <link:roleType roleURI="https://www.demiddelgrotebv.nl/role/RevaluationReserveStatementOfChanges" id="RevaluationReserveStatementOfChanges">
-        <link:definition>00500 - Revaluation reserve: Statement of changes</link:definition>
+      <link:roleType roleURI="https://www.demiddelgrotebv.nl/role/EquityStatementOfChanges" id="EquityStatementOfChanges">
+        <link:definition>00500 - Equity: Statement of changes</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
         <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
@@ -60,7 +60,6 @@
   <xsd:element name="ProceedsFromLiabilitiesNonCurrent" id="middelgroot_ProceedsFromLiabilitiesNonCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
   <xsd:element name="BankerMutation" id="middelgroot_BankerMutation" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
   <xsd:element name="SellingAndGeneralExpensesPolicy" id="middelgroot_SellingAndGeneralExpensesPolicy" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
-  <xsd:element name="RevaluationReserveReleasePolicy" id="middelgroot_RevaluationReserveReleasePolicy" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="FinancialInstrumentsRiskManagementCreditRisksDisclosure" id="middelgroot_FinancialInstrumentsRiskManagementCreditRisksDisclosure" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="DepreciationOtherChangesInValuePropertyPlantEquipmentIntangibleAssetsDisclosure" id="middelgroot_DepreciationOtherChangesInValuePropertyPlantEquipmentIntangibleAssetsDisclosure" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="StockOptionsAndSharesProvidedToEmployeesDisclosure" id="middelgroot_StockOptionsAndSharesProvidedToEmployeesDisclosure" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>

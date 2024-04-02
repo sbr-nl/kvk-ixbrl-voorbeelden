@@ -43,13 +43,15 @@
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_EquityGroup_loc" xlink:to="bw2-titel9_NoncontrollingInterest_loc" order="2.0" weight="1.0"/>
   </link:calculationLink>
   <link:calculationLink xlink:type="extended" xlink:role="https://www.demiddelgrotebv.nl/role/IncomeStatement">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_NetResultAfterTax" xlink:label="bw2-titel9_NetResultAfterTax_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ResultAfterTax" xlink:label="bw2-titel9_ResultAfterTax_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_NetResultAfterTax_loc" xlink:to="bw2-titel9_ResultAfterTax_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IncomeTaxExpense" xlink:label="bw2-titel9_IncomeTaxExpense_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultAfterTax_loc" xlink:to="bw2-titel9_IncomeTaxExpense_loc" order="2.0" weight="-1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ResultBeforeTax" xlink:label="bw2-titel9_ResultBeforeTax_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultAfterTax_loc" xlink:to="bw2-titel9_ResultBeforeTax_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_NetOperatingResult" xlink:label="bw2-titel9_NetOperatingResult_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="bw2-titel9_NetOperatingResult_loc" order="2.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="bw2-titel9_NetOperatingResult_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_GrossOperatingResult" xlink:label="bw2-titel9_GrossOperatingResult_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_NetOperatingResult_loc" xlink:to="bw2-titel9_GrossOperatingResult_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SumOfExpenses" xlink:label="bw2-titel9_SumOfExpenses_loc"/>
@@ -59,34 +61,36 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_GeneralAdministrativeExpenses" xlink:label="bw2-titel9_GeneralAdministrativeExpenses_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_SumOfExpenses_loc" xlink:to="bw2-titel9_GeneralAdministrativeExpenses_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ChangesValueInvestmentProperties" xlink:label="rj_ChangesValueInvestmentProperties_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="rj_ChangesValueInvestmentProperties_loc" order="5.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="rj_ChangesValueInvestmentProperties_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IncomeReceivablesNoncurrentSecurities" xlink:label="bw2-titel9_IncomeReceivablesNoncurrentSecurities_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="bw2-titel9_IncomeReceivablesNoncurrentSecurities_loc" order="6.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="bw2-titel9_IncomeReceivablesNoncurrentSecurities_loc" order="4.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_FinancialIncome" xlink:label="rj_FinancialIncome_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="rj_FinancialIncome_loc" order="7.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="rj_FinancialIncome_loc" order="5.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_FinancialExpenses" xlink:label="rj_FinancialExpenses_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="rj_FinancialExpenses_loc" order="8.0" weight="-1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="rj_FinancialExpenses_loc" order="6.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserveRelease" xlink:label="bw2-titel9_RevaluationReserveRelease_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultBeforeTax_loc" xlink:to="bw2-titel9_RevaluationReserveRelease_loc" order="3.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ShareInResultsParticipatingInterests" xlink:label="bw2-titel9_ShareInResultsParticipatingInterests_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_ResultAfterTax_loc" xlink:to="bw2-titel9_ShareInResultsParticipatingInterests_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ResultAttributableNoncontrollingInterest" xlink:label="bw2-titel9_ResultAttributableNoncontrollingInterest_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="bw2-titel9_NetResultAfterTax_loc" xlink:to="bw2-titel9_ResultAttributableNoncontrollingInterest_loc" order="2.0" weight="1.0"/>
   </link:calculationLink>
   <link:calculationLink xlink:type="extended" xlink:role="https://www.demiddelgrotebv.nl/role/CashFlowStatement">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_IncreaseDecreaseCashAndCashEquivalents" xlink:label="rj_IncreaseDecreaseCashAndCashEquivalents_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_NetCashFlows" xlink:label="rj_NetCashFlows_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_IncreaseDecreaseCashAndCashEquivalents_loc" xlink:to="rj_NetCashFlows_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_CashFlowOperatingActivities" xlink:label="rj_CashFlowOperatingActivities_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowOperatingActivities_loc" order="7.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowOperatingActivities_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_CashFlowFromOperations" xlink:label="rj_CashFlowFromOperations_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="rj_CashFlowFromOperations_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_AdjustmentsReconcileOperatingResult" xlink:label="rj_AdjustmentsReconcileOperatingResult_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_AdjustmentsReconcileOperatingResult_loc" order="1.0" weight="1.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_OperatingResultCashFlow" xlink:label="rj_OperatingResultCashFlow_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_AdjustmentsReconcileOperatingResult_loc" xlink:to="rj_OperatingResultCashFlow_loc" order="1.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_AdjustmentsReconcileOperatingResult_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_AdjustmentsDepreciationAndAmortisationExpense" xlink:label="rj_AdjustmentsDepreciationAndAmortisationExpense_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_AdjustmentsReconcileOperatingResult_loc" xlink:to="rj_AdjustmentsDepreciationAndAmortisationExpense_loc" order="2.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_AdjustmentsReconcileOperatingResult_loc" xlink:to="rj_AdjustmentsDepreciationAndAmortisationExpense_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_IncreaseDecreaseProvisions" xlink:label="rj_IncreaseDecreaseProvisions_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_AdjustmentsReconcileOperatingResult_loc" xlink:to="rj_IncreaseDecreaseProvisions_loc" order="3.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_AdjustmentsReconcileOperatingResult_loc" xlink:to="rj_IncreaseDecreaseProvisions_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ChangesWorkingCapital" xlink:label="rj_ChangesWorkingCapital_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_ChangesWorkingCapital_loc" order="2.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_ChangesWorkingCapital_loc" order="3.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_IncreaseDecreaseInInventories" xlink:label="rj_IncreaseDecreaseInInventories_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="rj_IncreaseDecreaseInInventories_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_IncreaseDecreaseInConstructionContracts" xlink:label="rj_IncreaseDecreaseInConstructionContracts_loc"/>
@@ -97,8 +101,10 @@
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="rj_IncreaseDecreaseInSecurities_loc" order="4.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_IncreaseDecreaseLiabilitiesCurrent" xlink:label="middelgroot_IncreaseDecreaseLiabilitiesCurrent_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="middelgroot_IncreaseDecreaseLiabilitiesCurrent_loc" order="5.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_OperatingResultCashFlow" xlink:label="rj_OperatingResultCashFlow_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_OperatingResultCashFlow_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowFromInterestDividend" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="middelgroot_CashFlowFromInterestDividend_loc" order="6.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="middelgroot_CashFlowFromInterestDividend_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_InterestReceivedClassifiedAsOperatingActivities" xlink:label="rj_InterestReceivedClassifiedAsOperatingActivities_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="middelgroot_CashFlowFromInterestDividend_loc" xlink:to="rj_InterestReceivedClassifiedAsOperatingActivities_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_IncomeTaxPaidClassifiedAsOperatingActivities" xlink:label="rj_IncomeTaxPaidClassifiedAsOperatingActivities_loc"/>
@@ -108,7 +114,7 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_DividendsReceivedClassifiedAsOperatingActivities" xlink:label="rj_DividendsReceivedClassifiedAsOperatingActivities_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="middelgroot_CashFlowFromInterestDividend_loc" xlink:to="rj_DividendsReceivedClassifiedAsOperatingActivities_loc" order="4.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_CashFlowInvestingActivities" xlink:label="rj_CashFlowInvestingActivities_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowInvestingActivities_loc" order="8.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowInvestingActivities_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_PurchaseGroupCompanies" xlink:label="rj_PurchaseGroupCompanies_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowInvestingActivities_loc" xlink:to="rj_PurchaseGroupCompanies_loc" order="1.0" weight="-1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_PurchaseIntangibleAssets" xlink:label="rj_PurchaseIntangibleAssets_loc"/>
@@ -124,7 +130,7 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ProceedsSalesInvestmentProperties" xlink:label="rj_ProceedsSalesInvestmentProperties_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowInvestingActivities_loc" xlink:to="rj_ProceedsSalesInvestmentProperties_loc" order="7.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_CashFlowFinancingActivities" xlink:label="rj_CashFlowFinancingActivities_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowFinancingActivities_loc" order="9.0" weight="1.0"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowFinancingActivities_loc" order="3.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ProceedsIssueShares" xlink:label="rj_ProceedsIssueShares_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFinancingActivities_loc" xlink:to="rj_ProceedsIssueShares_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_DividendsPaidClassifiedAsFinancingActivities" xlink:label="rj_DividendsPaidClassifiedAsFinancingActivities_loc"/>
