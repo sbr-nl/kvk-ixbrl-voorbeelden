@@ -161,8 +161,6 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_AccountingStandardsUsedToPrepareFinancialStatementsDescription_loc" order="75.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_NoChangesInAccountingPoliciesDescription" xlink:label="bw2-titel9_NoChangesInAccountingPoliciesDescription_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_NoChangesInAccountingPoliciesDescription_loc" order="76.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ChangesInReservesDueToForeignCurrencyTranslationPolicy" xlink:label="bw2-titel9_ChangesInReservesDueToForeignCurrencyTranslationPolicy_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_ChangesInReservesDueToForeignCurrencyTranslationPolicy_loc" order="77.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_LeasesPolicy" xlink:label="rj_LeasesPolicy_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_LeasesPolicy_loc" order="78.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_IntangibleAssetsPolicy" xlink:label="bw2-titel9_IntangibleAssetsPolicy_loc"/>
@@ -203,8 +201,6 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_OperatingExpensesOtherPolicy_loc" order="96.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ExpensesPolicy" xlink:label="bw2-titel9_ExpensesPolicy_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_ExpensesPolicy_loc" order="97.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_PayablesEmployeeBenefitsExpensesPolicy" xlink:label="rj_PayablesEmployeeBenefitsExpensesPolicy_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_PayablesEmployeeBenefitsExpensesPolicy_loc" order="98.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_DepreciationPropertyPlantEquipmentAmortisationIntangibleAssetsPolicy" xlink:label="bw2-titel9_DepreciationPropertyPlantEquipmentAmortisationIntangibleAssetsPolicy_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_DepreciationPropertyPlantEquipmentAmortisationIntangibleAssetsPolicy_loc" order="99.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ExceptionalItemsPolicy" xlink:label="rj_ExceptionalItemsPolicy_loc"/>
@@ -285,6 +281,12 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_loc" order="139.0"/>
     <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_RevaluationReserveRevaluationsChangesValueHedgeInstrument" xlink:label="klein_RevaluationReserveRevaluationsChangesValueHedgeInstrument_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="klein_RevaluationReserveRevaluationsChangesValueHedgeInstrument_loc" order="140.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ForeignCurrencyTranslationPolicy" xlink:label="bw2-titel9_ForeignCurrencyTranslationPolicy_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_ForeignCurrencyTranslationPolicy_loc" order="77.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EstimatesDisclosure" xlink:label="rj_EstimatesDisclosure_loc_2"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_EstimatesDisclosure_loc_2" order="73.5"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EmployeeBenefitsExpensesPolicy" xlink:label="bw2-titel9_EmployeeBenefitsExpensesPolicy_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_EmployeeBenefitsExpensesPolicy_loc" order="98.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.dekleinebv.nl/role/Anchoring">
     <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_ReceivablesOtherAccruedIncome" xlink:label="klein_ReceivablesOtherAccruedIncome_loc"/>
