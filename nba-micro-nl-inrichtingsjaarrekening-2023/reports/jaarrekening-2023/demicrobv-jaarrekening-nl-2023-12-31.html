@@ -119,6 +119,13 @@
       display: none;
     }
 
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
     /* first page */
     .first-page-title,
     .first-page-subtitle {
@@ -132,13 +139,6 @@
 
     .first-page-subtitle {
       font-weight: normal;
-    }
-
-    /* horizontal rules */
-    hr {
-      border-style: solid none none;
-      border-color: black;
-      border-width: 1px;
     }
 
     /* paragraphs */
@@ -183,6 +183,18 @@
     table h2,
     table h3 {
       font-size: 1rem;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-rl;
+      rotate: 180deg;
+      text-align: left;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
+      max-height: 125px;
     }
 
     h3,
@@ -309,16 +321,19 @@
       height: 1.4rem;
     }
 
-    .unit-row>td {
-      text-indent: .5rem;
-      direction: rtl;
-    }
-
     table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
+    }
+
+    table.col-3xs col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+
+    table.col-2xs col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
     }
 
     table.col-xs col:nth-child(2n+2),
@@ -353,8 +368,6 @@
     .annotated tr> :nth-child(2) {
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
     }
 
     table col:nth-child(2n+3),
@@ -364,10 +377,19 @@
       width: 8px;
     }
 
-    table tbody:nth-of-type(2) {
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+
+    tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2) {
       font-family: Arial, Helvetica, sans-serif;
-      text-indent: .5rem;
-      direction: rtl;
     }
 
     .scale {
@@ -438,10 +460,10 @@
 </head>
 
 <body>
-  <div class="hidden">
+  <div class="hidden" style="display:none">
     <ix:header>
       <ix:references xml:lang="nl">
-        <link:schemaRef xlink:type="simple" xlink:href="../www.demicrobv.nl/xbrl/2023-12-31/demicrobv-2023-12-31.xsd" />
+        <link:schemaRef xlink:type="simple" xlink:href="https://www.demicrobv.nl/xbrl/2023-12-31/demicrobv-2023-12-31.xsd" />
       </ix:references>
       <ix:resources>
         <xbrli:context id="context_1">
@@ -727,7 +749,6 @@
           </tr>
           <tr>
             <td>Opgevraagde stortingen van geplaatst kapitaal</td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000190">0</ix:nonFraction>
             </td>
@@ -738,10 +759,10 @@
               <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000200">0</ix:nonFraction>
             </td>
             <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>Overige vlottende activa</td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000210">0</ix:nonFraction>
             </td>
@@ -751,6 +772,7 @@
             <td>
               <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:AssetsCurrentOther" unitRef="EUR" decimals="0" scale="0" id="ID0000220">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">
@@ -961,7 +983,7 @@
       <h1 id="account-of-profit-and-loss">Winst-en-verliesrekening over <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriod" contextRef="context_1" id="ID000070">2023</ix:nonNumeric>
       </h1>
       <table class="table-full col-s">
-        <colgoup>
+        <colgroup>
           <col />
           <col />
           <col />
@@ -970,7 +992,7 @@
           <col />
           <col />
           <col />
-        </colgoup>
+        </colgroup>
         <tbody>
           <tr>
             <td></td>
@@ -1011,10 +1033,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:NetRevenue" unitRef="EUR" decimals="0" scale="0" id="ID0000390">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -1025,10 +1047,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000410">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -1039,10 +1061,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0000430">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1085,10 +1107,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:CostsRawMaterialsConsumables" unitRef="EUR" decimals="0" scale="0" id="ID0000470">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -1099,10 +1121,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0000490">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -1113,10 +1135,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationAmortisationAndDecreaseInValueAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000510">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -1127,10 +1149,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000530">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -1141,10 +1163,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>
               <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:ExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000550">0</ix:nonFraction>
             </td>
+            <td></td>
             <td></td>
           </tr>
           <tr class="empty-row sub-total">

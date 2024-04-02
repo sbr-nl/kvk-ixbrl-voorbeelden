@@ -7,7 +7,7 @@
       <link:linkbaseRef xlink:type="simple" xlink:href="demicrobv-2023-12-31_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="demicrobv-2023-12-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:roleType roleURI="https://www.demicrobv.nl/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
-        <link:definition>00000 - Document and Entity information</link:definition>
+        <link:definition>00010 - Document and Entity information</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.demicrobv.nl/role/BalanceSheet" id="BalanceSheet">
@@ -25,7 +25,7 @@
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.demicrobv.nl/role/SigningManagingSupervisoryDirectors" id="SigningManagingSupervisoryDirectors">
-        <link:definition>00400 - SigningManagingSupervisoryDirectors</link:definition>
+        <link:definition>00400 - Signing by managing and/or supervisory directors</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
     </xs:appinfo>

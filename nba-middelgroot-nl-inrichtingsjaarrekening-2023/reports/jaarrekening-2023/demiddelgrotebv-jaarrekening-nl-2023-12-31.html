@@ -184,6 +184,18 @@
       font-size: 1rem;
     }
 
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-rl;
+      rotate: 180deg;
+      text-align: left;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
+      max-height: 125px;
+    }
+
     h3,
     h4,
     h5 {
@@ -308,16 +320,19 @@
       height: 1.4rem;
     }
 
-    .unit-row>td {
-      text-indent: .5rem;
-      direction: rtl;
-    }
-
     table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
+    }
+
+    table.col-3xs col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+
+    table.col-2xs col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
     }
 
     table.col-xs col:nth-child(2n+2),
@@ -352,8 +367,6 @@
     .annotated tr> :nth-child(2) {
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
     }
 
     table col:nth-child(2n+3),
@@ -363,10 +376,19 @@
       width: 8px;
     }
 
-    table tbody:nth-of-type(2) {
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+
+    tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2) {
       font-family: Arial, Helvetica, sans-serif;
-      text-indent: .5rem;
-      direction: rtl;
     }
 
     .scale {
@@ -2242,7 +2264,7 @@
       <h1 id="consolidated-balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de geconsolideerde balans en winst-en-verliesrekening</h1>
       <h2>Algemene toelichting</h2>
       <h3>Activiteiten</h3>
-      <p>De activiteiten van De Middelgrote B.V. en haar groepsmaatschappijen bestaan voornamelijk uit:
+      <p>De activiteiten van De Middelgrote B.V. en haar groepsmaatschappijen bestaan voornamelijk uit:</p>
       <ul>
         <li>de productie van en handel in elektronische artikelen en computercomponenten;</li>
         <li>dienstverlening op het gebied van IT-processen en implementatie van software bij derden;</li>
@@ -2251,7 +2273,7 @@
       <p>Verkoop vindt plaats zowel in het binnenland als in het buitenland, waarbij de landen van de Europese Unie de belangrijkste afzetmarkt vormen.</p>
       <h3>Continuïteit</h3>
       <p>Het eigen vermogen van De Middelgrote B.V. bedraagt per 31 december 2023 € 0 negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Middelgrote B.V. Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt:</p>
-	  <p>Op basis van gesprekken die zijn gevoerd met de groepsmaatschappijen/banken over onze maatregelen en plannen verwachten wij dat de financiering zal worden gecontinueerd.</p>
+      <p>Op basis van gesprekken die zijn gevoerd met de groepsmaatschappijen/banken over onze maatregelen en plannen verwachten wij dat de financiering zal worden gecontinueerd.</p>
       <p>De in de onderhavige jaarrekening gehanteerde grondslagen van waardering en resultaatbepaling zijn dan ook gebaseerd op de veronderstelling van continuïteit van de vennootschap.</p>
       <h3>Vestigingsadres, rechtsvorm en inschrijfnummer handelsregister</h3>
       <p>De Middelgrote B.V. is feitelijk gevestigd op Straatnaam x, Postbus 0000, 0000 XX te Statutaire vestigingsplaats en is ingeschreven bij het handelsregister onder nummer 00000000.</p>
@@ -2281,7 +2303,7 @@
       <p>De groepsmaatschappijen en andere rechtspersonen waarop zij een overheersende zeggenschap kan uitoefenen of waarover zij de centrale leiding heeft, worden voor 100% in de consolidatie betrokken. Het aandeel van derden in het groepsvermogen en in het groepsresultaat wordt afzonderlijk vermeld. Deelnemingen waarop geen overheersende zeggenschap kan worden uitgeoefend (geassocieerde deelnemingen) worden niet betrokken in de consolidatie.</p>
       <p>Wanneer er sprake is van een belang in een joint venture, dan wordt het desbetreffende belang proportioneel geconsolideerd. Van een joint venture is sprake indien als gevolg van een overeenkomst tot samenwerking de zeggenschap door de deelnemers gezamenlijk wordt uitgeoefend.</p>
       <p>Intercompany-transacties, intercompany-winsten en onderlinge vorderingen en schulden tussen groepsmaatschappijen en andere in de consolidatie opgenomen rechtspersonen worden geëlimineerd, voor zover de resultaten niet door transacties met derden buiten de Groep zijn gerealiseerd. Ongerealiseerde verliezen op intercompany-transacties worden ook geëlimineerd tenzij er sprake is van een bijzondere waardevermindering. Waarderingsgrondslagen van groepsmaatschappijen en andere in de consolidatie opgenomen rechtspersonen zijn waar nodig gewijzigd om aansluiting te krijgen bij de geldende waarderingsgrondslagen voor de Groep.</p>
-      <p>De in de consolidatie begrepen vennootschappen zijn:
+      <p>De in de consolidatie begrepen vennootschappen zijn:</p>
       <ul>
         <li>B.V. X, Assen (100%);</li>
         <li>B.V. Y, Meppel (60%);</li>
@@ -2290,7 +2312,6 @@
         <li>B Ltd, Birmingham, Verenigd Koninkrijk (100%);</li>
         <li>V.o.f. Z, Amsterdam.</li>
       </ul>
-      </p>
       <p>V.o.f. Z te Amsterdam is aangemerkt als een joint venture. Met de andere vennoot wordt de zeggenschap gezamenlijk uitgeoefend. Het relatieve aandeel van De Middelgrote B.V. in de activa, verplichtingen en het resultaat van V.o.f. Z is proportioneel in de consolidatie verantwoord.</p>
       <p>Buiten de consolidatie blijven, naast geassocieerde deelnemingen, enkele deelnemingen, die afzonderlijk en gezamenlijk van te verwaarlozen betekenis zijn.</p>
       <p>Daarnaast zijn de maatschappijen die verworven zijn met de bedoeling om deze te vervreemden, niet meegenomen in de consolidatie. Deze maatschappijen zijn opgenomen onder de vlottende activa onder effecten (slechts gehouden om te vervreemden) indien op overnamedatum verkoop binnen een jaar na verkrijging waarschijnlijk is of binnen een korte periode daarna.</p>
@@ -2401,7 +2422,7 @@
       <ul>
         <li>indien de afgedekte post tegen kostprijs in de balans wordt verwerkt, wordt ook het derivaat tegen kostprijs gewaardeerd;</li>
         <li>zolang de afgedekte post in de kostprijshedgerelatie nog niet in de balans verwerkt wordt, wordt het hedge-instrument niet geherwaardeerd. Dit geldt bijvoorbeeld in geval van de hedge van het valutarisico van een toekomstige transactie.</li>
-		<li>indien de afgedekte post een monetaire post in vreemde valuta betreft die in de balans is opgenomen, wordt het derivaat, voor zover het valuta-elementen in zich heeft, ook gewaardeerd tegen de periode-eindkoers. Indien het derivaat valuta-elementen in zich heeft, wordt het verschil tussen de contante koers die geldt op het moment van afsluiten van het derivaat en de termijnkoers waartegen het derivaat zal worden afgewikkeld, geamortiseerd over de looptijd van het derivaat.</li>
+        <li>indien de afgedekte post een monetaire post in vreemde valuta betreft die in de balans is opgenomen, wordt het derivaat, voor zover het valuta-elementen in zich heeft, ook gewaardeerd tegen de periode-eindkoers. Indien het derivaat valuta-elementen in zich heeft, wordt het verschil tussen de contante koers die geldt op het moment van afsluiten van het derivaat en de termijnkoers waartegen het derivaat zal worden afgewikkeld, geamortiseerd over de looptijd van het derivaat.</li>
       </ul>
       <p>Het ineffectieve deel van de hedgerelatie wordt direct in de winst-en-verliesrekening verwerkt.</p>
       <p>Het toepassen van kostprijshedge-accounting wordt beëindigd als:</p>
@@ -3211,7 +3232,7 @@
     <div class="footer">
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
-    </div> 
+    </div>
   </div>
 
   <div class="page">
@@ -6286,7 +6307,7 @@
         </tbody>
         <tbody>
           <tr>
-            <td>Verplichtingen < 1 jaar</td>
+            <td>Verplichtingen &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -6296,7 +6317,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>Verplichtingen > 1 jaar en < 5 jaar</td>
+            <td>Verplichtingen &gt; 1 jaar en &lt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -6306,7 +6327,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>Verplichtingen > 5 jaar</td>
+            <td>Verplichtingen &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -10643,9 +10664,9 @@
       <p>De rechtstreeks door De Middelgrote B.V. gehouden deelnemingen zijn:</p>
       <table class="table-full col-xl no-row-headers">
         <colgroup>
-          <col>
-          <col>
-          <col>
+          <col />
+          <col />
+          <col />
         </colgroup>
         <tbody>
           <tr>
@@ -10659,11 +10680,11 @@
           </tr>
           <tr class="empty-row top-table-header">
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -12621,7 +12642,7 @@
       <table class="table-full text-left">
         <tr>
           <td>De directie</td>
-          <td>De Raad van Commissarissen
+          <td>De Raad van Commissarissen</td>
         </tr>
         <tr class="empty-row">
           <td colspan="2"></td>
@@ -12661,17 +12682,17 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h2 id="statutory-regulation-profit-appropriation">Statutaire regeling inzake de winstbestemming</h1>
-        <p>In de statuten is in artikel X het onderstaande opgenomen inzake de winstbestemming.</p>
-        <p>Uit de statuten blijkt dat de behaalde jaarwinst ter vrije beschikking staat van de algemene vergadering.
-          De houders van preferente aandelen hebben recht op een dividenduitkering van 0% van de door hen gehouden aandelen, indien en voor zover de jaarwinst daartoe toereikend is.</p>
-        <h2 id="special-statutory-rights-control">Bijzondere statutaire rechten inzake de zeggenschap</h1>
-          <p>Aan de volgende personen zijn preferente aandelen uitgegeven. Deze aandelen geven recht op het benoemen en /of ontslaan van de bestuurders van de vennootschap.</p>
-          <p>Het betreft:</p>
-          <h2 id="non-voting-or-non-profit-shares">Stemrechtloze dan wel winstrechtloze aandelen</h1>
-            <p>De vennootschap heeft …. aandelen uitgeven met een beperkt recht op de winst en de reserves van de vennootschap. Op deze aandelen wordt maximaal € 0,0 winst uitgekeerd.</p>
-            <h2>Nevenvestigingen</h1>
-              <p>In Duitsland en België zijn nevenvestigingen met dezelfde handelsnaam als De Middelgrote B.V.</p>
+      <h2 id="statutory-regulation-profit-appropriation">Statutaire regeling inzake de winstbestemming</h2>
+      <p>In de statuten is in artikel X het onderstaande opgenomen inzake de winstbestemming.</p>
+      <p>Uit de statuten blijkt dat de behaalde jaarwinst ter vrije beschikking staat van de algemene vergadering.
+        De houders van preferente aandelen hebben recht op een dividenduitkering van 0% van de door hen gehouden aandelen, indien en voor zover de jaarwinst daartoe toereikend is.</p>
+      <h2 id="special-statutory-rights-control">Bijzondere statutaire rechten inzake de zeggenschap</h2>
+      <p>Aan de volgende personen zijn preferente aandelen uitgegeven. Deze aandelen geven recht op het benoemen en /of ontslaan van de bestuurders van de vennootschap.</p>
+      <p>Het betreft:</p>
+      <h2 id="non-voting-or-non-profit-shares">Stemrechtloze dan wel winstrechtloze aandelen</h2>
+      <p>De vennootschap heeft …. aandelen uitgeven met een beperkt recht op de winst en de reserves van de vennootschap. Op deze aandelen wordt maximaal € 0,0 winst uitgekeerd.</p>
+      <h2>Nevenvestigingen</h2>
+      <p>In Duitsland en België zijn nevenvestigingen met dezelfde handelsnaam als De Middelgrote B.V.</p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>

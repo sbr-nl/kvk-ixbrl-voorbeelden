@@ -118,6 +118,13 @@
       display: none;
     }
 
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
     /* first page */
     .first-page-title,
     .first-page-subtitle {
@@ -129,11 +136,8 @@
       font-style: italic;
     }
 
-    /* horizontal rules */
-    hr {
-      border-style: solid none none;
-      border-color: black;
-      border-width: 1px;
+    .first-page-subtitle {
+      font-weight: normal;
     }
 
     /* paragraphs */
@@ -178,6 +182,18 @@
     table h2,
     table h3 {
       font-size: 1rem;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-rl;
+      rotate: 180deg;
+      text-align: left;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
+      max-height: 125px;
     }
 
     h3,
@@ -304,16 +320,19 @@
       height: 1.4rem;
     }
 
-    .unit-row>td {
-      text-indent: .5rem;
-      direction: rtl;
-    }
-
     table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
+    }
+
+    table.col-3xs col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+
+    table.col-2xs col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
     }
 
     table.col-xs col:nth-child(2n+2),
@@ -348,8 +367,6 @@
     .annotated tr> :nth-child(2) {
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
-      text-indent: 0;
-      direction: ltr;
     }
 
     table col:nth-child(2n+3),
@@ -359,10 +376,19 @@
       width: 8px;
     }
 
-    table tbody:nth-of-type(2) {
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+
+    tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2) {
       font-family: Arial, Helvetica, sans-serif;
-      text-indent: .5rem;
-      direction: rtl;
     }
 
     .scale {
@@ -536,11 +562,11 @@
             <td></td>
             <td></td>
             <td colspan="3">
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td colspan="3">
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -611,13 +637,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -675,13 +701,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -766,13 +792,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -889,13 +915,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -950,13 +976,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -976,13 +1002,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -1030,11 +1056,11 @@
             <td></td>
             <td></td>
             <td colspan="3">
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td colspan="3">
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -1136,13 +1162,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -1211,13 +1237,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -1308,13 +1334,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -1427,13 +1453,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -1458,13 +1484,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -1484,13 +1510,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -1537,11 +1563,11 @@
             <td></td>
             <td></td>
             <td colspan="3">
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td colspan="3">
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -1646,13 +1672,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -1676,13 +1702,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -1738,13 +1764,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
@@ -1793,13 +1819,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -1821,13 +1847,13 @@
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -1848,7 +1874,7 @@
       <h1 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening</h1>
       <h2>Algemene toelichting</h2>
       <h3>Activiteiten</h3>
-      <p>De activiteiten van De Kleine B.V. en haar groepsmaatschappijen bestaan voornamelijk uit:
+      <p>De activiteiten van De Kleine B.V. en haar groepsmaatschappijen bestaan voornamelijk uit:</p>
       <ul>
         <li>de productie van en handel in elektronische artikelen en computercomponenten;</li>
         <li>dienstverlening op het gebied van IT-processen en implementatie van software bij derden;</li>
@@ -1857,7 +1883,7 @@
       <p>Verkoop vindt plaats zowel in het binnenland als in het buitenland, waarbij de landen van de Europese Unie de belangrijkste afzetmarkt vormen.</p>
       <h3>Continuïteit</h3>
       <p>Het eigen vermogen van De Kleine B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Kleine B.V.</p>
-      <hr/>
+      <hr />
       <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt:</p>
       <p>.........
         .........</p>
@@ -2162,7 +2188,7 @@
       <h2>Grondslagen voor bepaling van het resultaat</h2>
       <h3>Algemeen</h3>
       <p>Het resultaat wordt bepaald als het verschil tussen de opbrengstwaarde van de geleverde prestaties en de kosten en andere lasten over het jaar. De opbrengsten op transacties worden verantwoord in het jaar waarin zij zijn gerealiseerd.</p>
-      <p>Het resultaat wordt tevens bepaald met inachtneming van de verwerking van ongerealiseerde waardeveranderingen van op reële waarde gewaardeerde:
+      <p>Het resultaat wordt tevens bepaald met inachtneming van de verwerking van ongerealiseerde waardeveranderingen van op reële waarde gewaardeerde:</p>
       <ul>
         <li>vastgoedbeleggingen;</li>
         <li>onder vlottende activa opgenomen effecten.</li>
@@ -2312,11 +2338,11 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -2345,11 +2371,11 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -2361,11 +2387,11 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -2391,7 +2417,7 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -2452,7 +2478,7 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -2464,7 +2490,7 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -2516,15 +2542,15 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -2563,15 +2589,15 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -2605,15 +2631,15 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -2629,15 +2655,15 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -2682,11 +2708,11 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -2743,11 +2769,11 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -2759,11 +2785,11 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -2817,11 +2843,11 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -2862,11 +2888,11 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -2878,11 +2904,11 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -2935,11 +2961,11 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -2974,11 +3000,11 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -3001,12 +3027,13 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
+          </tr>
           <tr>
             <td></td>
             <td>0</td>
@@ -3037,11 +3064,11 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -3090,11 +3117,11 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -3106,11 +3133,11 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
@@ -3159,11 +3186,11 @@
           <tr class="empty-row top-table-header">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr class="unit-row">
@@ -3204,11 +3231,11 @@
           <tr class="empty-row sub-total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
           <tr>
@@ -3220,11 +3247,11 @@
           <tr class="empty-row total">
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
             <td></td>
             <td>
-              <hr>
+              <hr />
             </td>
           </tr>
         </tbody>
