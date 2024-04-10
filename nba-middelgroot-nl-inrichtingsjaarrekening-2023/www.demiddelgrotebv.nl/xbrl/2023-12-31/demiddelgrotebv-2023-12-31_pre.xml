@@ -73,6 +73,8 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_LeasesPolicy_loc" xlink:to="rj_OperatingLeasesPolicy_loc" order="2.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ForeignCurrencyTranslationPolicy" xlink:label="bw2-titel9_ForeignCurrencyTranslationPolicy_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_NotesGeneralAccountingPrinciplesTitle_loc" xlink:to="bw2-titel9_ForeignCurrencyTranslationPolicy_loc" order="3.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_FunctionalCurrencyDescription" xlink:label="rj_FunctionalCurrencyDescription_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ForeignCurrencyTranslationPolicy_loc" xlink:to="rj_FunctionalCurrencyDescription_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_FinancialInstrumentsPolicy" xlink:label="rj_FinancialInstrumentsPolicy_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_NotesGeneralAccountingPrinciplesTitle_loc" xlink:to="rj_FinancialInstrumentsPolicy_loc" order="5.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_AccountingPrinciplesAssetsLiabilitiesTitle" xlink:label="bw2-titel9_AccountingPrinciplesAssetsLiabilitiesTitle_loc"/>
