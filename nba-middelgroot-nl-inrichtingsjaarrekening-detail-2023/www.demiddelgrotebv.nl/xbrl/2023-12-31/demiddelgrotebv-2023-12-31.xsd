@@ -80,8 +80,4 @@
   <xsd:element name="ChangesValueFinancialInstrumentsValuedFairValuePolicy" id="middelgroot_ChangesValueFinancialInstrumentsValuedFairValuePolicy" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="DividendsPolicy" id="middelgroot_DividendsPolicy" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="InterestExpensesInterestCapitalisedDuringPeriodPolicy" id="middelgroot_InterestExpensesInterestCapitalisedDuringPeriodPolicy" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
-  <xsd:element name="ReceivablesInvestmentsInParticipatingInterests" id="middelgroot_ReceivablesInvestmentsInParticipatingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
-  <xsd:element name="NOWReceivables" id="middelgroot_NOWReceivables" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
-  <xsd:element name="ReceivablesOtherAccruedIncome" id="middelgroot_ReceivablesOtherAccruedIncome" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
-  <xsd:element name="PayablesOtherAccrualsAndDeferredIncomeCurrent" id="middelgroot_PayablesOtherAccrualsAndDeferredIncomeCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant"/>
 </xsd:schema>
