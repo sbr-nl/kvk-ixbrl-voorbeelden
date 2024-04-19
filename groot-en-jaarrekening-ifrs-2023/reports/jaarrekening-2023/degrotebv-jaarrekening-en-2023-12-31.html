@@ -250,6 +250,10 @@
       content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
     }
 
+    span.bold {
+      font-weight: bold;
+    }
+
     /* table layout */
     table {
       margin-bottom: 1rem;
@@ -1501,16 +1505,6 @@
         <xbrli:unit xmlns:xbrli="http://www.xbrl.org/2003/instance" id="EUR">
           <xbrli:measure>iso4217:EUR</xbrli:measure>
         </xbrli:unit>
-        <xbrli:unit xmlns:xbrli="http://www.xbrl.org/2003/instance" id="EURperShare">
-          <xbrli:divide>
-            <xbrli:unitNumerator>
-              <xbrli:measure>iso4217:EUR</xbrli:measure>
-            </xbrli:unitNumerator>
-            <xbrli:unitDenominator>
-              <xbrli:measure>xbrli:shares</xbrli:measure>
-            </xbrli:unitDenominator>
-          </xbrli:divide>
-        </xbrli:unit>
         <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000211" toRefs="foot1" />
         <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000222" toRefs="foot2" />
         <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000223" toRefs="foot2" />
@@ -1584,7 +1578,15 @@
     <div class="content">
       <h1>Contents</h1>
       <p>
-        <a href="#statement-of-financial-position-statement-of-comprehensive-income-and-statement-of-changes-in-equity"><span>Statement of financial position, statement of comprehensive income, and statement of changes in equity<span class="align-right">3</span></span></a>
+        <a href="#management-report"><span class="bold">Management report<span class="align-right">3</span></span></a> 
+
+        <a href="#consolidated-financial-statements"><span class="bold">Consolidated financial statements<span class="align-right">5</span></span></a>
+        <a href="#consolidated-statement-of-profit-and-loss"><span>Consolidated statement of profit and loss<span class="align-right">6</span></span></a>
+        <a href="#consolidated-statement-of-comprehensive-income"><span>Consolidated statement of comprehensive income<span class="align-right">7</span></span></a>
+        <a href="#consolidated-statement-of-financial-position"><span>Consolidated statement of financial position<span class="align-right">8</span></span></a>
+        
+        
+        
         <a href="#statement-of-cash-flows"><span>Statement of cash flows<span class="align-right">14</span></span></a>
         <a href="#reconciliation-of-changes-in property-plant-and-equipment"><span>Reconciliation of changes in property, plant and equipment<span class="align-right">15</span></span></a>
       </p>
@@ -1600,7 +1602,7 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h1>Management Report</h1>
+      <h1 id="management-report">Management Report</h1>
       
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Nascetur ridiculus mus mauris vitae ultricies leo. Vitae sapien pellentesque habitant morbi. Sit amet est placerat in egestas erat imperdiet. Leo duis ut diam quam nulla. Facilisi cras fermentum odio eu feugiat. Eu consequat ac felis donec et odio pellentesque diam volutpat. Maecenas sed enim ut sem viverra aliquet eget sit amet. Tincidunt arcu non sodales neque. Venenatis lectus magna fringilla urna.</p>
       
@@ -1657,7 +1659,7 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h1>Consolidated statement of profit and loss</h1>
+      <h1 id="consolidated-statement-of-profit-and-loss">Consolidated statement of profit and loss</h1>
 	  <br/>
       <table class="table-full col-m">
         <colgroup>
@@ -1672,11 +1674,11 @@
               <h3>for the year ended 31 December 2023</h3>
             </td>
             <td>
-              <h2>31 Dec 2023</h2>
+              <h2>2023</h2>
             </td>
             <td></td>
             <td>
-              <h2>31 Dec 2022</h2>
+              <h2>2022</h2>
             </td>
           </tr>
           <tr class="empty-row top-table-header">
@@ -1701,9 +1703,7 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>
-              <h2>Revenue</h2>
-            </td>
+            <td>Revenue</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Revenue" unitRef="EUR" decimals="-3" scale="3" id="id00000268">0</ix:nonFraction>
             </td>
@@ -1723,7 +1723,7 @@
             </td>
           </tr>
           <tr>
-            <td>Changes in inventories of finished goods and work in progress</td>
+            <td>Changes in inventories</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ChangesInInventoriesOfFinishedGoodsAndWorkInProgress" unitRef="EUR" decimals="-3" scale="3" id="id00000272">0</ix:nonFraction>
             </td>
@@ -1733,17 +1733,7 @@
             </td>
           </tr>
           <tr>
-            <td>Work performed by the entity and capitalised</td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherWorkPerformedByEntityAndCapitalised" unitRef="EUR" decimals="-3" scale="3" id="id00000275">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherWorkPerformedByEntityAndCapitalised" unitRef="EUR" decimals="-3" scale="3" id="id00000274">0</ix:nonFraction>
-            </td>
-          </tr>
-          <tr>
-            <td>Raw material and consumables used</td>
+            <td>Costs of material</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:RawMaterialsAndConsumablesUsed" unitRef="EUR" decimals="-3" scale="3" id="id00000276">0</ix:nonFraction>
             </td>
@@ -1752,6 +1742,7 @@
               <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:RawMaterialsAndConsumablesUsed" unitRef="EUR" decimals="-3" scale="3" id="id00000277">0</ix:nonFraction>
             </td>
           </tr>
+          <tr>
           <tr>
             <td>Employee benefits expense</td>
             <td>
@@ -1763,7 +1754,17 @@
             </td>
           </tr>
           <tr>
-            <td>Depreciation and amortisation expense</td>
+            <td>Change in fair value of investment property</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000276">0</ix:nonFraction>
+            </td>
+             <td></td>
+             <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000277">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Depreciation, amortisation expense and impairment of non-financial assets</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DepreciationAndAmortisationExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000280">0</ix:nonFraction>
             </td>
@@ -1773,12 +1774,14 @@
             </td>
           </tr>
           <tr>
-            <td>Impairment of property, plant and equipment</td>
+            <td>Impairment losses of financial assets and contract assets</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="-3" scale="3" id="id00000282">0</ix:nonFraction>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000276">0</ix:nonFraction>
             </td>
-            <td></td>
-            <td>–</td>
+             <td></td>
+             <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000277">0</ix:nonFraction>
+            </td>
           </tr>
           <tr>
             <td>Other expenses</td>
@@ -1788,6 +1791,44 @@
             <td></td>
             <td>
               <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherExpenseByNature" unitRef="EUR" decimals="-3" scale="3" id="id00000284">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Operating profit</h2>
+            </td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OperatingProfit" unitRef="EUR" decimals="-3" scale="3" id="id00000290">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OperatingProfit" unitRef="EUR" decimals="-3" scale="3" id="id00000289">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Share of profit of equity accounted investments</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -1801,13 +1842,23 @@
             </td>
           </tr>
           <tr>
-            <td>Share of profit of associates<sup>(e)</sup></td>
+            <td>Finance income</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:FinanceIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:FinanceIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Other financial items</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1831,6 +1882,12 @@
             <td>
               <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="-3" scale="3" id="id00000289">0</ix:nonFraction>
             </td>
+          </tr>
+          <tr class="empty-row">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>Income tax expense</td>
@@ -1884,7 +1941,7 @@
           </tr>
           <tr>
             <td>
-              <h2>PROFIT FOR THE YEAR</h2>
+              <h2>Profit for the year</h2>
             </td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000297">0</ix:nonFraction>
@@ -1906,21 +1963,11 @@
           </tr>
           <tr>
             <td>
-              <h3>Profit attributable to:</h3>
+              <h3>Profit for the year attributable to:</h3>
             </td>
             <td></td>
             <td></td>
             <td></td>
-          </tr>
-          <tr>
-            <td>Owners of the parent</td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000298">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000299">0</ix:nonFraction>
-            </td>
           </tr>
           <tr>
             <td>Non-controlling interests</td>
@@ -1930,6 +1977,16 @@
             <td></td>
             <td>
               <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000300">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Owners of the parent</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000298">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000299">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1964,24 +2021,30 @@
           </tr>
           <tr>
             <td>
-              <h3>Earnings per share (in currency units):</h3>
+              <h3>Earnings per share:</h3>
             </td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>Basic and diluted</td>
+            <td>Basic earnings per share</td>
+              <td>
+                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+              </td>
+              <td></td>
+              <td>
+                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+              </td>
+          </tr>
+          <tr>
+            <td>Diluted earnings per share</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EURperShare" decimals="2" scale="0">
-                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EURperShare" decimals="2" scale="0" id="id00000305">0</ix:nonFraction>
-              </ix:nonFraction>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EURperShare" decimals="2" scale="0">
-                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EURperShare" decimals="2" scale="0" id="id00000304">0</ix:nonFraction>
-              </ix:nonFraction>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:DiluteEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1996,8 +2059,6 @@
           </tr>
         </tbody>
       </table>
-      <p class="footnote-table">(e)<ix:footnote footnoteRole="http://www.xbrl.org/2003/role/footnote" id="foot5" xml:lang="en">This means the share of associates’ other comprehensive income attributable to owners of the associates, ie it is after tax and non-controlling interests in the associates. In this example, the other comprehensive income ofassociates consists only of items that will not be subsequently reclassified to profit or loss. Entities whose associates’ other comprehensive income includes items that may be subsequently reclassified to profit or loss are required by paragraph 82A(b) to present that amount in a separate line.</ix:footnote>
-      </p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2069,7 +2130,7 @@
           </tr>
           <tr>
             <td>
-              <h2>Other comprehensive income</h2>
+              <h2>Other comprehensive income:</h2>
             </td>
             <td></td>
             <td></td>
@@ -2084,7 +2145,7 @@
             </td>
           </tr>
           <tr>
-            <td>Gains on property revaluation</td>
+            <td>Revaluation of land</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation" unitRef="EUR" decimals="-3" scale="3" id="id00000314">0</ix:nonFraction>
             </td>
@@ -2094,17 +2155,7 @@
             </td>
           </tr>
           <tr>
-            <td>Investments in equity instruments</td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000310">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments" unitRef="EUR" decimals="-3" scale="3" id="id00000311">0</ix:nonFraction>
-            </td>
-          </tr>
-          <tr>
-            <td>Remeasurements of defined benefit pension plans</td>
+            <td>Remeasurements of defined benefit liability</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000317">0</ix:nonFraction>
             </td>
@@ -2114,17 +2165,7 @@
             </td>
           </tr>
           <tr>
-            <td>Share of gain other comprehensive income of associates<sup>(f) </sup></td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" id="id00000318">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000319">0</ix:nonFraction>
-            </td>
-          </tr>
-          <tr>
-            <td>Income tax relating to items that will not be reclassified<sup>(g)</sup></td>
+            <td>Income tax relating to items not reclassified</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3" sign="-">0</ix:nonFraction>
             </td>
@@ -2165,7 +2206,33 @@
           </tr>
           <tr>
             <td colspan="4">
-              <h3>Items that may be reclassified subsequently to profit or loss:</h3>
+              <h3>Items that will be reclassified subsequently to profit or loss:</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>Cash flow hedging:</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>- current year gains</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>- reclassification to profit or loss</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -2179,17 +2246,27 @@
             </td>
           </tr>
           <tr>
-            <td>Cash flow hedges</td>
+            <td>Share of other comprehensive income of equity accounted investments</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000309">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000308">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
-            <td>Income tax relating to items that may be reclassified<sup>(g)</sup></td>
+            <td>- reclassification to profit or loss</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Income tax relating to items that will be reclassified</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
             </td>
@@ -2252,7 +2329,7 @@
           </tr>
           <tr>
             <td>
-              <h2>TOTAL COMPREHENSIVE INCOME FOR THE YEAR</h2>
+              <h2>Total comprehensive income for the year</h2>
             </td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000325">0</ix:nonFraction>
@@ -2273,29 +2350,31 @@
             </td>
           </tr>
           <tr>
-            <td>Total comprehensive income attributable to:</td>
+            <td>
+              <h3>Total comprehensive income attributable to:</h3>
+            </td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td class="non-list-bullet">Owners of the parent</td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000326">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000327">0</ix:nonFraction>
-            </td>
-          </tr>
-          <tr>
-            <td class="non-list-bullet">Non-controlling interests</td>
+            <td>Non-controlling interests</td>
             <td>
               <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000329">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
               <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000328">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Owners of the parent</td>
+            <td>
+              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000326">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000327">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2333,10 +2412,6 @@
           </tr>
         </tbody>
       </table>
-      <p class="footnote-table">(f)<ix:footnote footnoteRole="http://www.xbrl.org/2003/role/footnote" id="foot6" xml:lang="en">This means the share of associates’ other comprehensive income attributable to owners of the associates, ie it is after tax and non-controlling interests in the associates. In this example, the other comprehensive income of associatesconsists only of items that will not be subsequently reclassified to profit or loss. Entities whose associates’ other comprehensive income includes items that may be subsequently reclassified to profit or loss are required by paragraph 82A(b) to present that amount in a separate line.</ix:footnote>
-      </p>
-      <p class="footnote-table">(g)<ix:footnote footnoteRole="http://www.xbrl.org/2003/role/footnote" id="foot7" xml:lang="en">The income tax relating to each component of other comprehensive income is disclosed in the notes.</ix:footnote>
-      </p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
