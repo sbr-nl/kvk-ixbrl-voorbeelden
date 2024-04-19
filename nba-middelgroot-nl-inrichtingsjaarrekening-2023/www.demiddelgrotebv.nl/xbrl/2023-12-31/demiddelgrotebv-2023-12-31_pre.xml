@@ -303,8 +303,6 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_Equity_loc" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Equity" xlink:label="bw2-titel9_Equity_loc_2"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_Equity_loc_2" order="8.0" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RetainedEarnings" xlink:label="bw2-titel9_RetainedEarnings_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_RetainedEarnings_loc" order="2.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityDividendDistribution" xlink:label="rj_EquityDividendDistribution_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="rj_EquityDividendDistribution_loc" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityResultAllocation" xlink:label="rj_EquityResultAllocation_loc"/>
@@ -315,5 +313,7 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="rj_EquityShareBasedArrangementsExercised_loc" order="6.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityMovementOther" xlink:label="rj_EquityMovementOther_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="rj_EquityMovementOther_loc" order="7.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_EquityProfitAllocation" xlink:label="middelgroot_EquityProfitAllocation_loc"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="middelgroot_EquityProfitAllocation_loc" order="2.0"/>
   </link:presentationLink>
 </link:linkbase>
