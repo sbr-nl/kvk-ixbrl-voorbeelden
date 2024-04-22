@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier>https://www.degrotebv.nl/xbrl/2023-12-31</tp:identifier>
+	<tp:name>De Middelgrote B.V. voorbeeld XBRL extensietaxonomie 2023</tp:name>
+	<tp:description>De Middelgrote B.V. voorbeeld jaarrekening 2023</tp:description>
+	<tp:version>Voorbeeld</tp:version>
+	<tp:publisher>De Middelgrote B.V.</tp:publisher>
+	<tp:publisherURL>https://www.degrotebv.nl</tp:publisherURL>
+	<tp:publisherCountry>NL</tp:publisherCountry>
+	<tp:publicationDate>2024-03-31</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name>De Middelgrote B.V. voorbeeld XBRL extensietaxonomie 2023 - Entry point</tp:name>
+			<tp:description>Entry point dat wordt gebruikt om De Middelgrote B.V. voorbeeld XBRL extensietaxonomie en voorbeeld jaarrekening 2023 in te laden.</tp:description>
+			<tp:entryPointDocument href="https://https://www.degrotebv.nl/xbrl/2023-12-31/degrotebv-2023-12-31.xsd"/>
+			<tp:languages>
+				<tp:language>nl</tp:language>
+			</tp:languages>
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>
