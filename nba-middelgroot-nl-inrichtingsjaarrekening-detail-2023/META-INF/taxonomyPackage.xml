@@ -12,7 +12,7 @@
 		<tp:entryPoint>
 			<tp:name>De Middelgrote B.V. voorbeeld XBRL extensietaxonomie 2023 - Entry point</tp:name>
 			<tp:description>Entry point dat wordt gebruikt om De Middelgrote B.V. voorbeeld XBRL extensietaxonomie en voorbeeld jaarrekening 2023 in te laden.</tp:description>
-			<tp:entryPointDocument href="https://https://www.demiddelgrotebv.nl/xbrl/2023-12-31/demiddelgrotebv-2023-12-31.xsd"/>
+			<tp:entryPointDocument href="https://www.demiddelgrotebv.nl/xbrl/2023-12-31/demiddelgrotebv-2023-12-31.xsd"/>
 			<tp:languages>
 				<tp:language>nl</tp:language>
 			</tp:languages>
