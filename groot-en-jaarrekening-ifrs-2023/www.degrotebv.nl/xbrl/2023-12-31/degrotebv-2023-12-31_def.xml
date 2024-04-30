@@ -266,7 +266,7 @@
   <link:definitionLink xlink:type="extended" xlink:role="https://www.degrotebv.nl/role/ConsolidatedStatementOfChangesInEquity">
     <link:loc xlink:type="locator" xlink:href="https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd#ifrs-full_StatementOfChangesInEquityLineItems" xlink:label="ifrs-full_StatementOfChangesInEquityLineItems_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd#ifrs-full_StatementOfChangesInEquityTable" xlink:label="ifrs-full_StatementOfChangesInEquityTable_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="ifrs-full_StatementOfChangesInEquityLineItems_loc" xlink:to="ifrs-full_StatementOfChangesInEquityTable_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="ifrs-full_StatementOfChangesInEquityLineItems_loc" xlink:to="ifrs-full_StatementOfChangesInEquityTable_loc" order="1.0" xbrldt:contextElement="scenario" xbrldt:closed="true"/>
     <link:loc xlink:type="locator" xlink:href="https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd#ifrs-full_ComponentsOfEquityAxis" xlink:label="ifrs-full_ComponentsOfEquityAxis_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="ifrs-full_StatementOfChangesInEquityTable_loc" xlink:to="ifrs-full_ComponentsOfEquityAxis_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd#ifrs-full_EquityMember" xlink:label="ifrs-full_EquityMember_loc"/>
