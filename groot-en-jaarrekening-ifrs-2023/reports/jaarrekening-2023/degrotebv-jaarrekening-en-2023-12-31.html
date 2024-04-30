@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ifrs-full="https://xbrl.ifrs.org/taxonomy/2023-03-23/ifrs-full" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2015-02-26" xmlns:example="http://www.ifrs.org/xbrl/illustrativeExamples/Example" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:groot="https://www.degrotebv.nl/xbrl/2023-12-31" xmlns:ifrs-full="https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
 
 <head>
   <title>Annual report 2023</title>
@@ -469,19 +469,45 @@
   <div class="hidden">
     <ix:header xmlns:ix="http://www.xbrl.org/2013/inlineXBRL">
       <ix:references>
-        <link:schemaRef xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="AANPASSEN" />
+        <link:schemaRef xlink:type="simple" xlink:href="https://www.degrotebv.nl/xbrl/2023-12-31/degrotebv-2023-12-31.xsd" />
       </ix:references>
       <ix:resources>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023">
+        <xbrli:context id="context_1">
           <xbrli:entity>
-            <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
+            <xbrli:identifier scheme="https://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
           </xbrli:entity>
           <xbrli:period>
             <xbrli:startDate>2023-01-01</xbrli:startDate>
             <xbrli:endDate>2023-12-31</xbrli:endDate>
           </xbrli:period>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023">
+        <xbrli:context id="context_2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="https://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="ifrs-full:ConsolidatedAndSeparateFinancialStatementsAxis">ifrs-full:ConsolidatedMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="https://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2022-01-01</xbrli:startDate>
+            <xbrli:endDate>2022-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="ifrs-full:ConsolidatedAndSeparateFinancialStatementsAxis">ifrs-full:ConsolidatedMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+
+        <!--
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -489,7 +515,7 @@
             <xbrli:instant>2023-12-31</xbrli:instant>
           </xbrli:period>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -497,7 +523,7 @@
             <xbrli:instant>2022-12-31</xbrli:instant>
           </xbrli:period>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_SegmentAMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_SegmentAMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -509,7 +535,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:SegmentsAxis">example3:SegmentAMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_SegmentBMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_SegmentBMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -521,7 +547,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:SegmentsAxis">example3:SegmentBMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_LongtermBorrowingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_LongtermBorrowingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -532,7 +558,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:LiabilitiesArisingFromFinancingActivitiesAxis">ifrs-full:LongtermBorrowingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_LeaseLiabilitiesMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_LeaseLiabilitiesMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -543,7 +569,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:LiabilitiesArisingFromFinancingActivitiesAxis">ifrs-full:LeaseLiabilitiesMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_LongtermBorrowingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_LongtermBorrowingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -554,7 +580,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:LiabilitiesArisingFromFinancingActivitiesAxis">ifrs-full:LongtermBorrowingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_LeaseLiabilitiesMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_LeaseLiabilitiesMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -565,7 +591,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:LiabilitiesArisingFromFinancingActivitiesAxis">ifrs-full:LeaseLiabilitiesMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_LongtermBorrowingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_LongtermBorrowingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -577,7 +603,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:LiabilitiesArisingFromFinancingActivitiesAxis">ifrs-full:LongtermBorrowingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_LeaseLiabilitiesMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_LeaseLiabilitiesMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -589,7 +615,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:LiabilitiesArisingFromFinancingActivitiesAxis">ifrs-full:LeaseLiabilitiesMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -598,7 +624,7 @@
             <xbrli:endDate>2023-12-31</xbrli:endDate>
           </xbrli:period>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_GrossCarryingAmountMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_GrossCarryingAmountMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -610,7 +636,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis">ifrs-full:GrossCarryingAmountMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -622,7 +648,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis">ifrs-full:AccumulatedDepreciationAmortisationAndImpairmentMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_LandAndBuildingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_LandAndBuildingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -634,7 +660,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ClassesOfPropertyPlantAndEquipmentAxis">ifrs-full:LandAndBuildingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -647,7 +673,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ClassesOfPropertyPlantAndEquipmentAxis">ifrs-full:LandAndBuildingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_FixturesAndFittingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_FixturesAndFittingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -659,7 +685,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ClassesOfPropertyPlantAndEquipmentAxis">ifrs-full:FixturesAndFittingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_GrossCarryingAmountMember_FixturesAndFittingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_GrossCarryingAmountMember_FixturesAndFittingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -672,7 +698,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ClassesOfPropertyPlantAndEquipmentAxis">ifrs-full:FixturesAndFittingsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
           </xbrli:entity>
@@ -901,7 +927,7 @@
             <xbrli:instant>2023-12-31</xbrli:instant>
           </xbrli:period>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -910,7 +936,7 @@
             <xbrli:endDate>2022-12-31</xbrli:endDate>
           </xbrli:period>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1147,7 +1173,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:RevaluationSurplusMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_EquityAttributableToOwnersOfParentMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_EquityAttributableToOwnersOfParentMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1159,7 +1185,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:EquityAttributableToOwnersOfParentMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_NoncontrollingInterestsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_NoncontrollingInterestsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1171,7 +1197,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:NoncontrollingInterestsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_RetainedEarningsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_RetainedEarningsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1183,7 +1209,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:RetainedEarningsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_ReserveOfExchangeDifferencesOnTranslationMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_ReserveOfExchangeDifferencesOnTranslationMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1195,7 +1221,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_ReserveOfCashFlowHedgesMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_ReserveOfCashFlowHedgesMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1207,7 +1233,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_RevaluationSurplusMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_RevaluationSurplusMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1219,7 +1245,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:RevaluationSurplusMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_EquityAttributableToOwnersOfParentMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_EquityAttributableToOwnersOfParentMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1231,7 +1257,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:EquityAttributableToOwnersOfParentMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_NoncontrollingInterestsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_NoncontrollingInterestsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1243,7 +1269,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:NoncontrollingInterestsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_IssuedCapitalMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_IssuedCapitalMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1255,7 +1281,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:IssuedCapitalMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_RetainedEarningsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_RetainedEarningsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1267,7 +1293,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:RetainedEarningsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_ReserveOfExchangeDifferencesOnTranslationMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_ReserveOfExchangeDifferencesOnTranslationMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1279,7 +1305,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_ReserveOfCashFlowHedgesMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_ReserveOfCashFlowHedgesMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1291,7 +1317,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_RevaluationSurplusMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_RevaluationSurplusMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1478,7 +1504,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2022_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_3_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1490,7 +1516,7 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember">
+        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="context_2_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">Example 2</xbrli:identifier>
           </xbrli:entity>
@@ -1502,45 +1528,10 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
+        -->
         <xbrli:unit xmlns:xbrli="http://www.xbrl.org/2003/instance" id="EUR">
           <xbrli:measure>iso4217:EUR</xbrli:measure>
         </xbrli:unit>
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000211" toRefs="foot1" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000222" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000223" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000226" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000227" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000232" toRefs="foot3" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000233" toRefs="foot3" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000351" toRefs="foot4" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000352" toRefs="foot4" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000287" toRefs="foot5" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000288" toRefs="foot5" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000318" toRefs="foot6" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000319" toRefs="foot6" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000351" toRefs="foot8" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000352" toRefs="foot8" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000332" toRefs="foot9" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000333" toRefs="foot9" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000349" toRefs="foot10" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000350" toRefs="foot10" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000503" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000504" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000505" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000506" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000507" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000508" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000509" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000510" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000527" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000528" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000529" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000530" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000531" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000532" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000533" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000534" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000164" toRefs="foot13" />
       </ix:resources>
     </ix:header>
   </div>
@@ -1554,8 +1545,9 @@
         <div class="title-line"></div>
         <div class="title-content">
           <div class="first-page-title">Annual Report 2023</div>
-          <div class="first-page-subtitle">De Grote B.V.</div>
-          <div class="first-page-subtitle">Registered office</div>
+          <div class="first-page-subtitle"><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Grote</ix:nonNumeric> <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric></div>
+          <div class="first-page-subtitle"><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Registered office</ix:nonNumeric></div>
+          <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeLarge" format="ixt:fixed-true" id="ID000050"></ix:nonNumeric>
         </div>
       </div>
       <div class="date">
@@ -1624,7 +1616,7 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h1 id="consolidated-financial-statements">Consolidated financial statements</h1>
+      <h1 id="consolidated-financial-statements"><ix:nonNumeric contextRef="context_1" name="rj:FinancialStatementsConsolidated" format="ixt:fixed-true" id="ID000080">Consolidated</ix:nonNumeric> financial statements</h1>
 	  </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -1649,10 +1641,10 @@
         <tbody>
           <tr>
             <td>
-              <h3>for the year ended 31 December 2023</h3>
+              <h3>for the year ended <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriodEndDate" contextRef="context_1" format="ixt:date-day-monthname-year-en" id="ID0000060">31 December 2023</ix:nonNumeric></h3>
             </td>
             <td>
-              <h2>2023</h2>
+              <h2><ix:nonNumeric name="bw2-titel9:FinancialReportingPeriod" contextRef="context_1" id="ID0000070">2023</ix:nonNumeric></h2>
             </td>
             <td></td>
             <td>
@@ -1683,92 +1675,92 @@
           <tr>
             <td>Revenue</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Revenue" unitRef="EUR" decimals="-3" scale="3" id="id00000268">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:Revenue" unitRef="EUR" decimals="-3" scale="3" id="id00000100">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Revenue" unitRef="EUR" decimals="-3" scale="3" id="id00000269">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:Revenue" unitRef="EUR" decimals="-3" scale="3" id="id00000110">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other income</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000271">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000120">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000270">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000130">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Changes in inventories</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ChangesInInventoriesOfFinishedGoodsAndWorkInProgress" unitRef="EUR" decimals="-3" scale="3" id="id00000272">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInInventoriesOfFinishedGoodsAndWorkInProgress" unitRef="EUR" decimals="-3" scale="3" id="id00000140">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ChangesInInventoriesOfFinishedGoodsAndWorkInProgress" unitRef="EUR" decimals="-3" scale="3" id="id00000273">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInInventoriesOfFinishedGoodsAndWorkInProgress" unitRef="EUR" decimals="-3" scale="3" id="id00000150">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Costs of material</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:RawMaterialsAndConsumablesUsed" unitRef="EUR" decimals="-3" scale="3" id="id00000276">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:RawMaterialsAndConsumablesUsed" unitRef="EUR" decimals="-3" scale="3" id="id00000160">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:RawMaterialsAndConsumablesUsed" unitRef="EUR" decimals="-3" scale="3" id="id00000277">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:RawMaterialsAndConsumablesUsed" unitRef="EUR" decimals="-3" scale="3" id="id00000170">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
           <tr>
             <td>Employee benefits expense</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:EmployeeBenefitsExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000279">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:EmployeeBenefitsExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000180">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:EmployeeBenefitsExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000278">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:EmployeeBenefitsExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000190">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Change in fair value of investment property</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000276">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInInvestmentProperty" unitRef="EUR" decimals="-3" scale="3" id="id00000200">0</ix:nonFraction>
             </td>
              <td></td>
              <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000277">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInInvestmentProperty" unitRef="EUR" decimals="-3" scale="3" id="id00000210">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Depreciation, amortisation expense and impairment of non-financial assets</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DepreciationAndAmortisationExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000280">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationAndAmortisationExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000220">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:DepreciationAndAmortisationExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000281">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationAndAmortisationExpense" unitRef="EUR" decimals="-3" scale="3" id="id00000230">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Impairment losses of financial assets and contract assets</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000276">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ImpairmentLossOnFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000240">0</ix:nonFraction>
             </td>
              <td></td>
              <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000277">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ImpairmentLossOnFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000250">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other expenses</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherExpenseByNature" unitRef="EUR" decimals="-3" scale="3" id="id00000283">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherExpenseByNature" unitRef="EUR" decimals="-3" scale="3" id="id00000260">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherExpenseByNature" unitRef="EUR" decimals="-3" scale="3" id="id00000284">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherExpenseByNature" unitRef="EUR" decimals="-3" scale="3" id="id00000270">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1786,11 +1778,11 @@
               <h2>Operating profit</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OperatingProfit" unitRef="EUR" decimals="-3" scale="3" id="id00000290">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossFromOperatingActivities" unitRef="EUR" decimals="-3" scale="3" id="id00000280">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OperatingProfit" unitRef="EUR" decimals="-3" scale="3" id="id00000289">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossFromOperatingActivities" unitRef="EUR" decimals="-3" scale="3" id="id00000290">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -1802,41 +1794,41 @@
           <tr>
             <td>Share of profit of equity accounted investments</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000300">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000310">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Finance costs</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:FinanceCosts" unitRef="EUR" decimals="-3" scale="3" id="id00000286">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:FinanceCosts" unitRef="EUR" decimals="-3" scale="3" id="id00000320">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:FinanceCosts" unitRef="EUR" decimals="-3" scale="3" id="id00000285">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:FinanceCosts" unitRef="EUR" decimals="-3" scale="3" id="id00000330">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Finance income</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:FinanceIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:FinanceIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000340">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:FinanceIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:FinanceIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000350">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other financial items</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000287">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherFinanceIncomeCost" unitRef="EUR" decimals="-3" scale="3" id="id00000360">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000288">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherFinanceIncomeCost" unitRef="EUR" decimals="-3" scale="3" id="id00000370">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1854,11 +1846,11 @@
               <h2>Profit before tax</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="-3" scale="3" id="id00000290">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="-3" scale="3" id="id00000380">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="-3" scale="3" id="id00000289">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="-3" scale="3" id="id00000390">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -1870,11 +1862,11 @@
           <tr>
             <td>Income tax expense</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxExpenseContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000291">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:IncomeTaxExpenseContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000400">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxExpenseContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000292">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:IncomeTaxExpenseContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000410">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1892,19 +1884,21 @@
               <h2>Profit for the year from continuing operations</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossFromContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000294">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossFromContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000420">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossFromContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000293">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossFromContinuingOperations" unitRef="EUR" decimals="-3" scale="3" id="id00000430">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Loss for the year from discontinued operations</td>
-            <td>–</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossFromDiscontinuedOperations" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000440">0</ix:nonFraction>
+            </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossFromDiscontinuedOperations" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000295">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossFromDiscontinuedOperations" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000450">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1922,11 +1916,11 @@
               <h2>Profit for the year</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000297">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000460">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000296">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000470">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -1948,23 +1942,23 @@
             <td></td>
           </tr>
           <tr>
-            <td>Non-controlling interests</td>
+            <td>Non-controlling interest</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000301">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000480">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000300">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000490">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Owners of the parent</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000298">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000500">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000299">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000510">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -1980,11 +1974,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000302">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000520">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000303">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000530">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -2014,31 +2008,31 @@
           <tr>
             <td>- From continuing operations</td>
               <td>
-                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000540">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000550">0.00</ix:nonFraction>
               </td>
           </tr>		  
           <tr>
             <td>- From discontinued operations</td>
               <td>
-                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000560">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000570">0.00</ix:nonFraction>
               </td>
           </tr>		  
           <tr>
             <td>Total</td>
               <td>
-                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000580">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000590">0.00</ix:nonFraction>
               </td>
           </tr>
 		  <tr class="empty-row sub-total">
@@ -2060,31 +2054,31 @@
           <tr>
             <td>- From continuing operations</td>
               <td>
-                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000600">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000610">0.00</ix:nonFraction>
               </td>
           </tr>		  
           <tr>
             <td>- From discontinued operations</td>
               <td>
-                <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000620">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000630">0.00</ix:nonFraction>
               </td>
           </tr>			  
           <tr>
             <td>Total</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000640">0.00</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:DiluteEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0">0.00</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:DiluteEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000650">0.00</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2158,11 +2152,11 @@
               <h2>Profit for the year</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000306">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00001000">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00000307">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLoss" unitRef="EUR" decimals="-3" scale="3" id="id00001010">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -2187,31 +2181,31 @@
           <tr>
             <td>Revaluation of land</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation" unitRef="EUR" decimals="-3" scale="3" id="id00000314">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation" unitRef="EUR" decimals="-3" scale="3" id="id00001020">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation" unitRef="EUR" decimals="-3" scale="3" id="id00000315">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation" unitRef="EUR" decimals="-3" scale="3" id="id00001030">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Remeasurements of defined benefit liability</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000317">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00001040">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" unitRef="EUR" decimals="-3" scale="3" id="id00000316">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" unitRef="EUR" decimals="-3" scale="3" id="id00001050">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Income tax relating to items not reclassified</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3" sign="-">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3" id="id00001060">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3" id="id00001070">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2227,11 +2221,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" sign="-">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" id="id00001080">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" id="id00001090">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2250,69 +2244,43 @@
             </td>
           </tr>
           <tr>
-            <td>Cash flow hedging:</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>- current year gains</td>
+            <td>Cash flow hedging</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" id="id00001100">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
-            </td>
-          </tr>
-          <tr>
-            <td>- reclassification to profit or loss</td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxCashFlowHedges" unitRef="EUR" decimals="-3" scale="3" id="id000001110">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Exchange differences on translating foreign operations</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation" unitRef="EUR" decimals="-3" scale="3" id="id00000309">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation" unitRef="EUR" decimals="-3" scale="3" id="id00001120">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation" unitRef="EUR" decimals="-3" scale="3" id="id00000308">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation" unitRef="EUR" decimals="-3" scale="3" id="id00001130">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Share of other comprehensive income of equity accounted investments</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000309">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments" unitRef="EUR" decimals="-3" scale="3" id="id00001140">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000308">0</ix:nonFraction>
-            </td>
-          </tr>
-          <tr>
-            <td>- reclassification to profit or loss</td>
-            <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000313">0</ix:nonFraction>
-            </td>
-            <td></td>
-            <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000312">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments" unitRef="EUR" decimals="-3" scale="3" id="id00001150">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Income tax relating to items that will be reclassified</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3" id="id00001160">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss" unitRef="EUR" decimals="-3" scale="3" id="id00001170">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2328,11 +2296,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" id="id00001180">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax" unitRef="EUR" decimals="-3" scale="3" id="id00001190">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2350,11 +2318,11 @@
               <h2>Other comprehensive income for the year, net of tax</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000322">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00001200">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:OtherComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000323">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:OtherComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00001210">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2372,11 +2340,11 @@
               <h2>Total comprehensive income for the year</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000325">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00001220">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000324">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00001230">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -2398,23 +2366,23 @@
             <td></td>
           </tr>
           <tr>
-            <td>Non-controlling interests</td>
+            <td>Non-controlling interest</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000329">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncomeAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00001240">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000328">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncomeAttributableToNoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00001250">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Owners of the parent</td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000326">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00001260">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000327">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncomeAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00001270">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2430,11 +2398,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000330">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00001280">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000331">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00001290">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -2517,91 +2485,91 @@
           <tr>
             <td>Goodwill</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Goodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000138">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Goodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000138">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Goodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000137">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Goodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000137">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other intangible assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:IntangibleAssetsOtherThanGoodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000139">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:IntangibleAssetsOtherThanGoodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000139">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:IntangibleAssetsOtherThanGoodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000140">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:IntangibleAssetsOtherThanGoodwill" unitRef="EUR" decimals="-3" scale="3" id="id00000140">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Property, plant and equipment</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="-3" scale="3" id="id00000135">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="-3" scale="3" id="id00000135">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="-3" scale="3" id="id00000136">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="-3" scale="3" id="id00000136">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Right-of-use assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000135">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000135">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000136">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000136">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Investments accounted for using the equity method</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:InvestmentsInAssociatesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000142">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:InvestmentsInAssociatesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000142">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:InvestmentsInAssociatesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000141">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:InvestmentsInAssociatesAccountedForUsingEquityMethod" unitRef="EUR" decimals="-3" scale="3" id="id00000141">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Investment property</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other long-term assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other long-term financial assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:OtherNoncurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:OtherNoncurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:OtherNoncurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:OtherNoncurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Deferred tax assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000143">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000144">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2617,11 +2585,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:NoncurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000146">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:NoncurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000146">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:NoncurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000145">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:NoncurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000145">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2645,71 +2613,71 @@
           <tr>
             <td>Assets included in disposal group classified as held for sale</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Inventories</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Inventories" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Inventories" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Inventories" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Inventories" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Prepayments and other short-term assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Trade and other receivables</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:TradeAndOtherReceivables" unitRef="EUR" decimals="-3" scale="3" id="id00000150">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:TradeAndOtherReceivables" unitRef="EUR" decimals="-3" scale="3" id="id00000150">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:TradeAndOtherReceivables" unitRef="EUR" decimals="-3" scale="3" id="id00000149">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:TradeAndOtherReceivables" unitRef="EUR" decimals="-3" scale="3" id="id00000149">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Derivative financial instruments</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000147">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000148">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other short-term financial assets</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:OtherCurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000151">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:OtherCurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000151">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:OtherCurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000152">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:OtherCurrentFinancialAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000152">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Cash and cash equivalents</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="-3" scale="3" id="id00000154">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="-3" scale="3" id="id00000154">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="-3" scale="3" id="id00000153">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="-3" scale="3" id="id00000153">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2725,11 +2693,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:CurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000155">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:CurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000155">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:CurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000156">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:CurrentAssets" unitRef="EUR" decimals="-3" scale="3" id="id00000156">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2747,11 +2715,11 @@
               <h2>Total assets</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Assets" unitRef="EUR" decimals="-3" scale="3" id="id00000158">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Assets" unitRef="EUR" decimals="-3" scale="3" id="id00000158">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Assets" unitRef="EUR" decimals="-3" scale="3" id="id00000157">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Assets" unitRef="EUR" decimals="-3" scale="3" id="id00000157">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -2837,41 +2805,41 @@
           <tr>
             <td>Share capital</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:IssuedCapital" unitRef="EUR" decimals="-3" scale="3" id="id00000159">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:IssuedCapital" unitRef="EUR" decimals="-3" scale="3" id="id00000159">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:IssuedCapital" unitRef="EUR" decimals="-3" scale="3" id="id00000160">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:IssuedCapital" unitRef="EUR" decimals="-3" scale="3" id="id00000160">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Share premium</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:SharePremium" unitRef="EUR" decimals="-3" scale="3" id="id00000159">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:SharePremium" unitRef="EUR" decimals="-3" scale="3" id="id00000159">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:SharePremium" unitRef="EUR" decimals="-3" scale="3" id="id00000160">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:SharePremium" unitRef="EUR" decimals="-3" scale="3" id="id00000160">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other components of equity</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:OtherReserves" unitRef="EUR" decimals="-3" scale="3" id="id00000163">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:OtherReserves" unitRef="EUR" decimals="-3" scale="3" id="id00000163">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:OtherReserves" unitRef="EUR" decimals="-3" scale="3" id="id00000164">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:OtherReserves" unitRef="EUR" decimals="-3" scale="3" id="id00000164">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Retained earnings</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:RetainedEarnings" unitRef="EUR" decimals="-3" scale="3" id="id00000162">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:RetainedEarnings" unitRef="EUR" decimals="-3" scale="3" id="id00000162">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:RetainedEarnings" unitRef="EUR" decimals="-3" scale="3" id="id00000161">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:RetainedEarnings" unitRef="EUR" decimals="-3" scale="3" id="id00000161">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2887,11 +2855,11 @@
           <tr>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:EquityAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000166">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:EquityAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000166">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:EquityAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000165">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:EquityAttributableToOwnersOfParent" unitRef="EUR" decimals="-3" scale="3" id="id00000165">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -2899,11 +2867,11 @@
               <h3>Non-controlling interest</h3>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:NoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000167">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:NoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000167">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:NoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000168">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:NoncontrollingInterests" unitRef="EUR" decimals="-3" scale="3" id="id00000168">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2921,11 +2889,11 @@
               <h2>Total equity</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000170">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000170">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000169">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000169">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -2946,51 +2914,51 @@
           <tr>
             <td>Pension and other employee obligations</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000171">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000171">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000172">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000172">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Borrowings</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:LongtermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000171">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:LongtermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000171">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:LongtermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000172">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:LongtermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000172">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Lease liabilities</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000171">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000171">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000172">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000172">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Deferred tax liabilties</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:DeferredTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000174">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:DeferredTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000174">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:DeferredTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000173">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:DeferredTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000173">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Other liabilities</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:OtherLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000175">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:OtherLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000175">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:OtherLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000176">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:OtherLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000176">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3008,11 +2976,11 @@
               <h2>Total non-current liabilities</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:NoncurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000178">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:NoncurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000178">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:NoncurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000177">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:NoncurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000177">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3033,91 +3001,91 @@
           <tr>
             <td>Liabilities included in disposal group classified as held for sale</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Provisions</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:CurrentProvisions" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:CurrentProvisions" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:CurrentProvisions" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:CurrentProvisions" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Pension and other employee obligations</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Borrowings</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:ShorttermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000776">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:ShorttermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000776">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:ShorttermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000181">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:ShorttermBorrowings" unitRef="EUR" decimals="-3" scale="3" id="id00000181">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Lease liabilities</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000187">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000188">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Trade and other payables</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:TradeAndOtherCurrentPayables" unitRef="EUR" decimals="-3" scale="3" id="id00000179">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:TradeAndOtherCurrentPayables" unitRef="EUR" decimals="-3" scale="3" id="id00000179">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:TradeAndOtherCurrentPayables" unitRef="EUR" decimals="-3" scale="3" id="id00000180">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:TradeAndOtherCurrentPayables" unitRef="EUR" decimals="-3" scale="3" id="id00000180">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Current tax liabilities</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:CurrentTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000186">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:CurrentTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000186">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:CurrentTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000185">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:CurrentTaxLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000185">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Derivative financial instruments</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000183">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000183">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000184">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000184">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Contract and other liabilities</td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000183">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000183">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000184">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Undefined" unitRef="EUR" decimals="-3" scale="3" id="id00000184">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3135,11 +3103,11 @@
               <h2>Total current liabilities</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:CurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000190">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:CurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000190">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:CurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000189">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:CurrentLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000189">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3157,11 +3125,11 @@
               <h2>Total liabilities</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Liabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000191">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Liabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000191">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Liabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000192">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Liabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000192">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3179,11 +3147,11 @@
               <h2>Total equity and liabilities</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:EquityAndLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000194">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:EquityAndLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000194">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:EquityAndLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000193">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:EquityAndLiabilities" unitRef="EUR" decimals="-3" scale="3" id="id00000193">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -3320,31 +3288,31 @@
               <h2>Balance at 1 January 2023</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2022_IssuedCapitalMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000511">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_IssuedCapitalMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000511">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000512">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000512">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000513">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000513">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000514">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000514">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000517">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000517">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_NoncontrollingInterestsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000518">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_NoncontrollingInterestsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000518">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000519">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000519">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -3373,7 +3341,7 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:DividendsPaid" unitRef="EUR" decimals="-3" scale="3" id="id00000523">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:DividendsPaid" unitRef="EUR" decimals="-3" scale="3" id="id00000523">0</ix:nonFraction>
             </td>
             <td></td>
             <td>–</td>
@@ -3381,19 +3349,19 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:DividendsPaid" unitRef="EUR" decimals="-3" scale="3" id="id00000524">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:DividendsPaid" unitRef="EUR" decimals="-3" scale="3" id="id00000524">0</ix:nonFraction>
             </td>
             <td></td>
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DividendsPaid" unitRef="EUR" decimals="-3" scale="3" id="id00000525">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DividendsPaid" unitRef="EUR" decimals="-3" scale="3" id="id00000525">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Issue of share capital on exercise of employee share options</td>
             <td>
-              <ix:nonFraction contextRef="y2023_IssuedCapitalMember" format="ixt:numdotdecimal" name="ifrs-full:IssueOfEquity" unitRef="EUR" decimals="-3" scale="3" id="id00000520">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_IssuedCapitalMember" format="ixt:num-dot-decimal" name="ifrs-full:IssueOfEquity" unitRef="EUR" decimals="-3" scale="3" id="id00000520">0</ix:nonFraction>
             </td>
             <td></td>
             <td>–</td>
@@ -3403,13 +3371,13 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:IssueOfEquity" unitRef="EUR" decimals="-3" scale="3" id="id00000521">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:IssueOfEquity" unitRef="EUR" decimals="-3" scale="3" id="id00000521">0</ix:nonFraction>
             </td>
             <td></td>
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IssueOfEquity" unitRef="EUR" decimals="-3" scale="3" id="id00000522">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:IssueOfEquity" unitRef="EUR" decimals="-3" scale="3" id="id00000522">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -3465,27 +3433,27 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000527">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000527">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000528">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000528">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000529">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000529">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000532">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000532">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023_NoncontrollingInterestsMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000533">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2_NoncontrollingInterestsMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000533">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000534">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000534">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3523,31 +3491,31 @@
               <h2>Balance at 31 December 2023</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2023_IssuedCapitalMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000537">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023_IssuedCapitalMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000537">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000538">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000538">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000539">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000539">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000540">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000540">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000543">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000543">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023_NoncontrollingInterestsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000544">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023_NoncontrollingInterestsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000544">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000545">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000545">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -3588,31 +3556,31 @@
               <h2>Balance at 1 January 2022</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2021_IssuedCapitalMember_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000502">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_IssuedCapitalMember_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000502">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_RetainedEarningsMember_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000254">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_RetainedEarningsMember_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000254">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_ReserveOfExchangeDifferencesOnTranslationMember_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000550">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_ReserveOfExchangeDifferencesOnTranslationMember_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000550">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000552">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000552">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_EquityAttributableToOwnersOfParentMember_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000557">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_EquityAttributableToOwnersOfParentMember_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000557">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_NoncontrollingInterestsMember_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000560">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_NoncontrollingInterestsMember_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000560">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_PreviouslyStatedMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000563">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_PreviouslyStatedMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000563">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -3623,7 +3591,7 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_RetainedEarningsMember_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000255">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_RetainedEarningsMember_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000255">0</ix:nonFraction>
             </td>
             <td></td>
             <td>–</td>
@@ -3631,15 +3599,15 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_EquityAttributableToOwnersOfParentMember_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000556">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_EquityAttributableToOwnersOfParentMember_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000556">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_NoncontrollingInterestsMember_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000559">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_NoncontrollingInterestsMember_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000559">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000562">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_FinancialEffectOfChangesInAccountingPolicyMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000562">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3675,31 +3643,31 @@
           <tr>
             <td>Restated balance</td>
             <td>
-              <ix:nonFraction contextRef="e2021_IssuedCapitalMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000182">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_IssuedCapitalMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000182">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000548">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000548">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000549">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" sign="-" id="id00000549">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000551">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000551">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000555">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000555">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021_NoncontrollingInterestsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000558">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021_NoncontrollingInterestsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000558">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2021" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000561">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2021" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000561">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3787,27 +3755,27 @@
             <td>–</td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000503">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000503">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000504">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000504">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000505">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000505">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000508">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000508">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022_NoncontrollingInterestsMember" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000509">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3_NoncontrollingInterestsMember" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000509">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="y2022" format="ixt:numdotdecimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000510">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:ComprehensiveIncome" unitRef="EUR" decimals="-3" scale="3" id="id00000510">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -3845,31 +3813,31 @@
               <h2>Balance at 31 December 2022</h2>
             </td>
             <td>
-              <ix:nonFraction contextRef="e2022_IssuedCapitalMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000511">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_IssuedCapitalMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000511">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_RetainedEarningsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000512">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_RetainedEarningsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000512">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000513">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_ReserveOfExchangeDifferencesOnTranslationMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000513">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000514">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000514">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_EquityAttributableToOwnersOfParentMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000517">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_EquityAttributableToOwnersOfParentMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000517">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022_NoncontrollingInterestsMember" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000518">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022_NoncontrollingInterestsMember" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000518">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000519">0</ix:nonFraction>
+              <ix:nonFraction contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:Equity" unitRef="EUR" decimals="-3" scale="3" id="id00000519">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -3964,7 +3932,7 @@
           <tr>
             <td>Profit before tax</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="0" scale="0" id="id00000142">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProfitLossBeforeTax" unitRef="EUR" decimals="0" scale="0" id="id00000142">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4030,7 +3998,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:CashFlowsFromUsedInOperatingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000154">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:CashFlowsFromUsedInOperatingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000154">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4044,7 +4012,7 @@
           <tr>
             <td>Purchase of property, plant and equipment</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000156">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000156">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4052,7 +4020,7 @@
           <tr>
             <td>Proceeds from disposal of property, plant and equipment</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000157">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000157">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4072,7 +4040,7 @@
           <tr>
             <td>Acquisition of subsidiaries, net of cash acquired</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000155">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000155">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4092,7 +4060,7 @@
           <tr>
             <td>Interest received</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:InterestReceivedClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000158">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:InterestReceivedClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000158">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4100,7 +4068,7 @@
           <tr>
             <td>Dividends received</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DividendsReceivedClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000159">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DividendsReceivedClassifiedAsInvestingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000159">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4126,7 +4094,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:CashFlowsFromUsedInInvestingActivities" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000160">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:CashFlowsFromUsedInInvestingActivities" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000160">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4140,7 +4108,7 @@
           <tr>
             <td>Proceeds from borrowings</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000162">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000162">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4148,7 +4116,7 @@
           <tr>
             <td>Repayment of borrowings and leasing liabilities</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000163">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000163">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4156,7 +4124,7 @@
           <tr>
             <td>Proceeds from issue of share capital</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ProceedsFromIssuingShares" unitRef="EUR" decimals="0" scale="0" id="id00000161">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ProceedsFromIssuingShares" unitRef="EUR" decimals="0" scale="0" id="id00000161">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4170,7 +4138,7 @@
           <tr>
             <td>Dividends paid</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DividendsPaidClassifiedAsFinancingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000164">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DividendsPaidClassifiedAsFinancingActivities" unitRef="EUR" decimals="0" scale="0" id="id00000164">0</ix:nonFraction>
             </td>
             <td></td>
             <td>0</td>
@@ -4190,7 +4158,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:CashFlowsFromUsedInFinancingActivities" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000165">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:CashFlowsFromUsedInFinancingActivities" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000165">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
@@ -4208,7 +4176,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:IncreaseDecreaseInCashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="id00000167">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:IncreaseDecreaseInCashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="id00000167">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4216,7 +4184,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="id00000168">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="id00000168">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4224,7 +4192,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:EffectOfExchangeRateChangesOnCashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000166">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:EffectOfExchangeRateChangesOnCashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000166">0</ix:nonFraction>
             </td>
           </tr>       
           <tr class="empty-row sub-total">
@@ -4242,7 +4210,7 @@
             <td>0</td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="id00000169">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:CashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="id00000169">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4301,7 +4269,7 @@
         <li><b>construction</b> – providing customers with complete telecommunications systems solutions from design to development and installation.</li>
       </ul>
       <h2>General information, statement of compliance with IFRS and going concern assumption</h2>
-      <p>De Grote B.V., the Group’s ultimate parent company, is a limited liability company incorporated and domiciled in the Netherlands. The registered office according to the Articles of Association of De Grote B.V. is in city name. De Grote B.V. is registered in the Business Register of the Chamber of Commerce under the file number: 12345678. The address of Groot BV is street name, house number, postal code, city name, the Netherlands.</p>
+      <p>De Grote B.V., the Group’s ultimate parent company, is a limited liability company incorporated and domiciled in the Netherlands. The registered office according to the Articles of Association of De Grote B.V. is in city name. De Grote B.V. is registered in the Business Register of the Chamber of Commerce under the file number: <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric>. The address of Groot BV is street name, house number, postal code, city name, the Netherlands.</p>
 
       <p>The consolidated financial statements of the Group have been prepared in accordance with International Financial Reporting Standards (IFRS) as issued by the International Accounting Standards Board (IASB). They have been prepared under the assumption the Group operates on a going concern basis, which assumes the Group will be able to discharge its liabilities as they fall due. In confirming the validity of the going concern basis of preparation, the Group has considered the following specific factors:</p>
       <ul>
@@ -4322,6 +4290,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
+  <!--
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -4390,15 +4359,15 @@
           <tr>
             <td>Property, plant and equipment at beginning of period</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_GrossCarryingAmountMember_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000047">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_GrossCarryingAmountMember_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000047">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000048">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000048">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_GrossCarryingAmountMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000049">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_GrossCarryingAmountMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000049">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4419,11 +4388,11 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000050">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000050">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_GrossCarryingAmountMember" format="ixt:numdotdecimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000051">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_GrossCarryingAmountMember" format="ixt:num-dot-decimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000051">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4431,11 +4400,11 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000052">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000052">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_GrossCarryingAmountMember" format="ixt:numdotdecimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000053">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_GrossCarryingAmountMember" format="ixt:num-dot-decimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000053">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4443,25 +4412,25 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000054">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000054">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_GrossCarryingAmountMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000055">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_GrossCarryingAmountMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000055">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Property, plant and equipment at end of period</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_GrossCarryingAmountMember_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000056">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_GrossCarryingAmountMember_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000056">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000057">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_GrossCarryingAmountMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000057">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_GrossCarryingAmountMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000058">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_GrossCarryingAmountMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000058">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4478,15 +4447,15 @@
           <tr>
             <td>Property, plant and equipment at beginning of period</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000059">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000059">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000060">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000060">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000061">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000061">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4505,15 +4474,15 @@
           <tr>
             <td>Depreciation, property, plant and equipment</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000062">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000062">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000063">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000063">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:numdotdecimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000064">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000064">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4521,11 +4490,11 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000067">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000067">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:numdotdecimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000088">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:num-dot-decimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000088">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4533,39 +4502,39 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000068">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000068">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:numdotdecimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000069">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:num-dot-decimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000069">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Total increase (decrease) in property, plant and equipment</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000072">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000072">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000071">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000071">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="y2023_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000070">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" sign="-" contextRef="context_2_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000070">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Property, plant and equipment at end of period</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000073">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_AccumulatedDepreciationAmortisationAndImpairmentMember_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000073">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000074">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_AccumulatedDepreciationAmortisationAndImpairmentMember_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000074">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000075">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_AccumulatedDepreciationAmortisationAndImpairmentMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000075">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4584,15 +4553,15 @@
           <tr>
             <td>Property, plant and equipment at beginning of period</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000076">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000076">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000077">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000077">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000078">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2022" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000078">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4613,25 +4582,25 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000080">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000080">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000079">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000079">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Depreciation, property, plant and equipment</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000081">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000081">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000082">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000082">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000083">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DepreciationPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000083">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4639,11 +4608,11 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000085">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000085">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000084">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000084">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -4651,25 +4620,25 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000086">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000086">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000087">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DisposalsPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000087">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
             <td>Total increase (decrease) in property, plant and equipment</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000094">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" sign="-" id="id00000094">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000089">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000089">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="y2023" format="ixt:numdotdecimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000090">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:ChangesInPropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000090">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row">
@@ -4678,15 +4647,15 @@
           <tr>
             <td>Property, plant and equipment at end of period</td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_LandAndBuildingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000093">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_LandAndBuildingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000093">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_FixturesAndFittingsMember" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000092">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023_FixturesAndFittingsMember" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000092">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023" format="ixt:numdotdecimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000091">0</ix:nonFraction>
+              <ix:nonFraction xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" contextRef="e2023" format="ixt:num-dot-decimal" name="ifrs-full:PropertyPlantAndEquipment" unitRef="EUR" decimals="0" scale="0" id="id00000091">0</ix:nonFraction>
             </td>
           </tr>
         </tbody>
@@ -4697,7 +4666,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
-
+-->
 
 </body>
 
