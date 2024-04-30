@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ifrs-full="https://xbrl.ifrs.org/taxonomy/2023-03-23/ifrs-full" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2015-02-26" xmlns:example="http://www.ifrs.org/xbrl/illustrativeExamples/Example" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:groot="https://www.degrotebv.nl/xbrl/2023-12-31" xmlns:ifrs-full="https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2015-02-26" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
 
 <head>
   <title>Annual report 2023</title>
@@ -469,18 +469,44 @@
   <div class="hidden">
     <ix:header xmlns:ix="http://www.xbrl.org/2013/inlineXBRL">
       <ix:references>
-        <link:schemaRef xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="AANPASSEN" />
+        <link:schemaRef xlink:type="simple" xlink:href="https://www.degrotebv.nl/xbrl/2023-12-31/degrotebv-2023-12-31.xsd" />
       </ix:references>
       <ix:resources>
-        <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023">
+        <xbrli:context id="context_1">
           <xbrli:entity>
-            <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
+            <xbrli:identifier scheme="https://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
           </xbrli:entity>
           <xbrli:period>
             <xbrli:startDate>2023-01-01</xbrli:startDate>
             <xbrli:endDate>2023-12-31</xbrli:endDate>
           </xbrli:period>
         </xbrli:context>
+        <xbrli:context id="context_2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="https://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="ifrs-full:ConsolidatedAndSeparateFinancialStatementsAxis">ifrs-full:ConsolidatedMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="https://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2022-01-01</xbrli:startDate>
+            <xbrli:endDate>2022-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="ifrs-full:ConsolidatedAndSeparateFinancialStatementsAxis">ifrs-full:ConsolidatedMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+
+        <!--
         <xbrli:context xmlns:xbrli="http://www.xbrl.org/2003/instance" id="y2023">
           <xbrli:entity>
             <xbrli:identifier scheme="http://www.ifrs.org/xbrl/illustrativeExamples">123456789</xbrli:identifier>
@@ -1502,45 +1528,10 @@
             <xbrldi:explicitMember xmlns:xbrldi="http://xbrl.org/2006/xbrldi" dimension="ifrs-full:ComponentsOfEquityAxis">ifrs-full:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
           </xbrli:scenario>
         </xbrli:context>
+        -->
         <xbrli:unit xmlns:xbrli="http://www.xbrl.org/2003/instance" id="EUR">
           <xbrli:measure>iso4217:EUR</xbrli:measure>
         </xbrli:unit>
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000211" toRefs="foot1" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000222" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000223" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000226" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000227" toRefs="foot2" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000232" toRefs="foot3" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000233" toRefs="foot3" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000351" toRefs="foot4" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000352" toRefs="foot4" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000287" toRefs="foot5" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000288" toRefs="foot5" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000318" toRefs="foot6" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000319" toRefs="foot6" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000351" toRefs="foot8" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000352" toRefs="foot8" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000332" toRefs="foot9" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000333" toRefs="foot9" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000349" toRefs="foot10" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000350" toRefs="foot10" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000503" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000504" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000505" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000506" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000507" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000508" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000509" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000510" toRefs="foot11" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000527" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000528" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000529" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000530" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000531" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000532" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000533" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000534" toRefs="foot12" />
-        <ix:relationship arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" fromRefs="id00000164" toRefs="foot13" />
       </ix:resources>
     </ix:header>
   </div>
@@ -1554,8 +1545,9 @@
         <div class="title-line"></div>
         <div class="title-content">
           <div class="first-page-title">Annual Report 2023</div>
-          <div class="first-page-subtitle">De Grote B.V.</div>
-          <div class="first-page-subtitle">Registered office</div>
+          <div class="first-page-subtitle"><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Grote</ix:nonNumeric> <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric></div>
+          <div class="first-page-subtitle"><ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Registered office</ix:nonNumeric></div>
+          <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeLarge" format="ixt:fixed-true" id="ID000050"></ix:nonNumeric>
         </div>
       </div>
       <div class="date">
@@ -1624,7 +1616,7 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h1 id="consolidated-financial-statements">Consolidated financial statements</h1>
+      <h1 id="consolidated-financial-statements"><ix:nonNumeric contextRef="context_1" name="rj:FinancialStatementsConsolidated" format="ixt:fixed-true" id="ID000080">Consolidated</ix:nonNumeric> financial statements</h1>
 	  </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -1649,10 +1641,10 @@
         <tbody>
           <tr>
             <td>
-              <h3>for the year ended 31 December 2023</h3>
+              <h3>for the year ended <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriodEndDate" contextRef="context_1" format="ixt:date-day-monthname-year-en" id="ID0000060">31 December 2023</ix:nonNumeric></h3>
             </td>
             <td>
-              <h2>2023</h2>
+              <h2><ix:nonNumeric name="bw2-titel9:FinancialReportingPeriod" contextRef="context_1" id="ID0000070">2023</ix:nonNumeric></h2>
             </td>
             <td></td>
             <td>
@@ -4301,7 +4293,7 @@
         <li><b>construction</b> – providing customers with complete telecommunications systems solutions from design to development and installation.</li>
       </ul>
       <h2>General information, statement of compliance with IFRS and going concern assumption</h2>
-      <p>De Grote B.V., the Group’s ultimate parent company, is a limited liability company incorporated and domiciled in the Netherlands. The registered office according to the Articles of Association of De Grote B.V. is in city name. De Grote B.V. is registered in the Business Register of the Chamber of Commerce under the file number: 12345678. The address of Groot BV is street name, house number, postal code, city name, the Netherlands.</p>
+      <p>De Grote B.V., the Group’s ultimate parent company, is a limited liability company incorporated and domiciled in the Netherlands. The registered office according to the Articles of Association of De Grote B.V. is in city name. De Grote B.V. is registered in the Business Register of the Chamber of Commerce under the file number: <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric>. The address of Groot BV is street name, house number, postal code, city name, the Netherlands.</p>
 
       <p>The consolidated financial statements of the Group have been prepared in accordance with International Financial Reporting Standards (IFRS) as issued by the International Accounting Standards Board (IASB). They have been prepared under the assumption the Group operates on a going concern basis, which assumes the Group will be able to discharge its liabilities as they fall due. In confirming the validity of the going concern basis of preparation, the Group has considered the following specific factors:</p>
       <ul>
@@ -4322,6 +4314,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
+  <!--
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -4697,7 +4690,7 @@
       <div class="footer-page-number"></div>
     </div>
   </div>
-
+-->
 
 </body>
 
