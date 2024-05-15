@@ -266,31 +266,31 @@
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
     }
-    table.col-3xs col:nth-child(2n+2),
+    table.col-3xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 8%;
     }
-    table.col-2xs col:nth-child(2n+2),
+    table.col-2xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 9%;
     }
-    table.col-xs col:nth-child(2n+2),
+    table.col-xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 10%;
     }
-    table.col-s col:nth-child(2n+2),
+    table.col-s:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 12.5%;
     }
-    table.col-m col:nth-child(2n+2),
+    table.col-m:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 15%;
     }
-    table.col-l col:nth-child(2n+2),
+    table.col-l:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 17.5%;
     }
-    table.col-xl col:nth-child(2n+2),
+    table.col-xl:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 20%;
     }
@@ -301,10 +301,10 @@
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
     }
-    table col:nth-child(2n+3),
+    table:not(.annotated):not(.no-row-headers) col:nth-child(2n+3),
     table.annotated col:nth-child(2n+4),
     table.no-row-headers col:nth-child(2n+2) {
-      background-color: #ffffff;
+      background-color: #87acd4;
       width: 8px;
     }
     table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
@@ -316,7 +316,8 @@
     tr:not(.empty-row)>td:nth-child(2n+2) {
       padding-right: 0.5rem;
     }
-    tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2) {
+    table:not(.annotated) tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2),
+    table.annotated tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+3) {
       font-family: Arial, Helvetica, sans-serif;
     }
     .scale {
@@ -371,6 +372,18 @@
     .non-list-bullet {
       display: list-item;
       margin-left: 1.4rem;
+    }
+
+    .negative::before {
+      position: absolute;
+      content:"(";
+      margin-left: -5px;
+    }
+
+    .negative::after {
+      position: absolute;
+      margin-left: 0px;
+      content: ")";
     }
   </style>
 </head>
