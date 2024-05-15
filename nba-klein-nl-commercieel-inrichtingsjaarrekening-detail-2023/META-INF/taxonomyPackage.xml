@@ -12,7 +12,7 @@
 		<tp:entryPoint>
 			<tp:name>De Kleine B.V. voorbeeld XBRL extensietaxonomie 2023 - Entry point</tp:name>
 			<tp:description>Entry point dat wordt gebruikt om De Kleine B.V. voorbeeld XBRL extensietaxonomie en voorbeeld jaarrekening 2023 in te laden.</tp:description>
-			<tp:entryPointDocument href="https://https://www.dekleinebv.nl/xbrl/2023-12-31/dekleinebv-2023-12-31.xsd"/>
+			<tp:entryPointDocument href="https://www.dekleinebv.nl/xbrl/2023-12-31/dekleinebv-2023-12-31.xsd"/>
 			<tp:languages>
 				<tp:language>nl</tp:language>
 			</tp:languages>
