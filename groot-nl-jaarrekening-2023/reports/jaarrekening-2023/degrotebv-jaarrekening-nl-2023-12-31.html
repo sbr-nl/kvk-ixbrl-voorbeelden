@@ -19,7 +19,7 @@
     html {
       font-family: Georgia, "Times New Roman", Times, serif;
       background-color: #fff;
-      font-size: 15px;
+      font-size: 14.5px;
     }
     body {
       counter-reset: page h2 h3 h4 h5;
@@ -316,8 +316,9 @@
     tr:not(.empty-row)>td:nth-child(2n+2) {
       padding-right: 0.5rem;
     }
-    table:not(.annotated) tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2),
-    table.annotated tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+3) {
+    table:not(.annotated):not(.no-column-headers) tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2),
+    table.annotated tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+3),
+    table.no-column-headers tbody:nth-of-type(1)>tr:not(.empty-row)>td:nth-child(2n+2) {
       font-family: Arial, Helvetica, sans-serif;
     }
     .scale {
@@ -4780,10 +4781,12 @@
       <ul>
         <li>het hedge-instrument afloopt, wordt verkocht, beëindigd of uitgeoefend. Het cumulatieve gerealiseerde resultaat op het hedge-instrument dat nog niet in de winst-en-verliesrekening was verwerkt toen er sprake was van een effectieve hedge, wordt afzonderlijk in de overlopende posten in de balans verwerkt tot de afgedekte transactie plaatsvindt;</li>
         <li>de hedgerelatie niet meer voldoet aan de criteria voor hedge-accounting. Indien de afgedekte positie een in de toekomst verwachte transactie betreft, vindt de verwerking van de hedgeresultaten als volgt plaats:</li>
-        <ul>
-          <li>Indien de verwachte transactie naar verwachting nog plaatsvindt, wordt hedge-accounting vanaf dat moment stopgezet. Het hiermee samenhangende cumulatieve resultaat op het hedgeinstrument dat in de periode waarin de hedge effectief was buiten de winst-en-verliesrekening of off-balance was gehouden, blijft (afhankelijk van de situatie) off-balance of op de balans.</li>
-          <li>Indien de verwachte transactie naar verwachting niet meer plaatsvindt wordt het hiermee samenhangende cumulatieve resultaat op het hedge-instrument dat in de periode waarin de hedge effectief was buiten de winst-en-verliesrekening of off-balance was gehouden, naar de winst-enverliesrekening overgebracht.</li>
-        </ul>
+        <li>
+          <ul>
+            <li>Indien de verwachte transactie naar verwachting nog plaatsvindt, wordt hedge-accounting vanaf dat moment stopgezet. Het hiermee samenhangende cumulatieve resultaat op het hedgeinstrument dat in de periode waarin de hedge effectief was buiten de winst-en-verliesrekening of off-balance was gehouden, blijft (afhankelijk van de situatie) off-balance of op de balans.</li>
+            <li>Indien de verwachte transactie naar verwachting niet meer plaatsvindt wordt het hiermee samenhangende cumulatieve resultaat op het hedge-instrument dat in de periode waarin de hedge effectief was buiten de winst-en-verliesrekening of off-balance was gehouden, naar de winst-enverliesrekening overgebracht.</li>
+          </ul>
+        </li>
       </ul>
       <h4>Overige derivaten</h4>
       <p>Overige derivaten met beursgenoteerde aandelen of obligaties als onderliggende waarde worden na de eerste waardering gewaardeerd tegen de reële waarde. Baten en lasten die voortvloeien uit veranderingen in de reële waarde worden verwerkt in de winst-en-verliesrekening.</p>
@@ -4954,7 +4957,7 @@
       <h4>Latente belastingen</h4>
       <p>Voor alle belastbare tijdelijke verschillen tussen de commerciële en fiscale balanswaardering, wordt een latente belastingverplichting opgenomen. Voor alle verrekenbare tijdelijke verschillen tussen de commerciële en fiscale balanswaardering en voor beschikbare voorwaartse verliescompensatie wordt een latente belastingvordering opgenomen voor zover het waarschijnlijk is dat er fiscale winst beschikbaar zal zijn voor verrekening. De langlopende en kortlopende latente belastingvorderingen worden opgenomen onder de financiële vaste activa respectievelijk vorderingen onder de vlottende activa. Latente belastingvorderingen die naar verwachting binnen een jaar verrekenbaar zijn worden opgenomen onder de vlottende activa. Latente belastingverplichtingen worden opgenomen onder de voorzieningen.</p>
       <p>De waardering van latente belastingverplichtingen en -vorderingen wordt gebaseerd op de fiscale gevolgen van de door de groep, per balansdatum, voorgenomen wijze van realisatie of afwikkeling van activa, voorzieningen, schulden of overlopende passiva. Het belastingtarief en de fiscale wetgeving gehanteerd om het bedrag te bepalen, zijn vastgesteld dan wel er is materieel toe besloten op balansdatum. Hierbij wordt uitgegaan van het geldende belastingtarief. De latente belastingverplichtingen en -vorderingen worden gewaardeerd tegen nominale waarde.</p>
-      <p>De latente belastingvorderingen en -verplichtingen worden gesaldeerd indien en voor zover voldaan aan de volgende criteria:
+      <p>De latente belastingvorderingen en -verplichtingen worden gesaldeerd indien en voor zover voldaan aan de volgende criteria:</p>
       <ul>
         <li>de groep beschikt over een deugdelijk juridisch instrument om de over een verslagjaar te vorderen belasting te verrekenen met de over dat verslagjaar verschuldigde belasting; en</li>
         <li>de belastinglatenties houden verband met winstbelastingen die door dezelfde fiscale autoriteit worden geheven op:</li>
@@ -4965,7 +4968,6 @@
           </ul>
         </li>
       </ul>
-      </p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -15236,12 +15238,11 @@
       <p>Groot BV heeft in 2023 voor € … ingekocht (2022: € …) bij Zuster BV. De schuld aan Zuster BV per balansdatum is € …. (2022: € …) en is opgenomen onder de kortlopende schulden. Zuster BV is voor 100% (2022: …%) eigendom van het hoofd van de groep Supergroot BV. Supergroot BV is het hoofd van de groep en heeft een kapitaalbelang van 75% (2022: …%) in Groot BV De inkopen tussen de verbonden partijen vinden plaats tegen normale marktprijzen.</p>
       <p>De overige vorderingen en schulden met verbonden partijen zijn aangegaan tegen normale marktvoorwaarden.</p>
       <h2>Leningen aan leden van de directie en raad van commissarissen</h2>
-      <p>De leningen en voorschotten die door de vennootschap en haar dochter- en groepsmaatschappijen zijn verstrekt, zijn als volgt te specificeren:
-        <ul>
-          <li>Het per 31 december 2023 uitstaande bedrag aan leningen aan directieleden bedraagt € … (2022: € ..). De rentevoet van deze leningen is ..%. In 2023 is op deze leningen € … afgelost (2022: € …). De resterende looptijd is .. jaar.</li>
-          <li>Het per 31 december 2023 uitstaande bedrag aan leningen aan commissarissen bedraagt € … (2022: € ..). De rentevoet van deze leningen is ..%. In 2023 is op deze leningen € … afgelost (2022: € …). De resterende looptijd is .. jaar.</li>
-        </ul>
-      </p>
+      <p>De leningen en voorschotten die door de vennootschap en haar dochter- en groepsmaatschappijen zijn verstrekt, zijn als volgt te specificeren:</p>
+      <ul>
+        <li>Het per 31 december 2023 uitstaande bedrag aan leningen aan directieleden bedraagt € … (2022: € ..). De rentevoet van deze leningen is ..%. In 2023 is op deze leningen € … afgelost (2022: € …). De resterende looptijd is .. jaar.</li>
+        <li>Het per 31 december 2023 uitstaande bedrag aan leningen aan commissarissen bedraagt € … (2022: € ..). De rentevoet van deze leningen is ..%. In 2023 is op deze leningen € … afgelost (2022: € …). De resterende looptijd is .. jaar.</li>
+      </ul>
       <p>Voor de verstrekte leningen aan de directie wordt verwezen naar de paragraaf verbonden partijen.</p>
       <h2>Niet in de balans opgenomen regelingen en verplichtingen</h2>
       <h3>Operationele lease — groep als lessee</h3>
@@ -18770,12 +18771,11 @@
           </tr>
         </tbody>
       </table>
-      <p>De volgende overheidssubsidies zijn in mindering gebracht op de overige personeelskosten:
+      <p>De volgende overheidssubsidies zijn in mindering gebracht op de overige personeelskosten:</p>
       <ul>
         <li>Subsidie met betrekking tot speur- en ontwikkeling (WBSO) ten bedrage van € … (2022: € …).</li>
         <li>Subsidie op het gebied van scholing (ESF) ten bedrage van € … (2022: € …).</li>
       </ul>
-      </p>
       <h2>Sociale lasten</h2>
       <table class="table-full col-m">
         <colgroup>
@@ -37366,12 +37366,11 @@
           </tr>
         </tbody>
       </table>
-      <p>De volgende overheidssubsidies zijn in mindering gebracht op de overige personeelskosten:
+      <p>De volgende overheidssubsidies zijn in mindering gebracht op de overige personeelskosten:</p>
       <ul>
         <li>Subsidie met betrekking tot speur- en ontwikkeling (WBSO) ten bedrage van € … (2022: € …).</li>
         <li>Subsidie op het gebied van scholing (ESF) ten bedrage van € … (2022: € …).</li>
       </ul>
-      </p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -39121,13 +39120,12 @@
       <p>De winstbestemming vindt plaats overeenkomstig artikel … van de statuten. Daarin is bepaald dat de directie met goedkeuring van de raad van commissarissen vaststelt welk deel van de winst wordt toegevoegd aan de reserves. Het resterende bedrag staat ter beschikking van de algemene vergadering, nadat daarop eerst de dividendrechten van de houders van preferente aandelen met verplichte aflossing (…%) in mindering zijn gebracht.</p>
       <h2>Bijzondere statutaire zeggenschapsrechten</h2>
       <p>Aan prioriteitsaandelen zijn rechten verbonden tot het doen van bindende voordrachten voor de benoeming van directie en commissarissen. De prioriteitsaandelen worden gehouden door de te Utrecht gevestigde Stichting ST.</p>
-      <p>De bestuurders van deze stichting zijn:
-        <ul>
-          <li>P te Hilversum;</li>
-          <li>Q te Delft;</li>
-          <li>R te Eindhoven</li>
-        </ul>
-      </p>
+      <p>De bestuurders van deze stichting zijn:</p>
+      <ul>
+        <li>P te Hilversum;</li>
+        <li>Q te Delft;</li>
+        <li>R te Eindhoven</li>
+      </ul>
       <h2>Stemrechtloze aandelen en soortgelijke rechten</h2>
       <p>Lorem ipsum dolor sit amet. Sed tempore nisi qui aliquid internos At voluptatem architecto. Et consequatur nihil ut voluptatem maxime ut repellat numquam non neque nesciunt vel voluptas facere! Ab architecto delectus ea tenetur optio et nihil expedita vel similique porro qui autem nihil.</p>
       <h2>Nevenvestigingen</h2>
