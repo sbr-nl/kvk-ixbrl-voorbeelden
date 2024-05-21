@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" xmlns:degrotebv="https://www.degrotebv.nl/xbrl/2023-12-31" xmlns:groot="https://www.degrotebv.nl/xbrl/2023-12-31" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
+
 <head>
   <title>groot-nl-inrichtingsjaarrekenning-2023</title>
   <style type="text/css">
@@ -7,6 +8,7 @@
       html {
         font-size: 10pt !important;
       }
+
       .page {
         padding: 0 !important;
         margin: 0 auto !important;
@@ -16,17 +18,20 @@
         min-width: auto !important;
       }
     }
+
     html {
       font-family: Georgia, "Times New Roman", Times, serif;
       background-color: #fff;
       font-size: 14.5px;
     }
+
     body {
       counter-reset: page h2 h3 h4 h5;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     /* page layout */
     .page {
       min-width: 21cm;
@@ -44,37 +49,45 @@
       overflow: auto;
       border-radius: 6px;
     }
+
     .page:not(:last-child) {
       page-break-after: always;
     }
+
     .page::-webkit-scrollbar {
       background-color: red;
       width: 10px;
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+
     /* page content layout */
     .header-content,
     .footer-content,
     .content {
       padding-left: 1rem;
     }
+
     .header-content,
     .footer-content {
       padding-left: 1rem;
     }
+
     .header-content {
       padding-bottom: 2rem;
     }
+
     .content {
       flex: 1;
     }
+
     /* header and footer */
     .header-line {
       height: 1rem;
       border-top: solid 1px black;
       border-left: solid 1px black;
     }
+
     .header,
     .footer {
       font-style: italic;
@@ -82,47 +95,58 @@
       text-align: left;
       background-color: white;
     }
+
     .footer {
       display: flex;
       justify-content: space-between;
     }
+
     .page:nth-child(n+3) .footer-page-number::after {
       content: "Pagina " counter(page) " van 166";
     }
+
     .footer-content::after {
       content: "De Grote B.V., Statutaire vestigingsplaats";
     }
+
     .header-content::after {
       content: "Controleverklaring afgegeven d.d. ... 2024";
     }
+
     /* hidden */
     .hidden {
       display: none;
     }
+
     /* horizontal rules */
     hr {
       border-style: solid none none;
       border-color: black;
       border-width: 1px;
     }
+
     /* first page */
     .first-page-title,
     .first-page-subtitle {
       font-size: 2rem;
     }
+
     .first-page-title {
       font-weight: bold;
       font-style: italic;
     }
+
     .first-page-subtitle {
       font-weight: normal;
     }
+
     /* paragraphs */
     p {
       white-space: pre-line;
       margin-top: .5rem;
       margin-bottom: .5rem;
     }
+
     /* chapters */
     h1,
     h2,
@@ -132,46 +156,57 @@
       margin-top: .75rem;
       margin-bottom: .5rem;
     }
+
     table h2,
     table h3 {
       margin: 0;
     }
+
     h1 {
       font-size: 1.6rem;
     }
+
     h2,
     h3 {
       font-size: 1.2rem;
     }
+
     h4 {
       font-size: 1rem;
     }
+
     h5 {
       font-size: 1rem;
     }
+
     table h2,
     table h3 {
       font-size: 1rem;
     }
+
     table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
       writing-mode: vertical-rl;
       rotate: 180deg;
       text-align: left;
       text-wrap: nowrap;
     }
+
     table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
       text-align: -webkit-right;
       padding-right: 0.3rem;
       max-height: 125px;
     }
+
     h3,
     h4,
     h5 {
       font-weight: normal;
     }
+
     h2 {
       font-weight: bold;
     }
+
     h1,
     h2,
     h3,
@@ -179,34 +214,43 @@
     h5 {
       font-style: italic;
     }
+
     /* chapter numbering */
     h2:not(table h2) {
       counter-increment: h2;
       counter-set: h3 h4 h5;
     }
+
     h2:not(table h2)::before {
       content: counter(h2) ". ";
     }
+
     h3:not(table h3) {
       counter-increment: h3;
       counter-set: h4 h5;
     }
+
     h3:not(table h3)::before {
       content: counter(h2) "." counter(h3) ". ";
     }
+
     h4:not(table h4) {
       counter-increment: h4;
       counter-set: h5;
     }
+
     h4:not(table h4)::before {
       content: counter(h2) "." counter(h3) "." counter(h4) ". ";
     }
+
     h5:not(table h5) {
       counter-increment: h5;
     }
+
     h5:not(table h5)::before {
       content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
     }
+
     /* table layout */
     table {
       margin-bottom: 1rem;
@@ -214,163 +258,202 @@
       text-align: right;
       table-layout: fixed;
     }
+
     .table-xs {
       width: 40%;
     }
+
     .table-s {
       width: 55%;
     }
+
     .table-m {
       width: 70%;
     }
+
     .table-l {
       width: 85%;
     }
+
     .table-full {
       width: 100%;
     }
+
     .text-left {
       text-align: left;
     }
+
     td {
       vertical-align: bottom;
     }
+
     table,
     th,
     td {
       border-collapse: collapse;
       font-size: 1rem;
     }
+
     .top-table-header hr,
     .sub-total hr,
     .total hr {
       border-style: solid none none;
       border-color: black;
     }
+
     .dotted hr {
       border-style: dotted none none;
       border-color: black;
     }
+
     .top-table-header hr,
     .sub-total hr,
     .dotted hr {
       border-width: 1px;
     }
+
     .total hr {
       border-width: 2px;
       border-color: black;
     }
+
     tr.empty-row {
       height: 1.4rem;
     }
+
     table tr> :first-child {
       text-align: left;
       font-family: Georgia, "Times New Roman", Times, serif;
     }
+
     table.col-3xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 8%;
     }
+
     table.col-2xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 9%;
     }
+
     table.col-xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 10%;
     }
+
     table.col-s:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 12.5%;
     }
+
     table.col-m:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 15%;
     }
+
     table.col-l:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 17.5%;
     }
+
     table.col-xl:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
     table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
       width: 20%;
     }
+
     table.annotated col:nth-child(2) {
       width: 50px;
     }
+
     .annotated tr> :nth-child(2) {
       text-align: center;
       font-family: Georgia, "Times New Roman", Times, serif;
     }
+
     table:not(.annotated):not(.no-row-headers) col:nth-child(2n+3),
     table.annotated col:nth-child(2n+4),
     table.no-row-headers col:nth-child(2n+2) {
       background-color: #ffffff;
       width: 8px;
     }
+
     table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
     table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
     table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
       background-color: #ffffff;
       width: 4px;
     }
+
     tr:not(.empty-row)>td:nth-child(2n+2) {
       padding-right: 0.5rem;
     }
+
     table:not(.annotated):not(.no-column-headers) tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2),
     table.annotated tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+3),
     table.no-column-headers tbody:nth-of-type(1)>tr:not(.empty-row)>td:nth-child(2n+2) {
       font-family: Arial, Helvetica, sans-serif;
     }
+
     .scale {
       font-size: .8rem;
     }
+
     .footnote-table {
       font-size: .9rem;
       font-style: italic;
     }
+
     /* front page */
     .title-content,
     .title-line {
       margin-left: 25%;
       padding-left: 1rem;
     }
+
     .title-line {
       height: 1rem;
       border-top: solid 1px black;
       border-left: solid 1px black;
     }
+
     .date-content,
     .date-line {
       width: 60%;
       padding-left: 1rem;
       font-style: italic;
     }
+
     .date-line {
       margin-top: 13rem;
       height: 1rem;
       border-top: dotted 1px black;
       border-left: dotted 1px black;
     }
+
     /* toc */
     .toc-h1 {
       font-weight: bold;
     }
+
     .toc-h2 {
       font-style: italic;
     }
+
     .align-right {
       float: right;
     }
+
     a {
       color: black;
       text-decoration: none;
     }
+
     /* lists */
     ol,
     ul {
       padding-left: 1.4rem;
     }
+
     .non-list-bullet {
       display: list-item;
       margin-left: 1.4rem;
@@ -378,7 +461,7 @@
 
     .negative::before {
       position: absolute;
-      content:"(";
+      content: "(";
       margin-left: -5px;
     }
 
@@ -389,6 +472,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="hidden" style="display:none">
     <ix:header>
@@ -749,7 +833,8 @@
         <div class="date-line"></div>
         <div class="date-content">
           <p>d.d. maand 2024</p>
-          <p> Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric></p>
+          <p> Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric>
+          </p>
           <p>Vastgesteld door de algemene vergadering op <ix:nonNumeric name="bw2-titel9:DocumentAdoptionDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000100">19 maart 2024</ix:nonNumeric>
             <ix:nonNumeric contextRef="context_1" name="bw2-titel9:DocumentAdoptionStatus" format="ixt:fixed-true" id="ID000090"></ix:nonNumeric>
           </p>
@@ -769,8 +854,9 @@
     <div class="content">
       <h1>Inhoud</h1>
       <p><a href="#management-board-report"><span class="toc-h1">Bestuursverslag<span class="align-right">3</span></span></a><br />
-      <a href="#financial-statements"><span class="toc-h1">Jaarrekening 2023<span class="align-right">4</span></span></a><br />
-      <a href="#consolidated-balance-sheet">Geconsolideerde balans per 31 december 2023<span class="align-right">5</span></a><br /><a href="#consolidated-income-statement">Geconsolideerde winst-en-verliesrekening over 2023<span class="align-right">7</span></a><br /><a href="#consolidated-statement-of-comprehensive-income">Geconsolideerde overzicht van het totaalresultaat 2023<span class="align-right">9</span></a><br /><a href="#consolidated-cash-flow-statement">Geconsolideerd kasstroomoverzicht 2023<span class="align-right">10</span></a><br /><a href="#consolidated-accounting-policies">Grondslagen van waardering en resultaatbepaling in de geconsolideerde jaarrekening<span class="align-right">13</span></a><br /><a href="#consolidated-notes-balance-sheet">Toelichting op de geconsolideerde balans<span class="align-right">42</span></a><br /><a href="#consolidated-notes-income-statement">Toelichting op de geconsolideerde winst-en-verliesrekening<span class="align-right">79</span></a><br /><a href="#consolidated-notes-statement-of-comprehensive-income">Toelichting geconsolideerd overzicht van het totaalresultaat<span class="align-right">95</span></a><br /><a href="#consolidated-notes-cash-flow-statement">Toelichting op het geconsolideerd kasstroomoverzicht<span class="align-right">96</span></a><br /><a href="#consolidated-events-after-balanc-sheet-date">Gebeurtenissen na balansdatum bij de geconsolideerde jaarrekening<span class="align-right">98</span></a><br /><a href="#company-balance-sheet">Enkelvoudige balans per 31 december 2023<span class="align-right">99</span></a><br /><a href="#company-income-statement">Enkelvoudige winst-en-verliesrekening over 2023<span class="align-right">101</span></a><br /><a href="#company-accounting-policies">Grondslagen van waardering en resultaatbepaling in de enkelvoudige jaarrekening<span class="align-right">102</span></a><br /><a href="#company-notes-balance-sheet">Toelichting op de enkelvoudige balans<span class="align-right">107</span></a><br /><a href="#company-notes-income-statement">Toelichting op de enkelvoudige winst-en-verliesrekening<span class="align-right">156</span></a><br /><a href="#company-events-after-balanc-sheet-date">Gebeurtenissen na balansdatum bij de enkelvoudige jaarrekening<span class="align-right">164</span></a><br /><a href="#other-information"><span class="toc-h1">Overige gegevens<span class="align-right">166</span></span></a></p>
+        <a href="#financial-statements"><span class="toc-h1">Jaarrekening 2023<span class="align-right">4</span></span></a><br />
+        <a href="#consolidated-balance-sheet">Geconsolideerde balans per 31 december 2023<span class="align-right">5</span></a><br /><a href="#consolidated-income-statement">Geconsolideerde winst-en-verliesrekening over 2023<span class="align-right">7</span></a><br /><a href="#consolidated-statement-of-comprehensive-income">Geconsolideerde overzicht van het totaalresultaat 2023<span class="align-right">9</span></a><br /><a href="#consolidated-cash-flow-statement">Geconsolideerd kasstroomoverzicht 2023<span class="align-right">10</span></a><br /><a href="#consolidated-accounting-policies">Grondslagen van waardering en resultaatbepaling in de geconsolideerde jaarrekening<span class="align-right">13</span></a><br /><a href="#consolidated-notes-balance-sheet">Toelichting op de geconsolideerde balans<span class="align-right">42</span></a><br /><a href="#consolidated-notes-income-statement">Toelichting op de geconsolideerde winst-en-verliesrekening<span class="align-right">79</span></a><br /><a href="#consolidated-notes-statement-of-comprehensive-income">Toelichting geconsolideerd overzicht van het totaalresultaat<span class="align-right">95</span></a><br /><a href="#consolidated-notes-cash-flow-statement">Toelichting op het geconsolideerd kasstroomoverzicht<span class="align-right">96</span></a><br /><a href="#consolidated-events-after-balanc-sheet-date">Gebeurtenissen na balansdatum bij de geconsolideerde jaarrekening<span class="align-right">98</span></a><br /><a href="#company-balance-sheet">Enkelvoudige balans per 31 december 2023<span class="align-right">99</span></a><br /><a href="#company-income-statement">Enkelvoudige winst-en-verliesrekening over 2023<span class="align-right">101</span></a><br /><a href="#company-accounting-policies">Grondslagen van waardering en resultaatbepaling in de enkelvoudige jaarrekening<span class="align-right">102</span></a><br /><a href="#company-notes-balance-sheet">Toelichting op de enkelvoudige balans<span class="align-right">107</span></a><br /><a href="#company-notes-income-statement">Toelichting op de enkelvoudige winst-en-verliesrekening<span class="align-right">156</span></a><br /><a href="#company-events-after-balanc-sheet-date">Gebeurtenissen na balansdatum bij de enkelvoudige jaarrekening<span class="align-right">164</span></a><br /><a href="#other-information"><span class="toc-h1">Overige gegevens<span class="align-right">166</span></span></a>
+      </p>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -2662,7 +2748,7 @@
             <td></td>
             <td></td>
             <td class="negative">
-             <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="rj:IncreaseDecreaseProvisions" unitRef="EUR" decimals="0" scale="0" id="ID0001770">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="rj:IncreaseDecreaseProvisions" unitRef="EUR" decimals="0" scale="0" id="ID0001770">0</ix:nonFraction>
             </td>
             <td></td>
             <td></td>
@@ -7092,19 +7178,19 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>periode minder dan 1 jaar</td>
+            <td>periode &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode tussen 1 jaar en 5 jaar</td>
+            <td>1 jaar &le; periode &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode langer dan 5 jaar</td>
+            <td>periode &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -8523,7 +8609,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -8533,7 +8619,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd van 1 jaar en langer</td>
+            <td>looptijd &ge; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -10458,13 +10544,13 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -10894,7 +10980,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -10904,7 +10990,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -11120,7 +11206,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -11130,7 +11216,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -11398,7 +11484,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -11410,7 +11496,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd tussen 1 jaar en 5 jaar</td>
+            <td>looptijd &ge; 1 jaar en &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -11422,7 +11508,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -11682,7 +11768,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -11694,7 +11780,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd tussen 1 jaar en 5 jaar</td>
+            <td>looptijd &ge; 1 jaar en &le; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -11706,7 +11792,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -11949,19 +12035,19 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>periode korter dan 1 jaar</td>
+            <td>periode &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode tussen 1 jaar en 5 jaar</td>
+            <td>1 jaar &le; periode &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode langer dan 5 jaar</td>
+            <td>periode &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -12746,7 +12832,7 @@
           <tr>
             <td></td>
             <td>
-              <h2>Minder dan 1 jaar</h2>
+              <h2>&lt; 1 jaar</h2>
             </td>
             <td></td>
             <td>
@@ -13736,7 +13822,7 @@
           <tr>
             <td></td>
             <td>
-              <h2>minder dan 1 jaar</h2>
+              <h2>&lt; 1 jaar</h2>
             </td>
             <td></td>
             <td>
@@ -15288,19 +15374,19 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>periode korter dan 1 jaar</td>
+            <td>periode &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode tussen 1 jaar en 5 jaar</td>
+            <td>1 jaar &le; periode &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode langer dan 5 jaar</td>
+            <td>periode &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -18691,7 +18777,6 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-
       <h2>Lonen en salarissen</h2>
       <table class="table-full col-m">
         <colgroup>
@@ -19321,7 +19406,7 @@
             <td></td>
             <td>0</td>
           </tr>
-             
+
         </tbody>
       </table>
     </div>
@@ -25052,19 +25137,19 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>periode minder dan 1 jaar</td>
+            <td>periode &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode tussen 1 jaar en 5 jaar</td>
+            <td>1 jaar &le; periode &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode langer dan 5 jaar</td>
+            <td>periode &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -26615,7 +26700,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -26625,7 +26710,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd van 1 jaar en langer</td>
+            <td>looptijd &ge; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -29189,7 +29274,6 @@
             <td colspan="8">
               <h2>Andere wettelijke reserves:</h2>
             </td>
-
             <td></td>
           </tr>
           <tr class="empty-row top-table-header">
@@ -29568,7 +29652,6 @@
             <td></td>
             <td>0</td>
           </tr>
-
         </tbody>
       </table>
     </div>
@@ -29891,7 +29974,7 @@
             <td class="negative">0</td>
             <td></td>
             <td class="negative">0</td>
-          </tr>          
+          </tr>
           <tr class="empty-row total">
             <td></td>
             <td>
@@ -30416,7 +30499,7 @@
             <td>0</td>
             <td></td>
             <td>0</td>
-          </tr>  
+          </tr>
         </tbody>
       </table>
     </div>
@@ -30456,7 +30539,7 @@
             <td class="negative">0</td>
             <td></td>
             <td class="negative">0</td>
-          </tr>  
+          </tr>
           <tr>
             <td>Aanvulling overige reserves uit hoofde van resultaatbestemming 2021</td>
             <td></td>
@@ -30468,7 +30551,7 @@
             <td class="negative">0</td>
             <td></td>
             <td>0</td>
-          </tr>           
+          </tr>
           <tr class="empty-row total">
             <td></td>
             <td></td>
@@ -30826,7 +30909,7 @@
             <td></td>
             <td class="negative">0</td>
           </tr>
-          
+
         </tbody>
       </table>
     </div>
@@ -30866,7 +30949,7 @@
             <td>0</td>
             <td></td>
             <td>0</td>
-          </tr>   
+          </tr>
           <tr>
             <td>Slot(keuze)dividend 2022</td>
             <td></td>
@@ -30878,7 +30961,7 @@
             <td class="negative">0</td>
             <td></td>
             <td class="negative">0</td>
-          </tr>  
+          </tr>
           <tr>
             <td>Aanvulling overige reserves uit hoofde van resultaatbestemming 2022</td>
             <td></td>
@@ -30890,7 +30973,7 @@
             <td class="negative">0</td>
             <td></td>
             <td>0</td>
-          </tr>               
+          </tr>
           <tr class="empty-row total">
             <td></td>
             <td></td>
@@ -31020,7 +31103,9 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td><h2>Stand per 1 januari 2023</h2></td>
+            <td>
+              <h2>Stand per 1 januari 2023</h2>
+            </td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -31058,7 +31143,9 @@
             </td>
           </tr>
           <tr>
-            <td><h2>Stand per 31 december 2023</h2></td>
+            <td>
+              <h2>Stand per 31 december 2023</h2>
+            </td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -31084,7 +31171,7 @@
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
     </div>
-  </div>  
+  </div>
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -31166,12 +31253,12 @@
             <td></td>
             <td></td>
           </tr>
-            <tr>
-              <td>Totaal dividend</td>
-              <td></td>
-              <td></td>
-              <td>0</td>
-            </tr>
+          <tr>
+            <td>Totaal dividend</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
           <tr class="empty-row total">
             <td></td>
             <td></td>
@@ -31232,7 +31319,9 @@
             <td colspan="8"></td>
           </tr>
           <tr>
-            <td><h2>Stand per 1 januari 2023:</h2></td>
+            <td>
+              <h2>Stand per 1 januari 2023:</h2>
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -31384,7 +31473,7 @@
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
     </div>
-  </div>  
+  </div>
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -31437,7 +31526,9 @@
             <td colspan="8"></td>
           </tr>
           <tr>
-            <td><h2>Stand per 31 december 2023:</h2></td>
+            <td>
+              <h2>Stand per 31 december 2023:</h2>
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -31520,8 +31611,8 @@
             <td colspan="8"></td>
           </tr>
         </tbody>
-      </table>  
-      <p>Voor het afdekken van de personeelsopties wordt verwezen naar de afzonderlijke toelichting.</p>    
+      </table>
+      <p>Voor het afdekken van de personeelsopties wordt verwezen naar de afzonderlijke toelichting.</p>
       <h3>Personeelsopties</h3>
       <p>De vennootschap heeft aan de directie en werknemers opties op de gewone aandelen van de vennootschap verstrekt. Deze opties worden onvoorwaardelijk als het directielid of de werknemer na drie jaar nog in dienst is. De looptijd van de opties is vier jaar. De afwikkeling van de opties vindt in eigen-vermogensinstrumenten plaats. Per jaareinde staan .. (2022: ..) personeelsopties uit met een nominale waarde van € ... per aandeel.</p>
       <p>De totale kosten in het verslagjaar betreffende personeelsopties bedragen € … (2022: € …). Hiervan is een bedrag van € … (2022: € …) als loonkosten verwerkt.</p>
@@ -31722,7 +31813,7 @@
       <div class="footer-content"></div>
       <div class="footer-page-number"></div>
     </div>
-  </div>  
+  </div>
   <div class="page">
     <div class="header">
       <div class="header-content"></div>
@@ -32137,19 +32228,19 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
           </tr>
         </tbody>
-      </table>    
+      </table>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -32566,7 +32657,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -32576,7 +32667,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -32772,7 +32863,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -32782,7 +32873,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -33027,7 +33118,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -33039,7 +33130,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd tussen 1 jaar en 5 jaar</td>
+            <td>looptijd &ge; 1 jaar en &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -33051,7 +33142,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -33289,7 +33380,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>looptijd korter dan 1 jaar</td>
+            <td>looptijd &lt; 1 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -33301,7 +33392,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd tussen 1 jaar en 5 jaar</td>
+            <td>looptijd &ge; 1 jaar en &le; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -33313,7 +33404,7 @@
             <td>0</td>
           </tr>
           <tr>
-            <td>looptijd langer dan 5 jaar</td>
+            <td>looptijd &gt; 5 jaar</td>
             <td></td>
             <td></td>
             <td>0</td>
@@ -33356,7 +33447,7 @@
       <p>Onder de schulden aan overige verbonden maatschappijen is een lening van € … (2022: € …) opgenomen met een vaste rente van …%. De einddatum van de lening is 1 januari 2027.</p>
       <h3>Schulden aan rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft</h3>
       <p>Onder de schulden aan rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft, is een bedrag van € … (2022: € …) aan schulden aan deelnemingen waarin invloed van betekenis kan worden uitgeoefend, opgenomen. De rentevoet van deze schulden bedraagt …% en de einddatum is 1 oktober 2026.</p>
-      <h3>Financiële leaseverplichtingen — groep als lessee</h3>
+      <h3>Financiële leaseverplichtingen — de vennootschap als lessee</h3>
       <p>De vennootschap heeft financiële leasecontracten voor een aantal machines en installaties met een boekwaarde van € … (2022: € …) afgesloten. De effectieve rentevoet is …%. De looptijdanalyse van de toekomstige minimale leasebetalingen is als volgt:</p>
       <table class="table-full col-m">
         <colgroup>
@@ -33398,19 +33489,19 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>periode korter dan 1 jaar</td>
+            <td>periode &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode tussen 1 jaar en 5 jaar</td>
+            <td>1 jaar &le; periode &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode langer dan 5 jaar</td>
+            <td>periode &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -33673,7 +33764,7 @@
       <div class="header-content"></div>
       <div class="header-line"></div>
     </div>
-    <div class="content">       
+    <div class="content">
       <p>De in het bovenstaande verloopoverzicht opgenomen vrijval betreffende verwachte toekomstige verliezen en overige vrijval is in de winst-en-verliesrekening opgenomen onder de post overige bedrijfsopbrengsten.</p>
       <h2>Kortlopende schulden</h2>
       <table class="table-full col-m">
@@ -34194,7 +34285,7 @@
           <tr>
             <td></td>
             <td>
-              <h2>Minder dan 1 jaar</h2>
+              <h2>&lt; 1 jaar</h2>
             </td>
             <td></td>
             <td>
@@ -34383,7 +34474,7 @@
             <td></td>
             <td>0</td>
           </tr>
-          
+
           <tr>
             <td>Financiële leaseverplichtingen</td>
             <td>0</td>
@@ -35165,7 +35256,7 @@
           <tr>
             <td></td>
             <td>
-              <h2>minder dan 1 jaar</h2>
+              <h2>&lt; 1 jaar</h2>
             </td>
             <td></td>
             <td>
@@ -36695,19 +36786,19 @@
             <td colspan="4"></td>
           </tr>
           <tr>
-            <td>periode korter dan 1 jaar</td>
+            <td>periode &lt; 1 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode tussen 1 jaar en 5 jaar</td>
+            <td>1 jaar &le; periode &le; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
           </tr>
           <tr>
-            <td>periode langer dan 5 jaar</td>
+            <td>periode &gt; 5 jaar</td>
             <td>0</td>
             <td></td>
             <td>0</td>
@@ -39052,12 +39143,12 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-     <h1 id="company-events-after-balanc-sheet-date">Gebeurtenissen na balansdatum bij de enkelvoudige jaarrekening</h1>
-     <p>Op .. 2024 is XYZ te Parijs overgenomen door de verkrijging van 100% van de stemgerechtigde aandelen. XYZ is een handelsonderneming in standaardsoftware met winkels verspreid over Frankrijk. De overname van XYZ zal volgens de purchase accounting methode per .. 2024 in de jaarrekening 2024 worden verwerkt. De koopsom bedraagt € … miljoen en wordt betaald uit de geldmiddelen. De purchase price allocation is nog onderhanden waardoor de goodwill van derden nog niet kan worden toegelicht.</p>
-     <p>Op … 2024 is de deelneming B te Hilversum verkocht voor € … miljoen. Het gerealiseerde verschil ad € … miljoen tussen de verkoopopbrengst en de balanswaardering op basis van nettovermogenswaarde zal in het jaar 2024 als bate worden verantwoord.</p>
-     <p>Op … 2024 zijn vijf winkels van RST Ltd. in Schotland gesloten. Het verlies van deze beëindiging
-      bedraagt € … miljoen en zal in het jaar 2024 ten laste van de voorziening reorganisatiekosten worden
-      gebracht.</p>
+      <h1 id="company-events-after-balanc-sheet-date">Gebeurtenissen na balansdatum bij de enkelvoudige jaarrekening</h1>
+      <p>Op .. 2024 is XYZ te Parijs overgenomen door de verkrijging van 100% van de stemgerechtigde aandelen. XYZ is een handelsonderneming in standaardsoftware met winkels verspreid over Frankrijk. De overname van XYZ zal volgens de purchase accounting methode per .. 2024 in de jaarrekening 2024 worden verwerkt. De koopsom bedraagt € … miljoen en wordt betaald uit de geldmiddelen. De purchase price allocation is nog onderhanden waardoor de goodwill van derden nog niet kan worden toegelicht.</p>
+      <p>Op … 2024 is de deelneming B te Hilversum verkocht voor € … miljoen. Het gerealiseerde verschil ad € … miljoen tussen de verkoopopbrengst en de balanswaardering op basis van nettovermogenswaarde zal in het jaar 2024 als bate worden verantwoord.</p>
+      <p>Op … 2024 zijn vijf winkels van RST Ltd. in Schotland gesloten. Het verlies van deze beëindiging
+        bedraagt € … miljoen en zal in het jaar 2024 ten laste van de voorziening reorganisatiekosten worden
+        gebracht.</p>
       <p>Op … 2024 is het reorganisatieplan van de vestiging Eindhoven bekend gemaakt. Hiervoor is in 2024 een voorziening getroffen voor een bedrag van € … miljoen.</p>
     </div>
     <div class="footer">
@@ -39072,12 +39163,18 @@
     </div>
     <div class="content">
       <h1>Ondertekening van de jaarrekening</h1>
-      <p> Statutaire vestigingsplaats, dd maand 2023
-        De Middelgrote B.V.</p>
+      <p> Statutaire vestigingsplaats, dd maand 2023</p>
       <table class="table-full text-left">
+        <tr class="empty-row">
+          <td colspan="2"></td>
+        </tr>
         <tr>
-          <td>Directie</td>
-          <td>Raad van Commissarissen</td>
+          <td>Directie:</td>
+          <td>Raad van Commissarissen:</td>
+        </tr>
+        <tr>
+          <td>Naam A</td>
+          <td>Naam A</td>
         </tr>
         <tr class="empty-row">
           <td colspan="2"></td>
@@ -39085,9 +39182,8 @@
         <tr class="empty-row">
           <td colspan="2"></td>
         </tr>
-        <tr>
-          <td>Naam A</td>
-          <td>Naam A</td>
+        <tr class="empty-row">
+          <td colspan="2"></td>
         </tr>
         <tr class="empty-row">
           <td colspan="2"></td>
@@ -39098,6 +39194,15 @@
         </tr>
         <tr class="empty-row">
           <td colspan="2"></td>
+        </tr>
+        <tr class="empty-row">
+          <td colspan="2"></td>
+        <tr class="empty-row">
+          <td colspan="2"></td>
+        </tr>
+        <tr class="empty-row">
+          <td colspan="2"></td>
+        </tr>
         </tr>
         <tr>
           <td>Naam C</td>
@@ -39169,7 +39274,6 @@
           <td colspan="2"></td>
         </tr>
       </table>
-
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -39177,4 +39281,5 @@
     </div>
   </div>
 </body>
+
 </html>
