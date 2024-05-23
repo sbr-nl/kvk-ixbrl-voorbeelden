@@ -52,5 +52,41 @@
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_ProvisionRestructuringTakeover" xlink:label="groot_ProvisionRestructuringTakeover_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_ProvisionRestructuringTakeover_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Voorziening reorganisatiekosten m.b.t. overname</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_ProvisionRestructuringTakeover_loc" xlink:to="groot_ProvisionRestructuringTakeover_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_SalesResultParticipatingInterestsNotValuedAtNetAssetValue" xlink:label="groot_SalesResultParticipatingInterestsNotValuedAtNetAssetValue_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_SalesResultParticipatingInterestsNotValuedAtNetAssetValue_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Verkoopresultaat van niet op netto-vermogenswaarde gewaardeerde deelnemingen</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_SalesResultParticipatingInterestsNotValuedAtNetAssetValue_loc" xlink:to="groot_SalesResultParticipatingInterestsNotValuedAtNetAssetValue_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_ChangesValueIneffectivePartDerivatives" xlink:label="groot_ChangesValueIneffectivePartDerivatives_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_ChangesValueIneffectivePartDerivatives_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Waardeveranderingen van het niet effectieve deel van derivaten</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_ChangesValueIneffectivePartDerivatives_loc" xlink:to="groot_ChangesValueIneffectivePartDerivatives_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquitySharesStamping" xlink:label="groot_EquitySharesStamping_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquitySharesStamping_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Afstempelen aandelen</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquitySharesStamping_loc" xlink:to="groot_EquitySharesStamping_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquitySharesRedeeming" xlink:label="groot_EquitySharesRedeeming_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquitySharesRedeeming_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Aflossen aandelen</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquitySharesRedeeming_loc" xlink:to="groot_EquitySharesRedeeming_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityLoanConversion" xlink:label="groot_EquityLoanConversion_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquityLoanConversion_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Conversie lening</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityLoanConversion_loc" xlink:to="groot_EquityLoanConversion_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityStockdividend" xlink:label="groot_EquityStockdividend_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquityStockdividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Stockdividend</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityStockdividend_loc" xlink:to="groot_EquityStockdividend_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_PreferenceSharesMember" xlink:label="groot_PreferenceSharesMember_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_PreferenceSharesMember_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Preferente aandelen</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_PreferenceSharesMember_loc" xlink:to="groot_PreferenceSharesMember_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_CashFlowHedgeMember" xlink:label="groot_CashFlowHedgeMember_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_CashFlowHedgeMember_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Kasstroomhedge</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_CashFlowHedgeMember_loc" xlink:to="groot_CashFlowHedgeMember_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_FinancialInstrumentsOtherMember" xlink:label="groot_FinancialInstrumentsOtherMember_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_FinancialInstrumentsOtherMember_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere financiële instrumenten</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_FinancialInstrumentsOtherMember_loc" xlink:to="groot_FinancialInstrumentsOtherMember_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_PrioritySharesMember" xlink:label="groot_PrioritySharesMember_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_PrioritySharesMember_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Prioriteitsaandelen</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_PrioritySharesMember_loc" xlink:to="groot_PrioritySharesMember_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember" xlink:label="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Financiële instrumenten die op basis van de economische realiteit als vreemd vermogen zouden worden verantwoord</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_loc" xlink:to="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_LegalReserveParticipatingInterestsMember" xlink:label="groot_LegalReserveDevelopmentMember_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_LegalReserveDevelopmentMember_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Wettelijke reserve deelnemingen</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_LegalReserveDevelopmentMember_loc" xlink:to="groot_LegalReserveDevelopmentMember_label_nl"/>
   </link:labelLink>
 </link:linkbase>

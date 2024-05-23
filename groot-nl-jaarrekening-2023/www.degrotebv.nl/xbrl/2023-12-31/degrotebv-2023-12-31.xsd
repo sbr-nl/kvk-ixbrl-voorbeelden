@@ -8,39 +8,44 @@
       <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31-lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:roleType roleURI="https://www.degrotebv.nl/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
-        <link:definition>00010 - Document and Entity information</link:definition>
+        <link:definition>00100 - Document and Entity information</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/BalanceSheet" id="BalanceSheet">
-        <link:definition>00100 - Balance sheet</link:definition>
+        <link:definition>00200 - Balance sheet</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
         <link:usedOn>link:calculationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/IncomeStatement" id="IncomeStatement">
-        <link:definition>00200 - Income statement</link:definition>
+        <link:definition>00300 - Income statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.degrotebv.nl/role/StatementOfComprehensiveIncome" id="StatementOfComprehensiveIncome">
+        <link:definition>00400 - Statement of comprehensive income</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
         <link:usedOn>link:calculationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/Notes" id="Notes">
-        <link:definition>00400 - Notes</link:definition>
+        <link:definition>00600 - Notes</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/SigningManagingSupervisoryDirectors" id="SigningManagingSupervisoryDirectors">
-        <link:definition>00600 - Signing managing and supervisory directors</link:definition>
+        <link:definition>00800 - Signing managing and supervisory directors</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/Anchoring" id="Anchoring">
-        <link:definition>00700 - Anchoring</link:definition>
+        <link:definition>00900 - Anchoring</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/EquityStatementOfChanges" id="EquityStatementOfChanges">
-        <link:definition>00500 - Equity: Statement of changes</link:definition>
+        <link:definition>00700 - Equity: Statement of changes</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
         <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.degrotebv.nl/role/CashFlowStatement" id="CashFlowStatement">
-        <link:definition>00300 - Cash flow statement</link:definition>
+        <link:definition>00500 - Cash flow statement</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
         <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
@@ -64,4 +69,16 @@
   <xsd:element name="PatentsTrademarksOtherRightsNotInternallyGenerated" id="groot_PatentsTrademarksOtherRightsNotInternallyGenerated" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
   <xsd:element name="DevelopmentCostsInternallyGenerated" id="groot_DevelopmentCostsInternallyGenerated" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
   <xsd:element name="ProvisionRestructuringTakeover" id="groot_ProvisionRestructuringTakeover" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant"/>
+  <xsd:element name="SalesResultParticipatingInterestsNotValuedAtNetAssetValue" id="groot_SalesResultParticipatingInterestsNotValuedAtNetAssetValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xsd:element name="ChangesValueIneffectivePartDerivatives" id="groot_ChangesValueIneffectivePartDerivatives" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xsd:element name="EquitySharesStamping" id="groot_EquitySharesStamping" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xsd:element name="EquitySharesRedeeming" id="groot_EquitySharesRedeeming" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xsd:element name="EquityLoanConversion" id="groot_EquityLoanConversion" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xsd:element name="EquityStockdividend" id="groot_EquityStockdividend" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xsd:element name="PreferenceSharesMember" id="groot_PreferenceSharesMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="PrioritySharesMember" id="groot_PrioritySharesMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="CashFlowHedgeMember" id="groot_CashFlowHedgeMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="FinancialInstrumentsOtherMember" id="groot_FinancialInstrumentsOtherMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="FinancialInstrumentsEconomicRealityClassifiedAsEquityMember" id="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="LegalReserveParticipatingInterestsMember" id="groot_LegalReserveParticipatingInterestsMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
 </xsd:schema>
