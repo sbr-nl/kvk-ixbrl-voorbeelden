@@ -10,7 +10,7 @@ Belangrijk: het bestand moet in iXBRL 1.1 formaat worden opgesteld en moet dus v
 
 Met als belangrijkste aandachtspunten:
 - tags moeten altijd gesloten worden: `<tag></tag>` of 'self closing': `<tag />`
-- de semantische tags uit HTML 5 mogen niet worden gebruikt
+- de semantische tags uit HTML 5 mogen niet worden gebruikt.
 
 ## 2. Aanpassen van een template
 
