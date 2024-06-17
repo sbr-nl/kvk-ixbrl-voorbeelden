@@ -12,7 +12,7 @@
 		<tp:entryPoint>
 			<tp:name>De Grote B.V. voorbeeld XBRL extensietaxonomie 2023 - Entry point</tp:name>
 			<tp:description>Entry point dat wordt gebruikt om De Grote B.V. voorbeeld XBRL extensietaxonomie in te laden.</tp:description>
-			<tp:entryPointDocument href="https://www.demiddelgrotebv.nl/xbrl/2023-12-31/demiddelgrotebv-2023-12-31.xsd"/>
+			<tp:entryPointDocument href="https://www.degrotebv.nl/xbrl/2023-12-31/degrotebv-2023-12-31.xsd"/>
 			<tp:languages>
 				<tp:language>nl</tp:language>
 			</tp:languages>
