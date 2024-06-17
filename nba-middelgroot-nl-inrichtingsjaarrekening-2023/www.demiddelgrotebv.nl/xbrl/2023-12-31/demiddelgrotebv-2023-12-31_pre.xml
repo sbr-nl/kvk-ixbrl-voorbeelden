@@ -53,7 +53,7 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_IncreaseDecreaseInSecurities" xlink:label="rj_IncreaseDecreaseInSecurities_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="rj_IncreaseDecreaseInSecurities_loc" order="8.0"/>
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_IncreaseDecreaseLiabilitiesCurrent" xlink:label="middelgroot_IncreaseDecreaseLiabilitiesCurrent_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="middelgroot_IncreaseDecreaseLiabilitiesCurrent_loc" order="9.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="middelgroot_IncreaseDecreaseLiabilitiesCurrent_loc" order="9.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ChangesWorkingCapital" xlink:label="rj_ChangesWorkingCapital_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="rj_ChangesWorkingCapital_loc" order="10.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_CashFlowFromOperations" xlink:label="rj_CashFlowFromOperations_loc"/>
