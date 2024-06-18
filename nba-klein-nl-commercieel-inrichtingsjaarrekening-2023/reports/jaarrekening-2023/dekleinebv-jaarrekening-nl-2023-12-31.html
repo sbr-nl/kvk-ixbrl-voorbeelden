@@ -1,0 +1,3538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" xmlns:dekleinebv="https://www.dekleinebv.nl/xbrl/2023-12-31" xmlns:klein="https://www.dekleinebv.nl/xbrl/2023-12-31" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor">
+<head>
+  <title>nba-klein-nl-commercieel-inrichtingsjaarrekenning-2023</title>
+  <style type="text/css">
+    @media print {
+      html {
+        font-size: 10pt !important;
+      }
+      .page {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        box-shadow: none !important;
+        height: calc(100vh - 1rem) !important;
+        min-height: auto !important;
+        min-width: auto !important;
+      }
+    }
+    html {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: #fff;
+      font-size: 14.5px;
+    }
+    body {
+      counter-reset: page h2 h3 h4 h5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* page layout */
+    .page {
+      min-width: 21cm;
+      min-height: 29.7cm;
+      width: 21cm;
+      height: 29.7cm;
+      margin: 1cm;
+      padding: 1cm 1.5cm;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      counter-increment: page;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      overflow: auto;
+      border-radius: 6px;
+    }
+    .page:not(:last-child) {
+      page-break-after: always;
+    }
+    .page::-webkit-scrollbar {
+      background-color: red;
+      width: 10px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    /* page content layout */
+    .header-content,
+    .footer-content,
+    .content {
+      padding-left: 1rem;
+    }
+    .header-content,
+    .footer-content {
+      padding-left: 1rem;
+    }
+    .header-content {
+      padding-bottom: 2rem;
+    }
+    .content {
+      flex: 1;
+    }
+    /* header and footer */
+    .header-line {
+      height: 1rem;
+      border-top: solid 1px black;
+      border-left: solid 1px black;
+    }
+    .header,
+    .footer {
+      font-style: italic;
+      font-weight: normal;
+      text-align: left;
+      background-color: white;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .page:nth-child(n+3) .footer-page-number::after {
+      content: "Pagina " counter(page) " van 166";
+    }
+    .footer-content::after {
+      content: "De Grote B.V., Statutaire vestigingsplaats";
+    }
+    .header-content::after {
+      content: "Controleverklaring afgegeven d.d. ... 2024";
+    }
+    /* hidden */
+    .hidden {
+      display: none;
+    }
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+    /* first page */
+    .first-page-title,
+    .first-page-subtitle {
+      font-size: 2rem;
+    }
+    .first-page-title {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .first-page-subtitle {
+      font-weight: normal;
+    }
+    /* paragraphs */
+    p {
+      white-space: pre-line;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+    /* chapters */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin-top: .75rem;
+      margin-bottom: .5rem;
+    }
+    table h2,
+    table h3 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2,
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+    table h2,
+    table h3 {
+      font-size: 1rem;
+    }
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-rl;
+      rotate: 180deg;
+      text-align: left;
+      text-wrap: nowrap;
+    }
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
+      max-height: 125px;
+    }
+    h3,
+    h4,
+    h5 {
+      font-weight: normal;
+    }
+    h2 {
+      font-weight: bold;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-style: italic;
+    }
+    /* chapter numbering */
+    h2:not(table h2) {
+      counter-increment: h2;
+      counter-set: h3 h4 h5;
+    }
+    h2:not(table h2)::before {
+      content: counter(h2) ". ";
+    }
+    h3:not(table h3) {
+      counter-increment: h3;
+      counter-set: h4 h5;
+    }
+    h3:not(table h3)::before {
+      content: counter(h2) "." counter(h3) ". ";
+    }
+    h4:not(table h4) {
+      counter-increment: h4;
+      counter-set: h5;
+    }
+    h4:not(table h4)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+    }
+    h5:not(table h5) {
+      counter-increment: h5;
+    }
+    h5:not(table h5)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+    }
+    /* table layout */
+    table {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-align: right;
+      table-layout: fixed;
+    }
+    .table-xs {
+      width: 40%;
+    }
+    .table-s {
+      width: 55%;
+    }
+    .table-m {
+      width: 70%;
+    }
+    .table-l {
+      width: 85%;
+    }
+    .table-full {
+      width: 100%;
+    }
+    .text-left {
+      text-align: left;
+    }
+    td {
+      vertical-align: bottom;
+    }
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+      font-size: 1rem;
+    }
+    .top-table-header hr,
+    .sub-total hr,
+    .total hr {
+      border-style: solid none none;
+      border-color: black;
+    }
+    .dotted hr {
+      border-style: dotted none none;
+      border-color: black;
+    }
+    .top-table-header hr,
+    .sub-total hr,
+    .dotted hr {
+      border-width: 1px;
+    }
+    .total hr {
+      border-width: 2px;
+      border-color: black;
+    }
+    tr.empty-row {
+      height: 1.4rem;
+    }
+    table tr> :first-child {
+      text-align: left;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    table.col-3xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+    table.col-2xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
+    }
+    table.col-xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 10%;
+    }
+    table.col-s:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 12.5%;
+    }
+    table.col-m:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 15%;
+    }
+    table.col-l:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 17.5%;
+    }
+    table.col-xl:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 20%;
+    }
+    table.annotated col:nth-child(2) {
+      width: 50px;
+    }
+    .annotated tr> :nth-child(2) {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    table:not(.annotated):not(.no-row-headers) col:nth-child(2n+3),
+    table.annotated col:nth-child(2n+4),
+    table.no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 8px;
+    }
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+    table:not(.annotated):not(.no-column-headers) tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2),
+    table.annotated tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+3),
+    table.no-column-headers tbody:nth-of-type(1)>tr:not(.empty-row)>td:nth-child(2n+2) {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .scale {
+      font-size: .8rem;
+    }
+    .footnote-table {
+      font-size: .9rem;
+      font-style: italic;
+    }
+    /* front page */
+    .title-content,
+    .title-line {
+      margin-left: 25%;
+      padding-left: 1rem;
+    }
+    .title-line {
+      height: 1rem;
+      border-top: solid 1px black;
+      border-left: solid 1px black;
+    }
+    .date-content,
+    .date-line {
+      width: 60%;
+      padding-left: 1rem;
+      font-style: italic;
+    }
+    .date-line {
+      margin-top: 13rem;
+      height: 1rem;
+      border-top: dotted 1px black;
+      border-left: dotted 1px black;
+    }
+    /* toc */
+    .toc-h1 {
+      font-weight: bold;
+    }
+    .toc-h2 {
+      font-style: italic;
+    }
+    .align-right {
+      float: right;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    /* lists */
+    ol,
+    ul {
+      padding-left: 1.4rem;
+    }
+    .non-list-bullet {
+      display: list-item;
+      margin-left: 1.4rem;
+    }
+    .negative::before {
+      position: absolute;
+      content: "(";
+      margin-left: -5px;
+    }
+    .negative::after {
+      position: absolute;
+      margin-left: 0px;
+      content: ")";
+    }
+  </style>
+</head>
+<body>
+  <div class="hidden" style="display:none">
+    <ix:header>
+      <ix:references xml:lang="nl">
+        <link:schemaRef xlink:type="simple" xlink:href="https://www.dekleinebv.nl/xbrl/2023-12-31/dekleinebv-2023-12-31.xsd" />
+      </ix:references>
+      <ix:resources>
+        <xbrli:context id="context_1">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+        </xbrli:context>
+        <xbrli:context id="context_2">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2023-12-31</xbrli:instant>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_3">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_4">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2022-01-01</xbrli:startDate>
+            <xbrli:endDate>2022-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_5">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2022-12-31</xbrli:instant>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_6">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2022-12-31</xbrli:instant>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="rj:ClassesOfRevaluationReserveAxis">bw2-titel9:RevaluationReserveMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_7">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:startDate>2023-01-01</xbrli:startDate>
+            <xbrli:endDate>2023-12-31</xbrli:endDate>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="rj:ClassesOfRevaluationReserveAxis">bw2-titel9:RevaluationReserveMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:context id="context_8">
+          <xbrli:entity>
+            <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+          </xbrli:entity>
+          <xbrli:period>
+            <xbrli:instant>2023-12-31</xbrli:instant>
+          </xbrli:period>
+          <xbrli:scenario>
+            <xbrldi:explicitMember dimension="rj:ClassesOfRevaluationReserveAxis">bw2-titel9:RevaluationReserveMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="bw2-titel9:FinancialStatementsTypeAxis">bw2-titel9:SeparateMember</xbrldi:explicitMember>
+          </xbrli:scenario>
+        </xbrli:context>
+        <xbrli:unit id="EUR">
+          <xbrli:measure>iso4217:EUR</xbrli:measure>
+        </xbrli:unit>
+      </ix:resources>
+    </ix:header>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <div class="title">
+        <div class="title-line"></div>
+        <div class="title-content">
+          <div class="first-page-title">Voorbeeld financieel verslag 2023</div>
+          <div class="first-page-subtitle">
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityName" id="ID000010" escape="false">De Kleine</ix:nonNumeric>
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric>
+          </div>
+          <div class="first-page-subtitle">
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityRegisteredOffice" id="ID000030" escape="false">Statutaire vestigingsplaats</ix:nonNumeric>
+          </div>
+        </div>
+        <ix:nonNumeric contextRef="context_1" name="kvk:LegalEntitySizeSmall" format="ixt:fixed-true" id="ID000050"></ix:nonNumeric>
+        <ix:nonNumeric contextRef="context_1" name="rj:FinancialStatementsConsolidated" format="ixt:fixed-false" id="ID000080"></ix:nonNumeric>
+      </div>
+      <div class="date">
+        <div class="date-line"></div>
+        <div class="date-content">
+          <p>d.d. maand 2024
+            Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" name="bw2-titel9:ChamberOfCommerceRegistrationNumber" id="ID000040" escape="false">12345678</ix:nonNumeric>
+            Vastgesteld door de algemene vergadering op <ix:nonNumeric name="bw2-titel9:DocumentAdoptionDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000100">19 maart 2024</ix:nonNumeric>
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:DocumentAdoptionStatus" format="ixt:fixed-true" id="ID000090"></ix:nonNumeric>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1>Inhoud</h1>
+      <p>
+        <a href="#financial-statements"><span class="toc-h1">Jaarrekening<span class="align-right">3</span></span></a>
+        <a href="#balance-sheet">Balans per 31 december 2023<span class="align-right">4</span></a>
+        <a href="#account-of-profit-and-loss">Winst- en verliesrekening over 2023<span class="align-right">6</span></a>
+        <a href="#balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst- en verliesrekening<span class="align-right">7</span></a>
+      </p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="financial-statements">Jaarrekening</h1>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="balance-sheet">Balans per <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriodEndDate" contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000060">31 december 2023</ix:nonNumeric>
+      </h1>
+      (na resultaatbestemming)<ix:nonNumeric contextRef="context_3" name="bw2-titel9:BalanceSheetBeforeAppropriationResults" format="ixt:fixed-true" id="ID000120"></ix:nonNumeric>
+      <table class="table-full col-s annotated">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <h2>Activa</h2>
+            </td>
+            <td></td>
+            <td colspan="3">
+              <h2>31 december 2023</h2>
+            </td>
+            <td></td>
+            <td colspan="3">
+              <h2>31 december 2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>Ref.</td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td colspan="9">
+              <h3>Vaste activa</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Immateriële vaste activa</h4>
+            </td>
+            <td>5.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kosten die verband houden met de oprichting van uitgifte van aandelen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:CostsIncorporationShareIssue" unitRef="EUR" decimals="0" scale="0" id="ID0000130">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CostsIncorporationShareIssue" unitRef="EUR" decimals="0" scale="0" id="ID0000140">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kosten van ontwikkeling</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:DevelopmentCosts" unitRef="EUR" decimals="0" scale="0" id="ID0000150">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:DevelopmentCosts" unitRef="EUR" decimals="0" scale="0" id="ID0000160">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Goodwill</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:Goodwill" unitRef="EUR" decimals="0" scale="0" id="ID0000170">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Goodwill" unitRef="EUR" decimals="0" scale="0" id="ID0000180">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:IntangibleAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000190">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:IntangibleAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000200">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Materiële vaste activa</h4>
+            </td>
+            <td>6.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Bedrijfsgebouwen en -terreinen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:LandAndBuildings" unitRef="EUR" decimals="0" scale="0" id="ID0000210">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LandAndBuildings" unitRef="EUR" decimals="0" scale="0" id="ID0000220">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Andere vaste bedrijfsmiddelen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:TangibleAssetsOther" unitRef="EUR" decimals="0" scale="0" id="ID0000230">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:TangibleAssetsOther" unitRef="EUR" decimals="0" scale="0" id="ID0000240">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:PropertyPlantEquipment" unitRef="EUR" decimals="0" scale="0" id="ID0000250">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:PropertyPlantEquipment" unitRef="EUR" decimals="0" scale="0" id="ID0000260">0</ix:nonFraction>
+            </td>
+			</tr>
+          <tr>
+            <td>
+              <h4>Vastgoedbeleggingen</h4>
+            </td>
+            <td>7.</td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:InvestmentProperties" unitRef="EUR" decimals="0" scale="0" id="ID0000270">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:InvestmentProperties" unitRef="EUR" decimals="0" scale="0" id="ID0000280">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Financiële vaste activa</h4>
+            </td>
+            <td>8.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Deelnemingen in groepsmaatschappijen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:InvestmentsInParticipatingInterestsInGroupCompanies" unitRef="EUR" decimals="0" scale="0" id="ID0000290">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:InvestmentsInParticipatingInterestsInGroupCompanies" unitRef="EUR" decimals="0" scale="0" id="ID0000300">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Vorderingen op groepsmaatschappijen</td>
+            <td>9.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:ReceivablesGroupCompaniesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000310">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:ReceivablesGroupCompaniesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000320">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Latente belastingvorderingen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:DeferredTaxAssetsNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000330">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:DeferredTaxAssetsNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000340">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:FinancialAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000350">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:FinancialAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000360">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="9">
+              <h3>Vlottende activa</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Voorraden</h4>
+            </td>
+            <td>10.</td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:Inventories" unitRef="EUR" decimals="0" scale="0" id="ID0000370">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Inventories" unitRef="EUR" decimals="0" scale="0" id="ID0000380">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Onderhanden projecten</h4>
+            </td>
+            <td>11.</td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:ConstructionContractsAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000390">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:ConstructionContractsAssets" unitRef="EUR" decimals="0" scale="0" id="ID0000400">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Vorderingen</h4>
+            </td>
+            <td>12.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Handelsdebiteuren</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:TradeReceivables" unitRef="EUR" decimals="0" scale="0" id="ID0000410">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:TradeReceivables" unitRef="EUR" decimals="0" scale="0" id="ID0000420">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Vorderingen op groepsmaatschappijen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:ReceivablesGroupCompaniesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000430">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:ReceivablesGroupCompaniesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000440">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Opgevraagde storingen geplaatst kapitaal</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000450">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CalledUpShareCapital" unitRef="EUR" decimals="0" scale="0" id="ID0000460">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige vorderingen en overlopende activa</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="klein:ReceivablesOtherAccruedIncome" unitRef="EUR" decimals="0" scale="0" id="ID0000470">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="klein:ReceivablesOtherAccruedIncome" unitRef="EUR" decimals="0" scale="0" id="ID0000480">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:Receivables" unitRef="EUR" decimals="0" scale="0" id="ID0000490">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Receivables" unitRef="EUR" decimals="0" scale="0" id="ID0000500">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Effecten</h4>
+            </td>
+            <td>13</td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:SecuritiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000510">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:SecuritiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000520">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Liquide middelen</h4>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:CashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="ID0000530">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:CashAndCashEquivalents" unitRef="EUR" decimals="0" scale="0" id="ID0000540">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:Assets" unitRef="EUR" decimals="0" scale="0" id="ID0000550">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Assets" unitRef="EUR" decimals="0" scale="0" id="ID0000560">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <table class="table-full col-s annotated">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <h2>Passiva</h2>
+            </td>
+            <td></td>
+            <td colspan="3">
+              <h2>31 december 2023</h2>
+            </td>
+            <td></td>
+            <td colspan="3">
+              <h2>31 december 2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>Ref.</td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="9"></td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Eigen vermogen</h4>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Geplaatst kapitaal</td>
+            <td>14.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:ShareCapitalIssued" unitRef="EUR" decimals="0" scale="0" id="ID0000570">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:ShareCapitalIssued" unitRef="EUR" decimals="0" scale="0" id="ID0000580">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Agioreserve</td>
+            <td>15.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:SharePremium" unitRef="EUR" decimals="0" scale="0" id="ID0000590">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:SharePremium" unitRef="EUR" decimals="0" scale="0" id="ID0000600">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Herwaarderingsreserve</td>
+            <td>16.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:RevaluationReserve" unitRef="EUR" decimals="0" scale="0" id="ID0000610">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:RevaluationReserve" unitRef="EUR" decimals="0" scale="0" id="ID0000620">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Andere wettelijke reserves</td>
+            <td>17.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:LegalReserves" unitRef="EUR" decimals="0" scale="0" id="ID0000630">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LegalReserves" unitRef="EUR" decimals="0" scale="0" id="ID0000640">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Statutaire reserves</td>
+            <td>18.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:StatutoryReserves" unitRef="EUR" decimals="0" scale="0" id="ID0000650">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:StatutoryReserves" unitRef="EUR" decimals="0" scale="0" id="ID0000660">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige reserves</td>
+            <td>19.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:ReservesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000670">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:ReservesOther" unitRef="EUR" decimals="0" scale="0" id="ID0000680">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:Equity" unitRef="EUR" decimals="0" scale="0" id="ID0000690">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Equity" unitRef="EUR" decimals="0" scale="0" id="ID0000700">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Voorzieningen</h4>
+            </td>
+            <td>20.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Pensioenvoorziening</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:ProvisionPensionObligations" unitRef="EUR" decimals="0" scale="0" id="ID0000710">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:ProvisionPensionObligations" unitRef="EUR" decimals="0" scale="0" id="ID0000720">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Latente belastingverplichtingen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:DeferredTaxLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000730">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:DeferredTaxLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000740">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:ProvisionsOther" unitRef="EUR" decimals="0" scale="0" id="ID0000750">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:ProvisionsOther" unitRef="EUR" decimals="0" scale="0" id="ID0000760">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:Provisions" unitRef="EUR" decimals="0" scale="0" id="ID0000770">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:Provisions" unitRef="EUR" decimals="0" scale="0" id="ID0000780">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Langlopende schulden</h4>
+            </td>
+            <td>21.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Achtergestelde leningen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:SubordinatedLoans" unitRef="EUR" decimals="0" scale="0" id="ID0000790">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:SubordinatedLoans" unitRef="EUR" decimals="0" scale="0" id="ID0000800">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan kredietinstellingen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesBanksNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000810">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesBanksNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000820">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Financiële leaseverplichtingen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:FinanceLeaseLiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000830">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:FinanceLeaseLiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000840">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Oudedagsverplichting</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:OldAgeObligation" unitRef="EUR" decimals="0" scale="0" id="ID0000850">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:OldAgeObligation" unitRef="EUR" decimals="0" scale="0" id="ID0000860">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige schulden</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesOtherNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000870">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesOtherNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000880">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000890">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesNoncurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000900">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Kortlopende schulden</h4>
+            </td>
+            <td>22.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan kredietinstellingen</td>
+            <td>23.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesBanksCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000910">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesBanksCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000920">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan leveranciers en handelskredieten</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:TradePayablesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000930">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:TradePayablesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000940">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schulden aan groepsmaatschappijen</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesGroupCompaniesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000950">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:PayablesGroupCompaniesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000960">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Onderhanden projecten</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="rj:ConstructionContractsLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000970">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="rj:ConstructionContractsLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0000980">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Belastingen en premies sociale verzekeringen</td>
+            <td>24.</td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:TaxesSocialSecurityContributionsPayableCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0000990">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:TaxesSocialSecurityContributionsPayableCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001000">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Pensioenpremies</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:PensionPayablesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001010">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:PensionPayablesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001020">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige schulden en overlopende passiva</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="klein:PayablesOtherAccrualsAndDeferredIncomeCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001030">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="klein:PayablesOtherAccrualsAndDeferredIncomeCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001040">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001050">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:LiabilitiesCurrent" unitRef="EUR" decimals="0" scale="0" id="ID0001060">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="bw2-titel9:EquityAndLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0001070">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_5" format="ixt:num-dot-decimal" name="bw2-titel9:EquityAndLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0001080">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="account-of-profit-and-loss">Winst-en-verliesrekening over <ix:nonNumeric name="bw2-titel9:FinancialReportingPeriod" contextRef="context_1" id="ID001090">2023</ix:nonNumeric>
+      </h1>
+      <table class="table-full col-s annotated">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td colspan="3">
+              <h2>2023</h2>
+            </td>
+            <td></td>
+            <td colspan="3">
+              <h2>2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>Ref.</td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="9"></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Bruto-bedrijfsresultaat</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:GrossOperatingResult" unitRef="EUR" decimals="0" scale="0" id="ID0001200">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:GrossOperatingResult" unitRef="EUR" decimals="0" scale="0" id="ID0001210">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="9"></td>
+          </tr>
+          <tr>
+            <td>Lonen en salarissen</td>
+            <td>26.</td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0001220">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:WagesSalaries" unitRef="EUR" decimals="0" scale="0" id="ID0001230">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sociale lasten</td>
+            <td>26.</td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:SocialSecurityContributions" unitRef="EUR" decimals="0" scale="0" id="ID0001240">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:SocialSecurityContributions" unitRef="EUR" decimals="0" scale="0" id="ID0001250">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Afschrijvingen op immateriële en materiële vaste activa</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationPropertyPlantEquipmentAmortisationIntangibleAssets" unitRef="EUR" decimals="0" scale="0" id="ID0001260">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:DepreciationPropertyPlantEquipmentAmortisationIntangibleAssets" unitRef="EUR" decimals="0" scale="0" id="ID0001270">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Waardeveranderingen vastgoedbelegging</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="rj:ChangesValueInvestmentProperties" unitRef="EUR" decimals="0" scale="0" id="ID0001280">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="rj:ChangesValueInvestmentProperties" unitRef="EUR" decimals="0" scale="0" id="ID0001290">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Bijzondere waardeverminderingen vlottende activa</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:ImpairmentCurrentAssets" unitRef="EUR" decimals="0" scale="0" id="ID0001300">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:ImpairmentCurrentAssets" unitRef="EUR" decimals="0" scale="0" id="ID0001310">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overige bedrijfskosten</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0001320">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingExpensesOther" unitRef="EUR" decimals="0" scale="0" id="ID0001330">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Som der kosten</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:SumOfExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0001340">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:SumOfExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0001350">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Bedrijfsresultaat</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingResult" unitRef="EUR" decimals="0" scale="0" id="ID0001360">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:OperatingResult" unitRef="EUR" decimals="0" scale="0" id="ID0001370">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="9"></td>
+          </tr>
+          <tr>
+            <td>Opbrengst effecten</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeReceivablesNoncurrentSecurities" unitRef="EUR" decimals="0" scale="0" id="ID0001380">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeReceivablesNoncurrentSecurities" unitRef="EUR" decimals="0" scale="0" id="ID0001390">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rentebaten en soortgelijke opbrengsten</td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:InterestIncomeRelatedIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0001400">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:InterestIncomeRelatedIncomeOther" unitRef="EUR" decimals="0" scale="0" id="ID0001410">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rentelasten en soortgelijke kosten</td>
+            <td>27.</td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:InterestExpensesRelatedExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0001420">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:InterestExpensesRelatedExpenses" unitRef="EUR" decimals="0" scale="0" id="ID0001430">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Resultaat voor belastingen</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:ResultBeforeTax" unitRef="EUR" decimals="0" scale="0" id="ID0001440">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:ResultBeforeTax" unitRef="EUR" decimals="0" scale="0" id="ID0001450">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="9"></td>
+          </tr>
+          <tr>
+            <td>Belastingen</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeTaxExpense" unitRef="EUR" decimals="0" scale="0" id="ID0001460">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:IncomeTaxExpense" unitRef="EUR" decimals="0" scale="0" id="ID0001470">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Resultaat deelnemingen</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:ShareInResultsParticipatingInterests" unitRef="EUR" decimals="0" scale="0" id="ID0001480">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:ShareInResultsParticipatingInterests" unitRef="EUR" decimals="0" scale="0" id="ID0001490">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Resultaat na belastingen</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="bw2-titel9:ResultAfterTax" unitRef="EUR" decimals="0" scale="0" id="ID0001500">0</ix:nonFraction>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ix:nonFraction contextRef="context_4" format="ixt:num-dot-decimal" name="bw2-titel9:ResultAfterTax" unitRef="EUR" decimals="0" scale="0" id="ID0001510">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="balance-sheet-and-profit-and-loss-account-disclosure">Toelichting op de balans en winst-en-verliesrekening</h1>
+      <h2>Algemene toelichting</h2>
+      <h3>Activiteiten</h3>
+      <p>De activiteiten van De Kleine B.V. en haar groepsmaatschappijen bestaan voornamelijk uit:</p>
+      <ul>
+        <li>de productie van en handel in elektronische artikelen en computercomponenten;</li>
+        <li>dienstverlening op het gebied van IT-processen en implementatie van software bij derden;</li>
+        <li>bouw van maatwerksoftware in opdracht van derden.</li>
+      </ul>
+      <p>Verkoop vindt plaats zowel in het binnenland als in het buitenland, waarbij de landen van de Europese Unie de belangrijkste afzetmarkt vormen.</p>
+      <h3>Continuïteit</h3>
+      <p>Het eigen vermogen van De Kleine B.V. bedraagt per 31 december 2023 € x negatief. De financiering hiervan vindt geheel plaats met kortlopende/langlopende schulden, waaronder door groepsmaatschappijen in rekening-courant verstrekte middelen/waaronder door banken verstrekte leningen/etc. De continuïteit van de vennootschap hangt in hoge mate af van de bereidheid van de groepsmaatschappijen/banken deze financiering te continueren. Op dit moment zijn hierover door groepsmaatschappijen/banken nog geen concrete toezeggingen gedaan. Hierdoor bestaat er een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteit van het geheel van de werkzaamheden van De Kleine B.V.</p>
+      <hr />
+      <p>Wij verwachten dat de kasstroom over de komende boekjaren zich positief zal ontwikkelen als gevolg van de volgende maatregelen die wij inmiddels hebben getroffen en plannen die we hebben gemaakt:</p>
+      <p>.........
+        .........</p>
+      <p>Op basis van gesprekken die zijn gevoerd met de groepsmaatschappijen/banken over onze maatregelen en plannen verwachten wij dat de financiering zal worden gecontinueerd.</p>
+      <p>De in de onderhavige jaarrekening gehanteerde grondslagen van waardering en resultaatbepaling zijn dan ook gebaseerd op de veronderstelling van continuïteit van de vennootschap.</p>
+      <h3>Vestigingsadres, rechtsvorm en inschrijfnummer handelsregister</h3>
+      <p>De Kleine B.V. is feitelijk gevestigd te Statutaire vestigingsplaats en is ingeschreven bij het handelsregister onder nummer 00000000.</p>
+      <h3>Groepsverhoudingen</h3>
+      <p>XYZ B.V. te Statutaire vestigingsplaats stelt de geconsolideerde jaarrekening op van het groepsdeel waartoe De Kleine B.V. behoort. Aangezien De Kleine B.V. geconsolideerd ook als kleine rechtspersoon valt aan te merken is consolidatie achterwege gelaten op grond van het bepaalde in artikel 2:407 lid 2 sub a BW.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h3>Stelselwijzigingen</h3>
+      <h3>Stelselwijziging</h3>
+      <p>Als gevolg van.....</p>
+      <h4>Invloed stelselwijziging op vermogen en resultaat</h4>
+      <p>De stelselwijzigingen zijn rechtstreeks verwerkt in het eigen vermogen per 1 januari 2023. De invloed van de stelselwijzigingen op het vermogen is weergegeven in onderstaande aansluiting van het eigen vermogen van 31 december 2022 naar 1 januari 2023:</p>
+      <table class="table-full col-l">
+        <colgroup>
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>Eigen vermogen</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>Stand per 31 december 2022</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Vermogensverschil vanwege overgang naar fiscale grondslagen </td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>Stand per 1 januari 2023</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Schattingswijzigingen</h3>
+      <h3>Schattingen</h3>
+      <p>Bij toepassing van de grondslagen en regels voor het opstellen van de jaarrekening vormt de leiding van De Kleine B.V. zich verschillende oordelen en schattingen die essentieel kunnen zijn voor de in de jaarrekening opgenomen bedragen. Indien het voor het geven van het in artikel 2:362 lid 1 BW vereiste inzicht noodzakelijk is, is de aard van deze oordelen en schattingen inclusief de bijbehorende veronderstellingen opgenomen bij de toelichting op de desbetreffende jaarrekeningposten.</p>
+      <h3>Foutherstel</h3>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Algemene grondslagen</h2>
+      <h3>Algemeen</h3>
+      <p>De jaarrekening is opgesteld in overeenstemming met de wettelijke bepalingen van Titel 9 Boek 2 BW en de Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen, die uitgegeven zijn door de Raad voor de jaarverslaggeving.</p>
+      <p>Activa en passiva worden in het algemeen gewaardeerd tegen de verkrijgings- of vervaardigingsprijs of de actuele waarde. Indien geen specifieke waarderingsgrondslag is vermeld vindt waardering plaats tegen de verkrijgingsprijs. In de balans en de winst- en verliesrekening zijn referenties opgenomen. Met deze referenties wordt verwezen naar de toelichting.</p>
+      <h3>Vergelijking met voorgaand jaar</h3>
+      <p>De gehanteerde grondslagen van waardering en van resultaatbepaling zijn ongewijzigd gebleven ten opzichte van het voorgaande jaar, met uitzondering van de toegepaste stelselwijzigingen zoals opgenomen in de desbetreffende paragrafen.</p>
+      <h3>Vreemde valuta</h3>
+      <h4>Functionele valuta</h4>
+      <p>De posten in de jaarrekening van De Kleine B.V. worden gewaardeerd met inachtneming van de valuta van de economische omgeving waarin de vennootschap haar bedrijfsactiviteiten voornamelijk uitoefent (de functionele valuta). De jaarrekening is opgesteld in euro's; dit is zowel de functionele als de presentatievaluta van De Kleine B.V.</p>
+      <h4>Transacties, vorderingen en schulden</h4>
+      <p>Transacties in vreemde valuta gedurende de verslagperiode zijn in de jaarrekening verwerkt tegen de koers op transactiedatum.</p>
+      <p>Monetaire activa en passiva in vreemde valuta worden omgerekend in de functionele valuta tegen de koers per balansdatum. De uit de afwikkeling en omrekening voortvloeiende koersverschillen komen ten gunste of ten laste van de winst- en verliesrekening.</p>
+      <p>Niet-monetaire activa die volgens de verkrijgingsprijs worden gewaardeerd in een vreemde valuta worden omgerekend tegen de wisselkoers op de transactiedatum.</p>
+      <p>Niet-monetaire activa die volgens de actuele waarde worden gewaardeerd in een vreemde valuta worden omgerekend tegen de wisselkoers op het moment waarop de actuele waarde werd bepaald.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h3>Leasing</h3>
+      <h4>Financiële leasing</h4>
+      <p>De vennootschap leaset een deel van het machinepark; hierbij heeft de vennootschap grotendeels de voor- en nadelen verbonden aan de eigendom van deze activa. Deze activa worden geactiveerd in de balans bij aanvang van het leasecontract tegen de reële waarde van het actief of de lagere contante waarde van de minimale leasetermijnen. De te betalen leasetermijnen worden op annuïtaire wijze verdeeld in een aflossings- en een rentecomponent. De leaseverplichtingen worden exclusief de rentecomponent opgenomen onder de langlopende schulden. De rentecomponent wordt gedurende de looptijd van het contract verantwoord in de winst- en verliesrekening met een vast rentepercentage over de gemiddelde resterende aflossingscomponent.</p>
+      <h4>Operationele leasing</h4>
+      <p>Bij de vennootschap kunnen er leasecontracten bestaan waarbij een groot deel van de voor- en nadelen die aan de eigendom verbonden zijn, niet bij de vennootschap ligt. Deze leasecontracten worden verantwoord als operationele leasing. Leasebetalingen worden, rekening houdend met ontvangen vergoedingen van de lessor, op lineaire basis verwerkt in de winst- en verliesrekening over de looptijd van het contract.</p>
+      <h3>Bijzondere posten</h3>
+      <p>Bijzondere posten zijn baten of lasten die voortvloeien uit gebeurtenissen of transacties die behoren tot het resultaat uit de normale, niet-incidentele bedrijfsactiviteiten, maar die omwille van de vergelijkbaarheid apart toegelicht worden op grond van de aard, omvang of het incidentele karakter van de post.</p>
+      <h3>Hedge-accounting</h3>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Grondslagen voor waardering van activa en passiva</h2>
+      <h3>Immateriële vaste activa</h3>
+      <p>De immateriële vaste activa worden gewaardeerd tegen verkrijgingsprijs onder aftrek van afschrijvingen. Er wordt rekening gehouden met bijzondere waardeverminderingen; dit is het geval als de boekwaarde van het actief (of van de kasstroom genererende eenheid waartoe het actief behoort) hoger is dan de realiseerbare waarde ervan.</p>
+      <p>Om vast te stellen of er voor een immaterieel vast actief sprake is van een bijzondere waardevermindering, wordt verwezen naar ‘Bijzondere waardeverminderingen van vaste activa’.</p>
+      <h4>Kosten van ontwikkeling</h4>
+      <p>Uitgaven voor ontwikkelingsprojecten worden geactiveerd als onderdeel van de vervaardigingsprijs als het waarschijnlijk is dat het project commercieel en technisch succesvol zal zijn (dat wil zeggen: als het waarschijnlijk is dat economische voordelen zullen worden behaald) en de kosten betrouwbaar kunnen worden vastgesteld. Voor de geactiveerde ontwikkelingskosten is een wettelijke reserve onder het eigen vermogen gevormd ter hoogte van het geactiveerde bedrag. De afschrijving van de geactiveerde ontwikkelingskosten vangt aan zodra de commerciële productie is gestart en vindt lineair plaats over de verwachte toekomstige gebruiksduur van het actief. Onderzoekskosten worden verwerkt in de winst- en verliesrekening.</p>
+      <h4>Goodwill</h4>
+      <p>Positieve goodwill voortkomend uit acquisities en berekend in overeenstemming met de grondslag "Deelnemingen", wordt geactiveerd en lineair afgeschreven gedurende de verwachte economische gebruiksduur.</p>
+      <p>Negatieve goodwill valt vrij in de winst- en verliesrekening voor zover lasten en verliezen zich voordoen, indien hier bij de verwerking van de overname rekening mee is gehouden en deze lasten en verliezen betrouwbaar zijn te meten. Indien geen rekening is gehouden met verwachte lasten of verliezen, dan valt de negatieve goodwill vrij in overeenstemming met het gewogen gemiddelde van de resterende levensduur van de verworven afschrijfbare activa. Voor zover de negatieve goodwill uitkomt boven de reële waarde van de geïdentificeerde niet-monetaire activa wordt het meerdere direct in de winst- en verliesrekening verwerkt.</p>
+      <h3>Materiële vaste activa</h3>
+      <p>Bedrijfsgebouwen en terreinen worden gewaardeerd tegen verkrijgingsprijs plus bijkomende kosten of vervaardigingsprijs onder aftrek van lineaire afschrijvingen gedurende de verwachte toekomstige gebruiksduur. Op terreinen wordt niet afgeschreven. Er wordt rekening gehouden met de bijzondere waardeverminderingen die op balansdatum worden verwacht. Voor de vaststelling of voor een materieel vast actief sprake is van een bijzondere waardevermindering wordt verwezen naar de desbetreffende noot.</p>
+      <p>Overige materiële vaste activa worden gewaardeerd tegen verkrijgings- of vervaardigingsprijs inclusief direct toerekenbare kosten, onder aftrek van lineaire afschrijvingen gedurende de verwachte toekomstige gebruiksduur en bijzondere waardeverminderingen.</p>
+      <p>Subsidies op investeringen worden in mindering gebracht op de verkrijgings- of vervaardigingsprijs van de activa waarop de subsidies betrekking hebben.</p>
+      <p>Voor verplichtingen tot herstel na afloop van het gebruik van het actief (ontmantelingskosten) wordt een voorziening getroffen voor het verwachte bedrag op het moment van activering. Dit bedrag wordt verwerkt als onderdeel van de boekwaarde van het actief waartegenover voor het gehele bedrag een voorziening wordt gevormd, dan wel de opbouw van de voorziening vindt plaats over de gebruiksduur van het actief.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <p>Voor de toekomstige kosten van groot onderhoud aan de bedrijfsgebouwen is een voorziening voor groot onderhoud gevormd. De toevoeging aan de voorziening wordt bepaald op basis van het geschatte bedrag van het onderhoud en de periode die telkens tussen de werkzaamheden van groot onderhoud verloopt.
+        Of
+        De kosten in verband met groot onderhoud worden verwerkt in de boekwaarde van het actief, indien voldaan is aan de activeringscriteria. De kosten van groot onderhoud hebben een andere gebruiksduur dan de rest van het actief en worden aangemerkt als afzonderlijk af te schrijven bestanddeel.
+        Frequent voorkomende onderhoudskosten worden verwerkt in de winst-en-verliesrekening wanneer zij gemaakt worden</p>
+      <h3>Vastgoedbeleggingen</h3>
+      <p>Vastgoedbeleggingen zijn onroerende zaken die worden aangehouden om huuropbrengsten of waardestijgingen, of beide, te realiseren. Vastgoedbeleggingen, daaronder begrepen vastgoedbeleggingen in ontwikkeling, worden bij eerste verwerking tegen verkrijgingsprijs inclusief transactiekosten gewaardeerd en daarna tegen actuele (reële) waarde. De invulling hiervan wordt onder meer gebaseerd op beschikbare marktgegevens en samengesteld door externe taxateurs.
+        Waardeveranderingen van vastgoedbeleggingen worden verwerkt in de winst- en verliesrekening. Daarnaast wordt ten laste van de Overige reserves een herwaarderingsreserve gevormd. De herwaarderingsreserve wordt bepaald als het positieve verschil tussen de reële waarde en de initiële verkrijgings- of vervaardigingsprijs (zonder rekening te houden met enige afschrijving of waardevermindering) en onder aftrek van relevante (latente) belastingverplichtingen. Op vastgoedbeleggingen wordt niet afgeschreven. Vastgoedbeleggingen in ontwikkeling waarvan de reële waarde niet betrouwbaar te bepalen is worden tegen kostprijs worden gewaardeerd tot het moment dat de reële waarde wel betrouwbaar is te bepalen.</p>
+      <h3>Financiële vaste activa</h3>
+      <h4>Deelnemingen</h4>
+      <p>Deelnemingen waarin invloed van betekenis kan worden uitgeoefend worden gewaardeerd volgens de vermogensmutatiemethode (nettovermogenswaarde). Wanneer 20% of meer van de stemrechten uitgebracht kan worden, wordt ervan uitgegaan dat er invloed van betekenis is.</p>
+      <p>De nettovermogenswaarde wordt berekend volgens de grondslagen die gelden voor deze jaarrekening; voor deelnemingen waarvan onvoldoende gegevens beschikbaar zijn voor aanpassing aan deze grondslagen, wordt uitgegaan van de waarderingsgrondslagen van de desbetreffende deelneming.</p>
+      <p>Indien de waardering van een deelneming volgens de nettovermogenswaarde negatief is, wordt deze op nihil gewaardeerd. Indien en voor zover De Kleine B.V. in deze situatie geheel of gedeeltelijk instaat voor de schulden van de deelneming, dan wel het stellige voornemen heeft de deelneming tot betaling van haar schulden in staat te stellen, wordt hiervoor een voorziening getroffen.</p>
+      <p>De eerste waardering van gekochte deelnemingen is gebaseerd op de reële waarde van de identificeerbare activa en passiva op het moment van acquisitie. Voor de vervolgwaardering worden de grondslagen toegepast die gelden voor deze jaarrekening, uitgaande van de waarden bij eerste waardering.</p>
+      <p>Als resultaat wordt verantwoord het bedrag waarmee de boekwaarde van de deelneming sinds de voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat.</p>
+      <p>Deelnemingen waarop geen invloed van betekenis kan worden uitgeoefend, worden gewaardeerd tegen verkrijgingsprijs. Als resultaat wordt in aanmerking genomen het in het verslagjaar gedeclareerde dividend van de deelneming, waarbij niet in contanten uitgekeerde dividenden worden gewaardeerd tegen reële waarde.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <p>Indien sprake is van een bijzondere waardevermindering vindt waardering plaats tegen de realiseerbare waarde (zie verder de noot 3.5. "Bijzondere waardeverminderingen van vaste activa"); afwaardering vindt plaats ten laste van de winst- en verliesrekening.</p>
+      <h4>Vorderingen op groepsmaatschappijen</h4>
+      <p>De onder financiële vaste activa opgenomen vorderingen worden initieel gewaardeerd tegen de reële waarde inclusief transactiekosten. Vervolgens worden deze vorderingen gewaardeerd tegen geamortiseerde kostprijs, welke in het algemeen gelijk is aan de nominale waarde.
+        Bij de waardering wordt rekening gehouden met eventuele waardeverminderingen.</p>
+      <h4>Latente belastingvorderingen</h4>
+      <p>Latente belastingvorderingen worden opgenomen voor verrekenbare fiscale verliezen en voor verrekenbare tijdelijke verschillen tussen de waarde van de activa en passiva volgens fiscale voorschriften enerzijds en de in deze jaarrekening gevolgde waarderingsgrondslagen anderzijds, met dien verstande dat latente belastingvorderingen alleen worden opgenomen voor zover het waarschijnlijk is dat er toekomstige fiscale winst zal zijn waarmee de tijdelijke verschillen kunnen worden verrekend en verliezen kunnen worden gecompenseerd.</p>
+      <p>De berekening van de latente belastingvorderingen geschiedt tegen de op het einde van het verslagjaar geldende belastingtarieven dan wel tegen de in komende jaren geldende tarieven, voor zover deze al bij wet zijn vastgesteld.</p>
+      <p>Latente belastingvorderingen worden gewaardeerd op nominale waarde.</p>
+      <h3>Bijzondere waardeverminderingen van vaste activa</h3>
+      <p>De vennootschap beoordeelt op iedere balansdatum of er aanwijzingen zijn dat een vast actief aan een bijzondere waardevermindering onderhevig kan zijn. Indien dergelijke indicaties aanwezig zijn, wordt de realiseerbare waarde van het actief vastgesteld. Indien het niet mogelijk is de realiseerbare waarde voor het individuele actief te bepalen, wordt de realiseerbare waarde bepaald van de kasstroomgenererende eenheid waartoe het actief behoort. Van een bijzondere waardevermindering is sprake als de boekwaarde van een actief hoger is dan de realiseerbare waarde; de realiseerbare waarde is de hoogste van de opbrengstwaarde en de bedrijfswaarde. Een bijzondere-waardeverminderingsverlies wordt direct als een last verwerkt in de winst- en verliesrekening onder gelijktijdige verlaging van de boekwaarde van het betreffende actief.</p>
+      <p>De opbrengstwaarde wordt in eerste instantie ontleend aan een bindende verkoopovereenkomst; als die er niet is, wordt de opbrengstwaarde bepaald met behulp van de actieve markt waarbij normaliter de gangbare biedprijs geldt als marktprijs. De in aftrek te brengen kosten bij het bepalen van de opbrengstwaarde zijn gebaseerd op de geschatte kosten die rechtstreeks kunnen worden toegerekend aan de verkoop en nodig zijn om de verkoop te realiseren. Voor de bepaling van de bedrijfswaarde wordt een inschatting gemaakt van de toekomstige netto kasstromen bij voortgezet gebruik van het actief/de kasstroomgenererende eenheid; vervolgens worden deze kasstromen contant gemaakt waarbij een disconteringsvoet wordt gehanteerd van ...% (2022: ...%). De disconteringsvoet geeft geen risico’s weer waarmee in de toekomstige kasstromen al rekening is gehouden.</p>
+      <p>Indien wordt vastgesteld dat een bijzondere waardevermindering die in het verleden verantwoord is, niet meer bestaat of is afgenomen, dan wordt de toegenomen boekwaarde van de desbetreffende activa niet hoger gesteld dan de boekwaarde die bepaald zou zijn indien geen bijzondere waardevermindering voor het actief zou zijn verantwoord. Een bijzondere waardevermindering van goodwill wordt niet teruggenomen.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h3>Voorraden</h3>
+      <h4>Voorraden voor gebruik en verkoop</h4>
+      <p>De voorraden worden gewaardeerd tegen verkrijgings- of vervaardigingsprijs onder toepassing van de FIFO-methode (first in, first out) of lagere opbrengstwaarde.</p>
+      <p>De verkrijgings- of vervaardigingsprijs bestaan uit (alle kosten die samenhangen met de verkrijging of vervaardiging) alsmede de gemaakte kosten om de voorraden op hun huidige plaats en in hun huidige staat te brengen. In de kosten van vervaardiging zijn begrepen directe loonkosten en toeslagen voor aan de productie gerelateerde indirecte vaste en variabele kosten, waaronder de kosten van het bedrijfsbureau, de onderhoudsafdeling en interne logistiek.</p>
+      <p>De opbrengstwaarde is de geschatte verkoopprijs onder aftrek van direct toerekenbare verkoopkosten. Bij de bepaling van de opbrengstwaarde wordt rekening gehouden met de incourantheid van de voorraden.</p>
+      <h3>Onderhanden projecten</h3>
+      <p>De post onderhanden projecten in opdracht van derden bestaat uit het saldo van gerealiseerde projectkosten, toegerekende winst (voor zover betrouwbaar kan worden vastgesteld), en indien van toepassing, verwerkte verliezen en reeds gedeclareerde termijnen. Onderhanden projecten waarvan het saldo een debetstand vertoont, worden gepresenteerd onder de vlottende activa. Onderhanden projecten waarvan het saldo een creditstand vertoont, worden gepresenteerd onder de kortlopende schulden.</p>
+      <p>Uitgaven voor projectkosten voor nog niet verrichte prestaties worden opgenomen onder de voorraden.</p>
+      <h3>Vorderingen</h3>
+      <p>Vorderingen worden bij eerste verwerking gewaardeerd tegen de reële waarde inclusief de transactiekosten. Vorderingen worden na eerste verwerking gewaardeerd tegen de geamortiseerde kostprijs. Voorzieningen wegens oninbaarheid worden in mindering gebracht op de boekwaarde van de vordering.</p>
+      <h3>Effecten</h3>
+      <p>Beursgenoteerde effecten die onderdeel zijn van de handelsportefeuille worden gewaardeerd tegen actuele waarde (reële waarde). De reële waarde van beursgenoteerde effecten is gelijk aan de beurswaarde. Beursgenoteerde obligaties die geen onderdeel zijn van de handelsportefeuille worden gewaardeerd tegen geamortiseerde kostprijs.</p>
+      <p>Andere dan beursgenoteerde effecten worden gewaardeerd tegen de verkrijgingsprijs of lagere actuele (reële) waarde. In dat laatste geval wordt de reële waarde benaderd met behulp van algemeen aanvaarde waarderingsmodellen en –technieken.</p>
+      <p>Waardevermeerderingen van op actuele waarde gewaardeerde effecten worden onmiddellijk in de winst- en verliesrekening verwerkt. Waardeverminderingen van op actuele waarde gewaardeerde effecten worden eveneens onmiddellijk in de winst- en verliesrekening verwerkt.</p>
+      <p>Transactiekosten die direct zijn toe te rekenen aan de verwerving van de effecten worden direct in de winst- en verliesrekening verwerkt.</p>
+      <h3>Liquide middelen</h3>
+      <p>Liquide middelen bestaan uit kas, banktegoeden en deposito’s met een looptijd korter dan twaalf maanden. Rekening-courantschulden bij banken zijn opgenomen onder schulden aan kredietinstellingen onder kortlopende schulden. Liquide middelen worden gewaardeerd tegen nominale waarde.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h3>Eigen vermogen</h3>
+      <p>Indien De Kleine B.V. eigen aandelen inkoopt, wordt de verkrijgingsprijs van de ingekochte aandelen in mindering gebracht op de overige reserves, of op andere reserves mits de statuten dit toestaan, totdat deze aandelen worden ingetrokken of worden verkocht. Indien ingekochte aandelen worden verkocht, komt de opbrengst uit verkoop ten gunste van de overige reserves of andere reserves in het eigen vermogen.
+        De opbrengst komt ten gunste van de reserve waarop eerder de inkoop van deze aandelen in mindering is gebracht.</p>
+      <p>Kosten die direct samenhangen met de inkoop, verkoop en/of uitgifte van nieuwe aandelen worden rechtstreeks ten laste gebracht van het eigen vermogen, onder verrekening van relevante winstbelastingeffecten.</p>
+      <h3>Herwaarderingsreserve</h3>
+      <p>Indien herwaarderingen in de herwaarderingsreserve onder aftrek van relevante (latente) belastingverplichtingen zijn verwerkt, worden de gerealiseerde herwaarderingen bruto ten gunste van de winst- en verliesrekening gebracht. De corresponderende vrijval van de (latente) belastingverplichtingen wordt onder de post belastingen ten laste van het resultaat gebracht.</p>
+      <h3>Voorzieningen</h3>
+      <h4>Algemeen</h4>
+      <p>Voorzieningen worden gevormd voor in rechte afdwingbare of feitelijke verplichtingen die op de balansdatum bestaan, waarbij het waarschijnlijk is dat een uitstroom van middelen noodzakelijk is en waarvan de omvang op betrouwbare wijze is te schatten.</p>
+      <p>De voorzieningen worden gewaardeerd tegen de beste schatting van de bedragen die noodzakelijk zijn om de verplichtingen per balansdatum af te wikkelen. Pensioenvoorzieningen worden gewaardeerd op basis van actuariële grondslagen. Onderhoudsvoorzieningen worden gewaardeerd tegen nominale waarde. De overige voorzieningen worden gewaardeerd tegen de contante waarde van de uitgaven die naar verwachting noodzakelijk zijn om de verplichtingen af te wikkelen, tenzij de tijdswaarde van geld niet materieel is. Als de periode waarover de uitgaven contant worden gemaakt maximaal een jaar is, wordt de voorziening tegen nominale waarde gewaardeerd.</p>
+      <p>Wanneer het de verwachting is dat een derde de verplichtingen vergoedt, en wanneer het waarschijnlijk is dat deze vergoeding zal worden ontvangen bij de afwikkeling van de verplichting, dan wordt deze vergoeding als een actief in de balans opgenomen.</p>
+      <h4>Pensioenverplichting in eigen beheer</h4>
+      <p></p>
+      <h4>Latente belastingverplichtingen</h4>
+      <p>Latente belastingverplichtingen worden opgenomen voor tijdelijke verschillen tussen de waarde van de activa en passiva volgens fiscale voorschriften enerzijds en de boekwaarden die in deze jaarrekening gevolgd worden anderzijds. De berekening van de latente belastingverplichtingen geschiedt tegen de belastingtarieven die op het einde van het verslagjaar gelden, of tegen de tarieven die in de komende jaren gelden, voor zover deze al bij wet zijn vastgesteld.</p>
+      <p>Belastinglatenties worden gewaardeerd op nominale waarde.
+      </p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h4>Reorganisatievoorziening</h4>
+      <p>Deze voorziening heeft betrekking op kosten in verband met de reorganisatie van activiteiten en wordt gevormd indien voor de rechtspersoon een feitelijke of juridische verplichting is ontstaan.</p>
+      <h4>Garantievoorziening</h4>
+      <p>Deze voorziening heeft betrekking op te vergoeden kosten voor producten die zijn verkocht of diensten die zijn verricht, indien voor de rechtspersoon een verplichting is ontstaan wegens het niet voldoen aan de overeengekomen kwaliteiten.</p>
+      <h4>Overige voorzieningen</h4>
+      <p>Voor uitgaven voor groot onderhoud van gebouwen wordt een onderhoudsvoorziening gevormd om deze lasten gelijkmatig te verdelen over een aantal boekjaren. De toevoegingen aan de voorziening wordt bepaald op basis van het geschatte bedrag van het groot onderhoud en de periode die telkens tussen de werkzaamheden voor groot onderhoud verloopt.</p>
+      <p>De overige voorzieningen worden opgenomen tegen nominale waarde van de voor de afwikkeling van de voorziening naar verwachting noodzakelijke uitgaven.</p>
+      <h3>Langlopende schulden</h3>
+      <p>Langlopende schulden worden bij de eerste verwerking gewaardeerd tegen reële waarde. Transactiekosten die direct zijn toe te rekenen aan de verwerving van de langlopende schulden worden in de waardering bij eerste verwerking opgenomen. Langlopende schulden worden na eerste verwerking gewaardeerd tegen geamortiseerde kostprijs, zijnde het ontvangen bedrag rekening houdend met agio of disagio en onder aftrek van transactiekosten.</p>
+      <p>Het verschil tussen de bepaalde boekwaarde en de uiteindelijke aflossingswaarde wordt op basis van de effectieve rente gedurende de geschatte looptijd van de langlopende schulden in de winst- en verliesrekening als interestlast verwerkt.</p>
+      <h3>Kortlopende schulden</h3>
+      <p>Kortlopende schulden worden bij de eerste verwerking gewaardeerd tegen reële waarde. Kortlopende schulden worden na eerste verwerking gewaardeerd tegen de bedragen waartegen de schuld moet worden afgelost.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Grondslagen voor bepaling van het resultaat</h2>
+      <h3>Algemeen</h3>
+      <p>Het resultaat wordt bepaald als het verschil tussen de opbrengstwaarde van de geleverde prestaties en de kosten en andere lasten over het jaar. De opbrengsten op transacties worden verantwoord in het jaar waarin zij zijn gerealiseerd.</p>
+      <p>Het resultaat wordt tevens bepaald met inachtneming van de verwerking van ongerealiseerde waardeveranderingen van op reële waarde gewaardeerde:</p>
+      <ul>
+        <li>vastgoedbeleggingen;</li>
+        <li>onder vlottende activa opgenomen effecten.</li>
+      </ul>
+      <h3>Opbrengstverantwoording</h3>
+      <h4>Algemeen</h4>
+      <p>Netto-omzet omvat de opbrengsten uit overeenkomsten met klanten, waarbij het gaat om verkopen, leveringen en/of verrichte diensten voor eigen rekening en risico In de overeenkomsten worden de individuele prestatieverplichtingen geïdentificeerd. Vervolgens wordt de transactieprijs vastgesteld en deze wordt toegerekend aan individuele prestatieverplichting. Hierbij wordt rekening gehouden met kortingen en dergelijke en van over de omzet geheven belastingen.</p>
+      <h4>Verkoop van goederen</h4>
+      <p>Opbrengsten uit de verkoop van goederen worden verwerkt zodra alle belangrijke rechten en risico's met betrekking tot de eigendom van de goederen zijn overgedragen aan de koper.</p>
+      <h4>Verlenen van diensten</h4>
+      <p>Verantwoording van opbrengsten uit de levering van diensten geschiedt naar rato van de geleverde prestaties, gebaseerd op de verrichte diensten tot aan de balansdatum in verhouding tot de in totaal te verrichten diensten.</p>
+      <h4>Projectopbrengsten en projectkosten</h4>
+      <p>Voor onderhanden projecten, waarvan het resultaat op betrouwbare wijze kan worden bepaald, worden de projectopbrengsten en de projectkosten verwerkt als netto-omzet en kosten in de winst- en verliesrekening naar rato van de verrichte prestaties per balansdatum (de ‘Percentage of Completion’-methode, ofwel de PoC-methode).
+        De voortgang van de verrichte prestaties wordt bepaald op basis van de tot de balansdatum gemaakte projectkosten in verhouding tot de geschatte totale projectkosten. Als het resultaat (nog) niet op betrouwbare wijze kan worden ingeschat, dan worden de opbrengsten als netto-omzet verwerkt in de winst- en verliesrekening tot het bedrag van de gemaakte projectkosten dat waarschijnlijk kan worden verhaald; de projectkosten worden dan verwerkt in de winst- en verliesrekening in de periode waarin ze zijn gemaakt. Zodra het resultaat wel op betrouwbare wijze kan worden bepaald, vindt opbrengstverantwoording plaats volgens de PoC-methode naar rato van de verrichte prestaties per balansdatum.
+        Het resultaat wordt bepaald als het verschil tussen de projectopbrengsten en projectkosten. Projectopbrengsten zijn de contractueel overeengekomen opbrengsten en opbrengsten uit hoofde van meer- en minderwerk, claims en vergoedingen indien en voor zover het waarschijnlijk is dat deze worden gerealiseerd en ze betrouwbaar kunnen worden bepaald. Projectkosten zijn de direct op het project betrekking hebbende kosten, die in het algemeen aan projectactiviteiten worden toegerekend en toegewezen kunnen worden aan het project, en andere kosten die contractueel aan de opdrachtgever kunnen worden toegerekend.
+        Indien het waarschijnlijk is dat de totale projectkosten de totale projectopbrengsten overschrijden, dan worden de verwachte verliezen onmiddellijk in de winst- en verliesrekening verwerkt. Dit verlies wordt verwerkt in de kostprijs van de omzet.
+        De voorziening voor het verlies maakt deel uit van de post onderhanden projecten.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h3>Overige bedrijfsopbrengsten</h3>
+      <p>Onder overige bedrijfsopbrengsten worden resultaten verantwoord die niet rechtstreeks samenhangen met de levering van goederen of diensten in het kader van de normale, niet-incidentele bedrijfsactiviteiten. De overige bedrijfsopbrengsten bestaan uit royaltyopbrengsten. Deze opbrengsten worden toegerekend aan de verslagperiode in overeenstemming met de inhoud van de overeenkomst.</p>
+      <h3>Kosten</h3>
+      <p>De kosten worden bepaald op historische basis en toegerekend aan het verslagjaar waarop zij betrekking hebben.</p>
+      <h3>Personeelsbeloningen</h3>
+      <h4>periodiek betaalbare beloningen</h4>
+      <p>De aan het personeel verschuldigde beloningen worden op grond van de arbeidsvoorwaarden verwerkt in de winst- en verliesrekening.</p>
+      <h4>Pensioenen</h4>
+      <p>De Kleine B.V. heeft alle pensioenregelingen verwerkt volgens de verplichtingenbenadering. De over het verslagjaar verschuldigde premie wordt als last verantwoord.
+        Op de Nederlandse pensioenregelingen zijn de bepalingen van de Nederlandse Pensioenwet van toepassing en betaalt De Kleine B.V. verplichte, contractuele of vrijwillige basispremies aan pensioenfondsen en verzekeringsmaatschappijen. De premies worden verantwoord als personeelskosten zodra deze verschuldigd zijn. Vooruitbetaalde premies worden opgenomen als overlopende activa indien dit tot een terugstorting leidt of tot een vermindering van toekomstige betalingen. Nog niet betaalde premies worden als verplichting op de balans opgenomen.</p>
+      <h3>Afschrijvingen op immateriële en materiële vaste activa</h3>
+      <p>Immateriële vaste activa inclusief goodwill en materiële vaste activa worden vanaf het moment dat het actief beschikbaar is voor het beoogde gebruik afgeschreven over de geschatte economische levensduur/verwachte toekomstige gebruiksduur van het actief. Over terreinen en vastgoedbeleggingen wordt niet afgeschreven.</p>
+      <h3>Bijzondere posten</h3>
+      <p>Bijzondere posten zijn baten of lasten die voortvloeien uit gebeurtenissen of transacties die behoren tot de normale, niet-incidentele bedrijfsuitoefening, maar die omwille van de analyse en vergelijkbaarheid apart toegelicht worden op grond van de aard, omvang of het incidentele karakter van de post.</p>
+      <h3>Overheidssubsidies</h3>
+      <p>Exploitatiesubsidies worden als bate verantwoord in de winst- en verliesrekening in het jaar waarin de gesubsidieerde kosten zijn gemaakt of opbrengsten zijn gederfd, of wanneer een gesubsidieerd exploitatietekort zich heeft voorgedaan. De baten worden verantwoord als het waarschijnlijk is dat deze worden ontvangen.
+        Subsidies met betrekking tot investeringen in materiële vaste activa worden in mindering gebracht op het desbetreffende actief en als onderdeel van de afschrijvingen verwerkt in de winst- en verliesrekening.
+        Subsidies die betrekking hebben op investeringen anders dan in materiële activa worden als vooruitontvangen bedrag onder de overlopende passiva opgenomen, afhankelijk van het karakter langlopend en/of kortlopend. Jaarlijks valt een gedeelte van deze subsidie vrij, met inachtneming van de wijze waarop de besteding zelf in de jaarrekening wordt verwerkt.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h3>Financiële baten en lasten</h3>
+      <h4>Rentebaten en rentelasten</h4>
+      <p>Rentebaten en rentelasten worden tijdsevenredig verwerkt, rekening houdend met de effectieve rentevoet van de desbetreffende activa en passiva. Bij de verwerking van de rentelasten wordt rekening gehouden met de verantwoorde transactiekosten op de ontvangen leningen.</p>
+      <h4>Koersverschillen</h4>
+      <p>Koersverschillen die optreden bij de afwikkeling of omrekening van monetaire posten worden in de winst- en verliesrekening verwerkt in de periode dat zij zich voordoen, tenzij hedge-accounting wordt toegepast.</p>
+      <h4>Dividenden</h4>
+      <p>Te ontvangen dividenden van niet op nettovermogenswaarde gewaardeerde deelnemingen en effecten, worden verantwoord zodra De Kleine B.V. het recht hierop heeft verkregen.</p>
+      <h4>Waardeveranderingen financiële instrumenten gewaardeerd tegen reële waarde</h4>
+      <p>Waardeveranderingen van financiële instrumenten die op actuele waarde gewaardeerd zijn, worden verwerkt in de winst- en verliesrekening.</p>
+      <h3>Activeren van rentelasten</h3>
+      <p>Rentelasten worden geactiveerd gedurende de periode van vervaardiging van een actief, indien het een aanmerkelijke hoeveelheid tijd vergt om het actief gebruiks- of verkoopklaar te maken. De te activeren rente wordt berekend op basis van de verschuldigde rente over specifiek voor de vervaardiging opgenomen leningen of op basis van de gewogen rentevoet van leningen die niet specifiek aan de vervaardiging van het actief zijn toe te rekenen, in verhouding tot de uitgaven en periode van vervaardiging.</p>
+      <h3>Belastingen</h3>
+      <p>De belasting over het resultaat wordt berekend over het resultaat voor belastingen in de winst- en verliesrekening, rekening houdend met beschikbare, fiscaal compensabele verliezen uit voorgaande boekjaren (voor zover niet opgenomen in de latente belastingvorderingen) en vrijgestelde winstbestanddelen en na bijtelling van niet-aftrekbare kosten. Tevens wordt rekening gehouden met wijzigingen die optreden in de latente belastingvorderingen en latente belastingschulden uit hoofde van wijzigingen in het te hanteren belastingtarief.</p>
+      <p>In de jaarrekening van dochtervennootschappen wordt een belastinglast berekend op basis van het behaalde commerciële resultaat. De door dochtervennootschappen verschuldigde belasting wordt verrekend in rekening-courant met De Kleine B.V.</p>
+      <h3>Resultaat deelnemingen (gewaardeerd op netto-vermogenswaarde)</h3>
+      <p>Het resultaat is het bedrag waarmee de boekwaarde van de deelneming sinds de voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat voor zover dit aan De Kleine B.V. wordt toegerekend.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Immateriële vaste activa</h2>
+      <p>Ten laste van het resultaat van het boekjaar, zichtbaar in de ....[betreffende jaarrekeningpost] in de winst- en verliesrekening is een bijzondere waardevermindering gebracht van € 0.
+        Behalve de intern gegenereerde computersoftware en de ontwikkelingskosten zijn de overige immateriële vaste activa gekocht of als onderdeel van een overname verwerkt.</p>
+      <h2>Materiële vaste activa</h2>
+      <p>Ten laste van het resultaat van het boekjaar, zichtbaar in de ....[betreffende jaarrekeningpost] in de winst- en verliesrekening is een bijzondere waardevermindering gebracht van € 0.</p>
+      <p>De bedrijfsgebouwen en -terreinen dienen als zekerheid voor de hypothecaire lening zoals die is verstrekt door X bank. Zie hiervoor ook noot 25.2 ‘Meerjarige financiële verplichtingen’ in de toelichting.</p>
+      <h2>Vastgoedbeleggingen</h2>
+      <p></p>
+      <h2>Financiële vaste activa</h2>
+      <p>Bij de verwerving van deelneming B.V. Q is bij de bepaling van de reële waarde van de passiva rekening gehouden met een reorganisatievoorziening.</p>
+      <p>Voor verrekenbare tijdelijke verschillen tussen de commerciële (bedrijfseconomische) en fiscale waardering van de pensioenvoorziening van de directeur-groot aandeelhouder is een latente belastingvordering gevormd tot het bedrag waarvan het waarschijnlijk is dat er fiscale winst beschikbaar zal zijn voor verrekening.</p>
+      <h2>Vorderingen op groepsmaatschappijen</h2>
+      <p>Onder vorderingen op groepsmaatschappijen zijn marktconforme leningen opgenomen aan Q B.V. en R B.V. voor respectievelijk ... (2022: ...) en ... (2022: ...). Het betreft vastrentende leningen met een rentepercentage van € 0,0% (2022: 0,0%). De resterende looptijd van deze vorderingen bedraagt respectievelijk 0 en 0 jaar. Omtrent zekerheden is niets overeengekomen.</p>
+      <h2>Voorraden</h2>
+      <p></p>
+      <h2>Onderhanden projecten</h2>
+      <p></p>
+      <h2>Vorderingen</h2>
+      <h3>Algemeen</h3>
+      <p>Alle vorderingen hebben een resterende looptijd korter dan een jaar, tenzij anders vermeld.</p>
+      <h3>Handelsdebiteuren</h3>
+      <p>Onder de handelsdebiteuren zijn vorderingen opgenomen tot een bedrag van € 0 met een (verwachte) resterende looptijd langer dan een jaar.</p>
+      <h3>Overige vorderingen en overlopende activa</h3>
+      <p>Hierin zijn begrepen de leningen aan bestuurders van € 0 (2022: € 0) verstrekt tegen 0% en € 0 (2022: € 0) renteloos. De resterende looptijden bedragen respectievelijk 0 en 0 jaar. Deze leningen moeten uiterlijk door de desbetreffende bestuurder worden afgelost in het jaar waarin hij zijn functie neerlegt. In het boekjaar werd door de bestuurders € 0 op hun leningen afgelost. Er zijn leningen aan de commissarissen van € 0 (2022: € 0) verstrekt. Alle leningen zijn tegen 0% rente verstrekt. De resterende looptijd varieert van 0 tot 0 jaar. In het boekjaar werd niets afgelost.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Effecten</h2>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>31-12-2023</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>31-12-2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>Beursgenoteerde effecten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Niet-beursgenoteerde effecten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Geplaatst kapitaal</h2>
+      <p>Het ingehouden deel van het resultaat over 2023 bedraagt € 0 (2022: € 0).</p>
+      <h2>Agioreserve</h2>
+      <p>Voor een bedrag van € 0 kan het agio worden aangemerkt als fiscaal niet-gestort kapitaal.</p>
+      <p>In 2023 is door de aandeelhouders € 0 gestort zonder uitgifte van aandelen. De verschuldigde kapitaalbelasting is op de storting in mindering gebracht, onder aftrek van € 0 aan winstbelasting.</p>
+      <h2>Herwaarderingsreserve</h2>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>Totaal</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Stand per 1 januari 2023</h2>
+            </td>
+            <td>
+              <ix:nonFraction contextRef="context_6" format="ixt:num-dot-decimal" name="bw2-titel9:RevaluationReserve" unitRef="EUR" decimals="0" scale="0" id="ID0001600">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Gerealiseerde herwaarderingen:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="non-list-bullet">via winst- en verliesrekening</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="rj:RevaluationReserveRealisedRevaluationsThroughIncomeStatement" unitRef="EUR" decimals="0" scale="0" id="ID0001610">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td class="non-list-bullet">naar overige reserves</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="rj:RevaluationReserveRealisedRevaluationsThroughOtherReserves" unitRef="EUR" decimals="0" scale="0" id="ID0001620">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td class="non-list-bullet">via afgedekt actief of passief</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="rj:RevaluationReserveRealisedRevaluationsThroughHedgedAssetsLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0001630">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Belastingeffecten</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="rj:RevaluationReserveRealisedRevaluationsTaxImpact" unitRef="EUR" decimals="0" scale="0" id="ID0001640">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Gevormde herwaarderingen:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="non-list-bullet">via overige reserves</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="rj:RevaluationReserveRevaluationsThroughOtherReserves" unitRef="EUR" decimals="0" scale="0" id="ID0001650">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td class="non-list-bullet">wijziging waardering financiële instrumenten</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="klein:RevaluationReserveRevaluationsChangesValueFinancialInstruments" unitRef="EUR" decimals="0" scale="0" id="ID0001660">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td class="non-list-bullet">wijziging waardering afdekkingsinstrument</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="rj:RevaluationReserveRevaluationsThroughHedgedAssetsLiabilities" unitRef="EUR" decimals="0" scale="0" id="ID0001670">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr>
+            <td>Belastingeffecten</td>
+            <td>
+              <ix:nonFraction contextRef="context_7" format="ixt:num-dot-decimal" name="bw2-titel9:RevaluationReserveRevaluationsTaxImpact" unitRef="EUR" decimals="0" scale="0" id="ID0001680">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Stand per 31 december 2023</h2>
+            </td>
+            <td>
+              <ix:nonFraction contextRef="context_8" format="ixt:num-dot-decimal" name="bw2-titel9:RevaluationReserve" unitRef="EUR" decimals="0" scale="0" id="ID0001690">0</ix:nonFraction>
+            </td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Andere wettelijke reserves</h2>
+      <p>De wettelijke reserves worden aangehouden voor het de geactiveerde kosten van ontwikkeling ter grootte van € 0 (2022: € 0).</p>
+      <h2>Statutaire reserves</h2>
+      <p></p>
+      <h2>Overige reserves</h2>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Voorzieningen</h2>
+      <p>Het verloop van de voorzieningen is als volgt:</p>
+      <table class="table-full col-s">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>Latente belasting-verplich-tingen</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>Overige</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>Totaal</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Stand per 1 januari 2023</h2>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Dotatie</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Vrijval</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Onttrekking</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Stand per 31 december 2023</h2>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Latente belastingverplichtingen</h3>
+      <p>Voor belastbare tijdelijke verschillen tussen de commerciële (bedrijfseconomische) en fiscale waardering van materiële vaste activa en onderhanden projecten is een voorziening voor latente belastingverplichtingen gevormd. Naar verwachting wordt € 0 in 2024 verrekend.</p>
+      <h3>Overige</h3>
+      <p>De voorziening voor herstelkosten is gevormd ten tijde van de aanschaf van de machine en dient als dekking voor de ontmanteling van de machine aan het einde van haar levensduur. De voorziening bedraagt ultimo boekjaar € 0 (2022: € 0).</p>
+      <p>De onderhoudsvoorziening, die dient ter dekking van de toekomstige kosten van groot onderhoud aan de bedrijfsgebouwen, bedraagt ultimo boekjaar € 0 (2022: € 0).</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Langlopende schulden</h2>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>2023</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Achtergestelde leningen</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Schulden aan kredietinstellingen</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Financiële leaseverplichtingen</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Oudedagsverplichting</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Overige schulden</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Aflossingsverplichtingen binnen 12 maanden na afloop van het boekjaar zijn niet begrepen in de hierboven genoemde bedragen maar opgenomen onder de kortlopende schulden. Alle leningen zijn afgesloten in euro’s. Van het totaalbedrag aan langlopende schulden heeft een bedrag van € 0 (2022: € 0) een resterende looptijd van langer dan 5 jaren.</p>
+      <h3>Achtergestelde leningen</h3>
+      <p>De achtergestelde lening is achtergesteld ten opzichte van alle andere bestaande en toekomstige schulden van de vennootschap. De rente over deze lening bedraagt x%. Er is geen aflossingsschema vastgesteld.</p>
+      <h3>Schulden aan kredietinstellingen</h3>
+      <p>X Bank heeft een hypothecaire lening verstrekt voor een bedrag van € 0 met een resterende looptijd van 20 jaar. De rente over deze lening is variabel en bedraagt x%. De bedrijfsgebouwen en -terreinen dienen als zekerheid voor deze lening.</p>
+      <p>Verder is hieronder begrepen een onderhandse lening. Het rentepercentage is variabel en bedroeg in 2023 gemiddeld x%. De resterende looptijd bedraagt 0 jaren; jaarlijks dient € 0 te worden afgelost.</p>
+      <p>De reële waarde van beide leningen benadert de geamortiseerde kostprijs.</p>
+      <h3>Financiële leaseverplichtingen</h3>
+      <p>Van de financiële leaseverplichtingen heeft een bedrag van € 0 (2022: € 0) een resterende looptijd van langer dan 5 jaren.</p>
+      <h2>Kortlopende schulden</h2>
+      <p>De kortlopende schulden hebben een resterende looptijd van korter dan een jaar. In de kortlopende schulden is begrepen de aflossingsverplichting hypothecaire lening aan X bank voor de komende 12 maanden.</p>
+      <p>Het over het boekjaar aan de houders van gewone aandelen uit te keren dividend is verantwoord als kortlopende verplichting in de balans.</p>
+      <h2>Schulden aan kredietinstellingen</h2>
+      <p>Dit betreft een krediet in rekening-courant, het maximaal op te nemen krediet bedraagt € 0. Als zekerheid hiervoor is een (stil) pandrecht gevestigd op handelsdebiteuren en voorraden.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Belastingen en premies sociale verzekeringen</h2>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>31-12-2023</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>31-12-2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Omzetbelasting</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Loonheffingen</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Vennootschapsbelasting</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Niet in de balans opgenomen activa en verplichtingen</h2>
+      <h3>Voorwaardelijke verplichtingen</h3>
+      <p>De groepsmaatschappijen zijn over en weer hoofdelijk aansprakelijk voor de bankier.</p>
+      <p>De Kleine B.V. is vennoot in V.o.f. Z te Amsterdam en is als zodanig hoofdelijk aansprakelijk voor het geheel der schulden van die vof.</p>
+      <h3>(Meerjarige) financiële verplichtingen</h3>
+      <p>Er zijn niet in de balans opgenomen verplichtingen voor de aankoop van machines Er zijn niet in de balans opgenomen verplichtingen voor de aankoop van grond- en hulpstoffen in Britse ponden De verplichtingen uit hoofde van operationele leasing zien toe op...</p>
+      <h3>Fiscale eenheid</h3>
+      <p>De Kleine B.V. is opgenomen in de fiscale eenheid voor de vennootschapsbelasting en omzetbelasting tezamen met groepsmaatschappijen BV Q en BV R.</p>
+      <p>Op grond van de Invorderingswet zijn de vennootschap en de met haar gevoegde dochterondernemingen ieder hoofdelijk aansprakelijk voor ter zake door de combinatie verschuldigde belasting.</p>
+      <p>In de jaarrekening van beide dochtervennootschappen wordt een belastinglast berekend op basis van het door BV Q resp. BV R behaalde commerciële resultaat. De door beide dochtervennootschappen verschuldigde belasting wordt verrekend in rekening-courant.</p>
+      <h3>Niet-verwerkte verplichtingen</h3>
+      <p>De Kleine B.V. heeft een claim ontvangen van een afnemer voor onjuist samengestelde producten.
+        De vennootschap is het niet eens met de claim. Momenteel is er door de afnemer een rechtszaak aangespannen. De directie is van mening dat het niet waarschijnlijk is dat de claim wordt toegekend en heeft daarom geen voorziening getroffen. De kosten inzake rechtsbijstand worden ten laste van de winst- en verliesrekening gebracht.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Lonen, salarissen en sociale lasten</h2>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>2023</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>Lonen en salarissen</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Sociale lasten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Pensioenlasten</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Af: Vergoeding NOW</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Rentelasten en soortgelijke kosten</h2>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>2023</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Rente achtergestelde lening</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Rente hypothecaire lening X bank</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Overige rentelasten</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Bankkosten</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Gedurende het boekjaar is er geen rente geactiveerd als onderdeel van de vervaardigingsprijs van een actief.</p>
+      <h2>Gemiddeld aantal werknemers</h2>
+      <p>Gedurende het jaar 2023 waren 2,0 werknemers in dienst op basis van een volledig dienstverband (2022: 2,0).</p>
+      <h2>Gebeurtenissen na balansdatum</h2>
+      <p>In 2024 loopt een contract met een belangrijke afnemer af. In de jaarrekening over 2023 werd ongeveer 40% van de netto-omzet gerealiseerd met dit contract. Het wegvallen van het contract zal een belangrijke invloed hebben op het bedrijfsresultaat.</p>
+      <p>In februari 2024 zijn voor € 0 eigen aandelen uitgegeven.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h2>Baten en lasten uit voorgaande jaren</h2>
+      <p></p>
+      <h2>Bijzondere baten en lasten</h2>
+      <p>In de ‘....... (bijv. overige bedrijfskosten)’ zijn bijzondere posten begrepen tot een bedrag van € 0. Dit bedrag kan als volgt worden gespecificeerd:</p>
+      <table class="table-full col-m">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <h2>2023</h2>
+            </td>
+            <td></td>
+            <td>
+              <h2>2022</h2>
+            </td>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Naheffing loonbelasting</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Claim inzake ...</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Bijdrage NOW</h3>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <p>
+        Statutaire vestigingsplaats, d.d. maand 2024
+        De Kleine B.V.
+        Bestuurder (huidig)</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+</body>
+</html>

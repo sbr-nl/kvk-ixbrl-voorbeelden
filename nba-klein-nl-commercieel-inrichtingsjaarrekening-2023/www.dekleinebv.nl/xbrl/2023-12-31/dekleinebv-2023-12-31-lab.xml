@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_ReceivablesOtherAccruedIncome" xlink:label="klein_OtherReceivablesAccruedIncome_loc"/>
+    <link:label xlink:type="resource" xlink:label="klein_OtherReceivablesAccruedIncome_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Overige vorderingen en overlopende activa</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="klein_OtherReceivablesAccruedIncome_loc" xlink:to="klein_OtherReceivablesAccruedIncome_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_PayablesOtherAccrualsAndDeferredIncomeCurrent" xlink:label="klein_PayablesOtheAccrualsAndDeferredIncomeCurrent_loc"/>
+    <link:label xlink:type="resource" xlink:label="klein_PayablesOtheAccrualsAndDeferredIncomeCurrent_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Overige schulden en overlopende passiva</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="klein_PayablesOtheAccrualsAndDeferredIncomeCurrent_loc" xlink:to="klein_PayablesOtheAccrualsAndDeferredIncomeCurrent_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments" xlink:label="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_loc"/>
+    <link:label xlink:type="resource" xlink:label="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Mutatie in herwaarderingsreserve als gevolg van gevormde herwaarderingen wijzigingen waardering financiële instrumenten</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_loc" xlink:to="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_label_nl"/>
+  </link:labelLink>
+</link:linkbase>
