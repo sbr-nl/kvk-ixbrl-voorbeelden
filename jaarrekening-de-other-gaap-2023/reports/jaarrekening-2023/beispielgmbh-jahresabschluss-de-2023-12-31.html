@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>beispielgmbh-jahresabschluss-de-2023-12-31</title>
+  <style type="text/css">
+    @media print {
+      html {
+        font-size: 10pt !important;
+      }
+      .page {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        box-shadow: none !important;
+        height: calc(100vh - 1rem) !important;
+        min-height: auto !important;
+        min-width: auto !important;
+      }
+    }
+    html {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: #fff;
+      font-size: 14.5px;
+    }
+    body {
+      counter-reset: page h2 h3 h4 h5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* page layout */
+    .page {
+      min-width: 21cm;
+      min-height: 29.7cm;
+      width: 21cm;
+      height: 29.7cm;
+      margin: 1cm;
+      padding: 1cm 1.5cm;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      counter-increment: page;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      overflow: auto;
+      border-radius: 6px;
+    }
+    .page:not(:last-child) {
+      page-break-after: always;
+    }
+    .page::-webkit-scrollbar {
+      background-color: red;
+      width: 10px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    /* page content layout */
+    .header-content,
+    .footer-content,
+    .content {
+      padding-left: 1rem;
+    }
+    .header-content,
+    .footer-content {
+      padding-left: 1rem;
+    }
+    .header-content {
+      padding-bottom: 2rem;
+    }
+    .content {
+      flex: 1;
+    }
+    /* header and footer */
+    .header-line {
+      height: 1rem;
+      border-top: solid 1px black;
+      border-left: solid 1px black;
+    }
+    .header,
+    .footer {
+      font-style: italic;
+      font-weight: normal;
+      text-align: left;
+      background-color: white;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .page:nth-child(n+3) .footer-page-number::after {
+      content: "Seite " counter(page) " von 7";
+    }
+    .footer-content::after {
+      content: "Beispiel GmbH, Hamburg";
+    }
+    .header-content::after {
+      content: "";
+    }
+    /* hidden */
+    .hidden {
+      display: none;
+    }
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+    /* first page */
+    .first-page-title,
+    .first-page-subtitle {
+      font-size: 2rem;
+    }
+    .first-page-title {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .first-page-subtitle {
+      font-weight: normal;
+    }
+    /* paragraphs */
+    p {
+      white-space: pre-line;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+    /* chapters */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin-top: .75rem;
+      margin-bottom: .5rem;
+    }
+    table h2,
+    table h3 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2,
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+    table h2,
+    table h3 {
+      font-size: 1rem;
+    }
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-rl;
+      rotate: 180deg;
+      text-align: left;
+      text-wrap: nowrap;
+    }
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
+      max-height: 125px;
+    }
+    h3,
+    h4,
+    h5 {
+      font-weight: normal;
+    }
+    h2 {
+      font-weight: bold;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-style: italic;
+    }
+    /* chapter numbering */
+    h2:not(table h2) {
+      counter-increment: h2;
+      counter-set: h3 h4 h5;
+    }
+    h2:not(table h2)::before {
+      content: counter(h2) ". ";
+    }
+    h3:not(table h3) {
+      counter-increment: h3;
+      counter-set: h4 h5;
+    }
+    h3:not(table h3)::before {
+      content: counter(h2) "." counter(h3) ". ";
+    }
+    h4:not(table h4) {
+      counter-increment: h4;
+      counter-set: h5;
+    }
+    h4:not(table h4)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+    }
+    h5:not(table h5) {
+      counter-increment: h5;
+    }
+    h5:not(table h5)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+    }
+    /* table layout */
+    table {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-align: right;
+      table-layout: fixed;
+    }
+    .table-xs {
+      width: 40%;
+    }
+    .table-s {
+      width: 55%;
+    }
+    .table-m {
+      width: 70%;
+    }
+    .table-l {
+      width: 85%;
+    }
+    .table-full {
+      width: 100%;
+    }
+    .text-left {
+      text-align: left;
+    }
+    td {
+      vertical-align: bottom;
+    }
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+      font-size: 1rem;
+    }
+    .top-table-header hr,
+    .sub-total hr,
+    .total hr {
+      border-style: solid none none;
+      border-color: black;
+    }
+    .dotted hr {
+      border-style: dotted none none;
+      border-color: black;
+    }
+    .top-table-header hr,
+    .sub-total hr,
+    .dotted hr {
+      border-width: 1px;
+    }
+    .total hr {
+      border-width: 2px;
+      border-color: black;
+    }
+    tr.empty-row {
+      height: 1.4rem;
+    }
+    table tr> :first-child {
+      text-align: left;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    table.col-3xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+    table.col-2xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
+    }
+    table.col-xs:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 10%;
+    }
+    table.col-s:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 12.5%;
+    }
+    table.col-m:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 15%;
+    }
+    table.col-l:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 17.5%;
+    }
+    table.col-xl:not(.annotated):not(.no-row-headers) col:nth-child(2n+2),
+    table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 20%;
+    }
+    table.annotated col:nth-child(2) {
+      width: 50px;
+    }
+    .annotated tr> :nth-child(2) {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    table:not(.annotated):not(.no-row-headers) col:nth-child(2n+3),
+    table.annotated col:nth-child(2n+4),
+    table.no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 8px;
+    }
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+    table:not(.annotated):not(.no-column-headers) tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2),
+    table.annotated tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+3),
+    table.no-column-headers tbody:nth-of-type(1)>tr:not(.empty-row)>td:nth-child(2n+2) {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .scale {
+      font-size: .8rem;
+    }
+    .footnote-table {
+      font-size: .9rem;
+      font-style: italic;
+    }
+    /* front page */
+    .title-content,
+    .title-line {
+      margin-left: 25%;
+      padding-left: 1rem;
+    }
+    .title-line {
+      height: 1rem;
+      border-top: solid 1px black;
+      border-left: solid 1px black;
+    }
+    .date-content,
+    .date-line {
+      width: 60%;
+      padding-left: 1rem;
+      font-style: italic;
+    }
+    .date-line {
+      margin-top: 13rem;
+      height: 1rem;
+      border-top: dotted 1px black;
+      border-left: dotted 1px black;
+    }
+    /* toc */
+    .toc-h1 {
+      font-weight: bold;
+    }
+    .toc-h2 {
+      font-style: italic;
+    }
+    .align-right {
+      float: right;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    /* lists */
+    ol,
+    ul {
+      padding-left: 1.4rem;
+    }
+    .non-list-bullet {
+      display: list-item;
+      margin-left: 1.4rem;
+    }
+
+    .negative::before {
+      position: absolute;
+      content:"(";
+      margin-left: -5px;
+    }
+
+    .negative::after {
+      position: absolute;
+      margin-left: 0px;
+      content: ")";
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <div class="title">
+        <div class="title-line"></div>
+        <div class="title-content">
+          <div class="first-page-title">Jahresabschluss für das Geschäftsjahr 2023</div>
+          <div class="first-page-subtitle">Beispiel GmbH</div>
+          <div class="first-page-subtitle">Hamburg, Deutschland</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-line"></div>
+        <div class="date-content">
+          <p>31. Oktober 2024</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1>Inhaltsverzeichnis</h1>
+      <p>
+        <a href="#financial-statements"><span class="toc-h1">Jahresabschluss<span class="align-right">3</span></span></a>
+        <a href="#balance-sheet">Bilanz zum 31. Dezember 2023<span class="align-right">4</span></a>
+        <a href="#account-of-profit-and-loss">Gewinn- und Verlustrechnung für 2023<span class="align-right">5</span></a>
+        <a href="#balance-sheet-and-profit-and-loss-account-disclosure">Anhang<span class="align-right">6</span></a>
+        <a href="#auditors-report">Bescheinigung<span class="align-right">7</span></a>
+      </p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="financial-statements">Jahresabschluss</h1>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="balance-sheet">Bilanz zum 31. Dezember 2023</h1>
+      (na resultaatbestemming)
+      <table class="table-full col-s">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <h2>Aktiva</h2>
+            </td>
+            <th colspan="3">31. Dezember 2023</th>
+            <td></td>
+            <th colspan="3">31. Dezember 2022</th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td colspan="8">
+              <h3>Anlagevermögen</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>Immaterielle Vermögenswerte</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sachanlagen</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Finanzanlagen</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td colspan="8">
+              <h3>Umlaufvermögen</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>Vorräte</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Forderungen aus Lieferungen und Leistungen</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sonstige Vermögensgegenstände</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kassenbestand, Bundesbankguthaben, Guthaben bei Kreditinstituten und Schecks</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td colspan="8">
+              <h2>Passiva</h2>
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td colspan="8">
+              <h3>Eigenkapital</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>Gezeichnetes Kapital</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gewinnrücklagen</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Langfristige Verbindlichkeiten</h3>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Kurzfristige Verbindlichkeiten</h3>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="account-of-profit-and-loss">Gewinn- und Verlustrechnung für 2023</h1>
+      <table class="table-full col-s">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <th colspan="3">Geschäftsjahr</th>
+            <td></td>
+            <th colspan="3">Vorjahr</th>
+          </tr>
+          <tr class="empty-row top-table-header">
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+            <td></td>
+            <td colspan="3">
+              <hr />
+            </td>
+          </tr>
+          <tr class="unit-row">
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+            <td></td>
+            <td>€</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td>Umsatzerlöse</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sonstige betriebliche Erträge</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Summe der Betriebserträge</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+          <tr>
+            <td>Kosten für Roh-, Hilfs- und Betriebsstoffe</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Personalaufwand</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Abschreibungen und Wertminderungen von Vermögenswerten</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sonstige betriebliche Aufwendungen</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Summe der Kosten</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Ergebnis nach Steuern</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Steuern vom Einkommen und vom Ertrag</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row sub-total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Ergebnis nach Steuern</h2>
+            </td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+          </tr>
+          <tr class="empty-row total">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <hr />
+            </td>
+          </tr>
+          <tr class="empty-row">
+            <td colspan="8"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="balance-sheet-and-profit-and-loss-account-disclosure">Anhang</h1>
+      <h2>Allgemeine Angaben zum Jahresabschluss</h2>
+        
+      <p>Der Jahresabschluss wurde nach den Vorschriften der §§ 242 ff. HGB unter der Beachtung der ergänzen den Bestimmungen für Kleinstkapitalgesellschaften aufgestellt.</p>
+      <p>Firmenname laut Registergericht: Beispiel GmbH</p>
+      <p>Firmensitz laut Registergericht: Hamburg</p>
+      <p>Registereintrag: Handelsregister</p>
+      <p>Registergericht: Hamburg(-Mitte)</p>
+      <p>Register-Nr.: ABC 123456 D</p>
+
+      <h2>Angaben zu Bilanzierungs- und Bewertungsmethoden</h2>
+
+      <p>Das Sachanlagevermögen wurde zu Anschaffungs- bzw. Herstellungskosten angesetzt und, soweit abnutzbar, um planmäßige Abschreibungen vermindert.</p>
+
+      <p>Die planmäßigen Abschreibungen wurden nach der voraussichtlichen Nutzungsdauer der Vermögens gegenstände linear vorgenommen.</p>
+
+      <p>Forderungen und sonstige Vermögensgegenstände wurden unter Berücksichtigung aller erkennbaren Risiken bewertet.</p>
+
+      <p>Die sonstigen Rückstellungen wurden für alle weiteren ungewissen Verbindlichkeiten gebildet. Dabei wurden alle erkennbaren Risiken berücksichtigt.</p>
+
+      <p>Verbindlichkeiten wurden zum Erfüllungsbetrag angesetzt.</p>
+
+      <p>Beim Jahresabschluss konnten die bisher angewandten Bilanzierungs- und Bewertungsmethoden im Wesentlichen übernommen werden.</p>
+      
+      <h2>Angaben zur Bilanz</h2>
+      
+      <p>Der Betrag der Forderungen mit einer Restlaufzeit größer einem Jahr beträgt 0 EUR (Vorjahr: 0 EUR).</p>
+      
+      <p>Es bestehen keine bilanzierten Verbindlichkeiten mit einer Restlaufzeit von mehr als 5 Jahren.</p>
+      
+      <p>Der Gesamtbetrag der bilanzierten Verbindlichkeiten, die durch Pfandrechte oder ähnliche Rechte gesichert sind, beträgt 0 EUR.</p>
+      
+      <p>Der Betrag der Verbindlichkeiten mit einer Restlaufzeit bis zu einem Jahr beträgt 0 EUR (Vorjahr: 0 EUR).</p>
+      
+      <h2>Sonstige Angaben</h2>
+
+      <p>Die durchschnittliche Zahl der während des Geschäftsjahres im Unternehmen beschäftigten Arbeitnehmer betrug 0,0.</p>
+
+      <p>Zur Geschäftsführung waren im Geschäftsjahr 2023 Frau A und Herr B bestellt.</p>
+
+      <p>
+
+
+        Hamburg, 31. Oktober 2024
+        Beispiel GmbH
+
+
+
+        
+        -----------------------
+        Frau A. und Herr B.</p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="auditors-report">Bescheinigung des Steuerberaters über die Erstellung</h1>
+      
+      <p>Ich habe auftragsgemäß den vorstehenden Jahresabschluss – bestehend aus Bilanz, Gewinn- und Verlustrechnung sowie Anhang – der Beispiel GmbH für das Geschäftsjahr vom 1. Januar 2023 bis 31. Dezember 2023 unter Beachtung der deutschen handelsrechtlichen Vorschriften und der ergänzenden Bestimmungen des Gesellschaftsvertrags erstellt.</p>
+
+      <p>Grundlage für die Erstellung waren die von mir geführten Bücher und die mir darüber hinaus vorgelegten Belege und Bestandsnachweise, die ich auftragsgemäß nicht geprüft habe, sowie die mir erteilten Auskünfte.</p>
+
+      <p>Die Buchführung sowie die Aufstellung des Inventars und des Jahresabschlusses nach den deutschen handelsrechtlichen Vorschriften und den ergänzenden Bestimmungen des Gesellschaftsvertrags liegen in der Verantwortung der gesetzlichen Vertreter der Gesellschaft.</p>
+
+      <p>Ich habe meinen Auftrag unter Beachtung der Verlautbarung der Bundessteuerberaterkammer zu den Grundsätzen für die Erstellung von Jahresabschlüssen durch geführt. Dieser umfasst die Entwicklung der Bilanz und der Gewinn- und Verlustrechnung sowie des Anhangs auf Grundlage der Buchführung und des Inventars sowie der Vorgaben zu den anzuwendenden Bilanzierungs- und Bewertungsmethoden.</p>
+
+      <p>
+
+
+      Hamburg, den 31. Oktober 2024
+
+
+
+      -----------------------
+      Frau X. 
+      Dipl.-Finanzwirtin (FH)
+      Steuerberaterin
+      </p>
+
+
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
