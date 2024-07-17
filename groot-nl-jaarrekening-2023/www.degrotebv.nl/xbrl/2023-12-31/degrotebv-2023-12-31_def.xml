@@ -108,11 +108,11 @@
   <link:definitionLink xlink:type="extended" xlink:role="https://www.degrotebv.nl/role/Anchoring">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ShareCapitalMember" xlink:label="bw2-titel9_ShareCapitalMember_loc"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_PreferenceSharesMember" xlink:label="groot_PreferenceSharesMember_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_ShareCapitalMember_loc" xlink:to="groot_PreferenceSharesMember_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_ShareCapitalMember_loc" xlink:to="groot_PreferenceSharesMember_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_PrioritySharesMember" xlink:label="groot_PrioritySharesMember_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_ShareCapitalMember_loc" xlink:to="groot_PrioritySharesMember_loc" order="2.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_ShareCapitalMember_loc" xlink:to="groot_PrioritySharesMember_loc" order="2.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_FinancialInstrumentsEconomicRealityClassifiedAsLiabilityMember" xlink:label="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_ShareCapitalMember_loc" xlink:to="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_loc" order="3.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_ShareCapitalMember_loc" xlink:to="groot_FinancialInstrumentsEconomicRealityClassifiedAsEquityMember_loc" order="3.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_ProvisionRestructuring" xlink:label="rj_ProvisionRestructuring_loc"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_ProvisionRestructuringTakeover" xlink:label="groot_ProvisionRestructuringTakeover_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="rj_ProvisionRestructuring_loc" xlink:to="groot_ProvisionRestructuringTakeover_loc" order="1.0"/>
@@ -164,12 +164,12 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="rj_EquityMovementOther_loc" xlink:to="groot_EquityIterimDividend_loc" order="16.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserveMember" xlink:label="bw2-titel9_RevaluationReserveMember_loc"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_CashFlowHedgeMember" xlink:label="groot_CashFlowHedgeMember_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_RevaluationReserveMember_loc" xlink:to="groot_CashFlowHedgeMember_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_RevaluationReserveMember_loc" xlink:to="groot_CashFlowHedgeMember_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_FinancialInstrumentsOtherMember" xlink:label="groot_FinancialInstrumentsOtherMember_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_RevaluationReserveMember_loc" xlink:to="groot_FinancialInstrumentsOtherMember_loc" order="2.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_RevaluationReserveMember_loc" xlink:to="groot_FinancialInstrumentsOtherMember_loc" order="2.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_LegalReservesMember" xlink:label="bw2-titel9_LegalReservesMember_loc"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_LegalReserveParticipatingInterestsMember" xlink:label="groot_LegalReserveParticipatingInterestsMember_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_LegalReservesMember_loc" xlink:to="groot_LegalReserveParticipatingInterestsMember_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_LegalReservesMember_loc" xlink:to="groot_LegalReserveParticipatingInterestsMember_loc" order="1.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.degrotebv.nl/role/EquityStatementOfChanges">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityStatementOfChangesTitle" xlink:label="bw2-titel9_EquityStatementOfChangesTitle_loc"/>
