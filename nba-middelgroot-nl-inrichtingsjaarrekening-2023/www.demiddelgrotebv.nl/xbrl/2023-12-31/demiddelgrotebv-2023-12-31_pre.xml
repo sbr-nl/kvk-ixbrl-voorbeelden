@@ -66,7 +66,7 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="rj_InterestPaidClassifiedAsOperatingActivities_loc" order="14.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_DividendsReceivedClassifiedAsOperatingActivities" xlink:label="rj_DividendsReceivedClassifiedAsOperatingActivities_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="rj_DividendsReceivedClassifiedAsOperatingActivities_loc" order="15.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
-    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowFromInterestDividend" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowOperatingActivitiesSubtotal" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="middelgroot_CashFlowFromInterestDividend_loc" order="16.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_CashFlowOperatingActivities" xlink:label="rj_CashFlowOperatingActivities_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="rj_CashFlowStatementTitle_loc" xlink:to="rj_CashFlowOperatingActivities_loc" order="17.0"/>
