@@ -5,8 +5,8 @@
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_IncreaseDecreaseLiabilitiesCurrent" xlink:label="middelgroot_IncreaseDecreaseCurrentLiabilities_loc"/>
     <link:label xlink:type="resource" xlink:label="middelgroot_IncreaseDecreaseCurrentLiabilities_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Kortlopende schulden (exclusief bankkrediet)</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="middelgroot_IncreaseDecreaseCurrentLiabilities_loc" xlink:to="middelgroot_IncreaseDecreaseCurrentLiabilities_label_nl"/>
-    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowFromInterestDividend" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
-    <link:label xlink:type="resource" xlink:label="middelgroot_CashFlowFromInterestDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Kasstroom uit interest en dividend</link:label>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowOperatingActivitiesSubtotal" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
+    <link:label xlink:type="resource" xlink:label="middelgroot_CashFlowFromInterestDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Subtotaal</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="middelgroot_CashFlowFromInterestDividend_loc" xlink:to="middelgroot_CashFlowFromInterestDividend_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_ProceedsFromLiabilitiesNonCurrent" xlink:label="middelgroot_ProceedsFromLiabilitiesNonCurrent_loc"/>
     <link:label xlink:type="resource" xlink:label="middelgroot_ProceedsFromLiabilitiesNonCurrent_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Ontvangst uit langlopende schulden</link:label>
@@ -23,5 +23,11 @@
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_EquityResultFinancialYear" xlink:label="middelgroot_EquityProfitAllocation_loc"/>
     <link:label xlink:type="resource" xlink:label="middelgroot_EquityProfitAllocation_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Resultaat boekjaar</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="middelgroot_EquityProfitAllocation_loc" xlink:to="middelgroot_EquityProfitAllocation_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_TransferToLegalReserveDeductedFromResultForTheYear" xlink:label="middelgroot_TransferToLegalReserveDeductedFromResultForTheYear_loc"/>
+    <link:label xlink:type="resource" xlink:label="middelgroot_TransferToLegalReserveDeductedFromResultForTheYear_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Toevoeging wettelijke reserve</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="middelgroot_TransferToLegalReserveDeductedFromResultForTheYear_loc" xlink:to="middelgroot_TransferToLegalReserveDeductedFromResultForTheYear_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_EquitySubtotal" xlink:label="middelgroot_EquitySubtotal_loc"/>
+    <link:label xlink:type="resource" xlink:label="middelgroot_EquitySubtotal_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Subtotaal</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="middelgroot_EquitySubtotal_label_nl"/>
   </link:labelLink>
 </link:linkbase>

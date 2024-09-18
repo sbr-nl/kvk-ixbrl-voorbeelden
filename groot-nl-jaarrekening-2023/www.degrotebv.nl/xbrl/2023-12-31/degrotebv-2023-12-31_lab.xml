@@ -95,5 +95,20 @@
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOrtherReserves" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Aanvulling overige reserves uit hoofde van resultaatbestemming</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityTransferResult2021ToOrtherReserves_loc" xlink:to="groot_EquityTransferResult2021ToOrtherReserves_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability" xlink:label="groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Financiële instrumenten die op basis van de economische realiteit als vreemd vermogen zouden worden verantwoord</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability_loc" xlink:to="groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_InterimDividendDeductedFromResultForTheYear" xlink:label="groot_InterimDividendDeductedFromResultForTheYear_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_InterimDividendDeductedFromResultForTheYear_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Interim-dividend</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_InterimDividendDeductedFromResultForTheYear_loc" xlink:to="groot_InterimDividendDeductedFromResultForTheYear_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_TransferToLegalReserveDeductedFromResultForTheYear" xlink:label="groot_TransferToLegalReserveDeductedFromResultForTheYear_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_TransferToLegalReserveDeductedFromResultForTheYear_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Toevoeging wettelijke reserve</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_TransferToLegalReserveDeductedFromResultForTheYear_loc" xlink:to="groot_TransferToLegalReserveDeductedFromResultForTheYear_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquitySubtotal" xlink:label="groot_EquitySubtotal_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquitySubtotal_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Subtotaal</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquitySubtotal_loc" xlink:to="groot_EquitySubtotal_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_CashFlowOperatingActivitiesSubtotal" xlink:label="groot_CashFlowOperatingActivitiesSubtotal_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_CashFlowOperatingActivitiesSubtotal_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Subtotaal</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_CashFlowOperatingActivitiesSubtotal_loc" xlink:to="groot_CashFlowOperatingActivitiesSubtotal_label_nl"/>
   </link:labelLink>
 </link:linkbase>

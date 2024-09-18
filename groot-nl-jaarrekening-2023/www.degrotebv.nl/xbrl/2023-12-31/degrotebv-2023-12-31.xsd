@@ -6,7 +6,7 @@
       <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
-      <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31-lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="degrotebv-2023-12-31_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:roleType roleURI="https://www.degrotebv.nl/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
         <link:definition>00100 - Document and Entity information</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
@@ -60,6 +60,7 @@
   <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext" schemaLocation="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext.xsd"/>
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
   <xsd:element name="PatentsTrademarksOtherRightsInternallyGenerated" id="groot_PatentsTrademarksOtherRightsInternallyGenerated" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
+  <xsd:element name="EquitySubtotal" id="groot_EquitySubtotal" type="dtr:noDecimalsMonetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant"/>
   <xsd:element name="PatentsTrademarksOtherRightsNotInternallyGenerated" id="groot_PatentsTrademarksOtherRightsNotInternallyGenerated" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
   <xsd:element name="DevelopmentCostsInternallyGenerated" id="groot_DevelopmentCostsInternallyGenerated" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
   <xsd:element name="ProvisionRestructuringTakeover" id="groot_ProvisionRestructuringTakeover" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant"/>
@@ -90,4 +91,8 @@
   <xsd:element name="EquityTransferFromLegalStatutoryReserves" id="groot_EquityTransferFromLegalStatutoryReserves" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
   <xsd:element name="EquityTransferFromRevaluationReserves" id="groot_EquityTransferFromRevaluationReserves" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
   <xsd:element name="EquityTransferResultToOrtherReserves" id="groot_EquityTransferResultToOrtherReserves" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xsd:element name="FinancialInstrumentsEconomicRealityClassifiedAsLiability" id="groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability" type="dtr:noDecimalsMonetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant"/>
+  <xsd:element name="InterimDividendDeductedFromResultForTheYear" id="groot_InterimDividendDeductedFromResultForTheYear" type="dtr:noDecimalsMonetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
+  <xsd:element name="TransferToLegalReserveDeductedFromResultForTheYear" id="groot_TransferToLegalReserveDeductedFromResultForTheYear" type="dtr:noDecimalsMonetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant"/>
+  <xsd:element name="CashFlowOperatingActivitiesSubtotal" id="groot_CashFlowOperatingActivitiesSubtotal" type="dtr:noDecimalsMonetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
 </xsd:schema>

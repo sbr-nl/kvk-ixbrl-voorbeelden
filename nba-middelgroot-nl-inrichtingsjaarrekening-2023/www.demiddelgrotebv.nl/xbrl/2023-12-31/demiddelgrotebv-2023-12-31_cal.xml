@@ -4,7 +4,7 @@
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/BalanceSheet" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#BalanceSheet"/>
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/IncomeStatement" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#IncomeStatement"/>
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/CashFlowStatement" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#CashFlowStatement"/>
-  <link:arcroleRef arcroleURI="https://xbrl.org/2023/arcrole/summation-item" xlink:type="simple" xlink:href="https://www.xbrl.org/2023/calculation-1.1.xsd#summation-item"/>  
+  <link:arcroleRef arcroleURI="https://xbrl.org/2023/arcrole/summation-item" xlink:type="simple" xlink:href="https://www.xbrl.org/2023/calculation-1.1.xsd#summation-item"/>
   <link:calculationLink xlink:type="extended" xlink:role="https://www.demiddelgrotebv.nl/role/BalanceSheet">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Assets" xlink:label="bw2-titel9_Assets_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_AssetsNoncurrent" xlink:label="bw2-titel9_AssetsNoncurrent_loc"/>
@@ -119,6 +119,28 @@
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityAndLiabilities_loc" xlink:to="bw2-titel9_EquityGroup_loc" order="1.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Equity" xlink:label="bw2-titel9_Equity_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityGroup_loc" xlink:to="bw2-titel9_Equity_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RetainedEarnings" xlink:label="bw2-titel9_RetainedEarnings_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_Equity_loc" xlink:to="bw2-titel9_RetainedEarnings_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ResultForTheYear" xlink:label="bw2-titel9_ResultForTheYear_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_RetainedEarnings_loc" xlink:to="bw2-titel9_ResultForTheYear_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_PreferredDividendDeductedFromResultForTheYear" xlink:label="rj_PreferredDividendDeductedFromResultForTheYear_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_RetainedEarnings_loc" xlink:to="rj_PreferredDividendDeductedFromResultForTheYear_loc" order="2.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_TransferToLegalReserveDeductedFromResultForTheYear" xlink:label="middelgroot_TransferToLegalReserveDeductedFromResultForTheYear_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_RetainedEarnings_loc" xlink:to="middelgroot_TransferToLegalReserveDeductedFromResultForTheYear_loc" order="3.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_EquitySubtotal" xlink:label="middelgroot_EquitySubtotal_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_Equity_loc" xlink:to="middelgroot_EquitySubtotal_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ShareCapital" xlink:label="bw2-titel9_ShareCapital_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="bw2-titel9_ShareCapital_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SharePremium" xlink:label="bw2-titel9_SharePremium_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="bw2-titel9_SharePremium_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserve" xlink:label="bw2-titel9_RevaluationReserve_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="bw2-titel9_RevaluationReserve_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ForeignCurrencyTranslationReserve" xlink:label="bw2-titel9_ForeignCurrencyTranslationReserve_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="bw2-titel9_ForeignCurrencyTranslationReserve_loc" order="4.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_LegalReserves" xlink:label="bw2-titel9_LegalReserves_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="bw2-titel9_LegalReserves_loc" order="5.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ReservesOther" xlink:label="bw2-titel9_ReservesOther_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_EquitySubtotal_loc" xlink:to="bw2-titel9_ReservesOther_loc" order="6.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_NoncontrollingInterest" xlink:label="bw2-titel9_NoncontrollingInterest_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityGroup_loc" xlink:to="bw2-titel9_NoncontrollingInterest_loc" order="2.0" weight="1.0"/>
   </link:calculationLink>
@@ -193,7 +215,7 @@
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="rj_IncreaseDecreaseInReceivables_loc" order="3.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_OperatingResultCashFlow" xlink:label="rj_OperatingResultCashFlow_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_OperatingResultCashFlow_loc" order="1.0" weight="1.0"/>
-    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowFromInterestDividend" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
+    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_CashFlowOperatingActivitiesSubtotal" xlink:label="middelgroot_CashFlowFromInterestDividend_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="middelgroot_CashFlowFromInterestDividend_loc" order="2.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_InterestReceivedClassifiedAsOperatingActivities" xlink:label="rj_InterestReceivedClassifiedAsOperatingActivities_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="middelgroot_CashFlowFromInterestDividend_loc" xlink:to="rj_InterestReceivedClassifiedAsOperatingActivities_loc" order="1.0" weight="1.0"/>

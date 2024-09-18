@@ -28,11 +28,6 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_DocumentAdoptionDate" xlink:label="bw2-titel9_DocumentAdoptionDate_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="bw2-titel9_DocumentAdoptionDate_loc" order="10.0"/>
   </link:presentationLink>
-  <link:presentationLink xlink:type="extended" xlink:role="https://www.demicrobv.nl/role/SigningManagingSupervisoryDirectors">
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SigningManagingSupervisoryDirectorsTitle" xlink:label="bw2-titel9_SigningManagingSupervisoryDirectorsTitle_loc"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SigningManagingSupervisoryDirectorsDisclosure" xlink:label="bw2-titel9_SigningManagingSupervisoryDirectorsDisclosure_loc"/>
-    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_SigningManagingSupervisoryDirectorsTitle_loc" xlink:to="bw2-titel9_SigningManagingSupervisoryDirectorsDisclosure_loc" order="1.0"/>
-  </link:presentationLink>
   <link:presentationLink xlink:type="extended" xlink:role="https://www.demicrobv.nl/role/BalanceSheet">
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_BalanceSheetTitle" xlink:label="bw2-titel9_BalanceSheetTitle_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_BalanceSheetBeforeAppropriationResults" xlink:label="bw2-titel9_BalanceSheetBeforeAppropriationResults_loc"/>
