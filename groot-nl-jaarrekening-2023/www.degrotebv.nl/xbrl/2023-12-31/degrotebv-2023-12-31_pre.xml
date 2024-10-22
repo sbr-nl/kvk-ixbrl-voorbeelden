@@ -158,13 +158,13 @@
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="groot_EquityTransferFromLegalStatutoryReserves_loc" order="29.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityPreferredDividend" xlink:label="groot_EquityPreferredDividend_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="groot_EquityPreferredDividend_loc" order="32.0"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityIterimDividend" xlink:label="groot_EquityIterimDividend_loc"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityIterimDividend_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="groot_EquityIterimDividend_loc" order="33.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityResultAllocation" xlink:label="rj_EquityResultAllocation_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="rj_EquityResultAllocation_loc" order="34.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityFinalOptionDividend" xlink:label="groot_EquityFinalOptionDividend2021_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="groot_EquityFinalOptionDividend2021_loc" order="35.0"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOrtherReserves" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_loc"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOtherReserves" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="groot_EquityTransferResult2021ToOrtherReserves_loc" order="36.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityShareBasedArrangementsGranted" xlink:label="rj_EquityShareBasedArrangementsGranted_loc"/>
     <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bw2-titel9_ChangesInEquityTitle_loc" xlink:to="rj_EquityShareBasedArrangementsGranted_loc" order="5.0" preferredLabel="http://www.xbrl.org/2003/role/terseLabel"/>
