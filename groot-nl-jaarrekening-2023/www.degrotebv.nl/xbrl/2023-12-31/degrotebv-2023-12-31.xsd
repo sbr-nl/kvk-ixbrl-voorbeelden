@@ -71,7 +71,7 @@
   <xsd:element name="EquityLoanConversion" id="groot_EquityLoanConversion" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
   <xsd:element name="EquityStockdividend" id="groot_EquityStockdividend" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration"/>
   <xsd:element name="EquityPreferredDividend" id="groot_EquityPreferredDividend" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
-  <xsd:element name="EquityIterimDividend" id="groot_EquityInterimDividend" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xsd:element name="EquityInterimDividend" id="groot_EquityInterimDividend" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
   <xsd:element name="EquityFinalOptionDividend" id="groot_EquityFinalOptionDividend" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration"/>
   <xsd:element name="PreferenceSharesMember" id="groot_PreferenceSharesMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="PrioritySharesMember" id="groot_PrioritySharesMember" type="dtr:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>

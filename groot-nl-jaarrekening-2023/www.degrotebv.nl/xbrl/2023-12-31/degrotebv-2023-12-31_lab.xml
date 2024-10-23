@@ -86,9 +86,9 @@
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityPreferredDividend" xlink:label="groot_EquityPreferredDividend_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_EquityPreferredDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Preferent dividend</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityPreferredDividend_loc" xlink:to="groot_EquityPreferredDividend_label_nl"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityIterimDividend_loc"/>
-    <link:label xlink:type="resource" xlink:label="groot_EquityIterimDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Iterim-dividend</link:label>
-    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityIterimDividend_loc" xlink:to="groot_EquityIterimDividend_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityInterimDividend_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquityInterimDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Iterim-dividend</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityInterimDividend_loc" xlink:to="groot_EquityInterimDividend_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityFinalOptionDividend" xlink:label="groot_EquityFinalOtionDividend2021_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_EquityFinalOtionDividend2021_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Slot(keuze)dividend</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityFinalOtionDividend2021_loc" xlink:to="groot_EquityFinalOtionDividend2021_label_nl"/>

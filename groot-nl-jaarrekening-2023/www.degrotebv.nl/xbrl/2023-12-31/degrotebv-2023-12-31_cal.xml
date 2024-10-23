@@ -431,8 +431,8 @@
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="rj_EmissionCostsEquity_loc" order="31.0" weight="-1.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityPreferredDividend" xlink:label="groot_EquityPreferredDividend_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityPreferredDividend_loc" order="32.0" weight="-1.0"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityIterimDividend_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityIterimDividend_loc" order="33.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityInterimDividend_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityInterimDividend_loc" order="33.0" weight="-1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityResultAllocation" xlink:label="rj_EquityResultAllocation_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="rj_EquityResultAllocation_loc" order="34.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityFinalOptionDividend" xlink:label="groot_EquityFinalOptionDividend_loc"/>
