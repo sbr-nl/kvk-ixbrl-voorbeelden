@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
   <link:roleRef roleURI="https://www.degrotebv.nl/role/BalanceSheet" xlink:type="simple" xlink:href="degrotebv-2023-12-31.xsd#BalanceSheet"/>
   <link:roleRef roleURI="https://www.degrotebv.nl/role/IncomeStatement" xlink:type="simple" xlink:href="degrotebv-2023-12-31.xsd#IncomeStatement"/>
   <link:roleRef roleURI="https://www.degrotebv.nl/role/CashFlowStatement" xlink:type="simple" xlink:href="degrotebv-2023-12-31.xsd#CashFlowStatement"/>
@@ -431,13 +431,13 @@
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="rj_EmissionCostsEquity_loc" order="31.0" weight="-1.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityPreferredDividend" xlink:label="groot_EquityPreferredDividend_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityPreferredDividend_loc" order="32.0" weight="-1.0"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityIterimDividend" xlink:label="groot_EquityIterimDividend_loc"/>
-    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityIterimDividend_loc" order="33.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityInterimDividend_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityInterimDividend_loc" order="33.0" weight="-1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityResultAllocation" xlink:label="rj_EquityResultAllocation_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="rj_EquityResultAllocation_loc" order="34.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityFinalOptionDividend" xlink:label="groot_EquityFinalOptionDividend_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityFinalOptionDividend_loc" order="35.0" weight="-1.0"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOrtherReserves" xlink:label="groot_EquityTransferResultToOrtherReserves_loc"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOtherReserves" xlink:label="groot_EquityTransferResultToOrtherReserves_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="groot_EquityTransferResultToOrtherReserves_loc" order="36.0" weight="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserveRevaluationsTaxImpact" xlink:label="bw2-titel9_RevaluationReserveRevaluationsTaxImpact_loc"/>
     <link:calculationArc xlink:type="arc" xlink:arcrole="https://xbrl.org/2023/arcrole/summation-item" xlink:from="bw2-titel9_EquityMovement_loc" xlink:to="bw2-titel9_RevaluationReserveRevaluationsTaxImpact_loc" order="37.0" weight="-1.0"/>

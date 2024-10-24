@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_PatentsTrademarksOtherRightsInternallyGenerated" xlink:label="groot_PatentsTrademarksOtherRights_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_PatentsTrademarksOtherRights_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Kosten van verwerving ter zake van concessies, vergunningen en rechten van intellectuele eigendom, intern gegenereerd</link:label>
@@ -86,13 +86,13 @@
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityPreferredDividend" xlink:label="groot_EquityPreferredDividend_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_EquityPreferredDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Preferent dividend</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityPreferredDividend_loc" xlink:to="groot_EquityPreferredDividend_label_nl"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityIterimDividend" xlink:label="groot_EquityIterimDividend_loc"/>
-    <link:label xlink:type="resource" xlink:label="groot_EquityIterimDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Iterim-dividend</link:label>
-    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityIterimDividend_loc" xlink:to="groot_EquityIterimDividend_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityInterimDividend" xlink:label="groot_EquityInterimDividend_loc"/>
+    <link:label xlink:type="resource" xlink:label="groot_EquityInterimDividend_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Iterim-dividend</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityInterimDividend_loc" xlink:to="groot_EquityInterimDividend_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityFinalOptionDividend" xlink:label="groot_EquityFinalOtionDividend2021_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_EquityFinalOtionDividend2021_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Slot(keuze)dividend</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityFinalOtionDividend2021_loc" xlink:to="groot_EquityFinalOtionDividend2021_label_nl"/>
-    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOrtherReserves" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_loc"/>
+    <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_EquityTransferResultToOtherReserves" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_loc"/>
     <link:label xlink:type="resource" xlink:label="groot_EquityTransferResult2021ToOrtherReserves_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Aanvulling overige reserves uit hoofde van resultaatbestemming</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="groot_EquityTransferResult2021ToOrtherReserves_loc" xlink:to="groot_EquityTransferResult2021ToOrtherReserves_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="degrotebv-2023-12-31.xsd#groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability" xlink:label="groot_FinancialInstrumentsEconomicRealityClassifiedAsLiability_loc"/>
