@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-fs" xlink:type="simple" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-separate-fs"/>
   <link:roleRef roleURI="https://www.dekleinebv.nl/role/Anchoring" xlink:type="simple" xlink:href="dekleinebv-2023-12-31.xsd#Anchoring"/>
   <link:roleRef roleURI="https://www.dekleinebv.nl/role/RevaluationReserveStatementOfChanges" xlink:type="simple" xlink:href="dekleinebv-2023-12-31.xsd#RevaluationReserveStatementOfChanges"/>
@@ -142,22 +142,6 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_ShareInResultsParticipatingInterests_loc" order="65.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ResultAfterTax" xlink:label="bw2-titel9_ResultAfterTax_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_ResultAfterTax_loc" order="66.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRealisedRevaluationsThroughIncomeStatement" xlink:label="rj_RevaluationReserveRealisedRevaluationsThroughIncomeStatement_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_RevaluationReserveRealisedRevaluationsThroughIncomeStatement_loc" order="68.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRealisedRevaluationsThroughOtherReserves" xlink:label="rj_RevaluationReserveRealisedRevaluationsThroughOtherReserves_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_RevaluationReserveRealisedRevaluationsThroughOtherReserves_loc" order="69.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRealisedRevaluationsThroughHedgedAssetsLiabilities" xlink:label="rj_RevaluationReserveRealisedRevaluationsThroughHedgedAssetsLiabilities_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_RevaluationReserveRealisedRevaluationsThroughHedgedAssetsLiabilities_loc" order="70.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRealisedRevaluationsTaxImpact" xlink:label="rj_RevaluationReserveRealisedRevaluationsTaxImpact_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_RevaluationReserveRealisedRevaluationsTaxImpact_loc" order="71.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRevaluationsThroughOtherReserves" xlink:label="rj_RevaluationReserveRevaluationsThroughOtherReserves_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_RevaluationReserveRevaluationsThroughOtherReserves_loc" order="72.0"/>
-    <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments" xlink:label="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_loc" order="73.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRevaluationsThroughHedgedAssetsLiabilities" xlink:label="rj_RevaluationReserveRevaluationsThroughHedgedAssetsLiabilities_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_RevaluationReserveRevaluationsThroughHedgedAssetsLiabilities_loc" order="74.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserveRevaluationsTaxImpact" xlink:label="bw2-titel9_RevaluationReserveRevaluationsTaxImpact_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_RevaluationReserveRevaluationsTaxImpact_loc" order="75.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.dekleinebv.nl/role/Anchoring">
     <link:loc xlink:type="locator" xlink:href="dekleinebv-2023-12-31.xsd#klein_ReceivablesOtherAccruedIncome" xlink:label="klein_ReceivablesOtherAccruedIncome_loc"/>
@@ -179,6 +163,9 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="bw2-titel9_RevaluationReserveMovement_loc" xlink:to="klein_RevaluationReserveRevaluationsChangesValueFinancialInstruments_loc" order="1.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.dekleinebv.nl/role/RevaluationReserveStatementOfChanges">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_FinancialStatementsTypeAxis" xlink:label="bw2-titel9_FinancialStatementsTypeAxis_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SeparateMember" xlink:label="bw2-titel9_SeparateMember_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="bw2-titel9_FinancialStatementsTypeAxis_loc" xlink:to="bw2-titel9_SeparateMember_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserveStatementOfChangesLineItems" xlink:label="bw2-titel9_RevaluationReserveStatementOfChangesLineItems_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserve" xlink:label="bw2-titel9_RevaluationReserve_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_RevaluationReserveStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_RevaluationReserve_loc" order="1.0"/>
@@ -200,6 +187,7 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="bw2-titel9_RevaluationReserveStatementOfChangesTable_loc" xlink:to="rj_ClassesOfRevaluationReserveAxis_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RevaluationReserveMember" xlink:label="bw2-titel9_RevaluationReserveMember_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="rj_ClassesOfRevaluationReserveAxis_loc" xlink:to="bw2-titel9_RevaluationReserveMember_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="bw2-titel9_RevaluationReserveStatementOfChangesTable_loc" xlink:to="bw2-titel9_FinancialStatementsTypeAxis_loc" order="2.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRealisedRevaluationsTaxImpact" xlink:label="rj_RevaluationReserveRealisedRevaluationsTaxImpact_loc_2"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_RevaluationReserveStatementOfChangesLineItems_loc" xlink:to="rj_RevaluationReserveRealisedRevaluationsTaxImpact_loc_2" order="5.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_RevaluationReserveRealisedRevaluationsThroughHedgedAssetsLiabilities" xlink:label="rj_RevaluationReserveRealisedRevaluationsThroughHedgedAssetsLiabilities_loc"/>
