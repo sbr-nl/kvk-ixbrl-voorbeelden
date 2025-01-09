@@ -304,6 +304,6 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ifrs-full_StatementOfChangesInEquityLineItems_loc" xlink:to="ifrs-full_IncreaseDecreaseThroughTransactionsWithOwners_loc" order="8.0"/>
     <link:loc xlink:type="locator" xlink:href="https://xbrl.ifrs.org/taxonomy/2022-03-24/full_ifrs/full_ifrs-cor_2022-03-24.xsd#ifrs-full_ComprehensiveIncome" xlink:label="ifrs-full_ComprehensiveIncome_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ifrs-full_StatementOfChangesInEquityLineItems_loc" xlink:to="ifrs-full_ComprehensiveIncome_loc" order="9.0"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="ifrs-full_StatementOfChangesInEquityLineItems_loc" xlink:to="ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_loc" order="2.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="ifrs-full_StatementOfChangesInEquityTable_loc" xlink:to="ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_loc" order="2.0"/>
   </link:definitionLink>
 </link:linkbase>
