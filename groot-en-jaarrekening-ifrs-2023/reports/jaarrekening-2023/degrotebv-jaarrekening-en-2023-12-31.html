@@ -819,9 +819,19 @@
 		<!-- not used due to default <xbrldi:explicitMember dimension="ifrs-full:ConsolidatedAndSeparateFinancialStatementsAxis">ifrs-full:ConsolidatedMember</xbrldi:explicitMember> -->
       </xbrli:scenario>
     </xbrli:context>
-     <xbrli:unit xmlns:xbrli="http://www.xbrl.org/2003/instance" id="EUR">
-          <xbrli:measure>iso4217:EUR</xbrli:measure>
-        </xbrli:unit>
+    <xbrli:unit id="EUR">
+        <xbrli:measure>iso4217:EUR</xbrli:measure>
+    </xbrli:unit>
+	<xbrli:unit id="EUR_per_share">
+        <xbrli:divide>
+            <xbrli:unitNumerator>
+                <xbrli:measure>iso4217:EUR</xbrli:measure>
+            </xbrli:unitNumerator>
+            <xbrli:unitDenominator>
+                <xbrli:measure>xbrli:shares</xbrli:measure>
+            </xbrli:unitDenominator>
+        </xbrli:divide>
+    </xbrli:unit>
       </ix:resources>
     </ix:header>
   </div>
@@ -1299,31 +1309,31 @@
           <tr>
             <td>- From continuing operations</td>
               <td>
-                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000540">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000540">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000550">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000550">0.00</ix:nonFraction>
               </td>
           </tr>		  
           <tr>
             <td>- From discontinued operations</td>
               <td>
-                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000560">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000560">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000570">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000570">0.00</ix:nonFraction>
               </td>
           </tr>		  
           <tr>
             <td>Total</td>
               <td>
-                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000580">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000580">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000590">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000590">0.00</ix:nonFraction>
               </td>
           </tr>
 		  <tr class="empty-row sub-total">
@@ -1345,31 +1355,31 @@
           <tr>
             <td>- From continuing operations</td>
               <td>
-                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000600">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000600">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000610">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000610">0.00</ix:nonFraction>
               </td>
           </tr>		  
           <tr>
             <td>- From discontinued operations</td>
               <td>
-                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000620">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000620">0.00</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000630">0.00</ix:nonFraction>
+                <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:BasicEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000630">0.00</ix:nonFraction>
               </td>
           </tr>			  
           <tr>
             <td>Total</td>
             <td>
-              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000640">0.00</ix:nonFraction>
+              <ix:nonFraction contextRef="context_2" format="ixt:num-dot-decimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000640">0.00</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR" decimals="2" scale="0" id="id00000650">0.00</ix:nonFraction>
+              <ix:nonFraction contextRef="context_3" format="ixt:num-dot-decimal" name="ifrs-full:DilutedEarningsLossPerShare" unitRef="EUR_per_share" decimals="2" scale="0" id="id00000650">0.00</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row sub-total">
