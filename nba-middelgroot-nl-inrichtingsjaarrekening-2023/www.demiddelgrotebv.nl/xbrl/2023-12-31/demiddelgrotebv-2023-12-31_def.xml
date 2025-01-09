@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-fs" xlink:type="simple" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-separate-fs"/>
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/Anchoring" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#Anchoring"/>
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/EquityStatementOfChanges" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#EquityStatementOfChanges"/>
@@ -94,7 +94,7 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityMovementOther" xlink:label="rj_EquityMovementOther_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="rj_EquityMovementOther_loc" order="7.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityStatementOfChangesTable" xlink:label="bw2-titel9_EquityStatementOfChangesTable_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_EquityStatementOfChangesTable_loc" order="0.0" xbrldt:contextElement="scenario"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_EquityStatementOfChangesTable_loc" order="0.0" xbrldt:contextElement="scenario" xbrldt:closed="true"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ClassesOfEquityAxis" xlink:label="bw2-titel9_ClassesOfEquityAxis_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="bw2-titel9_EquityStatementOfChangesTable_loc" xlink:to="bw2-titel9_ClassesOfEquityAxis_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityMember" xlink:label="bw2-titel9_EquityMember_loc"/>
