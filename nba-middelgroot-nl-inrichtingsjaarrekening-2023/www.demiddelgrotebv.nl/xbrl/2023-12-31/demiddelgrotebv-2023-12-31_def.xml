@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-fs" xlink:type="simple" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-separate-fs"/>
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/Anchoring" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#Anchoring"/>
   <link:roleRef roleURI="https://www.demiddelgrotebv.nl/role/EquityStatementOfChanges" xlink:type="simple" xlink:href="demiddelgrotebv-2023-12-31.xsd#EquityStatementOfChanges"/>
@@ -14,18 +14,6 @@
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor.xsd#kvk_ItemsInSeparateFinancialStatementsPlaceholder" xlink:label="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Equity" xlink:label="bw2-titel9_Equity_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_Equity_loc" order="2.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityDividendDistribution" xlink:label="rj_EquityDividendDistribution_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_EquityDividendDistribution_loc" order="4.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityResultAllocation" xlink:label="rj_EquityResultAllocation_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_EquityResultAllocation_loc" order="3.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityShareBasedArrangementsGranted" xlink:label="rj_EquityShareBasedArrangementsGranted_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_EquityShareBasedArrangementsGranted_loc" order="6.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityShareBasedArrangementsExercised" xlink:label="rj_EquityShareBasedArrangementsExercised_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_EquityShareBasedArrangementsExercised_loc" order="7.0"/>
-    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_EquityMovementOther" xlink:label="rj_EquityMovementOther_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="rj_EquityMovementOther_loc" order="8.0"/>
-    <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_EquityResultFinancialYear" xlink:label="middelgroot_EquityProfitAllocation_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="middelgroot_EquityProfitAllocation_loc" order="5.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ShareCapital" xlink:label="bw2-titel9_ShareCapital_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="bw2-titel9_ShareCapital_loc" order="9.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SharePremium" xlink:label="bw2-titel9_SharePremium_loc"/>
@@ -80,6 +68,9 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="rj_IncreaseDecreaseInOtherPayables_loc" xlink:to="middelgroot_IncreaseDecreaseLiabilitiesCurrent_loc" order="1.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.demiddelgrotebv.nl/role/EquityStatementOfChanges">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_FinancialStatementsTypeAxis" xlink:label="bw2-titel9_FinancialStatementsTypeAxis_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_SeparateMember" xlink:label="bw2-titel9_SeparateMember_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="bw2-titel9_FinancialStatementsTypeAxis_loc" xlink:to="bw2-titel9_SeparateMember_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityStatementOfChangesLineItems" xlink:label="bw2-titel9_EquityStatementOfChangesLineItems_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_Equity" xlink:label="bw2-titel9_Equity_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="bw2-titel9_Equity_loc" order="1.0"/>
@@ -111,6 +102,7 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="bw2-titel9_ClassesOfEquityAxis_loc" xlink:to="bw2-titel9_ReservesOtherMember_loc" order="5.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_RetainedEarningsMember" xlink:label="bw2-titel9_RetainedEarningsMember_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="bw2-titel9_ClassesOfEquityAxis_loc" xlink:to="bw2-titel9_RetainedEarningsMember_loc" order="6.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="bw2-titel9_EquityStatementOfChangesTable_loc" xlink:to="bw2-titel9_FinancialStatementsTypeAxis_loc" order="2.0"/>
     <link:loc xlink:type="locator" xlink:href="demiddelgrotebv-2023-12-31.xsd#middelgroot_EquityResultFinancialYear" xlink:label="middelgroot_EquityProfitAllocation_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="bw2-titel9_EquityStatementOfChangesLineItems_loc" xlink:to="middelgroot_EquityProfitAllocation_loc" order="4.0"/>
   </link:definitionLink>
